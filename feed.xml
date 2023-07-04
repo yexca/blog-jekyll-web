@@ -1,0 +1,326 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://blog.yexca.net/</id>
+  <title>yexca'Blog</title>
+  <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
+  <updated>2023-07-04T13:09:48+08:00</updated>
+  <author>
+    <name>yexca</name>
+    <uri>https://blog.yexca.net/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://blog.yexca.net/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://blog.yexca.net/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2023 yexca </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>アイドルマスター ミリオンライブ！的 IP 规则</title>
+    <link href="https://blog.yexca.net/archives/114" rel="alternate" type="text/html" title="アイドルマスター ミリオンライブ！的 IP 规则" />
+    <published>2023-06-09T23:32:09+08:00</published>
+  
+    <updated>2023-06-09T23:32:09+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/114</id>
+    <content src="https://blog.yexca.net/archives/114" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="日常" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      最近游玩 ミリシタ 时连接不上，遂寻找解决方法 （顺便试试 Spotify 的嵌入效果
+
+域名
+
+theaterdays.appspot.com
+
+
+
+
+
+最近雨宿りの曲が大好きので、よく聞いていた。Last.fm で過去30日間雨宿りの「猫かぶり」は人気トラック一番になった。で、トップアーティストじゃない？トップアーティスト、もちろん湊あくあ！　　
+
+草、ミリシタの文章で何を書いたか、どっちもミリシタと関係ないもん！
+
+
+clash
+
+通过设置组更好选择
+
+首先设置 JP 组
+
+proxy-groups:
+- name: JP
+  type: select
+  proxies:
+  - your jp proxy name
+  - your jp proxy name
+
+
+然后添加规则
+
+rules:
+- DOMAIN-SUFFIX,theaterdays.appspot.com,...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>原型模式</title>
+    <link href="https://blog.yexca.net/archives/113" rel="alternate" type="text/html" title="原型模式" />
+    <published>2023-06-02T19:31:44+08:00</published>
+  
+    <updated>2023-06-02T19:31:44+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/113</id>
+    <content src="https://blog.yexca.net/archives/113" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Prototype Pattern 对象创建型模式
+
+意图
+
+用原型实例指定创建对象的种类，并且通过复制这些原型创建新的对象
+
+结构
+
+
+
+其中：
+
+
+  Prototype 声明一个复制自身的接口
+  ConcretePrototype 实现一个复制自身的操作
+  Client 让一个原型复制自身从而创建一个新的对象
+
+
+适用性
+
+Prototype 模式适用于：
+
+
+  当一个系统应该独立于它的产品创建、构成和表示时
+  当要实例化的类是在运行时刻指定时，例如，通过动态装载
+  为了避免创建一个与产品类层次平行的工厂类层次时
+  当一个类的实例只能有几个不同状态组合中的一种时。建立相应数目的原型并克隆它们，可能比每次用合适的状态手工实例化该类更方便一些
+
+
+例子 1
+
+public class main{
+    Product p1 = new Product(2023, 3....
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>生成器模式</title>
+    <link href="https://blog.yexca.net/archives/112" rel="alternate" type="text/html" title="生成器模式" />
+    <published>2023-06-01T23:33:17+08:00</published>
+  
+    <updated>2023-06-01T23:33:17+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/112</id>
+    <content src="https://blog.yexca.net/archives/112" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Builder Pattern 对象创建型模式
+
+意图
+
+将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示
+
+结构
+
+
+
+其中：
+
+
+  Builder 为创建一个 Product 对象的各个部件指定抽象接口
+  ConcreteBuilder 实现 Builder 的接口以构造和装配该产品的各个部件，定义并明确它所创建的表示，提供一个检索产品的接口
+  Director 构造一个使用 Builder 接口的对象
+  Product 表示被构建的复杂对象。ConcreteBuilder 创建该产品的内部表示并定义它的装配过程。包含定义组成组件的类，包括将这些组件装配成最终产品的接口
+
+
+适用性
+
+Builder 模式适用于：
+
+
+  当创建复杂对象的算法应该独立于该对象的组成部分以及它们的装配方式
+  当构建过程必须允许被构造的对象有不同的表示时
+
+
+例子 1...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>工厂模式</title>
+    <link href="https://blog.yexca.net/archives/111" rel="alternate" type="text/html" title="工厂模式" />
+    <published>2023-05-28T10:23:46+08:00</published>
+  
+    <updated>2023-05-28T10:23:46+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/111</id>
+    <content src="https://blog.yexca.net/archives/111" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      简单工厂模式
+
+简单工厂模式属于创建型模式，但不属于 23 种设计模式之一
+
+定义：定义一个工厂类，它可以根据参数的不同返回不同类的实例，被创建的实例通常都具有共同的父类
+
+在简单工厂模式中用于被创建实例的方法通常为静态 (static) 方法，因此简单工厂模式又被称为静态工厂方法 (Static Factory Method)
+
+需要什么产品就传入产品对应的参数，就可以获取所需要的产品对象，而无需知道其实现过程
+
+例如：有一家饺子店，当客户需要某种饺子时，饺子店生成对应的饺子给客户。这里就可以把饺子店看成工厂 (Factory) ，饺子看成产品 (Product) ，饺子的名称看成参数，饺子店根据不同的参数返回不同的饺子
+
+比如：客户想要韭菜饺子，这里韭菜就是参数，饺子店会根据参数韭菜返回韭菜饺子 (饺子店有韭菜饺子的前提下)
+
+
+
+三类角色：
+
+
+  工厂 (核心)
+
+
+​	负责...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>算法 钢条切割问题 (动态规划 分治)</title>
+    <link href="https://blog.yexca.net/archives/110" rel="alternate" type="text/html" title="算法 钢条切割问题 (动态规划 分治)" />
+    <published>2023-05-27T19:37:08+08:00</published>
+  
+    <updated>2023-05-27T19:37:08+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/110</id>
+    <content src="https://blog.yexca.net/archives/110" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="算法" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      问题描述
+
+某公司购买长钢条，将其切割后进行出售。切割钢条的成本可以忽略不计，钢条的长度为英寸。已知价格表 $p$ ，其中 $pi$ 表示长度为 $i$ 英寸的钢条的价格。现要求解使销售收益最大的切割方案
+
+问题分析
+
+假设长钢条的长度为 $n$ 英寸，最佳切割方案的最左边切割段长度为 $i$ 英寸，则继续求解剩余长度为 $m-1$ 英寸钢条的最佳切割方案。考虑所以可能的 $i$ ，得到的最大收益 $r_{n}$ 对应的切割方案即为最佳切割方案。$r_{n}$ 的递归定义如下
+\(r_{n}=max_{1\le i \le n}(p_{i}+r_{n-i})\)
+
+C 代码
+
+对此问题有两种方案
+
+(1) 分治 (自顶向下)
+
+int Top_Down_Cut_Rod(int p[], int n){
+    int r=0;	// 最大价值
+    int i;
+    
+    ...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
