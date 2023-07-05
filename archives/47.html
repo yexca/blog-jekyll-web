@@ -1789,6 +1789,156 @@ ONEPUSH={“notifier”:”discord”,”params”:{“markdown”:true,”webho
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -2063,41 +2213,7 @@ ONEPUSH={“notifier”:”discord”,”params”:{“markdown”:true,”webho
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
     
   
     
@@ -2159,10 +2275,10 @@ ONEPUSH={“notifier”:”discord”,”params”:{“markdown”:true,”webho
         <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象创建型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/fedora/">Fedora</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
       
     </div>
   </div>
@@ -2211,6 +2327,18 @@ ONEPUSH={“notifier”:”discord”,”params”:{“markdown”:true,”webho
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -3592,55 +3720,6 @@ ONEPUSH={“notifier”:”discord”,”params”:{“markdown”:true,”webho
         
         
         <div class="col">
-          <a href="/archives/105" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1682965659"
-  data-df="ll"
-  
->
-  May  2, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>搭建个人音乐网站</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  使用 Rclone 挂载 Onedrive 歌曲文件，Navidrome 搭建网站，采用 docker 部署
-
-Rclone
-
-首先需要在 Windows 系统上运行获取配置，然后再在服务器上安装并挂载文件
-
-获取 Token
-
-在 Windows 电脑上下载 Rclone，下载地址：https://rclone.org/downloads/
-
-下载完成后解压，解压完成后通过 cmd 进入该...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/71" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -3740,6 +3819,71 @@ Fedora 设置
 
   
     调整了域名为 link.start.icu，本没有 .icu，可浏览器不能解析，只能加上 (不过莫名更...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/102" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1680618705"
+  data-df="ll"
+  
+>
+  Apr  4, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>服务器用 Docker 部署记录</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  从想法产生到彻底实现，一共耗时三个月 (主要是太懒了)
+
+安装 Docker
+
+使用了 APT 进行安装
+
+
+  添加 HTTPS 传输的软件包以及 CA 证书
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+# 先更新一下
+sudo apt-get update
+
+# 然后安装
+sudo apt-get install \
+     apt-transport-https \
+     ca...
                 </p>
               </div>
             </div>
@@ -4386,6 +4530,156 @@ twikoo.init({
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -4660,41 +4954,7 @@ twikoo.init({
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
     
   
     
@@ -4756,10 +5016,10 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象创建型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/fedora/">Fedora</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
       
     </div>
   </div>

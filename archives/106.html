@@ -1764,6 +1764,156 @@ max{size(i-1,j),size(i-1,\pi(i)-1)+1}, &amp; \text{其他情况}
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -2038,41 +2188,7 @@ max{size(i-1,j),size(i-1,\pi(i)-1)+1}, &amp; \text{其他情况}
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
     
   
     
@@ -2134,10 +2250,10 @@ max{size(i-1,j),size(i-1,\pi(i)-1)+1}, &amp; \text{其他情况}
         <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象创建型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/fedora/">Fedora</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
       
     </div>
   </div>
@@ -2186,6 +2302,18 @@ max{size(i-1,j),size(i-1,\pi(i)-1)+1}, &amp; \text{其他情况}
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -3612,60 +3740,6 @@ max{size(i-1,j),size(i-1,\pi(i)-1)+1}, &amp; \text{其他情况}
         
         
         <div class="col">
-          <a href="/archives/15" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1637121649"
-  data-df="ll"
-  
->
-  Nov 17, 2021
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>数据结构 链表代码</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  简单链表
-
-
-#include &amp;lt;stdio.h&amp;gt;
- 
-struct student
-{
-    long num;
-    float score;
-    struct student *next;
-};
- 
-void main()
-{
-    struct student a, b, c, *head, *p;
-    a.num = 99101; a.score = 89...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/16" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -3705,6 +3779,62 @@ typedef struct Table
 {
     int * head; //声明了一个名为head的长度不确定的数组，也叫“动态数组”
     int leng...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/17" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1637504344"
+  data-df="ll"
+  
+>
+  Nov 21, 2021
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>数据结构 栈代码</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  顺序栈（数组实现）
+
+
+#include &amp;lt;stdio.h&amp;gt;
+
+//元素elem进栈，a为数组，top值为当前栈的栈顶位置
+int push(int* a,int top,int elem)
+{
+    a[++top]=elem;
+
+    return top;
+}
+
+//数据元素出栈
+int pop(int * a,int top)
+{
+    if (top==-1) 
+...
                 </p>
               </div>
             </div>
@@ -4351,6 +4481,156 @@ twikoo.init({
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -4625,41 +4905,7 @@ twikoo.init({
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
     
   
     
@@ -4721,10 +4967,10 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象创建型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/fedora/">Fedora</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
       
     </div>
   </div>
