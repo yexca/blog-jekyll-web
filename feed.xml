@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-08-28T15:56:50+08:00</updated>
+  <updated>2023-08-28T16:02:58+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>使用 CNAME 将域名重定向到带路径的 URL</title>
-    <link href="https://blog.yexca.net/archives/115" rel="alternate" type="text/html" title="使用 CNAME 将域名重定向到带路径的 URL" />
+    <link href="https://blog.yexca.net/archives/116" rel="alternate" type="text/html" title="使用 CNAME 将域名重定向到带路径的 URL" />
     <published>2023-08-28T15:31:00+08:00</published>
   
-    <updated>2023-08-28T15:31:00+08:00</updated>
+    <updated>2023-08-28T16:02:27+08:00</updated>
   
-    <id>https://blog.yexca.net/archives/115</id>
-    <content src="https://blog.yexca.net/archives/115" />
+    <id>https://blog.yexca.net/archives/116</id>
+    <content src="https://blog.yexca.net/archives/116" />
     <author>
       <name>yexca</name>
     </author>
