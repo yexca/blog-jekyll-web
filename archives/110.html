@@ -1068,7 +1068,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/64">HTTP 学习</a>
+          <a href="/archives/110">算法 钢条切割问题 (动态规划 分治)</a>
         </li>
       
     </ul>
@@ -2199,6 +2199,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -3592,49 +3604,6 @@
         
         
         <div class="col">
-          <a href="/archives/106" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1684230811"
-  data-df="ll"
-  
->
-  May 16, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>算法 电路布线问题 (动态规划)</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  问题描述
-
-在一块电路板的上下两端分别有 n 个接线柱。根据电路设计，用 $(i, \pi(i))$ 表示将上端接线柱 i 与下端接线柱 $\pi(i)$ 相连，称其为该电路板上的第 i 条连线
-
-下图所示的 $\pi(i)$ 排列为 ${8, 7, 4, 2, 5, 1, 9, 3, 10, 6}$ 对于任何 $1 \le i &amp;lt; j \le n $ ，第 i 条连线和第 j 条连线...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/109" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -3683,7 +3652,7 @@
         
         
         <div class="col">
-          <a href="/archives/16" class="card post-preview h-100">
+          <a href="/archives/106" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3696,14 +3665,14 @@
 
 <em
   class="small"
-  data-ts="1637420507"
+  data-ts="1684230811"
   data-df="ll"
   
 >
-  Nov 20, 2021
+  May 16, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>数据结构 顺序表代码</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>算法 电路布线问题 (动态规划)</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3712,16 +3681,67 @@
 
 
 
+                  问题描述
+
+在一块电路板的上下两端分别有 n 个接线柱。根据电路设计，用 $(i, \pi(i))$ 表示将上端接线柱 i 与下端接线柱 $\pi(i)$ 相连，称其为该电路板上的第 i 条连线
+
+下图所示的 $\pi(i)$ 排列为 ${8, 7, 4, 2, 5, 1, 9, 3, 10, 6}$ 对于任何 $1 \le i &amp;lt; j \le n $ ，第 i 条连线和第 j 条连线...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/17" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1637504344"
+  data-df="ll"
+  
+>
+  Nov 21, 2021
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>数据结构 栈代码</h4>
+              <div class="text-muted small">
+                <p>
                   
+
+
+
+
+
+                  顺序栈（数组实现）
+
+
 #include &amp;lt;stdio.h&amp;gt;
-#include &amp;lt;stdlib.h&amp;gt; //malloc()、exit()
 
-#define Size 5  //对Size进行宏定义，表示顺序表申请空间的大小
-
-typedef struct Table
+//元素elem进栈，a为数组，top值为当前栈的栈顶位置
+int push(int* a,int top,int elem)
 {
-    int * head; //声明了一个名为head的长度不确定的数组，也叫“动态数组”
-    int leng...
+    a[++top]=elem;
+
+    return top;
+}
+
+//数据元素出栈
+int pop(int * a,int top)
+{
+    if (top==-1) 
+...
                 </p>
               </div>
             </div>

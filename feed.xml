@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-07-20T15:40:15+08:00</updated>
+  <updated>2023-08-28T15:56:50+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,52 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>使用 CNAME 将域名重定向到带路径的 URL</title>
+    <link href="https://blog.yexca.net/archives/115" rel="alternate" type="text/html" title="使用 CNAME 将域名重定向到带路径的 URL" />
+    <published>2023-08-28T15:31:00+08:00</published>
+  
+    <updated>2023-08-28T15:31:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/115</id>
+    <content src="https://blog.yexca.net/archives/115" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="技术工具" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      之前拥有服务器的时候虽然有过此想法，但毕竟只要服务器再开个站点就解决了并没有深入研究，如今服务器到期将 Blog 搬到 Github 上想要继续这样无疑是不可能的，于是便寻求解决方法
+
+失败的历程
+
+虽然失败了，但还是要记录下来，肯定是我不会用
+
+之前只是试着玩玩，仅从 DNS 的 CNAME 试了发现不行便放弃了，这次使用互联网搜索”域名定向到路径 url”，从第一条搜索结果 https://cloud.tencent.com/developer/ask/sof/89340 得知工具网站：http://redirect.center/
+
+例子
+
+从 https://acg.yexca.net 重定向到 https://blog.yexca.net/acg
+
+按网站描述，CNAME 内容应该为 blog.yexca.net.opts-slash.acg.opts-https.redi...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -275,62 +321,6 @@ Builder 模式适用于：
 
 
 例子 1...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>工厂模式</title>
-    <link href="https://blog.yexca.net/archives/111" rel="alternate" type="text/html" title="工厂模式" />
-    <published>2023-05-28T10:23:46+08:00</published>
-  
-    <updated>2023-05-28T10:23:46+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/111</id>
-    <content src="https://blog.yexca.net/archives/111" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      简单工厂模式
-
-简单工厂模式属于创建型模式，但不属于 23 种设计模式之一
-
-定义：定义一个工厂类，它可以根据参数的不同返回不同类的实例，被创建的实例通常都具有共同的父类
-
-在简单工厂模式中用于被创建实例的方法通常为静态 (static) 方法，因此简单工厂模式又被称为静态工厂方法 (Static Factory Method)
-
-需要什么产品就传入产品对应的参数，就可以获取所需要的产品对象，而无需知道其实现过程
-
-例如：有一家饺子店，当客户需要某种饺子时，饺子店生成对应的饺子给客户。这里就可以把饺子店看成工厂 (Factory) ，饺子看成产品 (Product) ，饺子的名称看成参数，饺子店根据不同的参数返回不同的饺子
-
-比如：客户想要韭菜饺子，这里韭菜就是参数，饺子店会根据参数韭菜返回韭菜饺子 (饺子店有韭菜饺子的前提下)
-
-
-
-三类角色：
-
-
-  工厂 (核心)
-
-
-​	负责...
     </summary>
   
 
