@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-08-28T16:02:58+08:00</updated>
+  <updated>2023-09-01T15:07:39+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,76 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>适配器模式</title>
+    <link href="https://blog.yexca.net/archives/117" rel="alternate" type="text/html" title="适配器模式" />
+    <published>2023-09-01T15:03:00+08:00</published>
+  
+    <updated>2023-09-01T15:03:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/117</id>
+    <content src="https://blog.yexca.net/archives/117" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Adapter Pattern 类结构型模式/对象结构型模式
+
+意图
+
+将一个类的接口转换成客户希望的另外一个接口。Adapter 模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作
+
+结构
+
+
+  类适配器使用多重继承对一个接口与另一个接口进行匹配
+
+
+
+
+
+  对象适配器依赖于对象组合
+
+
+
+
+其中：
+
+
+  Target 定义 Client 使用的与特定领域相关的接口
+  Client 与符合 Target 接口的对象协同
+  Adaptee 定义一个已经存在的接口，这个接口需要适配
+  Adapter 对 Adaptee 的接口与 Target 接口进行适配
+
+
+适用性
+
+Adapter 模式适用于：
+
+
+  想使用一个已经存在的类，而它的接口不符合要求
+  想创建一个可以服用的类，该类可以与其他不相关的类或不可预见的类 (即那些接口可能不一定兼容的类) 协同工作
+...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -259,68 +329,6 @@ Prototype 模式适用于：
 
 public class main{
     Product p1 = new Product(2023, 3....
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>生成器模式</title>
-    <link href="https://blog.yexca.net/archives/112" rel="alternate" type="text/html" title="生成器模式" />
-    <published>2023-06-01T23:33:17+08:00</published>
-  
-    <updated>2023-06-01T23:33:17+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/112</id>
-    <content src="https://blog.yexca.net/archives/112" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Builder Pattern 对象创建型模式
-
-意图
-
-将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示
-
-结构
-
-
-
-其中：
-
-
-  Builder 为创建一个 Product 对象的各个部件指定抽象接口
-  ConcreteBuilder 实现 Builder 的接口以构造和装配该产品的各个部件，定义并明确它所创建的表示，提供一个检索产品的接口
-  Director 构造一个使用 Builder 接口的对象
-  Product 表示被构建的复杂对象。ConcreteBuilder 创建该产品的内部表示并定义它的装配过程。包含定义组成组件的类，包括将这些组件装配成最终产品的接口
-
-
-适用性
-
-Builder 模式适用于：
-
-
-  当创建复杂对象的算法应该独立于该对象的组成部分以及它们的装配方式
-  当构建过程必须允许被构造的对象有不同的表示时
-
-
-例子 1...
     </summary>
   
 
