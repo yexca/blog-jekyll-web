@@ -1291,6 +1291,68 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1404,68 +1466,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2080,10 +2080,10 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/game/">Game</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
@@ -2147,6 +2147,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -3564,59 +3576,6 @@
         
         
         <div class="col">
-          <a href="/archives/18" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1640504099"
-  data-df="ll"
-  
->
-  Dec 26, 2021
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>使用xshell连接虚拟机的centos7系统</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  注意：此方法为临时连接，虚拟机重启或关机需要重新配置
-
-虚拟机网络适配器设置
-
-虚拟机的网络适配器一共有三个设置
-
-
-  桥接模式：指使用本机网络网段
-  NAT模式：使用VMware Network Adapter VMnet8的网段
-  Host-only(仅主机模式)：使用VMware Network Adapter VMnet1的网段
-
-
-查看IP网段
-
-打开VMware中左上“编辑...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/19" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -3706,6 +3665,57 @@ linux系统有两个时钟：一个是硬件时钟，即BIOS时间；另一个�
   bin 是 Binaries (二进制文件) 的缩写, 这个目录存放着最经常使用的命令。
   /boot：
   这里存放的是启动 Linux 时使用的...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/39" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1650622422"
+  data-df="ll"
+  
+>
+  Apr 22, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>在虚拟机中设置静态IP（centos为例）</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  一、虚拟机设置
+
+在菜单栏选择编辑→ 虚拟网络编辑器，打开虚拟网络编辑器对话框，选择Net网络连接方式，随意设置子网IP，点击NAT设置页面，查看子网掩码和网关，后面修改静态IP会用到。
+
+在VMnet8模式下选择nat连接，并且取消DHCP服务。
+
+点击NAT设置，记录下此时的网关
+
+在系统的网络设置处，检查VMnet8的网络配置
+
+二、Liunx主机设置
+
+在root权限下输入命令 cd...
                 </p>
               </div>
             </div>
@@ -4060,6 +4070,68 @@ twikoo.init({
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -4173,68 +4245,6 @@ twikoo.init({
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -4849,10 +4859,10 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/game/">Game</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
