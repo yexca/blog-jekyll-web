@@ -1400,6 +1400,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/117">适配器模式</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/108">设计模式 引</a>
         </li>
       
@@ -1422,13 +1429,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/archives/27">使用PicX自建免费图床</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/35">使用PicX图床上传图片提示“Bad credentials”</a>
         </li>
       
     </ul>
@@ -1660,6 +1660,133 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1689,133 +1816,6 @@
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2515,10 +2515,10 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/game/">Game</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/game/">Game</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
@@ -2585,6 +2585,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4119,7 +4131,7 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
         
         
         <div class="col">
-          <a href="/archives/19" class="card post-preview h-100">
+          <a href="/archives/38" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4132,14 +4144,14 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
 
 <em
   class="small"
-  data-ts="1642095054"
+  data-ts="1650308007"
   data-df="ll"
   
 >
-  Jan 14, 2022
+  Apr 19, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Linux服务器（网络相关）</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>系统学习Linux笔记</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4148,13 +4160,21 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
 
 
 
-                  背景知识：
+                  （参考视频：https://www.bilibili.com/video/BV1WY4y1H7d3?p=1）
 
-linux时钟概述
-linux系统有两个时钟：一个是硬件时钟，即BIOS时间；另一个是系统时钟，是linux系统Kernel（内核）时间。
-在linux系统上程序运行时读取的时间都是系统Kernel（内核）时间。
-每次Linux启动时，系统Kernel（内核）会先去读取硬件时钟的设置（但是此时的硬件时间不一定是准确的），然后系统时钟就会独立于硬件继续运作。
-综上所述，所以想要永...
+一、基础篇
+
+1.1 Linux文件系统目录结构
+
+
+来源：菜鸟教程
+
+图中小箭头表示该文件实际位置在别处
+
+  /bin： 
+  bin 是 Binaries (二进制文件) 的缩写, 这个目录存放着最经常使用的命令。
+  /boot：
+  这里存放的是启动 Linux 时使用的...
                 </p>
               </div>
             </div>
@@ -4440,6 +4460,133 @@ twikoo.init({
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -4469,133 +4616,6 @@ twikoo.init({
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -5295,10 +5315,10 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/game/">Game</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/game/">Game</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>

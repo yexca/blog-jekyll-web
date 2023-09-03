@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-09-02T17:36:54+08:00</updated>
+  <updated>2023-09-03T16:00:15+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,64 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>组合模式</title>
+    <link href="https://blog.yexca.net/archives/119" rel="alternate" type="text/html" title="组合模式" />
+    <published>2023-09-03T15:44:00+08:00</published>
+  
+    <updated>2023-09-03T15:44:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/119</id>
+    <content src="https://blog.yexca.net/archives/119" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Composite Pattern 对象结构型模式
+
+意图
+
+将对象组合成树型结构以表示 “部分 - 整体” 的层次结构。Composite 使得用户对单个对象和组合对象的使用具有一致性
+
+结构
+
+
+
+其中：
+
+
+  Component 为组合中的对象声明接口；在适当情况下实现所有类共有接口的默认行为；声明一个接口用于访问和管理 Component 的子组件；(可选) 在递归结构中定义一个接口，用于访问一个父组件，并在合适的情况下实现它
+  Leaf 在组合中表示叶结点对象，叶结点没有子结点；在组合中定义图元对象的行为
+  Composite 定义所有子组件的那些组件的行为；存储子组件；在 Component 接口中实现与子组件有关的操作
+  Client 通过 Component 接口操纵组合组件的对象
+
+
+适用性
+
+Composite 模式适用于：
+
+
+  想表示对象的部分 - ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -83,7 +141,7 @@ Bridge 模式适用于：
     <link href="https://blog.yexca.net/archives/117" rel="alternate" type="text/html" title="适配器模式" />
     <published>2023-09-01T15:03:00+08:00</published>
   
-    <updated>2023-09-01T15:03:00+08:00</updated>
+    <updated>2023-09-02T17:37:54+08:00</updated>
   
     <id>https://blog.yexca.net/archives/117</id>
     <content src="https://blog.yexca.net/archives/117" />
@@ -256,72 +314,6 @@ public class main{
 }
 
 cl...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>アイドルマスター ミリオンライブ！的 IP 规则</title>
-    <link href="https://blog.yexca.net/archives/114" rel="alternate" type="text/html" title="アイドルマスター ミリオンライブ！的 IP 规则" />
-    <published>2023-06-09T23:32:09+08:00</published>
-  
-    <updated>2023-06-09T23:32:09+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/114</id>
-    <content src="https://blog.yexca.net/archives/114" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      最近游玩 ミリシタ 时连接不上，遂寻找解决方法 （顺便试试 Spotify 的嵌入效果
-
-域名
-
-theaterdays.appspot.com
-
-
-
-
-
-最近雨宿りの曲が大好きので、よく聞いていた。Last.fm で過去30日間雨宿りの「猫かぶり」は人気トラック一番になった。で、トップアーティストじゃない？トップアーティスト、もちろん湊あくあ！　　
-
-草、ミリシタの文章で何を書いたか、どっちもミリシタと関係ないもん！
-
-
-clash
-
-通过设置组更好选择
-
-首先设置 JP 组
-
-proxy-groups:
-- name: JP
-  type: select
-  proxies:
-  - your jp proxy name
-  - your jp proxy name
-
-
-然后添加规则
-
-rules:
-- DOMAIN-SUFFIX,theaterdays.appspot.com,...
     </summary>
   
 
