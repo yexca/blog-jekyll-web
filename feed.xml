@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-09-05T21:48:13+08:00</updated>
+  <updated>2023-09-06T03:05:46+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,62 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>外观模式</title>
+    <link href="https://blog.yexca.net/archives/121" rel="alternate" type="text/html" title="外观模式" />
+    <published>2023-09-06T03:02:00+08:00</published>
+  
+    <updated>2023-09-06T03:02:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/121</id>
+    <content src="https://blog.yexca.net/archives/121" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Facade Pattern 对象结构型模式
+
+意图
+
+为子系统中的一组接口提供一个一致的界面，Facade 模式定义了一个高层接口，这个接口使得这一子系统更加容易使用
+
+结构
+
+
+
+其中：
+
+
+  Facade 知道哪些子系统类负责处理请求；将客户的请求代理给适当的子系统对象
+  Subsystem classes 实现子系统的功能；处理有 Facade 对象指派的任务；没有 Facade 的任何相关信息，即没有指向 Facade 的指针
+
+
+适用性
+
+Facade 模式适用于：
+
+
+  要为一个复杂子系统提供一个简单接口时，子系统往往因为不断演化而变得越来越复杂。大多数模式使用时都会产生更多更小的类，这使得子系统更具有可重用性，也更容易对子系统进行定制，但也给那些不需要定制子系统的用户带来一些使用上的困难。Facade 可以提供一个简单的默认视图，这一视图对大多数用户来说已经足够...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -260,52 +316,6 @@ Adapter 模式适用于：
   想使用一个已经存在的类，而它的接口不符合要求
   想创建一个可以服用的类，该类可以与其他不相关的类或不可预见的类 (即那些接口可能不一定兼容的类) 协同工作
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>使用 CNAME 将域名重定向到带路径的 URL</title>
-    <link href="https://blog.yexca.net/archives/116" rel="alternate" type="text/html" title="使用 CNAME 将域名重定向到带路径的 URL" />
-    <published>2023-08-28T15:31:00+08:00</published>
-  
-    <updated>2023-08-28T16:02:27+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/116</id>
-    <content src="https://blog.yexca.net/archives/116" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="技术工具" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      之前拥有服务器的时候虽然有过此想法，但毕竟只要服务器再开个站点就解决了并没有深入研究，如今服务器到期将 Blog 搬到 Github 上想要继续这样无疑是不可能的，于是便寻求解决方法
-
-失败的历程
-
-虽然失败了，但还是要记录下来，肯定是我不会用
-
-之前只是试着玩玩，仅从 DNS 的 CNAME 试了发现不行便放弃了，这次使用互联网搜索”域名定向到路径 url”，从第一条搜索结果 https://cloud.tencent.com/developer/ask/sof/89340 得知工具网站：http://redirect.center/
-
-例子
-
-从 https://acg.yexca.net 重定向到 https://blog.yexca.net/acg
-
-按网站描述，CNAME 内容应该为 blog.yexca.net.opts-slash.acg.opts-https.redi...
     </summary>
   
 
