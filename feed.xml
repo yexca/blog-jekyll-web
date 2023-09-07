@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-09-06T03:05:46+08:00</updated>
+  <updated>2023-09-07T13:57:10+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,60 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>享元模式</title>
+    <link href="https://blog.yexca.net/archives/122" rel="alternate" type="text/html" title="享元模式" />
+    <published>2023-09-07T13:54:00+08:00</published>
+  
+    <updated>2023-09-07T13:54:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/122</id>
+    <content src="https://blog.yexca.net/archives/122" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Flyweight Pattern 对象结构型模式
+
+意图
+
+运用共享技术有效地支持大量细粒度的对象
+
+结构
+
+
+
+其中：
+
+
+  
+    Flyweight 描述一个接口，通过这个接口 Flyweight 可以接受并作用于外部状态
+  
+  
+    ConcreteFlyweight 实现 Flyweight 接口，并为内部状态 (如果有) 增加存储空间。ConcreteFlyweight 对象必项是可共享的。它所存储的状态必须是内部的，即它必须独立于 ConcreteFlyweight 对象的场景
+  
+  
+    并非所有的 Flyweight 子类都需要被共享。Flyweight 接口使共享成为可能，但它并不强制共亨。在 Flyweight 对象结构的某些层次，UnsharedConcreteFlyweight 对象通常将 ConcreteFlyweight 对象作为子...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -246,76 +300,6 @@ Bridge 模式适用于：
 
 
   不希望在抽象和它的实现部分之间有一个固定的绑定关系。例如，这种情况可能...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>适配器模式</title>
-    <link href="https://blog.yexca.net/archives/117" rel="alternate" type="text/html" title="适配器模式" />
-    <published>2023-09-01T15:03:00+08:00</published>
-  
-    <updated>2023-09-02T17:37:54+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/117</id>
-    <content src="https://blog.yexca.net/archives/117" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Adapter Pattern 类结构型模式/对象结构型模式
-
-意图
-
-将一个类的接口转换成客户希望的另外一个接口。Adapter 模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作
-
-结构
-
-
-  类适配器使用多重继承对一个接口与另一个接口进行匹配
-
-
-
-
-
-  对象适配器依赖于对象组合
-
-
-
-
-其中：
-
-
-  Target 定义 Client 使用的与特定领域相关的接口
-  Client 与符合 Target 接口的对象协同
-  Adaptee 定义一个已经存在的接口，这个接口需要适配
-  Adapter 对 Adaptee 的接口与 Target 接口进行适配
-
-
-适用性
-
-Adapter 模式适用于：
-
-
-  想使用一个已经存在的类，而它的接口不符合要求
-  想创建一个可以服用的类，该类可以与其他不相关的类或不可预见的类 (即那些接口可能不一定兼容的类) 协同工作
-...
     </summary>
   
 
