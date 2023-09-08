@@ -1224,11 +1224,6 @@
     
     
     
-  
-    
-    
-    
-    
       
         
         
@@ -1399,6 +1394,13 @@
     
     
       
+    
+  
+    
+    
+    
+    
+      
         
         
 
@@ -1505,6 +1507,48 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1638,48 +1682,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2084,10 +2086,10 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
@@ -2096,10 +2098,10 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/game/">Game</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
@@ -2160,6 +2162,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -3637,68 +3651,6 @@
         
         
         <div class="col">
-          <a href="/archives/113" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1685705504"
-  data-df="ll"
-  
->
-  Jun  2, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>原型模式</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Prototype Pattern 对象创建型模式
-
-意图
-
-用原型实例指定创建对象的种类，并且通过复制这些原型创建新的对象
-
-结构
-
-
-
-其中：
-
-
-  Prototype 声明一个复制自身的接口
-  ConcretePrototype 实现一个复制自身的操作
-  Client 让一个原型复制自身从而创建一个新的对象
-
-
-适用性
-
-Prototype 模式适用于：
-
-
-  当一个系统应该独...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/115" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -3814,6 +3766,60 @@ Singleton 模式适用于：
 
   Target 定义 Client 使用的与特定领域相关的接口
   C...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/118" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1693647240"
+  data-df="ll"
+  
+>
+  Sep  2, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>桥接模式</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Bridge Pattern 对象结构型模式
+
+意图
+
+将抽象部分与其实现部分分离，使它们都可以独立地变化
+
+结构
+
+
+
+其中：
+
+
+  Abstraction 定义抽象类的接口，维护一个指向 Implementor 类型对象的指针
+  RefinedAbstraction 扩充由 Abstraction 定义的接口
+  Implementor 定义实现类的接口，该接口不一定要与 Abstr...
                 </p>
               </div>
             </div>
@@ -4056,11 +4062,6 @@ twikoo.init({
     
     
     
-  
-    
-    
-    
-    
       
         
         
@@ -4231,6 +4232,13 @@ twikoo.init({
     
     
       
+    
+  
+    
+    
+    
+    
+      
         
         
 
@@ -4337,6 +4345,48 @@ twikoo.init({
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -4470,48 +4520,6 @@ twikoo.init({
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -4916,10 +4924,10 @@ twikoo.init({
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
@@ -4928,10 +4936,10 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/game/">Game</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>

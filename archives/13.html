@@ -1390,11 +1390,6 @@
     
     
     
-  
-    
-    
-    
-    
       
         
         
@@ -1565,6 +1560,13 @@
     
     
       
+    
+  
+    
+    
+    
+    
+      
         
         
 
@@ -1671,6 +1673,48 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1804,48 +1848,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2250,10 +2252,10 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
@@ -2262,10 +2264,10 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/game/">Game</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
@@ -2321,6 +2323,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -3828,6 +3842,59 @@
         
         
         <div class="col">
+          <a href="/archives/123" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1694146500"
+  data-df="ll"
+  
+>
+  Sep  8, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>代理模式</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Proxy Pattern 对象结构型模式
+
+意图
+
+为其他对象提供一种代理以控制对这个对象的访问
+
+结构
+
+
+
+其中：
+
+
+  Proxy 保存一个引用使得代理可以访问实体；提供一个与 Subject 的接口相同的接口，使代理可以用来代替实体；控制对实体的存取，并可能负责创建和删除它
+  Subject 定义 RealSubject 和 Proxy 的共用接口，这样就在任何使用 RealS...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/archives/122" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -3928,60 +3995,6 @@
 
   Facade 知道哪些子系统类负责处理请求；将客户的请求代理给适当的子系统对象
   Subsystem classes 实现子系统的功能；处理有 Facade 对象指派的任务；没有 Facade...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/120" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1693921500"
-  data-df="ll"
-  
->
-  Sep  5, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>装饰器模式</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Decorator Pattern 对象结构型模式
-
-意图
-
-动态地给一个对象添加一些额外的职责。就增加功能而言，Decorator 模式比生成子类更加灵活
-
-结构
-
-
-
-其中：
-
-
-  Component 定义一个对象接口，可以给这些对象动态地添加职责
-  ConcreteComponent 定义一个对象，可以给这个对象添加一些职责
-  Decorator 维持一个指向 Component...
                 </p>
               </div>
             </div>
@@ -4224,11 +4237,6 @@ twikoo.init({
     
     
     
-  
-    
-    
-    
-    
       
         
         
@@ -4399,6 +4407,13 @@ twikoo.init({
     
     
       
+    
+  
+    
+    
+    
+    
+      
         
         
 
@@ -4505,6 +4520,48 @@ twikoo.init({
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -4638,48 +4695,6 @@ twikoo.init({
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -5084,10 +5099,10 @@ twikoo.init({
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
@@ -5096,10 +5111,10 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/game/">Game</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>

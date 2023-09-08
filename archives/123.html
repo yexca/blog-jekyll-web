@@ -35,27 +35,27 @@
     
       <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Fedora安装java8(Oracle JDK)" />
+<meta property="og:title" content="代理模式" />
 <meta name="author" content="yexca" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="引言" />
-<meta property="og:description" content="引言" />
-<link rel="canonical" href="https://blog.yexca.net/archives/63" />
-<meta property="og:url" content="https://blog.yexca.net/archives/63" />
+<meta name="description" content="Proxy Pattern 对象结构型模式" />
+<meta property="og:description" content="Proxy Pattern 对象结构型模式" />
+<link rel="canonical" href="https://blog.yexca.net/archives/123" />
+<meta property="og:url" content="https://blog.yexca.net/archives/123" />
 <meta property="og:site_name" content="yexca’Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-09-02T17:37:51+08:00" />
+<meta property="article:published_time" content="2023-09-08T12:15:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Fedora安装java8(Oracle JDK)" />
+<meta property="twitter:title" content="代理模式" />
 <meta name="twitter:site" content="@yexcano" />
 <meta name="twitter:creator" content="@yexcano" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2022-09-02T17:37:51+08:00","datePublished":"2022-09-02T17:37:51+08:00","description":"引言","headline":"Fedora安装java8(Oracle JDK)","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/63"},"url":"https://blog.yexca.net/archives/63"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2023-09-08T12:15:00+08:00","datePublished":"2023-09-08T12:15:00+08:00","description":"Proxy Pattern 对象结构型模式","headline":"代理模式","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/123"},"url":"https://blog.yexca.net/archives/123"}</script>
 <!-- End Jekyll SEO tag -->
 
     
   
-    <title>Fedora安装java8(Oracle JDK) - yexca'Blog
+    <title>代理模式 - yexca'Blog
     </title>
   
     <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>Fedora安装java8(Oracle JDK)</span>
+              <span>代理模式</span>
             
 
           
@@ -553,6 +553,91 @@
 
 
 
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+
+  
+
+
 
 <!-- Add header for code snippets -->
 
@@ -575,66 +660,6 @@
       
         
         
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
       
 
       
@@ -711,7 +736,7 @@
 
 
 
-<h1 data-toc-skip>Fedora安装java8(Oracle JDK)</h1>
+<h1 data-toc-skip>代理模式</h1>
 
 <div class="post-meta text-muted">
     <!-- published date -->
@@ -728,13 +753,13 @@
 
 <em
   class=""
-  data-ts="1662111471"
+  data-ts="1694146500"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Sep  2, 2022
+  Sep  8, 2023
 </em>
 
     </span>
@@ -783,9 +808,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="338 words"
+  title="514 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
     </div>
 
@@ -794,168 +819,113 @@
 </div> <!-- .post-meta -->
 
 <div class="post-content">
-  <h2 id="引言"><span class="me-2">引言</span><a href="#引言" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <p>Proxy Pattern 对象结构型模式</p>
 
-<p>尽管 Fedora 系统自带 java 环境，不过是 OpenJDK 。有时候还是需要使用 Oracle 的</p>
+<h2 id="意图"><span class="me-2">意图</span><a href="#意图" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h2 id="下载"><span class="me-2">下载</span><a href="#下载" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>为其他对象提供一种代理以控制对这个对象的访问</p>
 
-<div class="table-wrapper"><table>
-  <tbody>
-    <tr>
-      <td>进入官网下载：[Java Downloads</td>
-      <td>Oracle](https://www.oracle.com/java/technologies/downloads/) (下载需要登陆)</td>
-    </tr>
-  </tbody>
-</table></div>
+<h2 id="结构"><span class="me-2">结构</span><a href="#结构" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>找到 <em>java8-Linux</em> ，下载 <em>x64 Compressed Archive</em> (64位的压缩包版本)</p>
+<p><a href="https://cdn.staticaly.com/gh/yexca/image_hosting@master/2023/03-设计模式/代理模式.1lw7cilzkxds.webp" class="popup img-link "><img data-src="https://cdn.staticaly.com/gh/yexca/image_hosting@master/2023/03-设计模式/代理模式.1lw7cilzkxds.webp" alt="代理模式" class="lazyload" data-proofer-ignore></a></p>
 
-<p>本文章写时文件名为 <em>jdk-8u341-linux-x64.tar.gz</em></p>
+<p>其中：</p>
 
-<h2 id="移到相应目录"><span class="me-2">移到相应目录</span><a href="#移到相应目录" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>Proxy 保存一个引用使得代理可以访问实体；提供一个与 Subject 的接口相同的接口，使代理可以用来代替实体；控制对实体的存取，并可能负责创建和删除它</li>
+  <li>Subject 定义 RealSubject 和 Proxy 的共用接口，这样就在任何使用 RealSubject 的地方都可以使用 Proxy</li>
+  <li>RealSubject 定义 Proxy 所代表的实体</li>
+</ul>
 
-<ol>
-  <li>首先创建一个 java的 目录，在 <em>/usr/local</em> 中</li>
-</ol>
+<h2 id="适用性"><span class="me-2">适用性</span><a href="#适用性" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo mkdir</span> <span class="nt">-p</span> /usr/local/java
-</pre></td></tr></tbody></table></code></div></div>
+<p>Proxy 模式适用于在需要比较通用和复杂的对象指针代替简单的指针的时候，常见的情况有：</p>
 
-<ol>
-  <li>复制文件到此目录</li>
-</ol>
+<ul>
+  <li>远程代理 (Remote Proxy) 为一个对象在不同地址空间提供局部代表</li>
+  <li>虚代理 (Virtual Proxy) 根据需要对原始对象的访问，用于对象应该有不同的访问权限的时候</li>
+  <li>保护代理 (Protection Proxy) 控制对原始对象的访问，用于对象应该有不同的访问权限的时候</li>
+  <li>只能引用 (Smart Reference) 取代了简单的指针，它在访问对象时执行了一些附加操作。典型用途包括：对指向实际对象的引用计数，这样当该对象没有引用时，可以被自动释放；当第一次引用一个持久对象时，将它装入内存；在访问一个实际对象前，检查是否已经锁定了它，以确保其他对象不能改变它</li>
+</ul>
 
-<p>假设下载的文件在 <em>~/Downloads</em> ，进入下载目录</p>
+<h2 id="例子"><span class="me-2">例子</span><a href="#例子" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">cd </span>Downloads
-</pre></td></tr></tbody></table></code></div></div>
+<p>中介代理买东西</p>
 
-<p>然后复制到上述目录</p>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo cp</span> <span class="nt">-r</span> jdk-8u341-linux-x64.tar.gz /usr/local/java
-</pre></td></tr></tbody></table></code></div></div>
-
-<h2 id="解压缩安装文件"><span class="me-2">解压缩安装文件</span><a href="#解压缩安装文件" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<ol>
-  <li>切换到 java 目录</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">cd</span> /usr/local/java
-</pre></td></tr></tbody></table></code></div></div>
-
-<ol>
-  <li>解压缩安装文件</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo tar </span>xvzf jdk-8u341-linux-x64.tar.gz
-</pre></td></tr></tbody></table></code></div></div>
-
-<h2 id="配置path"><span class="me-2">配置$PATH</span><a href="#配置path" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<ol>
-  <li>在 <em>/etc/profile</em> 末尾添加以下内容</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="rouge-code"><pre><span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/local/java/jdk1.8.0_341
-<span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/bin:<span class="nv">$JAVA_HOME</span>/bin
-<span class="nb">export </span>JAVA_HOME
-<span class="nb">export </span>PATH
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ProxyPattern</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">RealSubject</span> <span class="n">realSubject</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">RealSubject</span><span class="o">();</span>
+        <span class="nc">Proxy</span> <span class="n">proxy</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Proxy</span><span class="o">(</span><span class="n">realSubject</span><span class="o">);</span>
+
+        <span class="n">proxy</span><span class="o">.</span><span class="na">buy</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">interface</span> <span class="nc">Subject</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">buy</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Proxy</span> <span class="kd">implements</span> <span class="nc">Subject</span><span class="o">{</span>
+    <span class="kd">protected</span> <span class="nc">RealSubject</span> <span class="n">realSubject</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">Proxy</span><span class="o">(</span><span class="nc">RealSubject</span> <span class="n">realSubject</span><span class="o">){</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">realSubject</span> <span class="o">=</span> <span class="n">realSubject</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">buy</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"prepare"</span><span class="o">);</span>
+        <span class="n">realSubject</span><span class="o">.</span><span class="na">buy</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"complete"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">RealSubject</span> <span class="kd">implements</span> <span class="nc">Subject</span><span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">buy</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Money"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="更新可用-java-版本列表"><span class="me-2">更新可用 java 版本列表</span><a href="#更新可用-java-版本列表" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<ol>
-  <li>直接运行以下命令</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> <span class="s2">"/usr/bin/java"</span> <span class="s2">"java"</span> <span class="s2">"/usr/local/java/jdk1.8.0_341/bin/java"</span> 1
-</pre></td></tr></tbody></table></code></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> <span class="s2">"/usr/bin/javac"</span> <span class="s2">"javac"</span> <span class="s2">"/usr/local/java/jdk1.8.0_341/bin/javac"</span> 1
-</pre></td></tr></tbody></table></code></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> <span class="s2">"/usr/bin/javaws.itweb"</span> <span class="s2">"javaws.itweb"</span> <span class="s2">"/usr/local/java/jdk1.8.0_341/bin/javaws.itweb"</span> 1
-</pre></td></tr></tbody></table></code></div></div>
-
-<h2 id="生效配置文件"><span class="me-2">生效配置文件</span><a href="#生效配置文件" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<ol>
-  <li>首先重新加载系统范围的 PATH 文件</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">source</span> /etc/profile
-</pre></td></tr></tbody></table></code></div></div>
-
-<ol>
-  <li>重启系统</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>reboot
-</pre></td></tr></tbody></table></code></div></div>
-
-<h2 id="切换-java-版本"><span class="me-2">切换 java 版本</span><a href="#切换-java-版本" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>可以运行命令查看 java 版本</p>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>java <span class="nt">-version</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<ol>
-  <li>使用以下指令切换</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>alternatives <span class="nt">--config</span> java
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>当前使用的 java 版本前会有<code class="language-plaintext highlighter-rouge">+</code>，找到相应版本，输入数字选择即可</p>
-
-<h2 id="参考文章"><span class="me-2">参考文章</span><a href="#参考文章" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p><a href="https://www.lsbin.com/9422.html">如何在Fedora{OpenJDK 和 Oracle JDK}上安装Java？</a></p>
 
 </div>
 
@@ -966,7 +936,7 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/'>软件配置</a>
+      <a href='/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/'>软件工程</a>
   </div>
   
 
@@ -975,11 +945,11 @@
   <div class="post-tags">
     <i class="fa fa-tags fa-fw me-1"></i>
       
-      <a href="/tags/fedora/"
-          class="post-tag no-text-decoration" >Fedora</a>
+      <a href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/"
+          class="post-tag no-text-decoration" >对象结构型模式</a>
       
-      <a href="/tags/java/"
-          class="post-tag no-text-decoration" >Java</a>
+      <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"
+          class="post-tag no-text-decoration" >设计模式</a>
       
   </div>
   
@@ -1013,7 +983,7 @@
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=Fedora%E5%AE%89%E8%A3%85java8(Oracle%20JDK)%20-%20yexca'Blog&url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F63"
+        href="https://twitter.com/intent/tweet?text=%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F%20-%20yexca'Blog&url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F123"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -1026,7 +996,7 @@
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=Fedora%E5%AE%89%E8%A3%85java8(Oracle%20JDK)%20-%20yexca'Blog&u=https%3A%2F%2Fblog.yexca.net%2Farchives%2F63"
+        href="https://www.facebook.com/sharer/sharer.php?title=%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F%20-%20yexca'Blog&u=https%3A%2F%2Fblog.yexca.net%2Farchives%2F123"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -1039,7 +1009,7 @@
     
       
       <a
-        href="https://t.me/share/url?url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F63&text=Fedora%E5%AE%89%E8%A3%85java8(Oracle%20JDK)%20-%20yexca'Blog"
+        href="https://t.me/share/url?url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F123&text=%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F%20-%20yexca'Blog"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -2261,727 +2231,727 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -3746,7 +3716,7 @@
         
         
         <div class="col">
-          <a href="/archives/59" class="card post-preview h-100">
+          <a href="/archives/117" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3759,14 +3729,14 @@
 
 <em
   class="small"
-  data-ts="1661314410"
+  data-ts="1693551780"
   data-df="ll"
   
 >
-  Aug 24, 2022
+  Sep  1, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Fedora安装后</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>适配器模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3775,36 +3745,31 @@
 
 
 
-                  引言
+                  Adapter Pattern 类结构型模式/对象结构型模式
 
-个人安装Fedora后装的一些东西
+意图
 
-修改终端快捷键
+将一个类的接口转换成客户希望的另外一个接口。Adapter 模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作
 
-打开设置-键盘，在最下方查看及自定义快捷键
-
-自定义快捷键
-
-名称：Shell终端
-
-命令：gnome-terminal
-
-快捷键：自定
-
-更新系统
-
-sudo dnf update
+结构
 
 
-修改截图快捷键
+  类适配器使用多重继承对一个接口与另一个接口进行匹配
 
-还是习惯Win的快捷键
 
-上述截图处交互式截图改为Win+Shift+S
 
-User目录修改为英文
 
-中文目录及其不易使用终...
+
+  对象适配器依赖于对象组合
+
+
+
+
+其中：
+
+
+  Target 定义 Client 使用的与特定领域相关的接口
+  C...
                 </p>
               </div>
             </div>
@@ -3814,7 +3779,7 @@ User目录修改为英文
         
         
         <div class="col">
-          <a href="/archives/74" class="card post-preview h-100">
+          <a href="/archives/118" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3827,14 +3792,14 @@ User目录修改为英文
 
 <em
   class="small"
-  data-ts="1663470658"
+  data-ts="1693647240"
   data-df="ll"
   
 >
-  Sep 18, 2022
+  Sep  2, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Fedora桌面折腾</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>桥接模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3843,19 +3808,22 @@ User目录修改为英文
 
 
 
-                  引言
+                  Bridge Pattern 对象结构型模式
 
-应该是最近的最后一次折腾了，不过启用很多插件后开机后要很久才显示桌面，之后要禁用一些不常用的
+意图
 
-主题
+将抽象部分与其实现部分分离，使它们都可以独立地变化
 
-通过阅读书籍得知 GNOME 的主题网站，然后去逛了下，打开第一个主题就深深吸引了我
+结构
 
-链接
 
-主题：Fluent round gtk theme
 
-Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
+其中：
+
+
+  Abstraction 定义抽象类的接口，维护一个指向 Implementor 类型对象的指针
+  RefinedAbstraction 扩充由 Abstraction 定义的接口
+  Implementor 定义实现类的接口，该接口不一定要与 Abstr...
                 </p>
               </div>
             </div>
@@ -3865,7 +3833,7 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
         
         
         <div class="col">
-          <a href="/archives/93" class="card post-preview h-100">
+          <a href="/archives/119" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3878,14 +3846,14 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
 
 <em
   class="small"
-  data-ts="1677324870"
+  data-ts="1693727040"
   data-df="ll"
   
 >
-  Feb 25, 2023
+  Sep  3, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>面向对象基础</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>组合模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3894,29 +3862,20 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
 
 
 
-                  面向对象 (Object-Oriented, OO) 是一种非常实用的系统化软件开发方法
+                  Composite Pattern 对象结构型模式
 
-面向过程和面向对象
+意图
 
-以一个问题引入：把大象装进冰箱，需要几步？
+将对象组合成树型结构以表示 “部分 - 整体” 的层次结构。Composite 使得用户对单个对象和组合对象的使用具有一致性
 
-一般先打开冰箱，然后把大象装进冰箱，最后关上冰箱
-
-面向过程：
-
-关心我该怎么做？一步步去实现这个功能
-
-对于上述问题:
+结构
 
 
-  我打开冰箱
-  我把大象装进冰箱里
-  我关上冰箱门
+
+其中：
 
 
-面向对象
-
-关心我该让谁去做？去调用对象的操作...
+  Component 为组合中的对象声明接口；在适当情况下实现所有类共有接口的默认行为；声明一个接口用于访问和管理 Component 的子组件；(可选) 在递归结构中定义一个接...
                 </p>
               </div>
             </div>
@@ -3936,22 +3895,21 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
 <div class="post-navigation d-flex justify-content-between">
   
     <a
-      href="/archives/62"
+      href="/archives/122"
       class="btn btn-outline-primary"
       prompt="Older"
     >
-      <p>Aria2+AriaNG配置使用</p>
+      <p>享元模式</p>
     </a>
   
 
   
-    <a
-      href="/archives/64"
-      class="btn btn-outline-primary"
+    <div
+      class="btn btn-outline-primary disabled"
       prompt="Newer"
     >
-      <p>HTTP 学习</p>
-    </a>
+      <p>-</p>
+    </div>
   
 </div>
 
