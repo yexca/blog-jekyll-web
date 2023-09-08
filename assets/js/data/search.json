@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "责任链模式",
+    "url": "/archives/124",
+    "categories": "软件工程",
+    "tags": "对象行为型模式, 设计模式",
+    "date": "2023-09-09 07:02:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "Chain of Responsibility Pattern 对象行为型模式意图使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止结构其中：  Handler 定义一个处理请求的接口；(可选) 实现后继链  ConcreteHandler 处理它所负责的请求；可访问它的后继者；如果可处理该请求，就处...",
+    "content": "Chain of Responsibility Pattern 对象行为型模式意图使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止结构其中：  Handler 定义一个处理请求的接口；(可选) 实现后继链  ConcreteHandler 处理它所负责的请求；可访问它的后继者；如果可处理该请求，就处理它，否则将请求转发给后继者  Client 向链上的具体处理者 (ConcreteHandler) 对象提交请求适用性Chain of Responsibility 模式适用于：  有多个对象可以处理一个请求，哪个对象处理该请求运行时刻自动确定  想在不明确指定接收者的情况下向多个对象中的一个提交一个请求  可处理一个请求的对象集合应被动态指定例子学生请假，先辅导员，辅导员处理不了转院长，院长处理不了转校长public class ChainOfResponsibilityPattern {    public static void main(String[] args) {        // 实例化对象        Handler counsellor = new Counsellor();        Handler president = new President();        Handler schoolmaster = new Schoolmaster();        // 设置对象下一级        counsellor.next = president;        president.next = schoolmaster;        schoolmaster.next = null;        // 向辅导员请求7天假期        counsellor.HandlerRequest(7);    }}abstract class Handler{    protected Handler next;    public void setNext(Handler next){        this.next = next;    }    // 学生请假请求    public abstract void HandlerRequest(int request);}class Counsellor extends Handler{    // 辅导员 小于等于7天审批    @Override    public void HandlerRequest(int request){        if (request &lt;= 7) {            System.out.println(\"Counsellor Agree!\");        }        else {            if(next != null){                next.HandlerRequest(request);            }            else {                System.out.println(\"Counsellor Refuse!\");            }        }    }}class President extends Handler{    // 院长 小于等于15天审批    @Override    public void HandlerRequest(int request){        if (request &lt;= 15) {            System.out.println(\"President Agree!\");        }        else {            if(next != null){                next.HandlerRequest(request);            }            else {                System.out.println(\"President Refuse!\");            }        }    }}class Schoolmaster extends Handler{    // 校长 小于等于30天审批    @Override    public void HandlerRequest(int request){        if (request &lt;= 30) {            System.out.println(\"Schoolmaster Agree!\");        }        else {            if(next != null){                next.HandlerRequest(request);            }            else {                System.out.println(\"Schoolmaster Refuse!\");            }        }    }}"
+  },
+  
+  {
     "title": "代理模式",
     "url": "/archives/123",
     "categories": "软件工程",

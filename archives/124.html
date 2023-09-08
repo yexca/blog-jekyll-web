@@ -35,27 +35,27 @@
     
       <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="使用VS Code收发QQ消息" />
+<meta property="og:title" content="责任链模式" />
 <meta name="author" content="yexca" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="引言" />
-<meta property="og:description" content="引言" />
-<link rel="canonical" href="https://blog.yexca.net/archives/24" />
-<meta property="og:url" content="https://blog.yexca.net/archives/24" />
+<meta name="description" content="Chain of Responsibility Pattern 对象行为型模式" />
+<meta property="og:description" content="Chain of Responsibility Pattern 对象行为型模式" />
+<link rel="canonical" href="https://blog.yexca.net/archives/124" />
+<meta property="og:url" content="https://blog.yexca.net/archives/124" />
 <meta property="og:site_name" content="yexca’Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-02-11T21:47:56+08:00" />
+<meta property="article:published_time" content="2023-09-09T07:02:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="使用VS Code收发QQ消息" />
+<meta property="twitter:title" content="责任链模式" />
 <meta name="twitter:site" content="@yexcano" />
 <meta name="twitter:creator" content="@yexcano" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2022-02-11T21:47:56+08:00","datePublished":"2022-02-11T21:47:56+08:00","description":"引言","headline":"使用VS Code收发QQ消息","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/24"},"url":"https://blog.yexca.net/archives/24"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2023-09-09T07:02:00+08:00","datePublished":"2023-09-09T07:02:00+08:00","description":"Chain of Responsibility Pattern 对象行为型模式","headline":"责任链模式","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/124"},"url":"https://blog.yexca.net/archives/124"}</script>
 <!-- End Jekyll SEO tag -->
 
     
   
-    <title>使用VS Code收发QQ消息 - yexca'Blog
+    <title>责任链模式 - yexca'Blog
     </title>
   
     <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>使用VS Code收发QQ消息</span>
+              <span>责任链模式</span>
             
 
           
@@ -553,6 +553,91 @@
 
 
 
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+
+  
+
+
 
 <!-- Add header for code snippets -->
 
@@ -611,6 +696,22 @@
       
 
     
+
+    
+
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
       
 
       
@@ -623,25 +724,8 @@
       
 
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
 
     
-
-    
-
-  
-
-  
-  
 
   
 
@@ -663,7 +747,7 @@
 
 
 
-<h1 data-toc-skip>使用VS Code收发QQ消息</h1>
+<h1 data-toc-skip>责任链模式</h1>
 
 <div class="post-meta text-muted">
     <!-- published date -->
@@ -680,13 +764,13 @@
 
 <em
   class=""
-  data-ts="1644587276"
+  data-ts="1694214120"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Feb 11, 2022
+  Sep  9, 2023
 </em>
 
     </span>
@@ -735,9 +819,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="446 words"
+  title="594 words"
 >
-  <em>2 min</em> read</span>
+  <em>3 min</em> read</span>
 
     </div>
 
@@ -746,48 +830,39 @@
 </div> <!-- .post-meta -->
 
 <div class="post-content">
-  <h2 id="引言"><span class="me-2">引言</span><a href="#引言" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <p>Chain of Responsibility Pattern 对象行为型模式</p>
 
-<p>由于QQ软件过于臃肿并且权限过大，并且经常性卡住无法加载，所以便寻找其他方法，首先是通过Telegram收发QQ消息，但配置较为复杂且并不稳定，于是弃用并改用VS Code。</p>
+<h2 id="意图"><span class="me-2">意图</span><a href="#意图" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止</p>
 
-<h2 id="插件简介"><span class="me-2">插件简介</span><a href="#插件简介" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="结构"><span class="me-2">结构</span><a href="#结构" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>名称: QQ<br />
-ID: takayama.vscode-qq<br />
-说明: lite qq for chat in working<br />
-版本: 1.4.2<br />
-发布者: takayama<br />
-VS Marketplace 链接: <a href="https://marketplace.visualstudio.com/items?itemName=takayama.vscode-qq">VS Code QQ Extension</a><br />
-Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode-qq</a></p>
+<p><a href="https://cdn.staticaly.com/gh/yexca/image_hosting@master/2023/03-设计模式/责任链模式.3w9jnpfuij20.webp" class="popup img-link "><img data-src="https://cdn.staticaly.com/gh/yexca/image_hosting@master/2023/03-设计模式/责任链模式.3w9jnpfuij20.webp" alt="责任链模式" class="lazyload" data-proofer-ignore></a></p>
 
-<p>注：本程序不在本地保存任何消息记录和图片。暂不支持临时会话。</p>
+<p>其中：</p>
 
-<h2 id="安装"><span class="me-2">安装</span><a href="#安装" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>Handler 定义一个处理请求的接口；(可选) 实现后继链</li>
+  <li>ConcreteHandler 处理它所负责的请求；可访问它的后继者；如果可处理该请求，就处理它，否则将请求转发给后继者</li>
+  <li>Client 向链上的具体处理者 (ConcreteHandler) 对象提交请求</li>
+</ul>
 
-<p>首先安装 VS Code，访问<a href="https://code.visualstudio.com/">官网</a>点击 Download 即可下载安装</p>
+<h2 id="适用性"><span class="me-2">适用性</span><a href="#适用性" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>然后访问上述 <a href="https://marketplace.visualstudio.com/items?itemName=takayama.vscode-qq">VS Code QQ Extension</a> 链接点击 Install 即可自动打开VS Code安装</p>
+<p>Chain of Responsibility 模式适用于：</p>
 
-<p>或者打开 VS Code 在左侧“拓展”(或按CTRL+SHIFT+X)，然后搜索QQ(注意大写)，点击第一个安装</p>
+<ul>
+  <li>有多个对象可以处理一个请求，哪个对象处理该请求运行时刻自动确定</li>
+  <li>想在不明确指定接收者的情况下向多个对象中的一个提交一个请求</li>
+  <li>可处理一个请求的对象集合应被动态指定</li>
+</ul>
 
-<h2 id="功能"><span class="me-2">功能</span><a href="#功能" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h3 id="例子"><span class="me-2">例子</span><a href="#例子" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>按快捷键“CTRL+SHIFT+P”打开命令面板</p>
+<p>学生请假，先辅导员，辅导员处理不了转院长，院长处理不了转校长</p>
 
-<p>输入“QQ Explorer: Login”（或只输入“login”会显示对应选项）后回车</p>
-
-<p>然后根据提示输入账号密码即可登录成功，此时会显示相功能</p>
-
-<p>输入“QQ Explorer: 搜索好友”即可搜索好友</p>
-
-<p>输入“QQ Explorer: 搜索群”即可搜索群</p>
-
-<h2 id="设置"><span class="me-2">设置</span><a href="#设置" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>在登录成功后控制面板便会有设置，进入设置为json文件编辑，内容如下</p>
-
-<div class="language-json highlighter-rouge"><div class="code-header">
-        <span data-label-text="JSON"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -797,18 +872,160 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
 7
 8
 9
-</pre></td><td class="rouge-code"><pre><span class="p">{</span><span class="w">
-  </span><span class="nl">"account"</span><span class="p">:</span><span class="w"> </span><span class="err">***********</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">QQ号码</span><span class="w">
-  </span><span class="nl">"password"</span><span class="p">:</span><span class="w"> </span><span class="s2">"********************************"</span><span class="p">,</span><span class="w"> </span><span class="err">//QQ密码</span><span class="w">
-  </span><span class="nl">"platform"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="err">//登录平台，可更改“</span><span class="mi">1</span><span class="err">:手机，</span><span class="mi">3</span><span class="err">:手表(功能不完整)，</span><span class="mi">4</span><span class="err">:PC，</span><span class="mi">5</span><span class="err">:pad(默认)”</span><span class="w">
-  </span><span class="nl">"show_me_add_group_request"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"theme"</span><span class="p">:</span><span class="w"> </span><span class="s2">"default"</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">UI主题，可更改“default(默认)和console(控制台风格)”</span><span class="w">
-  </span><span class="nl">"theme_css"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"theme_js"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></div></div>
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ChainOfResponsibilityPattern</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// 实例化对象</span>
+        <span class="nc">Handler</span> <span class="n">counsellor</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Counsellor</span><span class="o">();</span>
+        <span class="nc">Handler</span> <span class="n">president</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">President</span><span class="o">();</span>
+        <span class="nc">Handler</span> <span class="n">schoolmaster</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Schoolmaster</span><span class="o">();</span>
 
-<p>可自定义主题，详情参考：<strong><a href="https://github.com/takayama-lily/vscode-qq/wiki/%E8%87%AA%E5%AE%9A%E4%B9%89%E8%81%8A%E5%A4%A9UI%E7%95%8C%E9%9D%A2">修改/自定义UI主题</a></strong></p>
+        <span class="c1">// 设置对象下一级</span>
+        <span class="n">counsellor</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">president</span><span class="o">;</span>
+        <span class="n">president</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">schoolmaster</span><span class="o">;</span>
+        <span class="n">schoolmaster</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+
+        <span class="c1">// 向辅导员请求7天假期</span>
+        <span class="n">counsellor</span><span class="o">.</span><span class="na">HandlerRequest</span><span class="o">(</span><span class="mi">7</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Handler</span><span class="o">{</span>
+    <span class="kd">protected</span> <span class="nc">Handler</span> <span class="n">next</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setNext</span><span class="o">(</span><span class="nc">Handler</span> <span class="n">next</span><span class="o">){</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">next</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="c1">// 学生请假请求</span>
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">HandlerRequest</span><span class="o">(</span><span class="kt">int</span> <span class="n">request</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Counsellor</span> <span class="kd">extends</span> <span class="nc">Handler</span><span class="o">{</span>
+    <span class="c1">// 辅导员 小于等于7天审批</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">HandlerRequest</span><span class="o">(</span><span class="kt">int</span> <span class="n">request</span><span class="o">){</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">request</span> <span class="o">&lt;=</span> <span class="mi">7</span><span class="o">)</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Counsellor Agree!"</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">else</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">next</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+                <span class="n">next</span><span class="o">.</span><span class="na">HandlerRequest</span><span class="o">(</span><span class="n">request</span><span class="o">);</span>
+            <span class="o">}</span>
+            <span class="k">else</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Counsellor Refuse!"</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">President</span> <span class="kd">extends</span> <span class="nc">Handler</span><span class="o">{</span>
+    <span class="c1">// 院长 小于等于15天审批</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">HandlerRequest</span><span class="o">(</span><span class="kt">int</span> <span class="n">request</span><span class="o">){</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">request</span> <span class="o">&lt;=</span> <span class="mi">15</span><span class="o">)</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"President Agree!"</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">else</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">next</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+                <span class="n">next</span><span class="o">.</span><span class="na">HandlerRequest</span><span class="o">(</span><span class="n">request</span><span class="o">);</span>
+            <span class="o">}</span>
+            <span class="k">else</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"President Refuse!"</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Schoolmaster</span> <span class="kd">extends</span> <span class="nc">Handler</span><span class="o">{</span>
+    <span class="c1">// 校长 小于等于30天审批</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">HandlerRequest</span><span class="o">(</span><span class="kt">int</span> <span class="n">request</span><span class="o">){</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">request</span> <span class="o">&lt;=</span> <span class="mi">30</span><span class="o">)</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Schoolmaster Agree!"</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">else</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">next</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+                <span class="n">next</span><span class="o">.</span><span class="na">HandlerRequest</span><span class="o">(</span><span class="n">request</span><span class="o">);</span>
+            <span class="o">}</span>
+            <span class="k">else</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Schoolmaster Refuse!"</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
 </div>
 
@@ -819,7 +1036,7 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/'>软件配置</a>
+      <a href='/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/'>软件工程</a>
   </div>
   
 
@@ -828,8 +1045,11 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
   <div class="post-tags">
     <i class="fa fa-tags fa-fw me-1"></i>
       
-      <a href="/tags/vs-code/"
-          class="post-tag no-text-decoration" >VS Code</a>
+      <a href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/"
+          class="post-tag no-text-decoration" >对象行为型模式</a>
+      
+      <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"
+          class="post-tag no-text-decoration" >设计模式</a>
       
   </div>
   
@@ -863,7 +1083,7 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=%E4%BD%BF%E7%94%A8VS%20Code%E6%94%B6%E5%8F%91QQ%E6%B6%88%E6%81%AF%20-%20yexca'Blog&url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F24"
+        href="https://twitter.com/intent/tweet?text=%E8%B4%A3%E4%BB%BB%E9%93%BE%E6%A8%A1%E5%BC%8F%20-%20yexca'Blog&url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F124"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -876,7 +1096,7 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=%E4%BD%BF%E7%94%A8VS%20Code%E6%94%B6%E5%8F%91QQ%E6%B6%88%E6%81%AF%20-%20yexca'Blog&u=https%3A%2F%2Fblog.yexca.net%2Farchives%2F24"
+        href="https://www.facebook.com/sharer/sharer.php?title=%E8%B4%A3%E4%BB%BB%E9%93%BE%E6%A8%A1%E5%BC%8F%20-%20yexca'Blog&u=https%3A%2F%2Fblog.yexca.net%2Farchives%2F124"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -889,7 +1109,7 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
     
       
       <a
-        href="https://t.me/share/url?url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F24&text=%E4%BD%BF%E7%94%A8VS%20Code%E6%94%B6%E5%8F%91QQ%E6%B6%88%E6%81%AF%20-%20yexca'Blog"
+        href="https://t.me/share/url?url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F124&text=%E8%B4%A3%E4%BB%BB%E9%93%BE%E6%A8%A1%E5%BC%8F%20-%20yexca'Blog"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -2119,1207 +2339,1207 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -3616,7 +3836,7 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
         
         
         <div class="col">
-          <a href="/archives/45" class="card post-preview h-100">
+          <a href="/archives/115" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3629,14 +3849,14 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
 
 <em
   class="small"
-  data-ts="1654034460"
+  data-ts="1688536680"
   data-df="ll"
   
 >
-  Jun  1, 2022
+  Jul  5, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>VS Code右下角嘉然</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>单例模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3645,23 +3865,29 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
 
 
 
-                  引言
+                  Singleton Pattern 对象创建型模式
 
-首先我不是嘉心糖，我只是觉得很可爱(我刚开始甚至都不知道是嘉然)，然后这个Bug挺多，自启动不是每次都能触发，但她太可爱啦
+意图
 
-然后这个拓展还可以改背景，但我个人不是太喜欢就没改
+保证一个类仅有一个实例，并提供一个访问它的全局访问点
 
-效果预览如下
+结构
 
 
 
-安装
+其中：
 
-打开VS Code然后在拓展搜索A-SOUL-live2d安装
 
-拓展地址：A-SOUL-live2d - Visual Studio Marketplace
+  Singleton 指定一个 Instance 操作，允许客户访问它的唯一实例
+  Instance 是一个类操作；可能负责创建它自己的唯一实例
 
-其实可以直接去拓...
+
+适用性
+
+Singleton 模式适用于：
+
+
+  当类只能有一个实例而且客户可以从一个众所周知的...
                 </p>
               </div>
             </div>
@@ -3671,7 +3897,7 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
         
         
         <div class="col">
-          <a href="/archives/46" class="card post-preview h-100">
+          <a href="/archives/117" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3684,14 +3910,14 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
 
 <em
   class="small"
-  data-ts="1654704214"
+  data-ts="1693551780"
   data-df="ll"
   
 >
-  Jun  9, 2022
+  Sep  1, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>VS Code实时预览Markdown</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>适配器模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3700,15 +3926,31 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
 
 
 
-                  引言
+                  Adapter Pattern 类结构型模式/对象结构型模式
 
-在学习Markdown用法后，感觉非常好用(最近的文章都是使用Markdown写的)，又因为编程或Github建站会和Markdown打交道，而我编程使用VS Code(看嘉然)，遂寻找是否可以实时预览
+意图
 
-快捷键
+将一个类的接口转换成客户希望的另外一个接口。Adapter 模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作
 
-在Markdown文件界面(.md文件)，点击下文件界面(鼠标文本光标在文件内)，然后按下CTRL+K后按下V即可，注意使用英文输入法
+结构
 
-以上是实时预览，可以按CTRL+...
+
+  类适配器使用多重继承对一个接口与另一个接口进行匹配
+
+
+
+
+
+  对象适配器依赖于对象组合
+
+
+
+
+其中：
+
+
+  Target 定义 Client 使用的与特定领域相关的接口
+  C...
                 </p>
               </div>
             </div>
@@ -3718,7 +3960,7 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
         
         
         <div class="col">
-          <a href="/archives/51" class="card post-preview h-100">
+          <a href="/archives/118" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3731,14 +3973,14 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
 
 <em
   class="small"
-  data-ts="1657705677"
+  data-ts="1693647240"
   data-df="ll"
   
 >
-  Jul 13, 2022
+  Sep  2, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>VS Code更换字体</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>桥接模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3747,19 +3989,22 @@ Github项目地址：<a href="https://github.com/takayama-lily/vscode-qq">vscode
 
 
 
-                  引言
+                  Bridge Pattern 对象结构型模式
 
-近日网上冲浪时发现一觉得还不错的字体，便寻找更换字体方法。但实际使用下来没那么惊艳
+意图
 
-方式一
+将抽象部分与其实现部分分离，使它们都可以独立地变化
 
-左下管理-设置(或者快捷键CTRL+,)进入设置界面，找到Editor:Font Family
+结构
 
-将默认的 Consolas, &#39;Courier New&#39;, monospace 改为要更换的字体即可
 
-方式二
 
-Ctrl + Shift + P -&amp;gt; 输入 settings.json...
+其中：
+
+
+  Abstraction 定义抽象类的接口，维护一个指向 Implementor 类型对象的指针
+  RefinedAbstraction 扩充由 Abstraction 定义的接口
+  Implementor 定义实现类的接口，该接口不一定要与 Abstr...
                 </p>
               </div>
             </div>
@@ -3779,22 +4024,21 @@ Ctrl + Shift + P -&amp;gt; 输入 settings.json...
 <div class="post-navigation d-flex justify-content-between">
   
     <a
-      href="/archives/23"
+      href="/archives/123"
       class="btn btn-outline-primary"
       prompt="Older"
     >
-      <p>去除Potplayer右下弹窗</p>
+      <p>代理模式</p>
     </a>
   
 
   
-    <a
-      href="/archives/25"
-      class="btn btn-outline-primary"
+    <div
+      class="btn btn-outline-primary disabled"
       prompt="Newer"
     >
-      <p>查看服务器端口是否开放</p>
-    </a>
+      <p>-</p>
+    </div>
   
 </div>
 
