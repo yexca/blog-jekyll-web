@@ -2339,6 +2339,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -3836,7 +3848,7 @@
         
         
         <div class="col">
-          <a href="/archives/115" class="card post-preview h-100">
+          <a href="/archives/125" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3849,14 +3861,14 @@
 
 <em
   class="small"
-  data-ts="1688536680"
+  data-ts="1694330760"
   data-df="ll"
   
 >
-  Jul  5, 2023
+  Sep 10, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>单例模式</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>命令模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3865,11 +3877,11 @@
 
 
 
-                  Singleton Pattern 对象创建型模式
+                  Command Pattern 对象行为型模式
 
 意图
 
-保证一个类仅有一个实例，并提供一个访问它的全局访问点
+将一个请求封装为一个对象，从而使得可以用不同的请求对客户进行参数化；对请求排队或记录请求日志，以及支持可撤销的操作
 
 结构
 
@@ -3878,16 +3890,9 @@
 其中：
 
 
-  Singleton 指定一个 Instance 操作，允许客户访问它的唯一实例
-  Instance 是一个类操作；可能负责创建它自己的唯一实例
-
-
-适用性
-
-Singleton 模式适用于：
-
-
-  当类只能有一个实例而且客户可以从一个众所周知的...
+  Command 声明执行操作的接口
+  ConcreteCommand 将一个接收者对象绑定于一个动作；调用接收者相应的操作，以实现 Execute
+  Client 创建一个具体命令对象并...
                 </p>
               </div>
             </div>
@@ -4033,12 +4038,13 @@ Singleton 模式适用于：
   
 
   
-    <div
-      class="btn btn-outline-primary disabled"
+    <a
+      href="/archives/125"
+      class="btn btn-outline-primary"
       prompt="Newer"
     >
-      <p>-</p>
-    </div>
+      <p>命令模式</p>
+    </a>
   
 </div>
 
