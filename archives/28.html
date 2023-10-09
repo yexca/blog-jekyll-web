@@ -963,14 +963,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/117">适配器模式</a>
+          <a href="/archives/36">查询B站注册时间(精确到秒)</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/108">设计模式 引</a>
+          <a href="/archives/117">适配器模式</a>
         </li>
       
         
@@ -984,14 +984,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/27">使用PicX自建免费图床</a>
+          <a href="/archives/118">桥接模式</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/35">使用PicX图床上传图片提示“Bad credentials”</a>
+          <a href="/archives/53">使用Git上传文件至Github</a>
         </li>
       
     </ul>
@@ -1185,10 +1185,20 @@
     
     
     
+  
+    
+    
+    
+    
       
         
         
 
+  
+    
+    
+    
+    
   
     
     
@@ -3294,6 +3304,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -3639,60 +3661,6 @@
         
         
         <div class="col">
-          <a href="/archives/26" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1645005196"
-  data-df="ll"
-  
->
-  Feb 16, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>将课程表导入日历（树维教务）</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  引言
-
-由于学校的教务系统查看课程表不是那么便捷，而且第三方课程表有一定的安全隐患并且广告奇多，于是便想着把课程表导入日历，我选择导入Outlook日历，这样可以实现iOS，Windows和Android多端同步。
-
-准备工作
-
-
-  一台电脑
-  一个Android手机
-  电脑安装chrome浏览器：官网链接
-  手机安装WakeUp课表：官网链接
-
-
-第一步，导出课程表
-
-一、使用ch...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/27" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -3780,6 +3748,58 @@
 官网链接：ImgURL免费图床
 
 游客每日限 10 次上传，单图最大 5 ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/36" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1649483272"
+  data-df="ll"
+  
+>
+  Apr  9, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>查询B站注册时间(精确到秒)</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  一、查询时间戳
+
+打开网页https://member.bilibili.com/x2/creative/h5/calendar/event?ts=0
+按下CTRL+F，输入”jointime”，找到jointime后面的数字即为时间戳
+
+
+
+将时间戳复制
+
+二、转换时间戳
+
+打开网站时间戳(Unix timestamp)转换工具 – 在线工具 (tool.lu)
+
+在相应位置输入时间戳点击...
                 </p>
               </div>
             </div>
@@ -4027,10 +4047,20 @@ twikoo.init({
     
     
     
+  
+    
+    
+    
+    
       
         
         
 
+  
+    
+    
+    
+    
   
     
     

@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-09-20T21:25:49+08:00</updated>
+  <updated>2023-10-09T17:50:00+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -20,11 +20,62 @@
 
   
   <entry>
+    <title>解释器模式</title>
+    <link href="https://blog.yexca.net/archives/126" rel="alternate" type="text/html" title="解释器模式" />
+    <published>2023-10-09T17:31:00+08:00</published>
+  
+    <updated>2023-10-09T17:31:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/126</id>
+    <content src="https://blog.yexca.net/archives/126" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Interpreter Pattern 类行为型模式
+
+意图
+
+给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子
+
+结构
+
+
+
+其中：
+
+
+  AbstractExpression 声明一个程序的解释操作，这个接口为抽象语法树中所有的结点所共享
+  TerminalExpression 实现与文法中的终结符相关联的解释操作；一个句子中的每个终结符需要该类的一个实例
+  NonterminalExpression 对文法中的每一条规则都需要一个 NonterminalExpression 类；为每个符号都维护一个 AbstractExpression 类型的实例变量；为文法中的非终结符实现解释 (Interpret) 操作
+  Context 包含解释器之外的一些全局信息
+  Client 构建 (或被给定) 表示该文法定义的语言中一个特定...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>命令模式</title>
     <link href="https://blog.yexca.net/archives/125" rel="alternate" type="text/html" title="命令模式" />
     <published>2023-09-10T15:26:00+08:00</published>
   
-    <updated>2023-09-10T15:26:00+08:00</updated>
+    <updated>2023-10-09T17:49:52+08:00</updated>
   
     <id>https://blog.yexca.net/archives/125</id>
     <content src="https://blog.yexca.net/archives/125" />
@@ -92,7 +143,7 @@ public class Comm...
     <link href="https://blog.yexca.net/archives/124" rel="alternate" type="text/html" title="责任链模式" />
     <published>2023-09-09T07:02:00+08:00</published>
   
-    <updated>2023-09-09T07:02:00+08:00</updated>
+    <updated>2023-10-09T17:49:52+08:00</updated>
   
     <id>https://blog.yexca.net/archives/124</id>
     <content src="https://blog.yexca.net/archives/124" />
@@ -152,7 +203,7 @@ Chain of Responsibility 模式适用于：
     <link href="https://blog.yexca.net/archives/123" rel="alternate" type="text/html" title="代理模式" />
     <published>2023-09-08T12:15:00+08:00</published>
   
-    <updated>2023-09-08T12:15:00+08:00</updated>
+    <updated>2023-10-09T17:49:52+08:00</updated>
   
     <id>https://blog.yexca.net/archives/123</id>
     <content src="https://blog.yexca.net/archives/123" />
@@ -211,7 +262,7 @@ Proxy 模式适用于在需要比较通用和复杂的对象指针代替简单�
     <link href="https://blog.yexca.net/archives/122" rel="alternate" type="text/html" title="享元模式" />
     <published>2023-09-07T13:54:00+08:00</published>
   
-    <updated>2023-09-07T13:54:00+08:00</updated>
+    <updated>2023-10-09T17:49:52+08:00</updated>
   
     <id>https://blog.yexca.net/archives/122</id>
     <content src="https://blog.yexca.net/archives/122" />
@@ -254,62 +305,6 @@ Proxy 模式适用于在需要比较通用和复杂的对象指针代替简单�
   
   
     并非所有的 Flyweight 子类都需要被共享。Flyweight 接口使共享成为可能，但它并不强制共亨。在 Flyweight 对象结构的某些层次，UnsharedConcreteFlyweight 对象通常将 ConcreteFlyweight 对象作为子...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>外观模式</title>
-    <link href="https://blog.yexca.net/archives/121" rel="alternate" type="text/html" title="外观模式" />
-    <published>2023-09-06T03:02:00+08:00</published>
-  
-    <updated>2023-09-06T03:02:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/121</id>
-    <content src="https://blog.yexca.net/archives/121" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Facade Pattern 对象结构型模式
-
-意图
-
-为子系统中的一组接口提供一个一致的界面，Facade 模式定义了一个高层接口，这个接口使得这一子系统更加容易使用
-
-结构
-
-
-
-其中：
-
-
-  Facade 知道哪些子系统类负责处理请求；将客户的请求代理给适当的子系统对象
-  Subsystem classes 实现子系统的功能；处理有 Facade 对象指派的任务；没有 Facade 的任何相关信息，即没有指向 Facade 的指针
-
-
-适用性
-
-Facade 模式适用于：
-
-
-  要为一个复杂子系统提供一个简单接口时，子系统往往因为不断演化而变得越来越复杂。大多数模式使用时都会产生更多更小的类，这使得子系统更具有可重用性，也更容易对子系统进行定制，但也给那些不需要定制子系统的用户带来一些使用上的困难。Facade 可以提供一个简单的默认视图，这一视图对大多数用户来说已经足够...
     </summary>
   
 
