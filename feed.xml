@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-10-09T17:50:00+08:00</updated>
+  <updated>2023-10-12T09:12:01+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,72 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>迭代器模式</title>
+    <link href="https://blog.yexca.net/archives/127" rel="alternate" type="text/html" title="迭代器模式" />
+    <published>2023-10-12T09:09:00+08:00</published>
+  
+    <updated>2023-10-12T09:09:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/127</id>
+    <content src="https://blog.yexca.net/archives/127" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Iterator Pattern 对象行为型模式
+
+意图
+
+提供一种方法顺序访问一个聚合对象中的各个元素，且不需要暴露该对象的内部表示
+
+结构
+
+
+
+其中：
+
+
+  Iterator (迭代器) 定义访问和遍历元素的接口
+  ConcreteIterator (具体迭代器) 实现迭代器接口；对该聚合遍历时跟踪当前位置
+  Aggregate (聚合) 定义创建相应迭代器对象的接口
+  ConcreteAggregate (具体聚合) 实现创建相应迭代器的接口，该操作返回 ConcreteIterator 的一个适当的实例
+
+
+适用性
+
+Iterator 模式适用于：
+
+
+  访问一个聚合对象的内容而无需暴露它的内部表示
+  支持对聚合对象的多种遍历
+  为遍历不同的聚合结构提供一个统一的接口
+
+
+利用 Java 已实现迭代器
+
+import java.util.ArrayList;
+...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -251,60 +317,6 @@ Proxy 模式适用于在需要比较通用和复杂的对象指针代替简单�
   远程代理 (Remote Proxy) 为一个对象在不同地址空间提供局部代表
   虚代理 (Virtual Proxy) 根据需要对原始对象的访问，用于对象应该有不同的访问权限的时候
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>享元模式</title>
-    <link href="https://blog.yexca.net/archives/122" rel="alternate" type="text/html" title="享元模式" />
-    <published>2023-09-07T13:54:00+08:00</published>
-  
-    <updated>2023-10-09T17:49:52+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/122</id>
-    <content src="https://blog.yexca.net/archives/122" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Flyweight Pattern 对象结构型模式
-
-意图
-
-运用共享技术有效地支持大量细粒度的对象
-
-结构
-
-
-
-其中：
-
-
-  
-    Flyweight 描述一个接口，通过这个接口 Flyweight 可以接受并作用于外部状态
-  
-  
-    ConcreteFlyweight 实现 Flyweight 接口，并为内部状态 (如果有) 增加存储空间。ConcreteFlyweight 对象必项是可共享的。它所存储的状态必须是内部的，即它必须独立于 ConcreteFlyweight 对象的场景
-  
-  
-    并非所有的 Flyweight 子类都需要被共享。Flyweight 接口使共享成为可能，但它并不强制共亨。在 Flyweight 对象结构的某些层次，UnsharedConcreteFlyweight 对象通常将 ConcreteFlyweight 对象作为子...
     </summary>
   
 
