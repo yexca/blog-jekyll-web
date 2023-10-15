@@ -1203,7 +1203,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/118">桥接模式</a>
+          <a href="/archives/119">组合模式</a>
         </li>
       
         
@@ -1217,7 +1217,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/119">组合模式</a>
+          <a href="/archives/120">装饰器模式</a>
         </li>
       
         
@@ -2369,6 +2369,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4015,7 +4027,7 @@
         
         
         <div class="col">
-          <a href="/archives/118" class="card post-preview h-100">
+          <a href="/archives/128" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4028,14 +4040,14 @@
 
 <em
   class="small"
-  data-ts="1693647240"
+  data-ts="1697361240"
   data-df="ll"
   
 >
-  Sep  2, 2023
+  Oct 15, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>桥接模式</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>中介者模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4044,11 +4056,11 @@
 
 
 
-                  Bridge Pattern 对象结构型模式
+                  Mediator Pattern 对象行为型模式
 
 意图
 
-将抽象部分与其实现部分分离，使它们都可以独立地变化
+用一个中介对象来封装一系列的对象交互。中介者使各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间地交互
 
 结构
 
@@ -4057,9 +4069,8 @@
 其中：
 
 
-  Abstraction 定义抽象类的接口，维护一个指向 Implementor 类型对象的指针
-  RefinedAbstraction 扩充由 Abstraction 定义的接口
-  Implementor 定义实现类的接口，该接口不一定要与 Abstr...
+  Mediator (中介者) 定义一个接口用于各同事 (Colleague) 对象通信
+  ConcreteMediator (具体中介中介) 通过协调各同事对象实现协作行为；了...
                 </p>
               </div>
             </div>

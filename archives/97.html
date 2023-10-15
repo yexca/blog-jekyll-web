@@ -1082,7 +1082,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/118">桥接模式</a>
+          <a href="/archives/119">组合模式</a>
         </li>
       
         
@@ -1096,7 +1096,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/119">组合模式</a>
+          <a href="/archives/120">装饰器模式</a>
         </li>
       
         
@@ -2248,6 +2248,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -3785,60 +3797,6 @@
         
         
         <div class="col">
-          <a href="/archives/118" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1693647240"
-  data-df="ll"
-  
->
-  Sep  2, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>桥接模式</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Bridge Pattern 对象结构型模式
-
-意图
-
-将抽象部分与其实现部分分离，使它们都可以独立地变化
-
-结构
-
-
-
-其中：
-
-
-  Abstraction 定义抽象类的接口，维护一个指向 Implementor 类型对象的指针
-  RefinedAbstraction 扩充由 Abstraction 定义的接口
-  Implementor 定义实现类的接口，该接口不一定要与 Abstr...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/119" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -3936,6 +3894,59 @@
   Component 定义一个对象接口，可以给这些对象动态地添加职责
   ConcreteComponent 定义一个对象，可以给这个对象添加一些职责
   Decorator 维持一个指向 Component...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/121" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1693940520"
+  data-df="ll"
+  
+>
+  Sep  6, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>外观模式</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Facade Pattern 对象结构型模式
+
+意图
+
+为子系统中的一组接口提供一个一致的界面，Facade 模式定义了一个高层接口，这个接口使得这一子系统更加容易使用
+
+结构
+
+
+
+其中：
+
+
+  Facade 知道哪些子系统类负责处理请求；将客户的请求代理给适当的子系统对象
+  Subsystem classes 实现子系统的功能；处理有 Facade 对象指派的任务；没有 Facade...
                 </p>
               </div>
             </div>
