@@ -1516,7 +1516,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/119">组合模式</a>
+          <a href="/archives/120">装饰器模式</a>
         </li>
       
         
@@ -2668,6 +2668,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4217,58 +4229,6 @@
         
         
         <div class="col">
-          <a href="/archives/119" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1693727040"
-  data-df="ll"
-  
->
-  Sep  3, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>组合模式</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Composite Pattern 对象结构型模式
-
-意图
-
-将对象组合成树型结构以表示 “部分 - 整体” 的层次结构。Composite 使得用户对单个对象和组合对象的使用具有一致性
-
-结构
-
-
-
-其中：
-
-
-  Component 为组合中的对象声明接口；在适当情况下实现所有类共有接口的默认行为；声明一个接口用于访问和管理 Component 的子组件；(可选) 在递归结构中定义一个接...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/120" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4367,6 +4327,59 @@
 
   Facade 知道哪些子系统类负责处理请求；将客户的请求代理给适当的子系统对象
   Subsystem classes 实现子系统的功能；处理有 Facade 对象指派的任务；没有 Facade...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/123" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1694146500"
+  data-df="ll"
+  
+>
+  Sep  8, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>代理模式</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Proxy Pattern 对象结构型模式
+
+意图
+
+为其他对象提供一种代理以控制对这个对象的访问
+
+结构
+
+
+
+其中：
+
+
+  Proxy 保存一个引用使得代理可以访问实体；提供一个与 Subject 的接口相同的接口，使代理可以用来代替实体；控制对实体的存取，并可能负责创建和删除它
+  Subject 定义 RealSubject 和 Proxy 的共用接口，这样就在任何使用 RealS...
                 </p>
               </div>
             </div>

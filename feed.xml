@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-10-15T19:18:06+08:00</updated>
+  <updated>2023-10-21T14:26:15+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,89 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Linux 学习 Index</title>
+    <link href="https://blog.yexca.net/archives/129" rel="alternate" type="text/html" title="Linux 学习 Index" />
+    <published>2023-10-21T14:18:00+08:00</published>
+  
+    <updated>2023-10-21T14:18:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/129</id>
+    <content src="https://blog.yexca.net/archives/129" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      此文章写于 2022.12，由于多种原因未发布
+
+该系列文章为我阅读《Linux 系统管理、服务器设置、安全、云数据中心》所书写相关笔记
+
+第一部分：入门
+
+这部分没有记录文章
+
+
+  第 01 章 开始使用 Linux
+
+
+Linux 的历史。总结：Linux NB
+
+
+  第 02 章 创建完美的 Linux 桌面
+
+
+然后有了 Fedora 桌面折腾
+
+
+
+第二部分：成为一名 Linux 高级用户
+
+
+  第 03 章 使用 shell
+
+
+shell 的一些用法与变量
+
+
+  第 04 章 在文件系统中移动
+
+
+文件相关 shell 命令、元字符、文件权限
+
+
+  第 05 章 使用文本文件
+
+
+vi 编辑器、查找文件 (locate 、find 、grep)
+
+
+  第 06 章 管理运行中的进程
+
+
+列出进程，杀死进程，限制进程
+
+
+  第 07 章 编写简单的 shel...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -257,66 +340,6 @@ Command 模式适用于：
 例子
 
 public class Comm...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>责任链模式</title>
-    <link href="https://blog.yexca.net/archives/124" rel="alternate" type="text/html" title="责任链模式" />
-    <published>2023-09-09T07:02:00+08:00</published>
-  
-    <updated>2023-10-09T17:49:52+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/124</id>
-    <content src="https://blog.yexca.net/archives/124" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Chain of Responsibility Pattern 对象行为型模式
-
-意图
-使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止
-
-结构
-
-
-
-其中：
-
-
-  Handler 定义一个处理请求的接口；(可选) 实现后继链
-  ConcreteHandler 处理它所负责的请求；可访问它的后继者；如果可处理该请求，就处理它，否则将请求转发给后继者
-  Client 向链上的具体处理者 (ConcreteHandler) 对象提交请求
-
-
-适用性
-
-Chain of Responsibility 模式适用于：
-
-
-  有多个对象可以处理一个请求，哪个对象处理该请求运行时刻自动确定
-  想在不明确指定接收者的情况下向多个对象中的一个提交一个请求
-  可处理一个请求的对象集合应被动态指定
-
-...
     </summary>
   
 
