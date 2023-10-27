@@ -50,7 +50,7 @@
 <meta name="twitter:site" content="@yexcano" />
 <meta name="twitter:creator" content="@yexcano" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2023-10-09T17:49:52+08:00","datePublished":"2023-05-16T17:53:31+08:00","description":"问题描述","headline":"算法 电路布线问题 (动态规划)","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/106"},"url":"https://blog.yexca.net/archives/106"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2023-10-27T15:32:14+08:00","datePublished":"2023-05-16T17:53:31+08:00","description":"问题描述","headline":"算法 电路布线问题 (动态规划)","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/106"},"url":"https://blog.yexca.net/archives/106"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -791,13 +791,13 @@
 
 <em
   class=""
-  data-ts="1696844992"
+  data-ts="1698391934"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Oct  9, 2023
+  Oct 27, 2023
 </em>
 
     </span>
@@ -844,7 +844,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="835 words"
+  title="832 words"
 >
   <em>4 min</em> read</span>
 
@@ -867,16 +867,7 @@
 
 <h2 id="问题分析"><span class="me-2">问题分析</span><a href="#问题分析" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<div class="table-wrapper"><table>
-  <tbody>
-    <tr>
-      <td>记 $N(i,j)={ t</td>
-      <td>(t,\pi(t))\in Nets, t\le i, \pi(t) \le j }$ 。$N(i,j)$ 的最大不相交子集为 $MNS(i,j)$ ，$size(i,j)=</td>
-      <td>MNS(i,j)</td>
-      <td>$</td>
-    </tr>
-  </tbody>
-</table></div>
+<p>记 $N(i,j)={ t|(t,\pi(t))\in Nets, t\le i, \pi(t) \le j }$ 。$N(i,j)$ 的最大不相交子集为 $MNS(i,j)$ ，$size(i,j)=|MNS(i,j)|$</p>
 
 <p>经分析，该问题具有最优子结构性质。对规模为 n 的电路布线问题，可以构造如下递归式
 \(\begin{align*}
@@ -1210,6 +1201,20 @@ max{size(i-1,j),size(i-1,\pi(i)-1)+1}, &amp; \text{其他情况}
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/106">算法 电路布线问题 (动态规划)</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/archives/74">Fedora 桌面折腾</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/127">迭代器模式</a>
         </li>
       
@@ -1225,20 +1230,6 @@ max{size(i-1,j),size(i-1,\pi(i)-1)+1}, &amp; \text{其他情况}
         
         <li class="text-truncate lh-lg">
           <a href="/archives/36">查询B站注册时间(精确到秒)</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/120">装饰器模式</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/43">Markdown简述(学习笔记)</a>
         </li>
       
     </ul>
