@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-10-27T15:32:26+08:00</updated>
+  <updated>2023-10-29T23:49:01+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,53 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>网易云音乐 2020-2022 年度报告</title>
+    <link href="https://blog.yexca.net/archives/130" rel="alternate" type="text/html" title="网易云音乐 2020-2022 年度报告" />
+    <published>2023-10-29T23:45:00+08:00</published>
+  
+    <updated>2023-10-29T23:45:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/130</id>
+    <content src="https://blog.yexca.net/archives/130" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="日常" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      网站
+
+手机访问即可查看 (只试过 IOS)
+
+2020:https://st.music.163.com/c/year2020
+
+2021:https://st.music.163.com/c/year2021
+
+2022:https://st.music.163.com/c/year2022
+
+过程
+
+Google 搜索 网易云年度报告，发现 https://st.music.163.com/c/reportreview2020 (手机访问情况下会出现 2020 年度报告入口)，顺着网站试着修改年份，发现 2020-2022 可以查看
+
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -272,74 +319,6 @@ import java.util.ArrayList;
   NonterminalExpression 对文法中的每一条规则都需要一个 NonterminalExpression 类；为每个符号都维护一个 AbstractExpression 类型的实例变量；为文法中的非终结符实现解释 (Interpret) 操作
   Context 包含解释器之外的一些全局信息
   Client 构建 (或被给定) 表示该文法定义的语言中一个特定...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>命令模式</title>
-    <link href="https://blog.yexca.net/archives/125" rel="alternate" type="text/html" title="命令模式" />
-    <published>2023-09-10T15:26:00+08:00</published>
-  
-    <updated>2023-10-09T17:49:52+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/125</id>
-    <content src="https://blog.yexca.net/archives/125" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Command Pattern 对象行为型模式
-
-意图
-
-将一个请求封装为一个对象，从而使得可以用不同的请求对客户进行参数化；对请求排队或记录请求日志，以及支持可撤销的操作
-
-结构
-
-
-
-其中：
-
-
-  Command 声明执行操作的接口
-  ConcreteCommand 将一个接收者对象绑定于一个动作；调用接收者相应的操作，以实现 Execute
-  Client 创建一个具体命令对象并设定它的接收者
-  Invoker 要求该命令执行这个请求
-  Receiver 知道如何实施与执行一个请求相关的操作。任何类都可能作为一个接收者
-
-
-适用性
-
-Command 模式适用于：
-
-
-  抽象出待执行的动作以参数化某对象
-  在不同的时刻指定、排列和执行请求
-  支持取消操作
-  支持修改日志
-  用构建在原语操作上的高层操作构造一个系统
-
-
-例子
-
-public class Comm...
     </summary>
   
 
