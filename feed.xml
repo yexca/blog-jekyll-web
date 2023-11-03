@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-10-29T23:49:01+08:00</updated>
+  <updated>2023-11-03T15:39:39+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,52 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>2023 新服务器部署记录</title>
+    <link href="https://blog.yexca.net/archives/131" rel="alternate" type="text/html" title="2023 新服务器部署记录" />
+    <published>2023-11-03T15:34:00+08:00</published>
+  
+    <updated>2023-11-03T15:34:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/131</id>
+    <content src="https://blog.yexca.net/archives/131" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="折腾记录" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      自从博客转移到 Github 上后本打算就这样不再购买新服务器的，不过可能是这几个月很平静使得我迫切想折腾一阵，也可能是 我可以不用，但不能没有 的心理使我冲动消费了一次
+
+目前的网站 (yexca.net 网域)
+
+
+  个人介绍？：http://yexca.net (目前还是半成品)
+  这个 Blog：http://blog.yexca.net
+  怀旧 Blog：http://wp.yexca.net
+  VRChat Blog：http://vrc.yexca.net
+  VRChat Docs：http://vrchat.yexca.net
+  Navidrome：http://music.yexca.net (自用)
+  ACG：http://acg.yexca.net (要不是看 DNS 记录我都忘记了，暂时没想好做什么)
+  xlog(Web3)：http://xl...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -268,57 +314,6 @@ Iterator 模式适用于：
 
 import java.util.ArrayList;
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>解释器模式</title>
-    <link href="https://blog.yexca.net/archives/126" rel="alternate" type="text/html" title="解释器模式" />
-    <published>2023-10-09T17:31:00+08:00</published>
-  
-    <updated>2023-10-09T17:31:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/126</id>
-    <content src="https://blog.yexca.net/archives/126" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Interpreter Pattern 类行为型模式
-
-意图
-
-给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子
-
-结构
-
-
-
-其中：
-
-
-  AbstractExpression 声明一个程序的解释操作，这个接口为抽象语法树中所有的结点所共享
-  TerminalExpression 实现与文法中的终结符相关联的解释操作；一个句子中的每个终结符需要该类的一个实例
-  NonterminalExpression 对文法中的每一条规则都需要一个 NonterminalExpression 类；为每个符号都维护一个 AbstractExpression 类型的实例变量；为文法中的非终结符实现解释 (Interpret) 操作
-  Context 包含解释器之外的一些全局信息
-  Client 构建 (或被给定) 表示该文法定义的语言中一个特定...
     </summary>
   
 

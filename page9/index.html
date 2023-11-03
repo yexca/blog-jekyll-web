@@ -595,6 +595,80 @@
 
 <div id="post-list">
   
+    <a href="/archives/51" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            VS Code更换字体
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              引言
+
+近日网上冲浪时发现一觉得还不错的字体，便寻找更换字体方法。但实际使用下来没那么惊艳
+
+方式一
+
+左下管理-设置(或者快捷键CTRL+,)进入设置界面，找到Editor:Font Family
+
+将默认的 Consolas, &#39;Courier New&#39;, monospace 改为要更换的字体即可
+
+方式二
+
+Ctrl + Shift + P -&amp;gt; 输入 settings.json...
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1657705677"
+  data-df="ll"
+  
+>
+  Jul 13, 2022
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    软件配置
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
     <a href="/archives/50" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
@@ -1262,89 +1336,6 @@ sekai.colorfulpalette.org
       </div>
     </a>
   
-    <a href="/archives/41" class="card-wrapper">
-      <div class="card post-preview flex-md-row-reverse">
-        
-
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title my-2 mt-md-0">
-            Linux添加用户和管理员用户
-          </h1>
-
-          <div class="card-text post-content mt-0 mb-2">
-            <p>
-              
-
-
-
-
-
-              添加管理员用户：
-
-1、新建用户，这里新建一个temp_test的用户
-
-adduser temp\_test
-
-
-2、设置新用户密码
-
-passwd temp_test
-
-3、将sudoers文件的权限修改成可编辑
-
-chmod -v u+w /etc/sudoers
-
-4、使用vim编辑sudoers文件
-
-vim /etc/sudoers
-
-5、在sudoes文件中添加如下的内容
-
-找...
-            </p>
-          </div>
-
-          <div class="post-meta flex-grow-1 d-flex align-items-end">
-            <div class="me-auto">
-              <!-- posted date -->
-              <i class="far fa-calendar fa-fw me-1"></i>
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1652686161"
-  data-df="ll"
-  
->
-  May 16, 2022
-</em>
-
-
-              <!-- categories -->
-              
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  
-                    Linux
-                </span>
-              
-            </div>
-
-            
-          </div>
-          <!-- .post-meta -->
-        </div>
-        <!-- .card-body -->
-      </div>
-    </a>
-  
 </div>
 <!-- #post-list -->
 
@@ -1561,12 +1552,25 @@ vim /etc/sudoers
     
 
     
+      <!-- hide number -->
+      
+    
+  
+    
+    
+    
+    
+    
+
+    
+
+    
       <!-- show number -->
       <li class="page-item ">
         <a
           class="page-link btn-box-shadow"
-          href="/page13"
-        >13</a>
+          href="/page14"
+        >14</a>
       </li>
     
   
@@ -1574,7 +1578,7 @@ vim /etc/sudoers
   <!-- mobile pagination -->
   <li class="page-index align-middle">
     <span>9</span>
-    <span class="text-muted">/ 13</span>
+    <span class="text-muted">/ 14</span>
   </li>
 
   <!-- right arrow -->
@@ -2278,6 +2282,37 @@ vim /etc/sudoers
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -2387,37 +2422,6 @@ vim /etc/sudoers
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2471,8 +2475,6 @@ vim /etc/sudoers
     
     
     
-    
-      
     
   
     
@@ -2736,10 +2738,10 @@ vim /etc/sudoers
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/github/">Github</a>
@@ -3386,6 +3388,37 @@ vim /etc/sudoers
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -3495,37 +3528,6 @@ vim /etc/sudoers
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -3579,8 +3581,6 @@ vim /etc/sudoers
     
     
     
-    
-      
     
   
     
@@ -3844,10 +3844,10 @@ vim /etc/sudoers
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/github/">Github</a>
