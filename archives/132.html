@@ -35,27 +35,27 @@
     
       <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="图床网站总结" />
+<meta property="og:title" content="备忘录模式" />
 <meta name="author" content="yexca" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="引言" />
-<meta property="og:description" content="引言" />
-<link rel="canonical" href="https://blog.yexca.net/archives/33" />
-<meta property="og:url" content="https://blog.yexca.net/archives/33" />
+<meta name="description" content="Memento Pattern 对象行为型模式" />
+<meta property="og:description" content="Memento Pattern 对象行为型模式" />
+<link rel="canonical" href="https://blog.yexca.net/archives/132" />
+<meta property="og:url" content="https://blog.yexca.net/archives/132" />
 <meta property="og:site_name" content="yexca’Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-03-20T16:54:36+08:00" />
+<meta property="article:published_time" content="2023-11-27T14:08:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="图床网站总结" />
+<meta property="twitter:title" content="备忘录模式" />
 <meta name="twitter:site" content="@yexcano" />
 <meta name="twitter:creator" content="@yexcano" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2022-03-20T16:54:36+08:00","datePublished":"2022-03-20T16:54:36+08:00","description":"引言","headline":"图床网站总结","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/33"},"url":"https://blog.yexca.net/archives/33"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2023-11-27T14:08:00+08:00","datePublished":"2023-11-27T14:08:00+08:00","description":"Memento Pattern 对象行为型模式","headline":"备忘录模式","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/132"},"url":"https://blog.yexca.net/archives/132"}</script>
 <!-- End Jekyll SEO tag -->
 
     
   
-    <title>图床网站总结 - yexca'Blog
+    <title>备忘录模式 - yexca'Blog
     </title>
   
     <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>图床网站总结</span>
+              <span>备忘录模式</span>
             
 
           
@@ -553,6 +553,91 @@
 
 
 
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+
+  
+
+
 
 <!-- Add header for code snippets -->
 
@@ -575,54 +660,6 @@
       
         
         
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
       
 
       
@@ -699,7 +736,7 @@
 
 
 
-<h1 data-toc-skip>图床网站总结</h1>
+<h1 data-toc-skip>备忘录模式</h1>
 
 <div class="post-meta text-muted">
     <!-- published date -->
@@ -716,13 +753,13 @@
 
 <em
   class=""
-  data-ts="1647766476"
+  data-ts="1701065280"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Mar 20, 2022
+  Nov 27, 2023
 </em>
 
     </span>
@@ -771,9 +808,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="368 words"
+  title="543 words"
 >
-  <em>2 min</em> read</span>
+  <em>3 min</em> read</span>
 
     </div>
 
@@ -782,56 +819,201 @@
 </div> <!-- .post-meta -->
 
 <div class="post-content">
-  <h2 id="引言"><span class="me-2">引言</span><a href="#引言" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <p>Memento Pattern 对象行为型模式</p>
 
-<p>本文章为我自行搜集的一些免费图床，部分图床曾经使用过。当然，如果您想要使用图床，我推荐您阅读<a href="https://blog.yexca.net/archives/27/">使用PicX自建免费图床 – yexca’Blog</a></p>
+<h2 id="意图"><span class="me-2">意图</span><a href="#意图" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h2 id="一路过图床"><span class="me-2">一、路过图床</span><a href="#一路过图床" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>在不破坏封装性的前提下捕获一个对象的内部状态，并在对象之外保存这个状态。这样以后就可以将对象恢复到原先保存的状态</p>
 
-<p>官网链接：<a href="https://imgtu.com/">路过图床 – 免费图片上传, 专业图片外链, 免费公共图床 (imgtu.com)</a></p>
+<h2 id="结构"><span class="me-2">结构</span><a href="#结构" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>高速稳定，单图最大 10 MB</p>
+<p><a href="https://cdn.jsdelivr.net/gh/yexca/image_hosting@master/2023/03-设计模式/备忘录模式.5pa8d63vllc0.webp" class="popup img-link "><img data-src="https://cdn.jsdelivr.net/gh/yexca/image_hosting@master/2023/03-设计模式/备忘录模式.5pa8d63vllc0.webp" alt="备忘录模式" class="lazyload" data-proofer-ignore></a></p>
 
-<h2 id="二imgurl"><span class="me-2">二、ImgURL</span><a href="#二imgurl" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>其中：</p>
 
-<p>官网链接：<a href="https://imgurl.org/">ImgURL免费图床</a></p>
+<ul>
+  <li>Memento (备忘录) 存储原发器对象的内部状态，原发器根据需要决定备忘录存储原发器的哪些内部状态；防止原发器以外的其他对象访问备忘录</li>
+  <li>Originator (原发器) 创建一个备忘录，用于记录当前时刻它的内部状态；使用备忘录恢复内部状态</li>
+  <li>Caretaker (管理者) 负责保存好备忘录；不能对备忘录的内容进行操作或检查</li>
+</ul>
 
-<p>游客每日限 10 次上传，单图最大 5 MB</p>
+<h2 id="适用性"><span class="me-2">适用性</span><a href="#适用性" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h2 id="三smms"><span class="me-2">三、SM.MS</span><a href="#三smms" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Memento 模式适用于：</p>
 
-<p>官网链接：<a href="https://sm.ms/">Image Upload – SM.MS – Simple Free Image Hosting</a></p>
+<ul>
+  <li>必须保存一个对象在某一个时刻的 (部分) 状态，这样以后需要时它才能恢复到先前的状态</li>
+  <li>如果一个用接口来让其他对象直接得到这些状态，将会暴露对象的实现细节并破坏对象的封装性</li>
+</ul>
 
-<p>老牌图床，现在游客禁止上传，普通用户单图最大 5 MB， 5 GB 存储空间</p>
+<h2 id="例子"><span class="me-2">例子</span><a href="#例子" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>（该图床的图片直链链接域名是loli.net</p>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
 
-<h2 id="四kinhpicture"><span class="me-2">四、KinhPicture</span><a href="#四kinhpicture" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MementoPattern</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Caretaker</span> <span class="n">caretaker</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Caretaker</span><span class="o">();</span>
+        <span class="nc">Originator</span> <span class="n">originator</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Originator</span><span class="o">();</span>
 
-<p>官网链接：<a href="https://img.kinh.cc/">KinhPicture – 聚合图床</a></p>
+        <span class="n">originator</span><span class="o">.</span><span class="na">setState</span><span class="o">(</span><span class="s">"first"</span><span class="o">);</span>
+        <span class="nc">Memento</span> <span class="n">memento1</span> <span class="o">=</span> <span class="n">originator</span><span class="o">.</span><span class="na">createMemento</span><span class="o">();</span>
+        <span class="n">caretaker</span><span class="o">.</span><span class="na">addMemento</span><span class="o">(</span><span class="n">memento1</span><span class="o">);</span>
 
-<p>岛主的聚合图床，支持阿里、百度、AWS S3 等 15 个接口，单图限制 2 ~ 32 MB</p>
+        <span class="n">originator</span><span class="o">.</span><span class="na">setState</span><span class="o">(</span><span class="s">"second"</span><span class="o">);</span>
+        <span class="nc">Memento</span> <span class="n">memento2</span> <span class="o">=</span> <span class="n">originator</span><span class="o">.</span><span class="na">createMemento</span><span class="o">();</span>
+        <span class="n">caretaker</span><span class="o">.</span><span class="na">addMemento</span><span class="o">(</span><span class="n">memento2</span><span class="o">);</span>
 
-<h2 id="五极兔图床"><span class="me-2">五.极兔图床</span><a href="#五极兔图床" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+        <span class="n">originator</span><span class="o">.</span><span class="na">setState</span><span class="o">(</span><span class="s">"third"</span><span class="o">);</span>
+        <span class="nc">Memento</span> <span class="n">memento3</span> <span class="o">=</span> <span class="n">originator</span><span class="o">.</span><span class="na">createMemento</span><span class="o">();</span>
+        <span class="n">caretaker</span><span class="o">.</span><span class="na">addMemento</span><span class="o">(</span><span class="n">memento3</span><span class="o">);</span>
 
-<p>官网链接：<a href="https://pic.jitudisk.com/">极兔图床 – 免费图床,匿名图床,免费CDN图床,图床API,专业的图片托管商 (jitudisk.com)</a></p>
+        <span class="n">caretaker</span><span class="o">.</span><span class="na">showMemento</span><span class="o">();</span>
 
-<p>最大可上传 10 MB 的图片</p>
+        <span class="nc">Memento</span> <span class="n">backup</span> <span class="o">=</span> <span class="n">caretaker</span><span class="o">.</span><span class="na">getMemento</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+        <span class="n">originator</span><span class="o">.</span><span class="na">setMemento</span><span class="o">(</span><span class="n">backup</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"========="</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">originator</span><span class="o">.</span><span class="na">getState</span><span class="o">());</span>
 
-<h2 id="六gimhoy图床"><span class="me-2">六、Gimhoy图床</span><a href="#六gimhoy图床" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <span class="o">}</span>
+<span class="o">}</span>
 
-<div class="table-wrapper"><table>
-  <tbody>
-    <tr>
-      <td>官网链接：[Gimhoy图床-无限制永久免费图床 – 微博图床 – 全网CDN – 永久外链图床 – tuchuang – 图片外链 – 外链相册 – 国内图床 – 论坛图片 – 淘宝图片</td>
-      <td>pic.Gimhoy.com](https://pic.gimhoy.com/)</td>
-    </tr>
-  </tbody>
-</table></div>
+<span class="kd">class</span> <span class="nc">Originator</span><span class="o">{</span> <span class="c1">// 原发器</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">state</span><span class="o">;</span>
 
-<h2 id="七bayimg"><span class="me-2">七、bayimg</span><a href="#七bayimg" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setState</span><span class="o">(</span><span class="nc">String</span> <span class="n">state</span><span class="o">){</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">state</span> <span class="o">=</span> <span class="n">state</span><span class="o">;</span>
+    <span class="o">}</span>
 
-<p>官网链接：<a href="https://bayimg.com/">bayimg – free uncensored image hosting</a></p>
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getState</span><span class="o">(){</span>
+        <span class="k">return</span> <span class="n">state</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="nc">Memento</span> <span class="nf">createMemento</span><span class="o">(){</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">Memento</span><span class="o">(</span><span class="n">state</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setMemento</span><span class="o">(</span><span class="nc">Memento</span> <span class="n">memento</span><span class="o">){</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="n">memento</span><span class="o">.</span><span class="na">getState</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Memento</span><span class="o">{</span> <span class="c1">// 备忘录</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">state</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">Memento</span><span class="o">(</span><span class="nc">String</span> <span class="n">state</span><span class="o">){</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">state</span> <span class="o">=</span> <span class="n">state</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getState</span><span class="o">(){</span>
+        <span class="k">return</span> <span class="n">state</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Caretaker</span><span class="o">{</span> <span class="c1">// 管理者</span>
+    <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Memento</span><span class="o">&gt;</span> <span class="n">mementoList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addMemento</span><span class="o">(</span><span class="nc">Memento</span> <span class="n">memento</span><span class="o">){</span>
+        <span class="n">mementoList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">memento</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="nc">Memento</span> <span class="nf">getMemento</span><span class="o">(</span><span class="kt">int</span> <span class="n">index</span><span class="o">){</span>
+        <span class="k">return</span> <span class="n">mementoList</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">index</span> <span class="o">-</span> <span class="mi">1</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">showMemento</span><span class="o">(){</span>
+        <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+        <span class="k">for</span><span class="o">(</span><span class="nc">Memento</span> <span class="n">m</span> <span class="o">:</span> <span class="n">mementoList</span><span class="o">){</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"No."</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">": "</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="na">getState</span><span class="o">());</span>
+            <span class="n">i</span><span class="o">++;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
 
 </div>
 
@@ -842,7 +1024,7 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/%E6%8A%80%E6%9C%AF%E5%B7%A5%E5%85%B7/'>技术工具</a>
+      <a href='/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/'>软件工程</a>
   </div>
   
 
@@ -851,8 +1033,11 @@
   <div class="post-tags">
     <i class="fa fa-tags fa-fw me-1"></i>
       
-      <a href="/tags/%E5%9B%BE%E5%BA%8A/"
-          class="post-tag no-text-decoration" >图床</a>
+      <a href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/"
+          class="post-tag no-text-decoration" >对象行为型模式</a>
+      
+      <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"
+          class="post-tag no-text-decoration" >设计模式</a>
       
   </div>
   
@@ -886,7 +1071,7 @@
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=%E5%9B%BE%E5%BA%8A%E7%BD%91%E7%AB%99%E6%80%BB%E7%BB%93%20-%20yexca'Blog&url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F33"
+        href="https://twitter.com/intent/tweet?text=%E5%A4%87%E5%BF%98%E5%BD%95%E6%A8%A1%E5%BC%8F%20-%20yexca'Blog&url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F132"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -899,7 +1084,7 @@
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=%E5%9B%BE%E5%BA%8A%E7%BD%91%E7%AB%99%E6%80%BB%E7%BB%93%20-%20yexca'Blog&u=https%3A%2F%2Fblog.yexca.net%2Farchives%2F33"
+        href="https://www.facebook.com/sharer/sharer.php?title=%E5%A4%87%E5%BF%98%E5%BD%95%E6%A8%A1%E5%BC%8F%20-%20yexca'Blog&u=https%3A%2F%2Fblog.yexca.net%2Farchives%2F132"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -912,7 +1097,7 @@
     
       
       <a
-        href="https://t.me/share/url?url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F33&text=%E5%9B%BE%E5%BA%8A%E7%BD%91%E7%AB%99%E6%80%BB%E7%BB%93%20-%20yexca'Blog"
+        href="https://t.me/share/url?url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F132&text=%E5%A4%87%E5%BF%98%E5%BD%95%E6%A8%A1%E5%BC%8F%20-%20yexca'Blog"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -2164,1195 +2349,1195 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -3757,7 +3942,7 @@
         
         
         <div class="col">
-          <a href="/archives/35" class="card post-preview h-100">
+          <a href="/archives/124" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3770,14 +3955,14 @@
 
 <em
   class="small"
-  data-ts="1647937812"
+  data-ts="1694214120"
   data-df="ll"
   
 >
-  Mar 22, 2022
+  Sep  9, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>使用PicX图床上传图片提示“Bad credentials”</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>责任链模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3786,14 +3971,20 @@
 
 
 
-                  引言
+                  Chain of Responsibility Pattern 对象行为型模式
 
-今日我写文章时，发现PicX图床无法使用并提示“Bad credentials” ，于是便寻找解决方法
+意图
+使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止
 
-结论
+结构
 
-其实就是Github的Token到期了，然后在邮箱里会收到一封邮件，名为“[GitHub] Your personal access token has expired”
-邮件有三行，第二行“If this token is still needed” ，后面有个链接，点...
+
+
+其中：
+
+
+  Handler 定义一个处理请求的接口；(可选) 实现后继链
+  ConcreteHandler 处理它所负责的请求；可访问它的后继...
                 </p>
               </div>
             </div>
@@ -3803,7 +3994,7 @@
         
         
         <div class="col">
-          <a href="/archives/27" class="card post-preview h-100">
+          <a href="/archives/125" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3816,14 +4007,14 @@
 
 <em
   class="small"
-  data-ts="1645110133"
+  data-ts="1694330760"
   data-df="ll"
   
 >
-  Feb 17, 2022
+  Sep 10, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>使用PicX自建免费图床</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>命令模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3832,11 +4023,22 @@
 
 
 
-                  引言
+                  Command Pattern 对象行为型模式
 
-在日常发文章时经常会需要插入图片（虽然我最近文章都没图片），但是如果使用自己服务器比较耗流量并且加载速度不是特别快，这就需要使用图床了，但是多数免费图床会有时不时图没了，速度慢等之类的问题，于是开始探索自建图床。
+意图
 
-可是如果特意花钱租云服务器托管图片，太贵划不来，使用付费图床多数有流量或空间限制，于是我不经意间发现一项目，一款基于 GitHub API &amp;amp; jsDelivr ...
+将一个请求封装为一个对象，从而使得可以用不同的请求对客户进行参数化；对请求排队或记录请求日志，以及支持可撤销的操作
+
+结构
+
+
+
+其中：
+
+
+  Command 声明执行操作的接口
+  ConcreteCommand 将一个接收者对象绑定于一个动作；调用接收者相应的操作，以实现 Execute
+  Client 创建一个具体命令对象并...
                 </p>
               </div>
             </div>
@@ -3846,7 +4048,7 @@
         
         
         <div class="col">
-          <a href="/archives/36" class="card post-preview h-100">
+          <a href="/archives/127" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3859,14 +4061,14 @@
 
 <em
   class="small"
-  data-ts="1649483272"
+  data-ts="1697072940"
   data-df="ll"
   
 >
-  Apr  9, 2022
+  Oct 12, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>查询B站注册时间(精确到秒)</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>迭代器模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3875,20 +4077,23 @@
 
 
 
-                  一、查询时间戳
+                  Iterator Pattern 对象行为型模式
 
-打开网页https://member.bilibili.com/x2/creative/h5/calendar/event?ts=0
-按下CTRL+F，输入”jointime”，找到jointime后面的数字即为时间戳
+意图
+
+提供一种方法顺序访问一个聚合对象中的各个元素，且不需要暴露该对象的内部表示
+
+结构
 
 
 
-将时间戳复制
+其中：
 
-二、转换时间戳
 
-打开网站时间戳(Unix timestamp)转换工具 – 在线工具 (tool.lu)
-
-在相应位置输入时间戳点击...
+  Iterator (迭代器) 定义访问和遍历元素的接口
+  ConcreteIterator (具体迭代器) 实现迭代器接口；对该聚合遍历时跟踪当前位置
+  Aggregate (聚合) 定义创建相应迭代器对象的接口
+  Con...
                 </p>
               </div>
             </div>
@@ -3908,22 +4113,21 @@
 <div class="post-navigation d-flex justify-content-between">
   
     <a
-      href="/archives/32"
+      href="/archives/131"
       class="btn btn-outline-primary"
       prompt="Older"
     >
-      <p>Windows 电脑截屏和录屏</p>
+      <p>2023 新服务器部署记录</p>
     </a>
   
 
   
-    <a
-      href="/archives/34"
-      class="btn btn-outline-primary"
+    <div
+      class="btn btn-outline-primary disabled"
       prompt="Newer"
     >
-      <p>VRchat在中文吧自动弹钢琴</p>
-    </a>
+      <p>-</p>
+    </div>
   
 </div>
 

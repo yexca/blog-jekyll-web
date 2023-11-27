@@ -4,19 +4,82 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-11-03T15:39:39+08:00</updated>
+  <updated>2023-11-27T14:12:00+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="https://blog.yexca.net/feed.xml"/>
-  <link rel="alternate" type="text/html" hreflang="en"
+  <link rel="alternate" type="text/html" hreflang="zh"
     href="https://blog.yexca.net/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
   <rights> © 2023 yexca </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>备忘录模式</title>
+    <link href="https://blog.yexca.net/archives/132" rel="alternate" type="text/html" title="备忘录模式" />
+    <published>2023-11-27T14:08:00+08:00</published>
+  
+    <updated>2023-11-27T14:08:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/132</id>
+    <content src="https://blog.yexca.net/archives/132" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Memento Pattern 对象行为型模式
+
+意图
+
+在不破坏封装性的前提下捕获一个对象的内部状态，并在对象之外保存这个状态。这样以后就可以将对象恢复到原先保存的状态
+
+结构
+
+
+
+其中：
+
+
+  Memento (备忘录) 存储原发器对象的内部状态，原发器根据需要决定备忘录存储原发器的哪些内部状态；防止原发器以外的其他对象访问备忘录
+  Originator (原发器) 创建一个备忘录，用于记录当前时刻它的内部状态；使用备忘录恢复内部状态
+  Caretaker (管理者) 负责保存好备忘录；不能对备忘录的内容进行操作或检查
+
+
+适用性
+
+Memento 模式适用于：
+
+
+  必须保存一个对象在某一个时刻的 (部分) 状态，这样以后需要时它才能恢复到先前的状态
+  如果一个用接口来让其他对象直接得到这些状态，将会暴露对象的实现细节并破坏对象的封装性
+
+
+例子
+
+import j...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -248,72 +311,6 @@ Mediator 模式适用于：
   一组对象以定义良好但是复杂的方式进行通信，产生的相互依赖关系结构混乱且难以理解
   一个对象引用其他很多对象并且直接与这些对象通信，导致难以复用该对象
   想定制一个分布在多个类中的行为，而又不想...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>迭代器模式</title>
-    <link href="https://blog.yexca.net/archives/127" rel="alternate" type="text/html" title="迭代器模式" />
-    <published>2023-10-12T09:09:00+08:00</published>
-  
-    <updated>2023-10-15T19:17:43+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/127</id>
-    <content src="https://blog.yexca.net/archives/127" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Iterator Pattern 对象行为型模式
-
-意图
-
-提供一种方法顺序访问一个聚合对象中的各个元素，且不需要暴露该对象的内部表示
-
-结构
-
-
-
-其中：
-
-
-  Iterator (迭代器) 定义访问和遍历元素的接口
-  ConcreteIterator (具体迭代器) 实现迭代器接口；对该聚合遍历时跟踪当前位置
-  Aggregate (聚合) 定义创建相应迭代器对象的接口
-  ConcreteAggregate (具体聚合) 实现创建相应迭代器的接口，该操作返回 ConcreteIterator 的一个适当的实例
-
-
-适用性
-
-Iterator 模式适用于：
-
-
-  访问一个聚合对象的内容而无需暴露它的内部表示
-  支持对聚合对象的多种遍历
-  为遍历不同的聚合结构提供一个统一的接口
-
-
-利用 Java 已实现迭代器
-
-import java.util.ArrayList;
-...
     </summary>
   
 

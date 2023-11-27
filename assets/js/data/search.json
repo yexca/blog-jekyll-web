@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "备忘录模式",
+    "url": "/archives/132",
+    "categories": "软件工程",
+    "tags": "对象行为型模式, 设计模式",
+    "date": "2023-11-27 14:08:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "Memento Pattern 对象行为型模式意图在不破坏封装性的前提下捕获一个对象的内部状态，并在对象之外保存这个状态。这样以后就可以将对象恢复到原先保存的状态结构其中：  Memento (备忘录) 存储原发器对象的内部状态，原发器根据需要决定备忘录存储原发器的哪些内部状态；防止原发器以外的其他对象访问备忘录  Originator (原发器) 创建一个备忘录，用于记录当前时刻它的内部状...",
+    "content": "Memento Pattern 对象行为型模式意图在不破坏封装性的前提下捕获一个对象的内部状态，并在对象之外保存这个状态。这样以后就可以将对象恢复到原先保存的状态结构其中：  Memento (备忘录) 存储原发器对象的内部状态，原发器根据需要决定备忘录存储原发器的哪些内部状态；防止原发器以外的其他对象访问备忘录  Originator (原发器) 创建一个备忘录，用于记录当前时刻它的内部状态；使用备忘录恢复内部状态  Caretaker (管理者) 负责保存好备忘录；不能对备忘录的内容进行操作或检查适用性Memento 模式适用于：  必须保存一个对象在某一个时刻的 (部分) 状态，这样以后需要时它才能恢复到先前的状态  如果一个用接口来让其他对象直接得到这些状态，将会暴露对象的实现细节并破坏对象的封装性例子import java.util.ArrayList;import java.util.List;public class MementoPattern {    public static void main(String[] args) {        Caretaker caretaker = new Caretaker();        Originator originator = new Originator();        originator.setState(\"first\");        Memento memento1 = originator.createMemento();        caretaker.addMemento(memento1);        originator.setState(\"second\");        Memento memento2 = originator.createMemento();        caretaker.addMemento(memento2);        originator.setState(\"third\");        Memento memento3 = originator.createMemento();        caretaker.addMemento(memento3);        caretaker.showMemento();        Memento backup = caretaker.getMemento(2);        originator.setMemento(backup);        System.out.println(\"=========\");        System.out.println(originator.getState());    }}class Originator{ // 原发器    private String state;    public void setState(String state){        this.state = state;    }    public String getState(){        return state;    }    public Memento createMemento(){        return new Memento(state);    }    public void setMemento(Memento memento){        state = memento.getState();    }}class Memento{ // 备忘录    private String state;    public Memento(String state){        this.state = state;    }    public String getState(){        return state;    }}class Caretaker{ // 管理者    private List&lt;Memento&gt; mementoList = new ArrayList&lt;&gt;();    public void addMemento(Memento memento){        mementoList.add(memento);    }    public Memento getMemento(int index){        return mementoList.get(index - 1);    }    public void showMemento(){        int i = 1;        for(Memento m : mementoList){            System.out.println(\"No.\" + i + \": \" + m.getState());            i++;        }    }}"
+  },
+  
+  {
     "title": "2023 新服务器部署记录",
     "url": "/archives/131",
     "categories": "折腾记录",
