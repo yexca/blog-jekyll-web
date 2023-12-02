@@ -50,7 +50,7 @@
 <meta name="twitter:site" content="@yexcano" />
 <meta name="twitter:creator" content="@yexcano" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2023-03-05T15:03:43+08:00","datePublished":"2023-03-05T15:03:43+08:00","description":"整理一下自己学的 Git 相关的内容吧","headline":"Git 学习","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/95"},"url":"https://blog.yexca.net/archives/95"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2023-12-02T21:22:50+08:00","datePublished":"2023-03-05T15:03:43+08:00","description":"整理一下自己学的 Git 相关的内容吧","headline":"Git 学习","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/95"},"url":"https://blog.yexca.net/archives/95"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -753,6 +753,30 @@
 
     <!-- lastmod date -->
     
+    <span>
+      Updated
+      <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1701523370"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Dec  2, 2023
+</em>
+
+    </span>
+    
 
   
 
@@ -795,7 +819,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1321 words"
+  title="1400 words"
 >
   <em>7 min</em> read</span>
 
@@ -1000,6 +1024,14 @@ git reset <span class="nt">--hard</span> eaadf4
 
 <p>命令为推送到远程仓库的 <em>master</em> 分支</p>
 
+<p>这里需要注意的是使用 VS Code 创建的仓库默认分支为 <em>master</em> 而 Github 默认分支为 <em>main</em>，直接推送 <code class="language-plaintext highlighter-rouge">git push origin main</code> 会失败，可以先修改本地分支名字再推送</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git branch <span class="nt">-m</span> master main
+</pre></td></tr></tbody></table></code></div></div>
+
 <hr />
 
 <p>如果链接仓库时输入错了</p>
@@ -1039,6 +1071,8 @@ git reset <span class="nt">--hard</span> eaadf4
 <p><a href="https://idealclover.top/archives/340/">如何使用github给大佬递茶 - idealclover</a></p>
 
 <p><a href="https://chinese.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github/">如何在 GitHub 提交第一个 pull request</a></p>
+
+<p><a href="https://blog.csdn.net/jiahongfei1213895/article/details/128661543">将本地master分支代码提交到远程main分支</a></p>
 
 </div>
 
@@ -1182,6 +1216,13 @@ git reset <span class="nt">--hard</span> eaadf4
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/95">Git 学习</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/106">算法 电路布线问题 (动态规划)</a>
         </li>
       
@@ -1204,13 +1245,6 @@ git reset <span class="nt">--hard</span> eaadf4
         
         <li class="text-truncate lh-lg">
           <a href="/archives/128">中介者模式</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/36">查询B站注册时间(精确到秒)</a>
         </li>
       
     </ul>
@@ -1641,21 +1675,6 @@ git reset <span class="nt">--hard</span> eaadf4
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -1685,112 +1704,7 @@ git reset <span class="nt">--hard</span> eaadf4
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -1837,6 +1751,130 @@ git reset <span class="nt">--hard</span> eaadf4
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
         
         
 
@@ -1864,8 +1902,6 @@ git reset <span class="nt">--hard</span> eaadf4
     
     
     
-    
-      
     
   
     
@@ -2300,13 +2336,13 @@ git reset <span class="nt">--hard</span> eaadf4
         <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/game/">Game</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
@@ -2367,6 +2403,18 @@ git reset <span class="nt">--hard</span> eaadf4
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4076,7 +4124,7 @@ yum install git
         
         
         <div class="col">
-          <a href="/archives/33" class="card post-preview h-100">
+          <a href="/archives/36" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4089,14 +4137,14 @@ yum install git
 
 <em
   class="small"
-  data-ts="1647766476"
+  data-ts="1649483272"
   data-df="ll"
   
 >
-  Mar 20, 2022
+  Apr  9, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>图床网站总结</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>查询B站注册时间(精确到秒)</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4105,21 +4153,20 @@ yum install git
 
 
 
-                  引言
+                  一、查询时间戳
 
-本文章为我自行搜集的一些免费图床，部分图床曾经使用过。当然，如果您想要使用图床，我推荐您阅读使用PicX自建免费图床 – yexca’Blog
+打开网页https://member.bilibili.com/x2/creative/h5/calendar/event?ts=0
+按下CTRL+F，输入”jointime”，找到jointime后面的数字即为时间戳
 
-一、路过图床
 
-官网链接：路过图床 – 免费图片上传, 专业图片外链, 免费公共图床 (imgtu.com)
 
-高速稳定，单图最大 10 MB
+将时间戳复制
 
-二、ImgURL
+二、转换时间戳
 
-官网链接：ImgURL免费图床
+打开网站时间戳(Unix timestamp)转换工具 – 在线工具 (tool.lu)
 
-游客每日限 10 次上传，单图最大 5 ...
+在相应位置输入时间戳点击...
                 </p>
               </div>
             </div>
@@ -4604,21 +4651,6 @@ twikoo.init({
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -4648,112 +4680,7 @@ twikoo.init({
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -4800,6 +4727,130 @@ twikoo.init({
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
         
         
 
@@ -4827,8 +4878,6 @@ twikoo.init({
     
     
     
-    
-      
     
   
     
@@ -5263,13 +5312,13 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/game/">Game</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
