@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-12-02T21:32:24+08:00</updated>
+  <updated>2023-12-21T01:24:50+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,59 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>观察者模式</title>
+    <link href="https://blog.yexca.net/archives/134" rel="alternate" type="text/html" title="观察者模式" />
+    <published>2023-12-21T01:18:00+08:00</published>
+  
+    <updated>2023-12-21T01:18:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/134</id>
+    <content src="https://blog.yexca.net/archives/134" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      观察者模式
+
+Observer Pattern 对象行为型模式
+
+意图
+定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变吋，所有依赖于它的对象都得到通知并被自动更新
+结构
+
+
+
+其中：
+
+
+  Subject (目标) 知道它的观察者，可以有任意多个观察者观察同一个目标；提供注册和删除观察者对象的接口
+  Observer (观察者) 为那些在”目标发生改变时需获得通知的对象定义一个更新接口
+  ConcreteSubject (具体目标) 将有关状态存入各 ConcreteObserver 对象：当它的状态发生改变时，向它的各个观察者发出通知
+  ConcreteObserver (具体观察者) 维护一个指向 ConcreteSubject 对象的引用：存储有关状态，这些状态应与目标的状态保持一致：实现 Observer 的更新接口，以使自身状态与目标的状态保持一致
+
+
+...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -225,89 +278,6 @@ import j...
 
 Google 搜索 网易云年度报告，发现 https://st.music.163.com/c/reportreview2020 (手机访问情况下会出现 2020 年度报告入口)，顺着网站试着修改年份，发现 2020-2022 可以查看
 
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Linux 学习 Index</title>
-    <link href="https://blog.yexca.net/archives/129" rel="alternate" type="text/html" title="Linux 学习 Index" />
-    <published>2023-10-21T14:18:00+08:00</published>
-  
-    <updated>2023-10-21T14:18:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/129</id>
-    <content src="https://blog.yexca.net/archives/129" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="Linux" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      此文章写于 2022.12，由于多种原因未发布
-
-该系列文章为我阅读《Linux 系统管理、服务器设置、安全、云数据中心》所书写相关笔记
-
-第一部分：入门
-
-这部分没有记录文章
-
-
-  第 01 章 开始使用 Linux
-
-
-Linux 的历史。总结：Linux NB
-
-
-  第 02 章 创建完美的 Linux 桌面
-
-
-然后有了 Fedora 桌面折腾
-
-
-
-第二部分：成为一名 Linux 高级用户
-
-
-  第 03 章 使用 shell
-
-
-shell 的一些用法与变量
-
-
-  第 04 章 在文件系统中移动
-
-
-文件相关 shell 命令、元字符、文件权限
-
-
-  第 05 章 使用文本文件
-
-
-vi 编辑器、查找文件 (locate 、find 、grep)
-
-
-  第 06 章 管理运行中的进程
-
-
-列出进程，杀死进程，限制进程
-
-
-  第 07 章 编写简单的 shel...
     </summary>
   
 
