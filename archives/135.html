@@ -1868,6 +1868,25 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1942,6 +1961,38 @@
     
     
     
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -2021,53 +2072,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2338,10 +2342,10 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象行为型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象行为型模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/github/">Github</a>
@@ -2396,6 +2400,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4021,15 +4037,15 @@
   
     
     
+      
+      
+        
+        
+        
+      
+    
   
     
-    
-      
-      
-        
-        
-        
-      
     
   
     
@@ -4058,6 +4074,63 @@
       Further Reading
     </h3>
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        
+        
+        <div class="col">
+          <a href="/archives/136" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1703229060"
+  data-df="ll"
+  
+>
+  Dec 22, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>状态模式</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  State Pattern 对象行为型模式
+
+意图
+
+允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类
+
+结构
+
+
+
+其中：
+
+
+  
+    Context (上下文) 定义客户感兴趣的接口：维护一个 ConcerteState 子类的实例，这个实例定义当前状态
+  
+  
+    State (状态) 定义一个接口以封装与 Context 的一个特定状态相关的行为
+...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
       
         
         
@@ -4161,59 +4234,6 @@ Github: yexca/hvdb
           </a>
         </div>
       
-        
-        
-        <div class="col">
-          <a href="/archives/132" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1701065280"
-  data-df="ll"
-  
->
-  Nov 27, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>备忘录模式</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Memento Pattern 对象行为型模式
-
-意图
-
-在不破坏封装性的前提下捕获一个对象的内部状态，并在对象之外保存这个状态。这样以后就可以将对象恢复到原先保存的状态
-
-结构
-
-
-
-其中：
-
-
-  Memento (备忘录) 存储原发器对象的内部状态，原发器根据需要决定备忘录存储原发器的哪些内部状态；防止原发器以外的其他对象访问备忘录
-  Originator (原发器) 创建一个备忘录...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
     </div>
     <!-- .card-deck -->
   </div>
@@ -4236,12 +4256,13 @@ Github: yexca/hvdb
   
 
   
-    <div
-      class="btn btn-outline-primary disabled"
+    <a
+      href="/archives/136"
+      class="btn btn-outline-primary"
       prompt="Newer"
     >
-      <p>-</p>
-    </div>
+      <p>状态模式</p>
+    </a>
   
 </div>
 
@@ -4989,6 +5010,25 @@ twikoo.init({
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -5063,6 +5103,38 @@ twikoo.init({
     
     
     
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -5142,53 +5214,6 @@ twikoo.init({
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -5459,10 +5484,10 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象行为型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象行为型模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/github/">Github</a>
