@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-12-22T15:17:19+08:00</updated>
+  <updated>2023-12-22T16:06:17+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -24,7 +24,7 @@
     <link href="https://blog.yexca.net/archives/136" rel="alternate" type="text/html" title="状态模式" />
     <published>2023-12-22T15:11:00+08:00</published>
   
-    <updated>2023-12-22T15:11:00+08:00</updated>
+    <updated>2023-12-22T16:06:06+08:00</updated>
   
     <id>https://blog.yexca.net/archives/136</id>
     <content src="https://blog.yexca.net/archives/136" />
@@ -35,6 +35,8 @@
   
     
     <category term="软件工程" />
+    
+    <category term="设计模式" />
     
   
 
@@ -149,7 +151,7 @@ Asynchronous JavaScript And XML，异步的 JS 和 XML。作用：
     <link href="https://blog.yexca.net/archives/134" rel="alternate" type="text/html" title="观察者模式" />
     <published>2023-12-21T01:18:00+08:00</published>
   
-    <updated>2023-12-21T01:18:00+08:00</updated>
+    <updated>2023-12-22T16:06:06+08:00</updated>
   
     <id>https://blog.yexca.net/archives/134</id>
     <content src="https://blog.yexca.net/archives/134" />
@@ -160,6 +162,8 @@ Asynchronous JavaScript And XML，异步的 JS 和 XML。作用：
   
     
     <category term="软件工程" />
+    
+    <category term="设计模式" />
     
   
 
@@ -258,7 +262,7 @@ Bot 配置
     <link href="https://blog.yexca.net/archives/132" rel="alternate" type="text/html" title="备忘录模式" />
     <published>2023-11-27T14:08:00+08:00</published>
   
-    <updated>2023-11-27T14:08:00+08:00</updated>
+    <updated>2023-12-22T16:06:06+08:00</updated>
   
     <id>https://blog.yexca.net/archives/132</id>
     <content src="https://blog.yexca.net/archives/132" />
@@ -269,6 +273,8 @@ Bot 配置
   
     
     <category term="软件工程" />
+    
+    <category term="设计模式" />
     
   
 
