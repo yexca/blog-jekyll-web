@@ -2638,13 +2638,6 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/127">迭代器模式</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/archives/128">中介者模式</a>
         </li>
       
@@ -2667,6 +2660,13 @@
         
         <li class="text-truncate lh-lg">
           <a href="/archives/104">UML 中的图</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/archives/134">观察者模式</a>
         </li>
       
     </ul>
@@ -2928,6 +2928,167 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -3146,171 +3307,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3787,6 +3783,9 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象行为型模式</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
       
         
@@ -3794,9 +3793,6 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象行为型模式</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
@@ -3857,6 +3853,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -5551,55 +5559,6 @@ HTTP请求报文分为3个部分，第一部分叫起始行(Request line)，第�
         
         
         <div class="col">
-          <a href="/archives/61" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1661991452"
-  data-df="ll"
-  
->
-  Sep  1, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Fiddler抓包HTTPS</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  引言
-
-默认情况下Fiddler仅抓包HTTP，需要设置后才能捕获HTTPS。现在大部分网站都是使用HTTPS或者HSTS，所以开启HTTPS抓包是很必要的
-
-Fiddler设置
-
-在设置-HTTPS中勾选Capture HTTPS traffic即可，下一个Ignore server certificate errors(unsafe)也可勾选，不过可能不安全吧，然后保存
-
-浏览器设置
-
-...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/129" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -5652,6 +5611,55 @@ Linux 的历史。总结：Linux NB
 
 
 第二部分：成为一名 Linu...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/61" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1661991452"
+  data-df="ll"
+  
+>
+  Sep  1, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Fiddler抓包HTTPS</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引言
+
+默认情况下Fiddler仅抓包HTTP，需要设置后才能捕获HTTPS。现在大部分网站都是使用HTTPS或者HSTS，所以开启HTTPS抓包是很必要的
+
+Fiddler设置
+
+在设置-HTTPS中勾选Capture HTTPS traffic即可，下一个Ignore server certificate errors(unsafe)也可勾选，不过可能不安全吧，然后保存
+
+浏览器设置
+
+...
                 </p>
               </div>
             </div>
@@ -5967,6 +5975,167 @@ twikoo.init({
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
   
     
     
@@ -6185,171 +6354,6 @@ twikoo.init({
     
     
     
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -6826,6 +6830,9 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象行为型模式</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
       
         
@@ -6833,9 +6840,6 @@ twikoo.init({
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象行为型模式</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
