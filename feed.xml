@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-12-24T18:38:14+08:00</updated>
+  <updated>2023-12-25T21:09:59+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,66 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>模板方法模式</title>
+    <link href="https://blog.yexca.net/archives/138" rel="alternate" type="text/html" title="模板方法模式" />
+    <published>2023-12-25T21:06:00+08:00</published>
+  
+    <updated>2023-12-25T21:06:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/138</id>
+    <content src="https://blog.yexca.net/archives/138" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+    <category term="设计模式" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Template Method Pattern 类行为型模式
+
+意图
+
+定义一个操作中的算法骨架，而将一些步骤延迟到子类中。Template Method 使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤
+
+结构
+
+
+
+其中：
+
+
+  AbstractClass (抽象类) 定义抽象的原语操作，具体的子类将重定义它们以实现一个算法的各步骤；实现模板方法，定一个算法的骨架，该模板方法不仅调用原语操作，也调用定义在 AbstractClass 或其他对象中的操作
+  ConcreteClass (具体类) 实现原语操作以完成算法中与特定子类相关的步骤
+
+
+适用性
+
+Template Method 模式适用于：
+
+
+  一次性实现一个算法的不变的部分，并将可变的行为留给子类来实现
+  各子类中公共的行为应被提取出来并集中到一个公共父类中，以避免代码重复
+  控制子类扩展。模板...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -261,62 +321,6 @@ Observer Pattern 对象行为型模式
 
 
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>hvdb 注册检测</title>
-    <link href="https://blog.yexca.net/archives/133" rel="alternate" type="text/html" title="hvdb 注册检测" />
-    <published>2023-12-02T21:23:00+08:00</published>
-  
-    <updated>2023-12-02T21:23:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/133</id>
-    <content src="https://blog.yexca.net/archives/133" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      从 ???? 我记不清了 开始喜欢上 ASMR 后就接触到了音声，不过高昂的价格显然会驱使我去广袤的互联网上搜索，于是便知道了这个网站，可此网站只有登录后才可以看到更多内容，而每年也几乎是不定时开放注册，这使我很好奇这个网站
-
-于是我便想着让服务器运行程序检测是否可以注册，然后通知
-
-Github: yexca/hvdb
-
-目标
-
-检测是否可以注册，如果可以便通过 Telegram 通知
-
-检测是否可以注册
-
-在灵梦广场的一个帖子回复中可以获知当开放注册时 login 的底下会出现 register
-
-那便可以用一种最简朴的方法，爬取这个网页，检查是否有此单词
-
-Bot 配置
-
-使用 Telegram 的 bot 通知需要先注册一个 bot
-
-对话 https://t.me/BotFather 输入 /newbot 指令按照步骤创建一个 bot
-
-和刚创建的 bot 对话，发送 he...
     </summary>
   
 

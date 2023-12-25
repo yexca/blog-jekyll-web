@@ -986,14 +986,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/128">中介者模式</a>
+          <a href="/archives/132">备忘录模式</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/132">备忘录模式</a>
+          <a href="/archives/134">观察者模式</a>
         </li>
       
         
@@ -1014,7 +1014,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/134">观察者模式</a>
+          <a href="/archives/108">设计模式 引</a>
         </li>
       
     </ul>
@@ -3129,6 +3129,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -3858,59 +3870,6 @@
         
         
         <div class="col">
-          <a href="/archives/38" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1650308007"
-  data-df="ll"
-  
->
-  Apr 19, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>系统学习Linux笔记</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  （参考视频：https://www.bilibili.com/video/BV1WY4y1H7d3?p=1）
-
-一、基础篇
-
-1.1 Linux文件系统目录结构
-
-
-来源：菜鸟教程
-
-图中小箭头表示该文件实际位置在别处
-
-  /bin： 
-  bin 是 Binaries (二进制文件) 的缩写, 这个目录存放着最经常使用的命令。
-  /boot：
-  这里存放的是启动 Linux 时使用的...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/39" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4001,6 +3960,66 @@
 
 
   使用别...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/41" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1652686161"
+  data-df="ll"
+  
+>
+  May 16, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Linux添加用户和管理员用户</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  添加管理员用户：
+
+1、新建用户，这里新建一个temp_test的用户
+
+adduser temp\_test
+
+
+2、设置新用户密码
+
+passwd temp_test
+
+3、将sudoers文件的权限修改成可编辑
+
+chmod -v u+w /etc/sudoers
+
+4、使用vim编辑sudoers文件
+
+vim /etc/sudoers
+
+5、在sudoes文件中添加如下的内容
+
+找...
                 </p>
               </div>
             </div>

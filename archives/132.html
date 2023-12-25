@@ -1182,14 +1182,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/128">中介者模式</a>
+          <a href="/archives/132">备忘录模式</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/132">备忘录模式</a>
+          <a href="/archives/134">观察者模式</a>
         </li>
       
         
@@ -1210,7 +1210,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/134">观察者模式</a>
+          <a href="/archives/108">设计模式 引</a>
         </li>
       
     </ul>
@@ -2397,6 +2397,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4054,59 +4066,6 @@
         
         
         <div class="col">
-          <a href="/archives/128" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1697361240"
-  data-df="ll"
-  
->
-  Oct 15, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>中介者模式</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Mediator Pattern 对象行为型模式
-
-意图
-
-用一个中介对象来封装一系列的对象交互。中介者使各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间地交互
-
-结构
-
-
-
-其中：
-
-
-  Mediator (中介者) 定义一个接口用于各同事 (Colleague) 对象通信
-  ConcreteMediator (具体中介中介) 通过协调各同事对象实现协作行为；了...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/134" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4151,6 +4110,63 @@ Observer Pattern 对象行为型模式
 
   Subject (目标) 知道它的观察者，可以有任意多个观察者观察同一个目标；提供注册和删除观察者对象的接口
   Observer (观察者) 为那些在”目标发生改变时需获得通知的对象定义一...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/136" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1703229060"
+  data-df="ll"
+  
+>
+  Dec 22, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>状态模式</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  State Pattern 对象行为型模式
+
+意图
+
+允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类
+
+结构
+
+
+
+其中：
+
+
+  
+    Context (上下文) 定义客户感兴趣的接口：维护一个 ConcerteState 子类的实例，这个实例定义当前状态
+  
+  
+    State (状态) 定义一个接口以封装与 Context 的一个特定状态相关的行为
+...
                 </p>
               </div>
             </div>

@@ -1111,14 +1111,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/128">中介者模式</a>
+          <a href="/archives/132">备忘录模式</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/132">备忘录模式</a>
+          <a href="/archives/134">观察者模式</a>
         </li>
       
         
@@ -1139,7 +1139,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/134">观察者模式</a>
+          <a href="/archives/108">设计模式 引</a>
         </li>
       
     </ul>
@@ -2326,6 +2326,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -3995,9 +4007,6 @@
   
     
     
-  
-    
-    
       
       
         
@@ -4012,6 +4021,58 @@
       Further Reading
     </h3>
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        
+        
+        <div class="col">
+          <a href="/archives/138" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1703509560"
+  data-df="ll"
+  
+>
+  Dec 25, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>模板方法模式</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Template Method Pattern 类行为型模式
+
+意图
+
+定义一个操作中的算法骨架，而将一些步骤延迟到子类中。Template Method 使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤
+
+结构
+
+
+
+其中：
+
+
+  AbstractClass (抽象类) 定义抽象的原语操作，具体的子类将重定义它们以实现一个算法的各步骤；实现模板方法，定一个算法的骨架，该模板...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
       
         
         
@@ -4120,59 +4181,6 @@
   
     State (状态) 定义一个接口以封装与 Context 的一个特定状态相关的行为
 ...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/134" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1703092680"
-  data-df="ll"
-  
->
-  Dec 21, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>观察者模式</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  观察者模式
-
-Observer Pattern 对象行为型模式
-
-意图
-定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变吋，所有依赖于它的对象都得到通知并被自动更新
-结构
-
-
-
-其中：
-
-
-  Subject (目标) 知道它的观察者，可以有任意多个观察者观察同一个目标；提供注册和删除观察者对象的接口
-  Observer (观察者) 为那些在”目标发生改变时需获得通知的对象定义一...
                 </p>
               </div>
             </div>

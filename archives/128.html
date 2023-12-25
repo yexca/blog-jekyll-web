@@ -1399,14 +1399,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/128">中介者模式</a>
+          <a href="/archives/132">备忘录模式</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/132">备忘录模式</a>
+          <a href="/archives/134">观察者模式</a>
         </li>
       
         
@@ -1427,7 +1427,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/134">观察者模式</a>
+          <a href="/archives/108">设计模式 引</a>
         </li>
       
     </ul>
@@ -2614,6 +2614,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4377,7 +4389,7 @@ Observer Pattern 对象行为型模式
         
         
         <div class="col">
-          <a href="/archives/124" class="card post-preview h-100">
+          <a href="/archives/136" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4390,14 +4402,14 @@ Observer Pattern 对象行为型模式
 
 <em
   class="small"
-  data-ts="1694214120"
+  data-ts="1703229060"
   data-df="ll"
   
 >
-  Sep  9, 2023
+  Dec 22, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>责任链模式</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>状态模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4406,10 +4418,11 @@ Observer Pattern 对象行为型模式
 
 
 
-                  Chain of Responsibility Pattern 对象行为型模式
+                  State Pattern 对象行为型模式
 
 意图
-使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止
+
+允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类
 
 结构
 
@@ -4418,8 +4431,12 @@ Observer Pattern 对象行为型模式
 其中：
 
 
-  Handler 定义一个处理请求的接口；(可选) 实现后继链
-  ConcreteHandler 处理它所负责的请求；可访问它的后继...
+  
+    Context (上下文) 定义客户感兴趣的接口：维护一个 ConcerteState 子类的实例，这个实例定义当前状态
+  
+  
+    State (状态) 定义一个接口以封装与 Context 的一个特定状态相关的行为
+...
                 </p>
               </div>
             </div>
