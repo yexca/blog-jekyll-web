@@ -1985,142 +1985,140 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2866,10 +2864,10 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象行为型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象行为型模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>
@@ -2939,6 +2937,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4714,7 +4724,7 @@ Observer Pattern 对象行为型模式
         
         
         <div class="col">
-          <a href="/archives/124" class="card post-preview h-100">
+          <a href="/archives/137" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4727,14 +4737,14 @@ Observer Pattern 对象行为型模式
 
 <em
   class="small"
-  data-ts="1694214120"
+  data-ts="1703413800"
   data-df="ll"
   
 >
-  Sep  9, 2023
+  Dec 24, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>责任链模式</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>策略模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4743,10 +4753,11 @@ Observer Pattern 对象行为型模式
 
 
 
-                  Chain of Responsibility Pattern 对象行为型模式
+                  Strategy Pattern 对象行为型模式
 
 意图
-使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止
+
+定义一系列的算法，把它们一个个封装起来，并且使它们可以相互替换。此模式使得算法可以独立于使用它们的客户而变化
 
 结构
 
@@ -4755,8 +4766,11 @@ Observer Pattern 对象行为型模式
 其中：
 
 
-  Handler 定义一个处理请求的接口；(可选) 实现后继链
-  ConcreteHandler 处理它所负责的请求；可访问它的后继...
+  
+    Strategy (策略) 定义所有支持的算法的公共接口。Context 使用这个接口来调用某 ConcreteStrategy 定义的算法
+  
+  
+    ConcreteStr...
                 </p>
               </div>
             </div>
@@ -5043,142 +5057,140 @@ twikoo.init({
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -5924,10 +5936,10 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象行为型模式</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象行为型模式</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/c-c/">c/c++</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/docker/">Docker</a>

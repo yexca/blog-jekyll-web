@@ -35,27 +35,27 @@
     
       <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="プロセカ的IP规则" />
+<meta property="og:title" content="访问者模式" />
 <meta name="author" content="yexca" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="引言" />
-<meta property="og:description" content="引言" />
-<link rel="canonical" href="https://blog.yexca.net/archives/42" />
-<meta property="og:url" content="https://blog.yexca.net/archives/42" />
+<meta name="description" content="Visitor Pattern 对象行为型模式" />
+<meta property="og:description" content="Visitor Pattern 对象行为型模式" />
+<link rel="canonical" href="https://blog.yexca.net/archives/139" />
+<meta property="og:url" content="https://blog.yexca.net/archives/139" />
 <meta property="og:site_name" content="yexca’Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-05-19T15:01:25+08:00" />
+<meta property="article:published_time" content="2023-12-26T16:09:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="プロセカ的IP规则" />
+<meta property="twitter:title" content="访问者模式" />
 <meta name="twitter:site" content="@yexcano" />
 <meta name="twitter:creator" content="@yexcano" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2022-05-19T15:01:25+08:00","datePublished":"2022-05-19T15:01:25+08:00","description":"引言","headline":"プロセカ的IP规则","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/42"},"url":"https://blog.yexca.net/archives/42"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2023-12-26T16:09:00+08:00","datePublished":"2023-12-26T16:09:00+08:00","description":"Visitor Pattern 对象行为型模式","headline":"访问者模式","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/139"},"url":"https://blog.yexca.net/archives/139"}</script>
 <!-- End Jekyll SEO tag -->
 
     
   
-    <title>プロセカ的IP规则 - yexca'Blog
+    <title>访问者模式 - yexca'Blog
     </title>
   
     <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>プロセカ的IP规则</span>
+              <span>访问者模式</span>
             
 
           
@@ -553,6 +553,159 @@
 
 
 
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+
+  
+
+
 
 <!-- Add header for code snippets -->
 
@@ -575,6 +728,30 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
       
 
       
@@ -639,7 +816,7 @@
 
 
 
-<h1 data-toc-skip>プロセカ的IP规则</h1>
+<h1 data-toc-skip>访问者模式</h1>
 
 <div class="post-meta text-muted">
     <!-- published date -->
@@ -656,13 +833,13 @@
 
 <em
   class=""
-  data-ts="1652943685"
+  data-ts="1703578140"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  May 19, 2022
+  Dec 26, 2023
 </em>
 
     </span>
@@ -711,9 +888,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="147 words"
+  title="1511 words"
 >
-  <em>1 min</em> read</span>
+  <em>8 min</em> read</span>
 
     </div>
 
@@ -722,25 +899,494 @@
 </div> <!-- .post-meta -->
 
 <div class="post-content">
-  <h2 id="引言"><span class="me-2">引言</span><a href="#引言" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <p>Visitor Pattern 对象行为型模式</p>
 
-<p>本人可直连进入游戏，但加速器等不可进入游戏，又因每次进入游戏关闭虚拟私人网路较为麻烦，寻找相应资料却无果，故写此文。(游戏为IOS日服)</p>
+<h2 id="意图"><span class="me-2">意图</span><a href="#意图" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h2 id="正文"><span class="me-2">正文</span><a href="#正文" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>表示一个作用于某对象结构中的各元素的操作。它不允许在不改变各元素的类的前提下定义作用于这些元素的新操作</p>
 
-<p>通过查看日志文件确定了进入游戏时连接的域名</p>
+<h2 id="结构"><span class="me-2">结构</span><a href="#结构" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>将以下域名加入DIRECT即可</p>
+<p><a href="https://cdn.jsdelivr.net/gh/yexca/image_hosting@master/2023/03-设计模式/访问者模式.5psqrqdq7gs0.webp" class="popup img-link "><img data-src="https://cdn.jsdelivr.net/gh/yexca/image_hosting@master/2023/03-设计模式/访问者模式.5psqrqdq7gs0.webp" alt="访问者模式" class="lazyload" data-proofer-ignore></a></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<p>其中：</p>
+
+<ul>
+  <li>Visitor (访问者) 为该对象结构中 ConcreteElement 的每一个类声明一个 Visit 操作。该操作的名字和特殊标识了发送 Visit 请求给该访问者的那个类，这使得访问者可以确定正被访问元素的具体的类。这样访问者就可以通过该元素的特定接口直接访问它</li>
+  <li>ConcreteVisitor (具体访问者) 实现每个有 Visitor 声明的操作，每个操作实现本算法的一部分，而该算法片段乃是对应于结构中对象的类。ConcreteVisitor 为该算法提供了上下文并存储它的局部状态。这一状态常常在遍历该结构的过程中累积结构</li>
+  <li>Element (元素) 定义以一个访问者为参数的 Accept 操作</li>
+  <li>ConcreteElement (具体元素) 实现以一个访问者为参数的 Accept 操作</li>
+  <li>ObjectStructure (对象结构) 能枚举它的元素；可以提供一个高层的接口以允许该访问者访问它的元素；可以是一个组合或者一个集合，如一个列表或一个无序集合</li>
+</ul>
+
+<h2 id="适用性"><span class="me-2">适用性</span><a href="#适用性" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Visitor 模式适用于：</p>
+
+<ul>
+  <li>一个对象结构包含很多类对象，它们有不同的接口，而用户想对这些对象实施一些依赖于其具体类的操作</li>
+  <li>需要对一个对象结构中的对象进行很多不同的并且不相关的操作，而又想要避免这些操作 “污染” 这些对象的类。Visitor 使得用户可以将相关的操作集中起来定义一个类中。当该对象结构被很多应用共享时，用 Visitor 模式让每个应用仅包含需要用到的操作</li>
+  <li>定义对象结构的类很少改变，但经常需要在此结构上定义新的操作。改变对象结构类需要重定义对所有访问者的接口，这可能需要很大的代价。如果对象结构类经常改变，那么可能还是在这些类中定义这些操作比较好</li>
+</ul>
+
+<h2 id="例子-1"><span class="me-2">例子 1</span><a href="#例子-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>某图书管理系统中管理着两种类型的文献：图书和论文。现在要求统计所有馆藏文献的总页码，采用 Visitor (访问者) 模式实现该要求，类图如下：</p>
+
+<p><a href="https://cdn.jsdelivr.net/gh/yexca/image_hosting@master/2023/03-设计模式/访问者模式-例子1.7hcnilk33us0.webp" class="popup img-link "><img data-src="https://cdn.jsdelivr.net/gh/yexca/image_hosting@master/2023/03-设计模式/访问者模式-例子1.7hcnilk33us0.webp" alt="访问者模式-例子1" class="lazyload" data-proofer-ignore></a></p>
+
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>sekai.colorfulpalette.org
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+</pre></td><td class="rouge-code"><pre><span class="kd">interface</span> <span class="nc">LibraryVisitor</span><span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">visit</span><span class="o">(</span><span class="nc">Book</span> <span class="n">p_book</span><span class="o">);</span>
+    <span class="kt">void</span> <span class="nf">visit</span><span class="o">(</span><span class="nc">Article</span> <span class="n">p_article</span><span class="o">);</span>
+    <span class="kt">void</span> <span class="nf">printSum</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">LibrarySumPrintVisitor</span> <span class="kd">implements</span> <span class="nc">LibraryVisitor</span><span class="o">{</span> <span class="c1">// 打印总页数</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">visit</span><span class="o">(</span><span class="nc">Book</span> <span class="n">p_book</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">sum</span> <span class="o">=</span> <span class="n">sum</span> <span class="o">+</span> <span class="n">p_book</span><span class="o">.</span><span class="na">getNumberOfPages</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">visit</span><span class="o">(</span><span class="nc">Article</span> <span class="n">p_article</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">sum</span> <span class="o">=</span> <span class="n">sum</span> <span class="o">+</span> <span class="n">p_article</span><span class="o">.</span><span class="na">getNumberOfPages</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printSum</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"SUM = "</span> <span class="o">+</span> <span class="n">sum</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">interface</span> <span class="nc">LibraryItemInterface</span><span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">accept</span><span class="o">(</span><span class="nc">LibraryVisitor</span> <span class="n">visitor</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Article</span> <span class="kd">implements</span> <span class="nc">LibraryItemInterface</span><span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">m_title</span><span class="o">;</span> <span class="c1">// 论文名</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">m_author</span><span class="o">;</span> <span class="c1">// 论文作者</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">m_start_page</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">m_end_page</span><span class="o">;</span>
+    
+    <span class="kd">public</span> <span class="nf">Article</span><span class="o">(</span><span class="nc">String</span> <span class="n">p_author</span><span class="o">,</span> <span class="nc">String</span> <span class="n">p_title</span><span class="o">,</span> <span class="kt">int</span> <span class="n">p_start_page</span><span class="o">,</span> <span class="kt">int</span> <span class="n">p_end_page</span><span class="o">){</span>
+        <span class="n">m_title</span> <span class="o">=</span> <span class="n">p_title</span><span class="o">;</span>
+        <span class="n">m_author</span> <span class="o">=</span> <span class="n">p_author</span><span class="o">;</span>
+        <span class="n">m_start_page</span> <span class="o">=</span> <span class="n">p_start_page</span><span class="o">;</span>
+        <span class="n">m_end_page</span> <span class="o">=</span> <span class="n">p_end_page</span><span class="o">;</span>
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getNumberOfPages</span><span class="o">(){</span>
+        <span class="k">return</span> <span class="n">m_end_page</span> <span class="o">-</span> <span class="n">m_start_page</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">accept</span><span class="o">(</span><span class="nc">LibraryVisitor</span> <span class="n">visitor</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">visitor</span><span class="o">.</span><span class="na">visit</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Book</span> <span class="kd">implements</span> <span class="nc">LibraryItemInterface</span><span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">m_title</span><span class="o">;</span> <span class="c1">// 书名</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">m_author</span><span class="o">;</span> <span class="c1">// 书作者</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">m_pages</span><span class="o">;</span> <span class="c1">// 页数</span>
+
+    <span class="kd">public</span> <span class="nf">Book</span><span class="o">(</span><span class="nc">String</span> <span class="n">p_author</span><span class="o">,</span> <span class="nc">String</span> <span class="n">p_title</span><span class="o">,</span> <span class="kt">int</span> <span class="n">p_pages</span><span class="o">){</span>
+        <span class="n">m_title</span> <span class="o">=</span> <span class="n">p_title</span><span class="o">;</span>
+        <span class="n">m_author</span> <span class="o">=</span> <span class="n">p_author</span><span class="o">;</span>
+        <span class="n">m_pages</span> <span class="o">=</span> <span class="n">p_pages</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getNumberOfPages</span><span class="o">(){</span>
+        <span class="k">return</span> <span class="n">m_pages</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">accept</span><span class="o">(</span><span class="nc">LibraryVisitor</span> <span class="n">visitor</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">visitor</span><span class="o">.</span><span class="na">visit</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="后记"><span class="me-2">后记</span><a href="#后记" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="例子-2"><span class="me-2">例子 2</span><a href="#例子-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>本想详细写写的，却发现游戏出了国际服和台服，如果详细写估计要花费很长时间并去校验，懒~</p>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">VisitorPattern</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">PersonStructure</span> <span class="n">personStructure</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PersonStructure</span><span class="o">();</span>
+
+        <span class="nc">Visitor1</span> <span class="n">visitor1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Visitor1</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"For Visitor1"</span><span class="o">);</span>
+        <span class="n">personStructure</span><span class="o">.</span><span class="na">Accept</span><span class="o">(</span><span class="n">visitor1</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The sum of student age: "</span> <span class="o">+</span> <span class="n">visitor1</span><span class="o">.</span><span class="na">getStudentAgeSum</span><span class="o">());</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The sum of teacher age: "</span> <span class="o">+</span> <span class="n">visitor1</span><span class="o">.</span><span class="na">getTeacherAgeSum</span><span class="o">());</span>
+
+        <span class="nc">Visitor2</span> <span class="n">visitor2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Visitor2</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"For Visitor2"</span><span class="o">);</span>
+        <span class="n">personStructure</span><span class="o">.</span><span class="na">Accept</span><span class="o">(</span><span class="n">visitor2</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Max score: "</span> <span class="o">+</span> <span class="n">visitor2</span><span class="o">.</span><span class="na">getMaxScore</span><span class="o">());</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Max work year: "</span> <span class="o">+</span> <span class="n">visitor2</span><span class="o">.</span><span class="na">getMaxWorkYear</span><span class="o">());</span>
+
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">interface</span> <span class="nc">Visitor</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">VisitS</span><span class="o">(</span><span class="nc">Student</span> <span class="n">student</span><span class="o">);</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">VisitT</span><span class="o">(</span><span class="nc">Teacher</span> <span class="n">teacher</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Visitor1</span> <span class="kd">implements</span> <span class="nc">Visitor</span><span class="o">{</span><span class="c1">// 分别统计学生和老师的年龄总和</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">studentAgeSum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">teacherAgeSum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getStudentAgeSum</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">studentAgeSum</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getTeacherAgeSum</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">teacherAgeSum</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">VisitS</span><span class="o">(</span><span class="nc">Student</span> <span class="n">student</span><span class="o">){</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Visitor1: "</span> <span class="o">+</span> <span class="n">student</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">" Age: "</span> <span class="o">+</span> <span class="n">student</span><span class="o">.</span><span class="na">getAge</span><span class="o">());</span>
+        <span class="n">studentAgeSum</span> <span class="o">+=</span> <span class="n">student</span><span class="o">.</span><span class="na">getAge</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">VisitT</span><span class="o">(</span><span class="nc">Teacher</span> <span class="n">teacher</span><span class="o">){</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Visitor1: "</span> <span class="o">+</span> <span class="n">teacher</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">" Age: "</span> <span class="o">+</span> <span class="n">teacher</span><span class="o">.</span><span class="na">getAge</span><span class="o">());</span>
+        <span class="n">teacherAgeSum</span> <span class="o">+=</span> <span class="n">teacher</span><span class="o">.</span><span class="na">getAge</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Visitor2</span> <span class="kd">implements</span> <span class="nc">Visitor</span><span class="o">{</span> <span class="c1">// 分别求出学生最高成绩以及老师最高工龄</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">maxScore</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">maxWorkYear</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getMaxScore</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">maxScore</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getMaxWorkYear</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">maxWorkYear</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">VisitS</span><span class="o">(</span><span class="nc">Student</span> <span class="n">student</span><span class="o">){</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Visitor2: "</span> <span class="o">+</span> <span class="n">student</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">" Score: "</span> <span class="o">+</span> <span class="n">student</span><span class="o">.</span><span class="na">getScore</span><span class="o">());</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">student</span><span class="o">.</span><span class="na">getScore</span><span class="o">()</span> <span class="o">&gt;</span> <span class="n">maxScore</span><span class="o">)</span> <span class="n">maxScore</span> <span class="o">=</span> <span class="n">student</span><span class="o">.</span><span class="na">getScore</span><span class="o">();</span>
+        <span class="c1">// maxScore = Math.max(maxScore, student.getScore());</span>
+    <span class="o">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">VisitT</span><span class="o">(</span><span class="nc">Teacher</span> <span class="n">teacher</span><span class="o">){</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Visitor2: "</span> <span class="o">+</span> <span class="n">teacher</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">" WorkYear: "</span> <span class="o">+</span> <span class="n">teacher</span><span class="o">.</span><span class="na">getWorkYear</span><span class="o">());</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">teacher</span><span class="o">.</span><span class="na">getWorkYear</span><span class="o">()</span> <span class="o">&gt;</span> <span class="n">maxWorkYear</span><span class="o">)</span> <span class="n">maxWorkYear</span> <span class="o">=</span> <span class="n">teacher</span><span class="o">.</span><span class="na">getWorkYear</span><span class="o">();</span>
+        <span class="c1">// maxWorkYear = Math.max(maxWorkYear, teacher.getWorkYear());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">PersonStructure</span><span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Person</span><span class="o">&gt;</span> <span class="n">personList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+
+    <span class="kd">public</span> <span class="nf">PersonStructure</span><span class="o">(){</span>
+        <span class="n">personList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Student</span><span class="o">(</span><span class="s">"Mike"</span><span class="o">,</span> <span class="mi">16</span><span class="o">,</span> <span class="mi">99</span><span class="o">));</span>
+        <span class="n">personList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Student</span><span class="o">(</span><span class="s">"Jane"</span><span class="o">,</span> <span class="mi">15</span><span class="o">,</span> <span class="mi">100</span><span class="o">));</span>
+
+        <span class="n">personList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Teacher</span><span class="o">(</span><span class="s">"Alice mana"</span><span class="o">,</span> <span class="mi">20</span><span class="o">,</span> <span class="mi">1</span><span class="o">));</span>
+    <span class="o">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">Accept</span><span class="o">(</span><span class="nc">Visitor</span> <span class="n">visitor</span><span class="o">){</span>
+        <span class="k">for</span><span class="o">(</span><span class="nc">Person</span> <span class="n">p</span> <span class="o">:</span> <span class="n">personList</span><span class="o">){</span>
+            <span class="n">p</span><span class="o">.</span><span class="na">Accept</span><span class="o">(</span><span class="n">visitor</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Person</span><span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">Accept</span><span class="o">(</span><span class="nc">Visitor</span> <span class="n">visitor</span><span class="o">);</span>
+
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getAge</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">age</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setAge</span><span class="o">(</span><span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Student</span> <span class="kd">extends</span> <span class="nc">Person</span><span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">score</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getScore</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">score</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="nf">Student</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">age</span><span class="o">,</span> <span class="kt">int</span> <span class="n">score</span><span class="o">){</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">setAge</span><span class="o">(</span><span class="n">age</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">score</span> <span class="o">=</span> <span class="n">score</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">Accept</span><span class="o">(</span><span class="nc">Visitor</span> <span class="n">visitor</span><span class="o">){</span>
+        <span class="n">visitor</span><span class="o">.</span><span class="na">VisitS</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Teacher</span> <span class="kd">extends</span> <span class="nc">Person</span><span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">workYear</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getWorkYear</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">workYear</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="nf">Teacher</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">age</span><span class="o">,</span> <span class="kt">int</span> <span class="n">workYear</span><span class="o">){</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">setAge</span><span class="o">(</span><span class="n">age</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">workYear</span> <span class="o">=</span> <span class="n">workYear</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">Accept</span><span class="o">(</span><span class="nc">Visitor</span> <span class="n">visitor</span><span class="o">){</span>
+        <span class="n">visitor</span><span class="o">.</span><span class="na">VisitT</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
 
 </div>
 
@@ -751,7 +1397,8 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/%E6%97%A5%E5%B8%B8/'>日常</a>
+      <a href='/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/'>软件工程</a>,
+      <a href='/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/'>设计模式</a>
   </div>
   
 
@@ -760,8 +1407,8 @@
   <div class="post-tags">
     <i class="fa fa-tags fa-fw me-1"></i>
       
-      <a href="/tags/game/"
-          class="post-tag no-text-decoration" >Game</a>
+      <a href="/tags/%E5%AF%B9%E8%B1%A1%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/"
+          class="post-tag no-text-decoration" >对象行为型模式</a>
       
   </div>
   
@@ -795,7 +1442,7 @@
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=%E3%83%97%E3%83%AD%E3%82%BB%E3%82%AB%E7%9A%84IP%E8%A7%84%E5%88%99%20-%20yexca'Blog&url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F42"
+        href="https://twitter.com/intent/tweet?text=%E8%AE%BF%E9%97%AE%E8%80%85%E6%A8%A1%E5%BC%8F%20-%20yexca'Blog&url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F139"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -808,7 +1455,7 @@
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=%E3%83%97%E3%83%AD%E3%82%BB%E3%82%AB%E7%9A%84IP%E8%A7%84%E5%88%99%20-%20yexca'Blog&u=https%3A%2F%2Fblog.yexca.net%2Farchives%2F42"
+        href="https://www.facebook.com/sharer/sharer.php?title=%E8%AE%BF%E9%97%AE%E8%80%85%E6%A8%A1%E5%BC%8F%20-%20yexca'Blog&u=https%3A%2F%2Fblog.yexca.net%2Farchives%2F139"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -821,7 +1468,7 @@
     
       
       <a
-        href="https://t.me/share/url?url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F42&text=%E3%83%97%E3%83%AD%E3%82%BB%E3%82%AB%E7%9A%84IP%E8%A7%84%E5%88%99%20-%20yexca'Blog"
+        href="https://t.me/share/url?url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F139&text=%E8%AE%BF%E9%97%AE%E8%80%85%E6%A8%A1%E5%BC%8F%20-%20yexca'Blog"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -2101,1171 +2748,1171 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -3778,7 +4425,7 @@
         
         
         <div class="col">
-          <a href="/archives/54" class="card post-preview h-100">
+          <a href="/archives/132" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3791,14 +4438,14 @@
 
 <em
   class="small"
-  data-ts="1659537666"
+  data-ts="1701065280"
   data-df="ll"
   
 >
-  Aug  3, 2022
+  Nov 27, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>记录Grey Hack第一个任务(获取密码)</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>备忘录模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3807,15 +4454,21 @@
 
 
 
-                  引言
+                  Memento Pattern 对象行为型模式
 
-昨日游玩接取第一个任务的记录，由于是复述，部分细节可能与实际情况不同
+意图
 
-接取任务
+在不破坏封装性的前提下捕获一个对象的内部状态，并在对象之外保存这个状态。这样以后就可以将对象恢复到原先保存的状态
 
-在通过某神秘人的考验后获得HackShop的网站，接到第一个任务
+结构
 
-任务内容为”The client wants the login credentials of the user Daronane. The remote ip of the victim is 54.44.37.52. It’s i...
+
+
+其中：
+
+
+  Memento (备忘录) 存储原发器对象的内部状态，原发器根据需要决定备忘录存储原发器的哪些内部状态；防止原发器以外的其他对象访问备忘录
+  Originator (原发器) 创建一个备忘录...
                 </p>
               </div>
             </div>
@@ -3825,7 +4478,7 @@
         
         
         <div class="col">
-          <a href="/archives/107" class="card post-preview h-100">
+          <a href="/archives/134" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3838,14 +4491,14 @@
 
 <em
   class="small"
-  data-ts="1684250001"
+  data-ts="1703092680"
   data-df="ll"
   
 >
-  May 16, 2023
+  Dec 21, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Honkai: Star Rail 国际服分流规则</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>观察者模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3854,21 +4507,21 @@
 
 
 
-                  针对中国大陆无法进入游戏分流规则
+                  观察者模式
 
-Key
+Observer Pattern 对象行为型模式
 
-在进入游戏时需要 udp 连接，而多数协议不支持 udp，即遇到 udp 会自动拒绝，所以将 udp 连接的 IP 设置为直连即可，下面是我抓取到的两个 IP
-
-1
-2
-3
-8.209.196.179
-# 第二个貌似直连不会连接，只用设置第一个就行
-47.245.63.117
+意图
+定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变吋，所有依赖于它的对象都得到通知并被自动更新
+结构
 
 
-当然，为了安全起见 (指 tcp 连接与 udp 连接不一致可能造...
+
+其中：
+
+
+  Subject (目标) 知道它的观察者，可以有任意多个观察者观察同一个目标；提供注册和删除观察者对象的接口
+  Observer (观察者) 为那些在”目标发生改变时需获得通知的对象定义一...
                 </p>
               </div>
             </div>
@@ -3878,7 +4531,7 @@ Key
         
         
         <div class="col">
-          <a href="/archives/114" class="card post-preview h-100">
+          <a href="/archives/136" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -3891,14 +4544,14 @@ Key
 
 <em
   class="small"
-  data-ts="1686324729"
+  data-ts="1703229060"
   data-df="ll"
   
 >
-  Jun  9, 2023
+  Dec 22, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>アイドルマスター ミリオンライブ！的 IP 规则</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>状态模式</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -3907,20 +4560,25 @@ Key
 
 
 
-                  最近游玩 ミリシタ 时连接不上，遂寻找解决方法 （顺便试试 Spotify 的嵌入效果
+                  State Pattern 对象行为型模式
 
-域名
+意图
 
-1
-theaterdays.appspot.com
+允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类
 
-
-
+结构
 
 
-最近雨宿りの曲が大好きので、よく聞いていた。Last.fm で過去30日間雨宿りの「猫かぶり」は人気トラック一番になった。で、トップアーティストじゃない？トップアーティスト、もちろん湊あくあ！　　
 
-草、ミリシタの文章で何を書いたか、...
+其中：
+
+
+  
+    Context (上下文) 定义客户感兴趣的接口：维护一个 ConcerteState 子类的实例，这个实例定义当前状态
+  
+  
+    State (状态) 定义一个接口以封装与 Context 的一个特定状态相关的行为
+...
                 </p>
               </div>
             </div>
@@ -3940,22 +4598,21 @@ theaterdays.appspot.com
 <div class="post-navigation d-flex justify-content-between">
   
     <a
-      href="/archives/41"
+      href="/archives/138"
       class="btn btn-outline-primary"
       prompt="Older"
     >
-      <p>Linux添加用户和管理员用户</p>
+      <p>模板方法模式</p>
     </a>
   
 
   
-    <a
-      href="/archives/43"
-      class="btn btn-outline-primary"
+    <div
+      class="btn btn-outline-primary disabled"
       prompt="Newer"
     >
-      <p>Markdown简述(学习笔记)</p>
-    </a>
+      <p>-</p>
+    </div>
   
 </div>
 
