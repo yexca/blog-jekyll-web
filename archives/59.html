@@ -1400,6 +1400,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/108">设计模式 引</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/132">备忘录模式</a>
         </li>
       
@@ -1414,21 +1421,14 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/136">状态模式</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/103">UML</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/104">UML 中的图</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/108">设计模式 引</a>
         </li>
       
     </ul>
@@ -3577,6 +3577,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4399,7 +4411,7 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
         
         
         <div class="col">
-          <a href="/archives/40" class="card post-preview h-100">
+          <a href="/archives/41" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4412,14 +4424,14 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
 
 <em
   class="small"
-  data-ts="1651263847"
+  data-ts="1652686161"
   data-df="ll"
   
 >
-  Apr 30, 2022
+  May 16, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Liunx随手笔记</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Linux添加用户和管理员用户</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4428,16 +4440,28 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
 
 
 
-                  
-  Linux不会自动创建不存在的文件夹,使用”mv”命令时需要注意文件夹是否存在,否则会将文件重命名。
-  为文件创建硬链接实际上是为文件创建了额外的名字部分(数据部分未改动),类似于C语言中创建了一个指针指向该文件。
-  为文件创建符号链接类似于WIN中的快捷方式,在使用”ls -li”命令中可以比较直观的看出区别。硬链接字节数和源文件一样，而符号链接字节数不同。
+                  添加管理员用户：
+
+1、新建用户，这里新建一个temp_test的用户
+
+adduser temp\_test
 
 
+2、设置新用户密码
 
+passwd temp_test
 
+3、将sudoers文件的权限修改成可编辑
 
-  使用别...
+chmod -v u+w /etc/sudoers
+
+4、使用vim编辑sudoers文件
+
+vim /etc/sudoers
+
+5、在sudoes文件中添加如下的内容
+
+找...
                 </p>
               </div>
             </div>

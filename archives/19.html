@@ -1077,6 +1077,13 @@ linux时钟相关命令<br />
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/108">设计模式 引</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/132">备忘录模式</a>
         </li>
       
@@ -1091,21 +1098,14 @@ linux时钟相关命令<br />
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/136">状态模式</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/103">UML</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/104">UML 中的图</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/108">设计模式 引</a>
         </li>
       
     </ul>
@@ -3734,6 +3734,18 @@ linux时钟相关命令<br />
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -3971,54 +3983,6 @@ linux时钟相关命令<br />
         
         
         <div class="col">
-          <a href="/archives/40" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1651263847"
-  data-df="ll"
-  
->
-  Apr 30, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Liunx随手笔记</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  
-  Linux不会自动创建不存在的文件夹,使用”mv”命令时需要注意文件夹是否存在,否则会将文件重命名。
-  为文件创建硬链接实际上是为文件创建了额外的名字部分(数据部分未改动),类似于C语言中创建了一个指针指向该文件。
-  为文件创建符号链接类似于WIN中的快捷方式,在使用”ls -li”命令中可以比较直观的看出区别。硬链接字节数和源文件一样，而符号链接字节数不同。
-
-
-
-
-
-  使用别...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/41" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4139,6 +4103,51 @@ sudo dnf update
 User目录修改为英文
 
 中文目录及其不易使...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/60" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1661876829"
+  data-df="ll"
+  
+>
+  Aug 31, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Linux 下 bin 目录</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引言
+
+事实上命令文件放在哪都可自行决定，也就是自己想放哪就放哪，这些目录不过是约定，不过遵守约定会更好啦，毕竟没有人会想要自己的电脑一团糟吧，尤其是Linux
+
+优先级
+
+Linux下的这些bin目录都是存放命令的，如果不同的目录下有相同名称的可执行程序，将通过优先级决定先运行哪个目录的二进制文件，可以通过使用命令echo $PATH查看环境变量以确定命令执行的优先级，比如我的系统输出如下...
                 </p>
               </div>
             </div>

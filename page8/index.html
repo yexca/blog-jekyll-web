@@ -595,6 +595,86 @@
 
 <div id="post-list">
   
+    <a href="/archives/70" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            SSH 公钥登录
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              引言
+
+每次连接机子都要输入密码属实有点麻烦 (因为我忘了
+
+OneClick
+
+如果自己的电脑没有公钥需要先生成，一般在 ~/.ssh/id_rsa.pub
+
+ssh-keygen
+
+
+然后在自己的电脑上运行下个命令
+
+ssh-copy-id username@RemoteIP
+
+
+其中 username 替换为要登录的账户，RemoteIP 替换为要登录的 IP 地址
+
+等待提示输入密码...
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1662981865"
+  data-df="ll"
+  
+>
+  Sep 12, 2022
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    Linux
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
     <a href="/archives/69" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
@@ -1246,74 +1326,6 @@ Fiddler设置
       </div>
     </a>
   
-    <a href="/archives/60" class="card-wrapper">
-      <div class="card post-preview flex-md-row-reverse">
-        
-
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title my-2 mt-md-0">
-            Linux 下 bin 目录
-          </h1>
-
-          <div class="card-text post-content mt-0 mb-2">
-            <p>
-              
-
-
-
-
-
-              引言
-
-事实上命令文件放在哪都可自行决定，也就是自己想放哪就放哪，这些目录不过是约定，不过遵守约定会更好啦，毕竟没有人会想要自己的电脑一团糟吧，尤其是Linux
-
-优先级
-
-Linux下的这些bin目录都是存放命令的，如果不同的目录下有相同名称的可执行程序，将通过优先级决定先运行哪个目录的二进制文件，可以通过使用命令echo $PATH查看环境变量以确定命令执行的优先级，比如我的系统输出如下...
-            </p>
-          </div>
-
-          <div class="post-meta flex-grow-1 d-flex align-items-end">
-            <div class="me-auto">
-              <!-- posted date -->
-              <i class="far fa-calendar fa-fw me-1"></i>
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1661876829"
-  data-df="ll"
-  
->
-  Aug 31, 2022
-</em>
-
-
-              <!-- categories -->
-              
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  
-                    Linux
-                </span>
-              
-            </div>
-
-            
-          </div>
-          <!-- .post-meta -->
-        </div>
-        <!-- .card-body -->
-      </div>
-    </a>
-  
 </div>
 <!-- #post-list -->
 
@@ -1606,6 +1618,13 @@ Linux下的这些bin目录都是存放命令的，如果不同的目录下有相
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/108">设计模式 引</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/132">备忘录模式</a>
         </li>
       
@@ -1620,21 +1639,14 @@ Linux下的这些bin目录都是存放命令的，如果不同的目录下有相
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/136">状态模式</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/103">UML</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/104">UML 中的图</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/108">设计模式 引</a>
         </li>
       
     </ul>

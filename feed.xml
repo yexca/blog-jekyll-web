@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-12-26T16:12:36+08:00</updated>
+  <updated>2023-12-27T16:19:12+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,88 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>设计模式 Index</title>
+    <link href="https://blog.yexca.net/archives/140" rel="alternate" type="text/html" title="设计模式 Index" />
+    <published>2023-12-27T16:14:00+08:00</published>
+  
+    <updated>2023-12-27T16:14:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/140</id>
+    <content src="https://blog.yexca.net/archives/140" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+    <category term="设计模式" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      简单介绍设计模式
+
+
+  设计模式 引
+
+
+具体的设计模式
+
+
+  
+    
+       
+      创建型
+      结构型
+      行为型
+    
+  
+  
+    
+      类
+      工厂方法模式
+      适配器模式 (类)
+      解释器模式模板方法模式
+    
+    
+      对象
+      抽象工厂模式生成器模式原型模式单例模式
+      适配器模式 (对象)桥接模式组合模式装饰器模式外观模式享元模式代理模式
+      责任链模式命令模式迭代器模式中介者模式备忘录模式观察者模式状态模式策略模式访问者模式
+    
+  
+
+
+其中
+
+
+  
+    工厂方法模式 与 抽象工厂模式 在 工厂模式
+  
+  
+    适配器模式 描述了类与对象
+  
+
+
+推荐阅读
+
+https://refactoringguru.cn/desig...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -257,66 +339,6 @@ Strategy 模式适用于：
   
   
     一个操作中含有庞大的多分支的条件语句，且这些分支依赖于该对象的状态。这个状态常用一个或多个枚举常量表示。通常，有多个操作包含这一相同的条件结构，Stat...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Ajax 与 Axios</title>
-    <link href="https://blog.yexca.net/archives/135" rel="alternate" type="text/html" title="Ajax 与 Axios" />
-    <published>2023-12-21T13:32:00+08:00</published>
-  
-    <updated>2023-12-21T13:32:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/135</id>
-    <content src="https://blog.yexca.net/archives/135" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="前端" />
-    
-    <category term="JavaScript" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Ajax 与 Axios
-
-Asynchronous JavaScript And XML，异步的 JS 和 XML。作用：
-
-
-  数据交换：通过 Ajax 可以给服务器发送请求，并获取服务器响应的数据
-  异步交互：可以在不重新加载整个页面的情况下，与服务器交换数据并更新部分网页的技术
-
-
-使用场景：搜索联想、用户名是否可用等
-
-同步与异步
-
-同步指在访问网页时进行某操作需要请求服务器，在服务器处理时网页不可操作，直到服务器响应客户端时才可继续操作
-
-而异步在请求服务器的同时，客户端可以执行其他操作
-
-原生 Ajax
-
-首先创建 XMLHttpRequest 对象 (用于和服务器交换数据)，然后向服务器发送请求，最后获取服务器响应数据
-
-&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang="en"&amp;gt;
-&amp;lt;head&amp;gt;
-    &amp;lt;meta c...
     </summary>
   
 
