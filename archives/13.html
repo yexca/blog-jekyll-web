@@ -1646,61 +1646,7 @@
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -1751,7 +1697,59 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3933,6 +3931,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4128,6 +4138,59 @@
         
         
         <div class="col">
+          <a href="/archives/141" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1704808200"
+  data-df="ll"
+  
+>
+  Jan  9, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Docker 创建与推送 H5 镜像</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  新建目录，将网页文件放入 ./dict
+
+根目录装进文件 dockerfile 内容如下：
+
+1
+2
+3
+4
+5
+6
+# 基于nginx:1.20镜像
+FROM nginx:1.20
+# 将dist文件中的内容复制到 /usr/share/nginx/html/ 这个目录下面
+COPY dist/ /usr/share/nginx/html/dist/
+# 用本地的 nginx.conf 配...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/archives/140" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4237,58 +4300,6 @@
 
 
   Visitor (访问者) 为该对象结构中 ConcreteElement 的每一个类声明一个 Visit 操作。该操作的名字和特殊标识了发送 Visit 请求给该访问者的那个类，这使得访问者可以确定正...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/138" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1703509560"
-  data-df="ll"
-  
->
-  Dec 25, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>模板方法模式</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Template Method Pattern 类行为型模式
-
-意图
-
-定义一个操作中的算法骨架，而将一些步骤延迟到子类中。Template Method 使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤
-
-结构
-
-
-
-其中：
-
-
-  AbstractClass (抽象类) 定义抽象的原语操作，具体的子类将重定义它们以实现一个算法的各步骤；实现模板方法，定一个算法的骨架，该模板...
                 </p>
               </div>
             </div>
@@ -4763,61 +4774,7 @@ twikoo.init({
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -4868,7 +4825,59 @@ twikoo.init({
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -5540,7 +5549,7 @@ twikoo.init({
         </p>
   
         <p>©
-          2023
+          2024
           <a href="https://blog.yexca.net">yexca</a>.
           
             <span

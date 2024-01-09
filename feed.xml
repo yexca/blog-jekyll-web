@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2023-12-27T16:19:12+08:00</updated>
+  <updated>2024-01-09T21:56:02+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -13,10 +13,67 @@
   <link rel="alternate" type="text/html" hreflang="zh"
     href="https://blog.yexca.net/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 yexca </rights>
+  <rights> © 2024 yexca </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Docker 创建与推送 H5 镜像</title>
+    <link href="https://blog.yexca.net/archives/141" rel="alternate" type="text/html" title="Docker 创建与推送 H5 镜像" />
+    <published>2024-01-09T21:50:00+08:00</published>
+  
+    <updated>2024-01-09T21:50:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/141</id>
+    <content src="https://blog.yexca.net/archives/141" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="后端" />
+    
+    <category term="Docker" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      新建目录，将网页文件放入 ./dict
+
+根目录装进文件 dockerfile 内容如下：
+
+# 基于nginx:1.20镜像
+FROM nginx:1.20
+# 将dist文件中的内容复制到 /usr/share/nginx/html/ 这个目录下面
+COPY dist/ /usr/share/nginx/html/dist/
+# 用本地的 nginx.conf 配置来替换nginx镜像里的默认配置
+COPY nginx.conf /etc/nginx/nginx.conf
+
+
+新建文件 nginx.conf 内容如下：
+
+#user  nobody;
+worker_processes  1;
+events {
+    worker_connections  1024;
+}
+http {
+    include       mime.types;
+    default_type ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -272,73 +329,6 @@ Strategy 模式适用于：
 
   
     许多相关的类仅仅是行为有异。”策略” 提供了一种用多个行为中的一个...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>状态模式</title>
-    <link href="https://blog.yexca.net/archives/136" rel="alternate" type="text/html" title="状态模式" />
-    <published>2023-12-22T15:11:00+08:00</published>
-  
-    <updated>2023-12-22T16:06:06+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/136</id>
-    <content src="https://blog.yexca.net/archives/136" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-    <category term="设计模式" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      State Pattern 对象行为型模式
-
-意图
-
-允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类
-
-结构
-
-
-
-其中：
-
-
-  
-    Context (上下文) 定义客户感兴趣的接口：维护一个 ConcerteState 子类的实例，这个实例定义当前状态
-  
-  
-    State (状态) 定义一个接口以封装与 Context 的一个特定状态相关的行为
-  
-  
-    ConcreteState (具体状态子类) 毎个子类实现与 Context 的一个状态相关的行为
-  
-
-
-适用性
-
-
-  
-    一个对象的行为决定于它的状态，并且它必领在运行吋刻根据状态改变它的行为
-  
-  
-    一个操作中含有庞大的多分支的条件语句，且这些分支依赖于该对象的状态。这个状态常用一个或多个枚举常量表示。通常，有多个操作包含这一相同的条件结构，Stat...
     </summary>
   
 

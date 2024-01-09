@@ -1924,61 +1924,7 @@ rclone mount DriveName:Folder LocalFolder
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -2029,7 +1975,59 @@ rclone mount DriveName:Folder LocalFolder
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2688,6 +2686,18 @@ rclone mount DriveName:Folder LocalFolder
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4484,7 +4494,7 @@ Github: yexca/hvdb
         
         
         <div class="col">
-          <a href="/archives/71" class="card post-preview h-100">
+          <a href="/archives/141" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4497,14 +4507,14 @@ Github: yexca/hvdb
 
 <em
   class="small"
-  data-ts="1663152436"
+  data-ts="1704808200"
   data-df="ll"
   
 >
-  Sep 14, 2022
+  Jan  9, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Fedora 安装 Komga 折腾记录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Docker 创建与推送 H5 镜像</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4513,23 +4523,21 @@ Github: yexca/hvdb
 
 
 
-                  引言
+                  新建目录，将网页文件放入 ./dict
 
-为了在内网更方便得看漫画
+根目录装进文件 dockerfile 内容如下：
 
-IP 设置
-
-路由器为 OpenWRT 系统
-
-路由器设置
-
-在 网络- IP/MAC 绑定 将电脑绑定一个固定的 IP
-
-Fedora 设置
-
-因为我设置的 IP 与自动分配的不一致 (有线连接) ，固需要手动修改
-
-在 网络-设置 的 身份 加上 MAC 地址，IPv4 改为 手动，地址依次为 IP、255.255.255.255、路由器 IP，DNS...
+1
+2
+3
+4
+5
+6
+# 基于nginx:1.20镜像
+FROM nginx:1.20
+# 将dist文件中的内容复制到 /usr/share/nginx/html/ 这个目录下面
+COPY dist/ /usr/share/nginx/html/dist/
+# 用本地的 nginx.conf 配...
                 </p>
               </div>
             </div>
@@ -5004,61 +5012,7 @@ twikoo.init({
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -5109,7 +5063,59 @@ twikoo.init({
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -5781,7 +5787,7 @@ twikoo.init({
         </p>
   
         <p>©
-          2023
+          2024
           <a href="https://blog.yexca.net">yexca</a>.
           
             <span

@@ -1,10 +1,27 @@
 [
   
   {
+    "title": "Docker 创建与推送 H5 镜像",
+    "url": "/archives/141",
+    "categories": "后端, Docker",
+    "tags": "Docker",
+    "date": "2024-01-09 21:50:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "新建目录，将网页文件放入 ./dict根目录装进文件 dockerfile 内容如下：# 基于nginx:1.20镜像FROM nginx:1.20# 将dist文件中的内容复制到 /usr/share/nginx/html/ 这个目录下面COPY dist/ /usr/share/nginx/html/dist/# 用本地的 nginx.conf 配置来替换nginx镜像里的默认配置COP...",
+    "content": "新建目录，将网页文件放入 ./dict根目录装进文件 dockerfile 内容如下：# 基于nginx:1.20镜像FROM nginx:1.20# 将dist文件中的内容复制到 /usr/share/nginx/html/ 这个目录下面COPY dist/ /usr/share/nginx/html/dist/# 用本地的 nginx.conf 配置来替换nginx镜像里的默认配置COPY nginx.conf /etc/nginx/nginx.conf新建文件 nginx.conf 内容如下：#user  nobody;worker_processes  1;events {    worker_connections  1024;}http {    include       mime.types;    default_type  application/octet-stream;    sendfile        on;    #tcp_nopush     on;    keepalive_timeout  65;    # HTTP server    server {        listen 80;        server_name  localhost;        location / {            root   /usr/share/nginx/html/dist;            index  index.html index.htm;        }        error_page   500 502 503 504  /50x.html;        location = /50x.html {            root   html;        }    }}运行打包命令docker build -t username/imagename:v1.0 .tag 修改镜像名称推送镜像的命名规范docker push 注册用户名/镜像名修改 tagdocker tag name username/imagename:v1.0如果不加 tag ，推送时默认为 latest ，推送docker push username/imagename:v1.0参考文章docker: 打包h5项目的镜像Docker镜像推送（push）到Docker Hub"
+  },
+  
+  {
     "title": "设计模式 Index",
     "url": "/archives/140",
     "categories": "软件工程, 设计模式",
-    "tags": "对象行为型模式",
+    "tags": "",
     "date": "2023-12-27 16:14:00 +0800",
     
 
