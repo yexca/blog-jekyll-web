@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-01-09T21:56:02+08:00</updated>
+  <updated>2024-01-10T17:59:22+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,61 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>JavaWeb 入门</title>
+    <link href="https://blog.yexca.net/archives/142" rel="alternate" type="text/html" title="JavaWeb 入门" />
+    <published>2024-01-10T17:53:00+08:00</published>
+  
+    <updated>2024-01-10T17:53:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/142</id>
+    <content src="https://blog.yexca.net/archives/142" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="后端" />
+    
+    <category term="Spring" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      SpringBoot 入门例子
+
+需求：使用 SpringBoot 开发一个 web 应用，浏览器发起 /hello 后，返回字符串 “Hello Spring”
+
+首先需要创建 SpringBoot 工程，并勾选 web 开发相关依赖
+
+然后创建控制类，路径在 *Application.java 同级创建文件 Controller/HelloController.java
+
+@RestController
+public class HelloController{
+    @RequestMapping("/hello")
+    public String hello(){
+        String s = "Hello Spring";
+        System.out.println(s);
+        return s;
+    }
+}
+
+
+运行  *Appli...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -81,7 +136,7 @@ http {
     <link href="https://blog.yexca.net/archives/140" rel="alternate" type="text/html" title="设计模式 Index" />
     <published>2023-12-27T16:14:00+08:00</published>
   
-    <updated>2023-12-27T16:14:00+08:00</updated>
+    <updated>2024-01-09T21:57:02+08:00</updated>
   
     <id>https://blog.yexca.net/archives/140</id>
     <content src="https://blog.yexca.net/archives/140" />
@@ -263,72 +318,6 @@ Template Method 模式适用于：
   一次性实现一个算法的不变的部分，并将可变的行为留给子类来实现
   各子类中公共的行为应被提取出来并集中到一个公共父类中，以避免代码重复
   控制子类扩展。模板...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>策略模式</title>
-    <link href="https://blog.yexca.net/archives/137" rel="alternate" type="text/html" title="策略模式" />
-    <published>2023-12-24T18:30:00+08:00</published>
-  
-    <updated>2023-12-24T18:30:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/137</id>
-    <content src="https://blog.yexca.net/archives/137" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-    <category term="设计模式" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Strategy Pattern 对象行为型模式
-
-意图
-
-定义一系列的算法，把它们一个个封装起来，并且使它们可以相互替换。此模式使得算法可以独立于使用它们的客户而变化
-
-结构
-
-
-
-其中：
-
-
-  
-    Strategy (策略) 定义所有支持的算法的公共接口。Context 使用这个接口来调用某 ConcreteStrategy 定义的算法
-  
-  
-    ConcreteStrategy (具体策略) 以 Strategy 接口实现某具体算法
-  
-  
-    Context (上下文) 用一个 ConcreteStrategy 对象来配置；维护一个对 Strategy 对象的引用；可定义一个接口来让 Strategy 访问它的数据
-  
-
-
-适用性
-
-Strategy 模式适用于：
-
-
-  
-    许多相关的类仅仅是行为有异。”策略” 提供了一种用多个行为中的一个...
     </summary>
   
 
