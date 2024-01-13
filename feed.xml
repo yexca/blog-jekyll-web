@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-01-10T17:59:22+08:00</updated>
+  <updated>2024-01-14T00:02:25+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,57 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>maven 学习</title>
+    <link href="https://blog.yexca.net/archives/143" rel="alternate" type="text/html" title="maven 学习" />
+    <published>2024-01-13T23:58:00+08:00</published>
+  
+    <updated>2024-01-13T23:58:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/143</id>
+    <content src="https://blog.yexca.net/archives/143" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="后端" />
+    
+    <category term="maven" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Maven 是一款用于管理和构建 java 项目的工具
+
+Maven 可以方便快捷的管理项目依赖的资源 (jar 包)，避免版本冲突问题；提供标准、统一的项目结构；标准跨平台的自动化项目构建方式
+
+安装
+
+在官网下载后解压，然后配置本地仓库，修改 conf/setting.xml 中的 &amp;lt;localRepository&amp;gt; 为一个指定目录
+
+&amp;lt;!-- 例如本地库在 D:\develop\maven_repo --&amp;gt;
+&amp;lt;localRepository&amp;gt;D:\develop\maven_repo&amp;lt;/localRepository&amp;gt;
+
+
+配置阿里云私服镜像，修改 conf/setting.xml 中的 &amp;lt;mirror&amp;gt; 标签，添加子标签
+
+&amp;lt;mirror&amp;gt;
+    &amp;lt;id&amp;gt;alimaven&amp;lt;/id&amp;gt...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -258,66 +309,6 @@ https://refactoringguru.cn/desig...
   Visitor (访问者) 为该对象结构中 ConcreteElement 的每一个类声明一个 Visit 操作。该操作的名字和特殊标识了发送 Visit 请求给该访问者的那个类，这使得访问者可以确定正被访问元素的具体的类。这样访问者就可以通过该元素的特定接口直接访问它
   ConcreteVisitor (具体访问者) 实现每个有 Visitor 声明的操作，每个操作实现本算法的一部分，而该算法片段乃是对应于结构中对象的类。ConcreteVisitor 为该算法提供了上下文并存储它的局部状态。这一状态常常在遍历该结构的过程中累积结构
   Element (元素) 定义以一个访问者为参数的 A...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>模板方法模式</title>
-    <link href="https://blog.yexca.net/archives/138" rel="alternate" type="text/html" title="模板方法模式" />
-    <published>2023-12-25T21:06:00+08:00</published>
-  
-    <updated>2023-12-25T21:06:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/138</id>
-    <content src="https://blog.yexca.net/archives/138" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-    <category term="设计模式" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Template Method Pattern 类行为型模式
-
-意图
-
-定义一个操作中的算法骨架，而将一些步骤延迟到子类中。Template Method 使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤
-
-结构
-
-
-
-其中：
-
-
-  AbstractClass (抽象类) 定义抽象的原语操作，具体的子类将重定义它们以实现一个算法的各步骤；实现模板方法，定一个算法的骨架，该模板方法不仅调用原语操作，也调用定义在 AbstractClass 或其他对象中的操作
-  ConcreteClass (具体类) 实现原语操作以完成算法中与特定子类相关的步骤
-
-
-适用性
-
-Template Method 模式适用于：
-
-
-  一次性实现一个算法的不变的部分，并将可变的行为留给子类来实现
-  各子类中公共的行为应被提取出来并集中到一个公共父类中，以避免代码重复
-  控制子类扩展。模板...
     </summary>
   
 

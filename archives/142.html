@@ -2171,6 +2171,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -3876,20 +3888,16 @@
   
     
     
-  
-    
-    
       
       
     
   
     
     
+  
+    
+    
       
-      
-        
-        
-        
       
     
   
@@ -3909,6 +3917,55 @@
       Further Reading
     </h3>
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        
+        
+        <div class="col">
+          <a href="/archives/143" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1705161480"
+  data-df="ll"
+  
+>
+  Jan 13, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>maven 学习</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Maven 是一款用于管理和构建 java 项目的工具
+
+Maven 可以方便快捷的管理项目依赖的资源 (jar 包)，避免版本冲突问题；提供标准、统一的项目结构；标准跨平台的自动化项目构建方式
+
+安装
+
+在官网下载后解压，然后配置本地仓库，修改 conf/setting.xml 中的 &amp;lt;localRepository&amp;gt; 为一个指定目录
+
+1
+2
+&amp;lt;!-- 例如本地库在 D...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
       
         
         
@@ -4023,58 +4080,6 @@ COPY dist/ /usr/share/nginx/html/dist/
           </a>
         </div>
       
-        
-        
-        <div class="col">
-          <a href="/archives/139" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1703578140"
-  data-df="ll"
-  
->
-  Dec 26, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>访问者模式</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Visitor Pattern 对象行为型模式
-
-意图
-
-表示一个作用于某对象结构中的各元素的操作。它不允许在不改变各元素的类的前提下定义作用于这些元素的新操作
-
-结构
-
-
-
-其中：
-
-
-  Visitor (访问者) 为该对象结构中 ConcreteElement 的每一个类声明一个 Visit 操作。该操作的名字和特殊标识了发送 Visit 请求给该访问者的那个类，这使得访问者可以确定正...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
     </div>
     <!-- .card-deck -->
   </div>
@@ -4097,12 +4102,13 @@ COPY dist/ /usr/share/nginx/html/dist/
   
 
   
-    <div
-      class="btn btn-outline-primary disabled"
+    <a
+      href="/archives/143"
+      class="btn btn-outline-primary"
       prompt="Newer"
     >
-      <p>-</p>
-    </div>
+      <p>maven 学习</p>
+    </a>
   
 </div>
 
