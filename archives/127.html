@@ -1348,13 +1348,6 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/134">观察者模式</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/archives/136">状态模式</a>
         </li>
       
@@ -1363,6 +1356,13 @@
         
         <li class="text-truncate lh-lg">
           <a href="/archives/103">UML</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/archives/104">UML 中的图</a>
         </li>
       
     </ul>
@@ -2605,6 +2605,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4334,59 +4346,6 @@
         
         
         <div class="col">
-          <a href="/archives/134" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1703092680"
-  data-df="ll"
-  
->
-  Dec 21, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>观察者模式</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  观察者模式
-
-Observer Pattern 对象行为型模式
-
-意图
-定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变吋，所有依赖于它的对象都得到通知并被自动更新
-结构
-
-
-
-其中：
-
-
-  Subject (目标) 知道它的观察者，可以有任意多个观察者观察同一个目标；提供注册和删除观察者对象的接口
-  Observer (观察者) 为那些在”目标发生改变时需获得通知的对象定义一...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/136" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4491,6 +4450,58 @@ Observer Pattern 对象行为型模式
   
   
     ConcreteStr...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/139" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1703578140"
+  data-df="ll"
+  
+>
+  Dec 26, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>访问者模式</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Visitor Pattern 对象行为型模式
+
+意图
+
+表示一个作用于某对象结构中的各元素的操作。它不允许在不改变各元素的类的前提下定义作用于这些元素的新操作
+
+结构
+
+
+
+其中：
+
+
+  Visitor (访问者) 为该对象结构中 ConcreteElement 的每一个类声明一个 Visit 操作。该操作的名字和特殊标识了发送 Visit 请求给该访问者的那个类，这使得访问者可以确定正...
                 </p>
               </div>
             </div>

@@ -1730,7 +1730,7 @@
     <i class="far fa-folder-open fa-fw me-1"></i>
     
       <a href='/categories/%E5%90%8E%E7%AB%AF/'>后端</a>,
-      <a href='/categories/maven/'>maven</a>
+      <a href='/categories/maven/'>Maven</a>
   </div>
   
 
@@ -1880,13 +1880,6 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/134">观察者模式</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/archives/136">状态模式</a>
         </li>
       
@@ -1895,6 +1888,13 @@
         
         <li class="text-truncate lh-lg">
           <a href="/archives/103">UML</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/archives/104">UML 中的图</a>
         </li>
       
     </ul>
@@ -3137,6 +3137,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4855,31 +4867,6 @@
 
 
 
-  
-    
-    
-  
-    
-    
-      
-      
-    
-  
-    
-    
-      
-      
-    
-  
-    
-    
-      
-      
-        
-        
-        
-          
-
 
 
   <div id="related-posts" class="mb-2 mb-sm-4">
@@ -4938,6 +4925,51 @@
         
         
         <div class="col">
+          <a href="/archives/144" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1705222020"
+  data-df="ll"
+  
+>
+  Jan 14, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>请求响应</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  浏览器发送请求会先经过 DispatcherServlet 转给各 *Controller 程序进行处理，处理完成后返回给 DispatcherServlet 处理结果，然后再返回浏览器
+
+DispatcherServlet 被称为核心控制器或前端控制器
+
+对于浏览器请求数据，会被封装到 HttpServletRequest 对象，响应数据被封装到 HttpServletResponse
+
+...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/archives/141" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4982,72 +5014,6 @@ COPY dist/ /usr/share/nginx/html/dist/
           </a>
         </div>
       
-        
-        
-        <div class="col">
-          <a href="/archives/140" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1703664840"
-  data-df="ll"
-  
->
-  Dec 27, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>设计模式 Index</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  简单介绍设计模式
-
-
-  设计模式 引
-
-
-具体的设计模式
-
-
-  
-    
-       
-      创建型
-      结构型
-      行为型
-    
-  
-  
-    
-      类
-      工厂方法模式
-      适配器模式 (类)
-      解释器模式模板方法模式
-    
-    
-      对象
-      抽象工厂模式生成器模式原型模式单例模式
-   ...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
     </div>
     <!-- .card-deck -->
   </div>
@@ -5070,12 +5036,13 @@ COPY dist/ /usr/share/nginx/html/dist/
   
 
   
-    <div
-      class="btn btn-outline-primary disabled"
+    <a
+      href="/archives/144"
+      class="btn btn-outline-primary"
       prompt="Newer"
     >
-      <p>-</p>
-    </div>
+      <p>请求响应</p>
+    </a>
   
 </div>
 

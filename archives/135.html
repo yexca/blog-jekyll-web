@@ -1125,13 +1125,6 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/134">观察者模式</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/archives/136">状态模式</a>
         </li>
       
@@ -1140,6 +1133,13 @@
         
         <li class="text-truncate lh-lg">
           <a href="/archives/103">UML</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/archives/104">UML 中的图</a>
         </li>
       
     </ul>
@@ -2382,6 +2382,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4141,6 +4153,51 @@
         
         
         <div class="col">
+          <a href="/archives/144" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1705222020"
+  data-df="ll"
+  
+>
+  Jan 14, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>请求响应</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  浏览器发送请求会先经过 DispatcherServlet 转给各 *Controller 程序进行处理，处理完成后返回给 DispatcherServlet 处理结果，然后再返回浏览器
+
+DispatcherServlet 被称为核心控制器或前端控制器
+
+对于浏览器请求数据，会被封装到 HttpServletRequest 对象，响应数据被封装到 HttpServletResponse
+
+...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/archives/143" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4231,59 +4288,6 @@ Maven 可以方便快捷的管理项目依赖的资源 (jar 包)，避免版本�
 2
 3
 4...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/141" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1704808200"
-  data-df="ll"
-  
->
-  Jan  9, 2024
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Docker 创建与推送 H5 镜像</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  新建目录，将网页文件放入 ./dict
-
-根目录装进文件 dockerfile 内容如下：
-
-1
-2
-3
-4
-5
-6
-# 基于nginx:1.20镜像
-FROM nginx:1.20
-# 将dist文件中的内容复制到 /usr/share/nginx/html/ 这个目录下面
-COPY dist/ /usr/share/nginx/html/dist/
-# 用本地的 nginx.conf 配...
                 </p>
               </div>
             </div>

@@ -927,13 +927,6 @@ body： 内容</p>
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/134">观察者模式</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/archives/136">状态模式</a>
         </li>
       
@@ -942,6 +935,13 @@ body： 内容</p>
         
         <li class="text-truncate lh-lg">
           <a href="/archives/103">UML</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/archives/104">UML 中的图</a>
         </li>
       
     </ul>
@@ -3851,6 +3851,18 @@ body： 内容</p>
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -3904,55 +3916,6 @@ body： 内容</p>
       Further Reading
     </h3>
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
-      
-        
-        
-        <div class="col">
-          <a href="/archives/44" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1653723043"
-  data-df="ll"
-  
->
-  May 28, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Github Pages建站及自定义域名</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  引言
-
-最近基于Github Pages整了一个个人页面，记录一下如何使用Github Pages建站以及自定义域名
-
-本文没有建站系统等，因为我也就写了一个Markdown文件
-
-创建Github仓库
-
-首先需要注册一个Github账号，登录后创建一个新仓库
-
-其中Repository name为username.github.io，例如我的Github用户名为yexca，则输入yexca...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
       
         
         
@@ -4051,6 +4014,71 @@ Bilibili外链引用
 
 本是想着实现首页也有黑幕，但实际测试发现首页不会渲染为什么不渲染啊啊啊啊啊啊啊！！！！！！！
 ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/72" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1663251422"
+  data-df="ll"
+  
+>
+  Sep 15, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>WordPress 数据库禁用插件</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引言
+
+启用某插件后台 502 了
+
+进入数据库
+
+
+  
+    选择进入 wp_options 表
+  
+  
+    找到 active_plugins 条目，一般在第二页
+  
+  
+    编辑此项目的 option_value 行
+  
+
+
+删除不要的插件
+
+注意：删除前先备份！！！
+
+
+  
+    找到不需要的插件的名字
+
+    删除从 i 开始到 ;，例如 i:1;s:2...
                 </p>
               </div>
             </div>
