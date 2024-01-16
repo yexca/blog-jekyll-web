@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-01-14T16:50:42+08:00</updated>
+  <updated>2024-01-16T08:15:59+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -20,8 +20,64 @@
 
   
   <entry>
-    <title>请求响应</title>
-    <link href="https://blog.yexca.net/archives/144" rel="alternate" type="text/html" title="请求响应" />
+    <title>结构化开发</title>
+    <link href="https://blog.yexca.net/archives/145" rel="alternate" type="text/html" title="结构化开发" />
+    <published>2024-01-16T08:10:00+08:00</published>
+  
+    <updated>2024-01-16T08:10:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/145</id>
+    <content src="https://blog.yexca.net/archives/145" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="软件工程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      系统设计的基本原理
+
+抽象、模块化、信息隐蔽、模块独立
+
+模块化
+
+在软件的体系结构中，模块是可组合、分解和更换的单元
+
+模块化是指将一个待开发的软件分解成若干个小的简单部分，即模块。每个模块可独立地开发、测试，最后组装成完整的程序。这是一种复杂问题 “分而治之” 的原则。模块化的目的是使程序的结构清晰，容易阅读、理解、测试和修改
+
+模块独立
+
+模块独立是指每个模块完成一个相对独立的特定子功能，并且与其他模块之间的联系简单。衡量模块独立程度的标准有两个：耦合性和内聚性
+
+耦合
+
+耦合是模块之间的相对独立性 (互相连接的紧密程度) 的度量。耦合取决于各个模块之间接口的复杂程度、调用模块的方式以及通过接口的信息类型等。一般模块之间可能的耦合方式有 7 种类型
+
+
+
+
+  无直接耦合。指两个模块之间没有直接的关系，它们分别从属于不同模块的控制与调用，它们之间不传递任何信息
+  数据耦合。指...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Spring 请求响应</title>
+    <link href="https://blog.yexca.net/archives/144" rel="alternate" type="text/html" title="Spring 请求响应" />
     <published>2024-01-14T16:47:00+08:00</published>
   
     <updated>2024-01-14T16:47:00+08:00</updated>
@@ -78,7 +134,7 @@ public String simpleParam(HttpServletRequest request){
     <link href="https://blog.yexca.net/archives/143" rel="alternate" type="text/html" title="maven 学习" />
     <published>2024-01-13T23:58:00+08:00</published>
   
-    <updated>2024-01-13T23:58:00+08:00</updated>
+    <updated>2024-01-14T16:51:46+08:00</updated>
   
     <id>https://blog.yexca.net/archives/143</id>
     <content src="https://blog.yexca.net/archives/143" />
@@ -230,88 +286,6 @@ events {
 http {
     include       mime.types;
     default_type ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>设计模式 Index</title>
-    <link href="https://blog.yexca.net/archives/140" rel="alternate" type="text/html" title="设计模式 Index" />
-    <published>2023-12-27T16:14:00+08:00</published>
-  
-    <updated>2024-01-09T21:57:02+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/140</id>
-    <content src="https://blog.yexca.net/archives/140" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-    <category term="设计模式" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      简单介绍设计模式
-
-
-  设计模式 引
-
-
-具体的设计模式
-
-
-  
-    
-       
-      创建型
-      结构型
-      行为型
-    
-  
-  
-    
-      类
-      工厂方法模式
-      适配器模式 (类)
-      解释器模式模板方法模式
-    
-    
-      对象
-      抽象工厂模式生成器模式原型模式单例模式
-      适配器模式 (对象)桥接模式组合模式装饰器模式外观模式享元模式代理模式
-      责任链模式命令模式迭代器模式中介者模式备忘录模式观察者模式状态模式策略模式访问者模式
-    
-  
-
-
-其中
-
-
-  
-    工厂方法模式 与 抽象工厂模式 在 工厂模式
-  
-  
-    适配器模式 描述了类与对象
-  
-
-
-推荐阅读
-
-https://refactoringguru.cn/desig...
     </summary>
   
 
