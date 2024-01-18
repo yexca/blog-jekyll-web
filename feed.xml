@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-01-16T08:15:59+08:00</updated>
+  <updated>2024-01-18T14:45:40+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,71 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>HTML 学习一 - 基础</title>
+    <link href="https://blog.yexca.net/archives/146" rel="alternate" type="text/html" title="HTML 学习一 - 基础" />
+    <published>2024-01-18T14:43:00+08:00</published>
+  
+    <updated>2024-01-18T14:43:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/146</id>
+    <content src="https://blog.yexca.net/archives/146" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="前端" />
+    
+    <category term="HTML" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      基本骨架
+
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;title&amp;gt;网页标题&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        网页主体
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+
+一般有软件生成，例如在 VS Code 里可以新建 .html 文件后输入英文 ! 按 TAB 键自动生成
+
+head 标签一般是面向浏览器，body 标签面向用户
+
+注释
+
+&amp;lt;!-- 注释内容 --&amp;gt;
+
+
+在 VS Code 中可以选中该行，使用快捷键 Ctrl + / 一键注释
+
+浏览器不会显示注释的内容
+
+标题与段落
+
+&amp;lt;h1&amp;gt;一级标题&amp;lt;/h1&amp;gt;
+&amp;lt;h2&amp;gt;二级标题&amp;lt;/h2&amp;gt;
+&amp;lt;h3&amp;gt;三级标题&amp;lt...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -80,7 +145,7 @@
     <link href="https://blog.yexca.net/archives/144" rel="alternate" type="text/html" title="Spring 请求响应" />
     <published>2024-01-14T16:47:00+08:00</published>
   
-    <updated>2024-01-14T16:47:00+08:00</updated>
+    <updated>2024-01-16T08:16:35+08:00</updated>
   
     <id>https://blog.yexca.net/archives/144</id>
     <content src="https://blog.yexca.net/archives/144" />
@@ -229,63 +294,6 @@ public class HelloController{
 
 
 运行  *Appli...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Docker 创建与推送 H5 镜像</title>
-    <link href="https://blog.yexca.net/archives/141" rel="alternate" type="text/html" title="Docker 创建与推送 H5 镜像" />
-    <published>2024-01-09T21:50:00+08:00</published>
-  
-    <updated>2024-01-09T21:50:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/141</id>
-    <content src="https://blog.yexca.net/archives/141" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="后端" />
-    
-    <category term="Docker" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      新建目录，将网页文件放入 ./dict
-
-根目录装进文件 dockerfile 内容如下：
-
-# 基于nginx:1.20镜像
-FROM nginx:1.20
-# 将dist文件中的内容复制到 /usr/share/nginx/html/ 这个目录下面
-COPY dist/ /usr/share/nginx/html/dist/
-# 用本地的 nginx.conf 配置来替换nginx镜像里的默认配置
-COPY nginx.conf /etc/nginx/nginx.conf
-
-
-新建文件 nginx.conf 内容如下：
-
-#user  nobody;
-worker_processes  1;
-events {
-    worker_connections  1024;
-}
-http {
-    include       mime.types;
-    default_type ...
     </summary>
   
 

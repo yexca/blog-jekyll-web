@@ -1330,6 +1330,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/144">Spring 请求响应</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/143">maven 学习</a>
         </li>
       
@@ -1345,13 +1352,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/archives/108">设计模式 引</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/136">状态模式</a>
         </li>
       
         
@@ -2601,6 +2601,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4354,63 +4366,6 @@
         
         
         <div class="col">
-          <a href="/archives/136" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1703229060"
-  data-df="ll"
-  
->
-  Dec 22, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>状态模式</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  State Pattern 对象行为型模式
-
-意图
-
-允许一个对象在其内部状态改变时改变它的行为。对象看起来似乎修改了它的类
-
-结构
-
-
-
-其中：
-
-
-  
-    Context (上下文) 定义客户感兴趣的接口：维护一个 ConcerteState 子类的实例，这个实例定义当前状态
-  
-  
-    State (状态) 定义一个接口以封装与 Context 的一个特定状态相关的行为
-...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/139" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4506,6 +4461,60 @@
 
   Handler 定义一个处理请求的接口；(可选) 实现后继链
   ConcreteHandler 处理它所负责的请求；可访问它的后继...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/125" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1694330760"
+  data-df="ll"
+  
+>
+  Sep 10, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>命令模式</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Command Pattern 对象行为型模式
+
+意图
+
+将一个请求封装为一个对象，从而使得可以用不同的请求对客户进行参数化；对请求排队或记录请求日志，以及支持可撤销的操作
+
+结构
+
+
+
+其中：
+
+
+  Command 声明执行操作的接口
+  ConcreteCommand 将一个接收者对象绑定于一个动作；调用接收者相应的操作，以实现 Execute
+  Client 创建一个具体命令对象并...
                 </p>
               </div>
             </div>

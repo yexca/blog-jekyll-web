@@ -1103,6 +1103,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/144">Spring 请求响应</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/143">maven 学习</a>
         </li>
       
@@ -1118,13 +1125,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/archives/108">设计模式 引</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/136">状态模式</a>
         </li>
       
         
@@ -2374,6 +2374,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4235,7 +4247,7 @@ Fedora 设置
         
         
         <div class="col">
-          <a href="/archives/102" class="card post-preview h-100">
+          <a href="/archives/141" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4248,14 +4260,14 @@ Fedora 设置
 
 <em
   class="small"
-  data-ts="1680618705"
+  data-ts="1704808200"
   data-df="ll"
   
 >
-  Apr  4, 2023
+  Jan  9, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>服务器用 Docker 部署记录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Docker 创建与推送 H5 镜像</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4264,24 +4276,21 @@ Fedora 设置
 
 
 
-                  从想法产生到彻底实现，一共耗时三个月 (主要是太懒了)
+                  新建目录，将网页文件放入 ./dict
 
-安装 Docker
+根目录装进文件 dockerfile 内容如下：
 
-使用了 APT 进行安装
-
-
-  添加 HTTPS 传输的软件包以及 CA 证书
-
-
-# 先更新一下
-sudo apt-get update
-
-# 然后安装
-sudo apt-get install \
-     apt-transport-https \
-     ca-certificates \
-     ...
+1
+2
+3
+4
+5
+6
+# 基于nginx:1.20镜像
+FROM nginx:1.20
+# 将dist文件中的内容复制到 /usr/share/nginx/html/ 这个目录下面
+COPY dist/ /usr/share/nginx/html/dist/
+# 用本地的 nginx.conf 配...
                 </p>
               </div>
             </div>
