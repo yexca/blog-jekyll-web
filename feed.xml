@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-01-19T10:45:31+08:00</updated>
+  <updated>2024-01-22T19:57:40+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,72 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>JavaScript 学习</title>
+    <link href="https://blog.yexca.net/archives/148" rel="alternate" type="text/html" title="JavaScript 学习" />
+    <published>2024-01-22T19:51:00+08:00</published>
+  
+    <updated>2024-01-22T19:51:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/148</id>
+    <content src="https://blog.yexca.net/archives/148" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="前端" />
+    
+    <category term="JavaScript" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      JS 是一门跨平台、面向对象的脚本语言，是用来控制网页行为的，使网页可交互
+
+JS 引入方式
+
+分为内部脚本和外部脚本两种
+
+内部脚本
+
+将 js 代码定义在 HTML 页面中
+
+
+  JS 代码必须位于 &amp;lt;script&amp;gt;&amp;lt;/script&amp;gt; 标签之间
+  在 HTML 文档中，可以在任意地方，放置任意数量的 &amp;lt;script&amp;gt;
+  一般会把脚本置于 &amp;lt;body&amp;gt; 元素的底部，可以改善显示速度
+
+
+&amp;lt;script&amp;gt;
+	alert("Hello JavaScript")
+&amp;lt;/script&amp;gt;
+
+
+外部脚本
+
+将 JS 代码定义在外部 JS 文件中，然后引入到 HTML 页面中
+
+
+  外部 JS 文件中，只包含 JS 代码，不包含 &amp;lt;script&amp;gt; 标签
+
+
+&amp;lt;html&amp;gt;
+    &amp;lt;head...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -242,57 +308,6 @@ DispatcherServlet 被称为核心控制器或前端控制器
 @RequestMapping("/simpleParam")
 public String simpleParam(HttpServletRequest request){
     String name = request.getPar...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>maven 学习</title>
-    <link href="https://blog.yexca.net/archives/143" rel="alternate" type="text/html" title="maven 学习" />
-    <published>2024-01-13T23:58:00+08:00</published>
-  
-    <updated>2024-01-14T16:51:46+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/143</id>
-    <content src="https://blog.yexca.net/archives/143" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="后端" />
-    
-    <category term="Maven" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Maven 是一款用于管理和构建 java 项目的工具
-
-Maven 可以方便快捷的管理项目依赖的资源 (jar 包)，避免版本冲突问题；提供标准、统一的项目结构；标准跨平台的自动化项目构建方式
-
-安装
-
-在官网下载后解压，然后配置本地仓库，修改 conf/setting.xml 中的 &amp;lt;localRepository&amp;gt; 为一个指定目录
-
-&amp;lt;!-- 例如本地库在 D:\develop\maven_repo --&amp;gt;
-&amp;lt;localRepository&amp;gt;D:\develop\maven_repo&amp;lt;/localRepository&amp;gt;
-
-
-配置阿里云私服镜像，修改 conf/setting.xml 中的 &amp;lt;mirror&amp;gt; 标签，添加子标签
-
-&amp;lt;mirror&amp;gt;
-    &amp;lt;id&amp;gt;alimaven&amp;lt;/id&amp;gt...
     </summary>
   
 
