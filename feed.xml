@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-01-22T19:57:40+08:00</updated>
+  <updated>2024-01-28T14:30:20+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,69 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Fedora 开机启动运行脚本</title>
+    <link href="https://blog.yexca.net/archives/149" rel="alternate" type="text/html" title="Fedora 开机启动运行脚本" />
+    <published>2024-01-28T14:25:00+08:00</published>
+  
+    <updated>2024-01-28T14:25:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/149</id>
+    <content src="https://blog.yexca.net/archives/149" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      引言
+
+千万不要把死循环放进去啊！！！使用 systemd 方式
+
+新建脚本
+
+在此文件中写入您的脚本
+
+vi /etc/rc.d/rc.local
+
+
+赋予执行权限
+
+chmod +x /etc/rc.d/rc.local
+
+
+编辑启动状态
+
+编辑文件
+
+vi /usr/lib/systemd/system/rc-local.service
+
+
+在最后一行加入 [Install]
+
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as published by
+#  the Free Software F...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -254,60 +317,6 @@ head 标签一般是面向浏览器，body 标签面向用户
 
   无直接耦合。指两个模块之间没有直接的关系，它们分别从属于不同模块的控制与调用，它们之间不传递任何信息
   数据耦合。指...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Spring 请求响应</title>
-    <link href="https://blog.yexca.net/archives/144" rel="alternate" type="text/html" title="Spring 请求响应" />
-    <published>2024-01-14T16:47:00+08:00</published>
-  
-    <updated>2024-01-16T08:16:35+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/144</id>
-    <content src="https://blog.yexca.net/archives/144" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="后端" />
-    
-    <category term="Spring" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      浏览器发送请求会先经过 DispatcherServlet 转给各 *Controller 程序进行处理，处理完成后返回给 DispatcherServlet 处理结果，然后再返回浏览器
-
-DispatcherServlet 被称为核心控制器或前端控制器
-
-对于浏览器请求数据，会被封装到 HttpServletRequest 对象，响应数据被封装到 HttpServletResponse
-
-
-  *Controller 接收请求，设置响应
-
-
-请求
-
-简单参数
-
-首先为原始方式，获取请求参数通过 HttpServletRequest 对象手动获取
-
-@RequestMapping("/simpleParam")
-public String simpleParam(HttpServletRequest request){
-    String name = request.getPar...
     </summary>
   
 

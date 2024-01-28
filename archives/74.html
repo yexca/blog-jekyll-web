@@ -2859,41 +2859,6 @@ gsettings <span class="nb">set </span>org.gnome.desktop.background picture-uri f
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -2932,7 +2897,7 @@ gsettings <span class="nb">set </span>org.gnome.desktop.background picture-uri f
         <a class="post-tag btn btn-outline-primary" href="/tags/wordpress/">WordPress</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/javaweb/">JavaWeb</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/fedora/">Fedora</a>
       
     </div>
   </div>
@@ -2981,6 +2946,18 @@ gsettings <span class="nb">set </span>org.gnome.desktop.background picture-uri f
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4892,7 +4869,7 @@ User目录修改为英文
         
         
         <div class="col">
-          <a href="/archives/66" class="card post-preview h-100">
+          <a href="/archives/149" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4905,14 +4882,14 @@ User目录修改为英文
 
 <em
   class="small"
-  data-ts="1662384263"
+  data-ts="1706423100"
   data-df="ll"
   
 >
-  Sep  5, 2022
+  Jan 28, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>记录 OpenWRT 通过深澜网络认证折腾</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Fedora 开机启动运行脚本</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4923,13 +4900,31 @@ User目录修改为英文
 
                   引言
 
-记录我使用OpenWRT路由器连接学校网的折腾过程，虽然最后的结果挺 emm？但在这个过程中还是了解到不少东西
+千万不要把死循环放进去啊！！！使用 systemd 方式
 
-起始
+新建脚本
 
-通过在浏览器搜索openwrt通过深澜认证得到恩山无线论坛帖子回复下的一个开源项目：coffeehat/BIT-srun-login-script，通过项目知道了有支持多平台（包括openwrt）的golang版本，于是开始折腾
+在此文件中写入您的脚本
 
-这是项目作者的文章：深澜校园网登...
+1
+vi /etc/rc.d/rc.local
+
+
+赋予执行权限
+
+1
+chmod +x /etc/rc.d/rc.local
+
+
+编辑启动状态
+
+编辑文件
+
+1
+vi /usr/lib/systemd/system/rc-local.service
+
+
+在最后一行加入 [Install...
                 </p>
               </div>
             </div>
@@ -6024,41 +6019,6 @@ twikoo.init({
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -6097,7 +6057,7 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/wordpress/">WordPress</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/javaweb/">JavaWeb</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/fedora/">Fedora</a>
       
     </div>
   </div>

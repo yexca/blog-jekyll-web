@@ -2469,41 +2469,6 @@
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -2542,7 +2507,7 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/wordpress/">WordPress</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/javaweb/">JavaWeb</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/fedora/">Fedora</a>
       
     </div>
   </div>
@@ -2591,6 +2556,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4485,7 +4462,7 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
         
         
         <div class="col">
-          <a href="/archives/60" class="card post-preview h-100">
+          <a href="/archives/149" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4498,14 +4475,14 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
 
 <em
   class="small"
-  data-ts="1661876829"
+  data-ts="1706423100"
   data-df="ll"
   
 >
-  Aug 31, 2022
+  Jan 28, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Linux 下 bin 目录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Fedora 开机启动运行脚本</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4516,11 +4493,31 @@ Github：vinceliuice/Fluent-gtk-theme: Fluent design gtk theme for l...
 
                   引言
 
-事实上命令文件放在哪都可自行决定，也就是自己想放哪就放哪，这些目录不过是约定，不过遵守约定会更好啦，毕竟没有人会想要自己的电脑一团糟吧，尤其是Linux
+千万不要把死循环放进去啊！！！使用 systemd 方式
 
-优先级
+新建脚本
 
-Linux下的这些bin目录都是存放命令的，如果不同的目录下有相同名称的可执行程序，将通过优先级决定先运行哪个目录的二进制文件，可以通过使用命令echo $PATH查看环境变量以确定命令执行的优先级，比如我的系统输出如下...
+在此文件中写入您的脚本
+
+1
+vi /etc/rc.d/rc.local
+
+
+赋予执行权限
+
+1
+chmod +x /etc/rc.d/rc.local
+
+
+编辑启动状态
+
+编辑文件
+
+1
+vi /usr/lib/systemd/system/rc-local.service
+
+
+在最后一行加入 [Install...
                 </p>
               </div>
             </div>
@@ -5615,41 +5612,6 @@ twikoo.init({
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -5688,7 +5650,7 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/wordpress/">WordPress</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/javaweb/">JavaWeb</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/fedora/">Fedora</a>
       
     </div>
   </div>

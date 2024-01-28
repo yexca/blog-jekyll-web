@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Fedora 开机启动运行脚本",
+    "url": "/archives/149",
+    "categories": "Linux",
+    "tags": "Fedora",
+    "date": "2024-01-28 14:25:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "引言千万不要把死循环放进去啊！！！使用 systemd 方式新建脚本在此文件中写入您的脚本vi /etc/rc.d/rc.local赋予执行权限chmod +x /etc/rc.d/rc.local编辑启动状态编辑文件vi /usr/lib/systemd/system/rc-local.service在最后一行加入 [Install]#  This file is part of syst...",
+    "content": "引言千万不要把死循环放进去啊！！！使用 systemd 方式新建脚本在此文件中写入您的脚本vi /etc/rc.d/rc.local赋予执行权限chmod +x /etc/rc.d/rc.local编辑启动状态编辑文件vi /usr/lib/systemd/system/rc-local.service在最后一行加入 [Install]#  This file is part of systemd.##  systemd is free software; you can redistribute it and/or modify it#  under the terms of the GNU Lesser General Public License as published by#  the Free Software Foundation; either version 2.1 of the License, or#  (at your option) any later version.# This unit gets pulled automatically into multi-user.target by# systemd-rc-local-generator if /etc/rc.d/rc.local is executable.[Unit]Description=/etc/rc.d/rc.local CompatibilityConditionFileIsExecutable=/etc/rc.d/rc.localAfter=network.target[Service]Type=forkingExecStart=/etc/rc.d/rc.local startTimeoutSec=0RemainAfterExit=yesSysVStartPriority=99[Install]WantedBy=multi-user.target然后使用 systemd 开机自启动systemctl enable rc-local.service 查看启动状态使用以下命令systemctl status rc-local.service参考文章Fedora 22(15以上版本)开机自启动脚本 - 可酷可乐 - 博客园"
+  },
+  
+  {
     "title": "JavaScript 学习",
     "url": "/archives/148",
     "categories": "前端, JavaScript",

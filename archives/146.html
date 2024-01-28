@@ -2491,41 +2491,6 @@
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -2564,7 +2529,7 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/wordpress/">WordPress</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/javaweb/">JavaWeb</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/fedora/">Fedora</a>
       
     </div>
   </div>
@@ -2613,6 +2578,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4396,12 +4373,6 @@
     
       
       
-    
-  
-    
-    
-      
-      
         
         
         
@@ -4520,7 +4491,7 @@ JS 引入方式
         
         
         <div class="col">
-          <a href="/archives/147" class="card post-preview h-100">
+          <a href="/archives/149" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4533,14 +4504,14 @@ JS 引入方式
 
 <em
   class="small"
-  data-ts="1705631820"
+  data-ts="1706423100"
   data-df="ll"
   
 >
-  Jan 19, 2024
+  Jan 28, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>三层架构与分层解耦</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Fedora 开机启动运行脚本</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4549,21 +4520,33 @@ JS 引入方式
 
 
 
-                  案例引入
+                  引言
 
-获取员工数据，返回统一响应结果，在页面渲染展示
+千万不要把死循环放进去啊！！！使用 systemd 方式
 
-首先需要引入 dom4j 依赖，用于解析 xml 文件
+新建脚本
+
+在此文件中写入您的脚本
 
 1
-2
-3
-4
-5
-&amp;lt;dependency&amp;gt;
-    &amp;lt;groupId&amp;gt;org.dom4j&amp;lt;/groupId&amp;gt;
-    &amp;lt;artifactId&amp;gt;dom4j&amp;lt;/artifactId&amp;gt;
-    &amp;lt;version&amp;...
+vi /etc/rc.d/rc.local
+
+
+赋予执行权限
+
+1
+chmod +x /etc/rc.d/rc.local
+
+
+编辑启动状态
+
+编辑文件
+
+1
+vi /usr/lib/systemd/system/rc-local.service
+
+
+在最后一行加入 [Install...
                 </p>
               </div>
             </div>
@@ -5658,41 +5641,6 @@ twikoo.init({
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -5731,7 +5679,7 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/wordpress/">WordPress</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/javaweb/">JavaWeb</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/fedora/">Fedora</a>
       
     </div>
   </div>

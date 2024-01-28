@@ -2266,41 +2266,6 @@
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -2339,7 +2304,7 @@
         <a class="post-tag btn btn-outline-primary" href="/tags/wordpress/">WordPress</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/javaweb/">JavaWeb</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/fedora/">Fedora</a>
       
     </div>
   </div>
@@ -2383,6 +2348,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4202,6 +4179,71 @@
         
         
         <div class="col">
+          <a href="/archives/149" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1706423100"
+  data-df="ll"
+  
+>
+  Jan 28, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Fedora 开机启动运行脚本</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引言
+
+千万不要把死循环放进去啊！！！使用 systemd 方式
+
+新建脚本
+
+在此文件中写入您的脚本
+
+1
+vi /etc/rc.d/rc.local
+
+
+赋予执行权限
+
+1
+chmod +x /etc/rc.d/rc.local
+
+
+编辑启动状态
+
+编辑文件
+
+1
+vi /usr/lib/systemd/system/rc-local.service
+
+
+在最后一行加入 [Install...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/archives/148" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4298,65 +4340,6 @@ JS 引入方式
     &amp;lt;groupId&amp;gt;org.dom4j&amp;lt;/groupId&amp;gt;
     &amp;lt;artifactId&amp;gt;dom4j&amp;lt;/artifactId&amp;gt;
     &amp;lt;version&amp;...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/146" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1705560180"
-  data-df="ll"
-  
->
-  Jan 18, 2024
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>HTML 学习一 - 基础</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  基本骨架
-
-1
-2
-3
-4
-5
-6
-7
-8
-&amp;lt;html&amp;gt;
-    &amp;lt;head&amp;gt;
-        &amp;lt;title&amp;gt;网页标题&amp;lt;/title&amp;gt;
-    &amp;lt;/head&amp;gt;
-    &amp;lt;body&amp;gt;
-        网页主体
-    &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-
-
-一般有软件生成，例如在 VS Code 里可以...
                 </p>
               </div>
             </div>
@@ -5451,41 +5434,6 @@ twikoo.init({
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -5524,7 +5472,7 @@ twikoo.init({
         <a class="post-tag btn btn-outline-primary" href="/tags/wordpress/">WordPress</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/javaweb/">JavaWeb</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/fedora/">Fedora</a>
       
     </div>
   </div>
