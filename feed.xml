@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-01-28T14:30:20+08:00</updated>
+  <updated>2024-01-29T13:28:37+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,84 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>HTML 学习二 - 列表、表格与表单</title>
+    <link href="https://blog.yexca.net/archives/150" rel="alternate" type="text/html" title="HTML 学习二 - 列表、表格与表单" />
+    <published>2024-01-29T13:24:00+08:00</published>
+  
+    <updated>2024-01-29T13:24:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/150</id>
+    <content src="https://blog.yexca.net/archives/150" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="前端" />
+    
+    <category term="HTML" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      列表
+
+列表分为无序、有序列表和定义列表
+
+无序列表
+
+unordered list -&amp;gt; list
+
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;第一项&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;第二项&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;第三项&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+
+
+效果如下
+
+
+    第一项
+    第二项
+    第三项
+
+有序列表
+
+ordered list -&amp;gt; list
+
+&amp;lt;ol&amp;gt;
+    &amp;lt;li&amp;gt;第一项&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;第二项&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;第三项&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+
+
+效果如下
+
+
+    第一项
+    第二项
+    第三项
+
+定义列表
+
+个人记忆: define list...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -261,62 +339,6 @@ head 标签一般是面向浏览器，body 标签面向用户
 &amp;lt;h1&amp;gt;一级标题&amp;lt;/h1&amp;gt;
 &amp;lt;h2&amp;gt;二级标题&amp;lt;/h2&amp;gt;
 &amp;lt;h3&amp;gt;三级标题&amp;lt...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>结构化开发</title>
-    <link href="https://blog.yexca.net/archives/145" rel="alternate" type="text/html" title="结构化开发" />
-    <published>2024-01-16T08:10:00+08:00</published>
-  
-    <updated>2024-01-16T08:10:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/145</id>
-    <content src="https://blog.yexca.net/archives/145" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="软件工程" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      系统设计的基本原理
-
-抽象、模块化、信息隐蔽、模块独立
-
-模块化
-
-在软件的体系结构中，模块是可组合、分解和更换的单元
-
-模块化是指将一个待开发的软件分解成若干个小的简单部分，即模块。每个模块可独立地开发、测试，最后组装成完整的程序。这是一种复杂问题 “分而治之” 的原则。模块化的目的是使程序的结构清晰，容易阅读、理解、测试和修改
-
-模块独立
-
-模块独立是指每个模块完成一个相对独立的特定子功能，并且与其他模块之间的联系简单。衡量模块独立程度的标准有两个：耦合性和内聚性
-
-耦合
-
-耦合是模块之间的相对独立性 (互相连接的紧密程度) 的度量。耦合取决于各个模块之间接口的复杂程度、调用模块的方式以及通过接口的信息类型等。一般模块之间可能的耦合方式有 7 种类型
-
-
-
-
-  无直接耦合。指两个模块之间没有直接的关系，它们分别从属于不同模块的控制与调用，它们之间不传递任何信息
-  数据耦合。指...
     </summary>
   
 
