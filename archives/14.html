@@ -1284,6 +1284,7 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
+      <a href='/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/'>编程基础</a>,
       <a href='/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/'>数据结构</a>
   </div>
   
@@ -4381,7 +4382,7 @@
         
         
         <div class="col">
-          <a href="/archives/106" class="card post-preview h-100">
+          <a href="/archives/15" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4394,14 +4395,14 @@
 
 <em
   class="small"
-  data-ts="1684230811"
+  data-ts="1637121649"
   data-df="ll"
   
 >
-  May 16, 2023
+  Nov 17, 2021
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>算法 电路布线问题 (动态规划)</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>数据结构 链表代码</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4410,11 +4411,48 @@
 
 
 
-                  问题描述
+                  简单链表
 
-在一块电路板的上下两端分别有 n 个接线柱。根据电路设计，用 $(i, \pi(i))$ 表示将上端接线柱 i 与下端接线柱 $\pi(i)$ 相连，称其为该电路板上的第 i 条连线
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
 
-下图所示的 $\pi(i)$ 排列为 ${8, 7, 4, 2, 5, 1, 9, 3, 10, 6}$ 对于任何 $1 \le i &amp;lt; j \le n $ ，第 i 条连线和第 j 条连线...
+#include &amp;lt;stdio.h&amp;gt;
+ 
+struct student
+{
+    long num;
+    float score;
+    struct student *next;
+};
+ 
+void m...
                 </p>
               </div>
             </div>
@@ -4424,7 +4462,7 @@
         
         
         <div class="col">
-          <a href="/archives/109" class="card post-preview h-100">
+          <a href="/archives/16" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4437,14 +4475,14 @@
 
 <em
   class="small"
-  data-ts="1684412255"
+  data-ts="1637420507"
   data-df="ll"
   
 >
-  May 18, 2023
+  Nov 20, 2021
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>算法 假币问题 (分治)</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>数据结构 顺序表代码</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4453,16 +4491,75 @@
 
 
 
-                  问题描述
-
-有 $n$ 枚硬币，其中有一枚是假币，已知假币的重量较轻。现只有一个天平，要求用尽量少的比较次数找出这枚假币
-
-问题分析
-
-将 $n$ 枚硬币分成相等的两部分：
-
-
-  当 $n$ 为偶数时，将前后两部分，即 $1\cdots\frac{n}{2}$ 和 $\frac{n}{2}+1\cdots n$ 放在天平的两端，较轻的一端里有假币，继续在较轻的这部分硬币中用同样的方法找出假...
+                  1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69...
                 </p>
               </div>
             </div>
@@ -4472,7 +4569,7 @@
         
         
         <div class="col">
-          <a href="/archives/110" class="card post-preview h-100">
+          <a href="/archives/17" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4485,14 +4582,14 @@
 
 <em
   class="small"
-  data-ts="1685187428"
+  data-ts="1637504344"
   data-df="ll"
   
 >
-  May 27, 2023
+  Nov 21, 2021
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>算法 钢条切割问题 (动态规划 分治)</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>数据结构 栈代码</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4501,13 +4598,56 @@
 
 
 
-                  问题描述
+                  顺序栈（数组实现）
 
-某公司购买长钢条，将其切割后进行出售。切割钢条的成本可以忽略不计，钢条的长度为英寸。已知价格表 $p$ ，其中 $p_{i}(i=1,2,\cdots,m)$ 表示长度为 $i$ 英寸的钢条的价格。现要求解使销售收益最大的切割方案
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
 
-问题分析
+#include &amp;lt;stdio.h&amp;gt;
 
-假设长钢条的长度为 $n$ 英寸，最佳切割方案的最左边切割段长度为 $i$ 英寸，则继续求解剩余长度为 $m-1$ 英寸钢条的最佳切割方...
+//元素elem进栈，a为数组，top值为当前栈的栈顶位置
+int push(...
                 </p>
               </div>
             </div>
