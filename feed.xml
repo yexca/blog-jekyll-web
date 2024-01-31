@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-01-29T18:12:38+08:00</updated>
+  <updated>2024-01-31T16:54:26+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,72 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>了解微信小程序</title>
+    <link href="https://blog.yexca.net/archives/151" rel="alternate" type="text/html" title="了解微信小程序" />
+    <published>2024-01-31T16:50:00+08:00</published>
+  
+    <updated>2024-01-31T16:50:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/151</id>
+    <content src="https://blog.yexca.net/archives/151" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="前端" />
+    
+    <category term="微信小程序" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      官网：https://mp.weixin.qq.com/cgi-bin/wx
+
+开发小程序之前需要先注册一个小程序，可以使用不同主体注册小程序，相应的权限也不同。例如以个人的身份注册小程序是无法获得支付权限的 (也可以使用测试号体验)
+
+注册完成后设置相关信息，获取 AppID 与 AppSecret，下载开发者工具，登录，创建项目
+
+
+  首先右上 详情-本地设置，勾选 不校验合法域名、web-view(业务域名)、TLS 版本以及 HTTPS 证书
+
+
+小程序的开发属于前端开发，主要使用 JavaScript
+
+小程序目录结构
+
+小程序包含一个描述整体程序的 app 和多个描述各自页面的 page
+
+主体部分
+
+由三个文件组成，必须放在项目的根目录
+
+
+  
+    
+      文件
+      作用
+    
+  
+  
+    
+      app.js
+      小程序...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -274,71 +340,6 @@ JS 引入方式
 
 
   SpringBoot 项目的静态资源 (h5+css+js 等前端资源) 默认存放目录为 clsspath:/static, classpath:/p...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>HTML 学习一 - 基础</title>
-    <link href="https://blog.yexca.net/archives/146" rel="alternate" type="text/html" title="HTML 学习一 - 基础" />
-    <published>2024-01-18T14:43:00+08:00</published>
-  
-    <updated>2024-01-18T14:43:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/146</id>
-    <content src="https://blog.yexca.net/archives/146" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="前端" />
-    
-    <category term="HTML" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      基本骨架
-
-&amp;lt;html&amp;gt;
-    &amp;lt;head&amp;gt;
-        &amp;lt;title&amp;gt;网页标题&amp;lt;/title&amp;gt;
-    &amp;lt;/head&amp;gt;
-    &amp;lt;body&amp;gt;
-        网页主体
-    &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-
-
-一般有软件生成，例如在 VS Code 里可以新建 .html 文件后输入英文 ! 按 TAB 键自动生成
-
-head 标签一般是面向浏览器，body 标签面向用户
-
-注释
-
-&amp;lt;!-- 注释内容 --&amp;gt;
-
-
-在 VS Code 中可以选中该行，使用快捷键 Ctrl + / 一键注释
-
-浏览器不会显示注释的内容
-
-标题与段落
-
-&amp;lt;h1&amp;gt;一级标题&amp;lt;/h1&amp;gt;
-&amp;lt;h2&amp;gt;二级标题&amp;lt;/h2&amp;gt;
-&amp;lt;h3&amp;gt;三级标题&amp;lt...
     </summary>
   
 

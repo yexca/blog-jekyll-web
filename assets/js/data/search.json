@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "了解微信小程序",
+    "url": "/archives/151",
+    "categories": "前端, 微信小程序",
+    "tags": "",
+    "date": "2024-01-31 16:50:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "官网：https://mp.weixin.qq.com/cgi-bin/wx开发小程序之前需要先注册一个小程序，可以使用不同主体注册小程序，相应的权限也不同。例如以个人的身份注册小程序是无法获得支付权限的 (也可以使用测试号体验)注册完成后设置相关信息，获取 AppID 与 AppSecret，下载开发者工具，登录，创建项目  首先右上 详情-本地设置，勾选 不校验合法域名、web-view...",
+    "content": "官网：https://mp.weixin.qq.com/cgi-bin/wx开发小程序之前需要先注册一个小程序，可以使用不同主体注册小程序，相应的权限也不同。例如以个人的身份注册小程序是无法获得支付权限的 (也可以使用测试号体验)注册完成后设置相关信息，获取 AppID 与 AppSecret，下载开发者工具，登录，创建项目  首先右上 详情-本地设置，勾选 不校验合法域名、web-view(业务域名)、TLS 版本以及 HTTPS 证书小程序的开发属于前端开发，主要使用 JavaScript小程序目录结构小程序包含一个描述整体程序的 app 和多个描述各自页面的 page主体部分由三个文件组成，必须放在项目的根目录            文件      作用                  app.js      小程序逻辑              app.json      小程序公共配置              app.wxss      小程序公共样式表，非必须文件，类似 CSS      页面一个小程序有多个页面，存放在 pages 目录每个页面由四个文件组成            文件类型      是否必须      作用                  js      是      页面逻辑，JavaScript              wxml      是      页面结构、布局，HTML              json      否      页面配置              wxss      否      页面样式表，CSS      简单入门小程序的编写风格类似于 Vue插值wxml&lt;view&gt;&lt;/view&gt;jsPage({    data: {    title: 'Hello'  }})获取用户信息wxml&lt;view&gt;    &lt;button type=\"default\" bindtap=\"getUserInfo\"&gt;获取用户信息&lt;/button&gt;    &lt;image src=\"\" style=\"width: 100px; height: 100px;\"/&gt;&lt;/view&gt;jsPage({  data: {    title: 'Hello',    avatarUrl: '',    nickName: ''  },  getUserInfo: function(){    wx.getUserProfile({      desc: '获取用户信息',      success: (res) =&gt; {        console.log(res);        this.setData({          avatarUrl: res.userInfo.avatarUrl,          nickName: res.userInfo.nickName        })      }    })  }})微信登录wxml&lt;view&gt;    &lt;button type=\"primary\" bind:tap=\"wxlogin\"&gt;微信登录&lt;/button&gt;    授权码：&lt;/view&gt;jsPage({  data: {    code: ''  },  wxlogin: function(){    wx.login({      success: (res) =&gt; {        console.log(\"授权码：\" + res.code);        this.setData({          code: res.code        })      },    })  }})  微信登录流程：https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html发送 HTTP 请求wxml&lt;view&gt;    &lt;button type=\"warn\" bind:tap=\"sendRequest\"&gt;发送请求&lt;/button&gt;    响应结果：&lt;/view&gt;jsPage({  data: {    result: ''  },  sendRequest: function(){    wx.request({      url: 'url', // 请求路径      method: 'GET', // 请求方式      success: (res) =&gt; {        console.log(\"响应结果：\" + res.data);        this.setData({          result: res.data // 响应数据        })      }    })  }})编译与发布上方编译按钮，编译完成后在左方预览代码开发完毕后，上传，指定版本号。上传成功后在微信公众平台提交审核后可以发布为线上版本"
+  },
+  
+  {
     "title": "HTML 学习二 - 列表、表格与表单",
     "url": "/archives/150",
     "categories": "前端, HTML",
