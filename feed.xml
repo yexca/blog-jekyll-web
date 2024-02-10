@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-01-31T16:54:26+08:00</updated>
+  <updated>2024-02-10T18:14:59+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,66 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>微信登录后端</title>
+    <link href="https://blog.yexca.net/archives/152" rel="alternate" type="text/html" title="微信登录后端" />
+    <published>2024-02-10T18:09:00+08:00</published>
+  
+    <updated>2024-02-10T18:09:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/152</id>
+    <content src="https://blog.yexca.net/archives/152" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="后端" />
+    
+    <category term="Spring" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Happy Lunar Year!
+
+
+
+流程：https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html
+
+前端获取授权码，向 https://api.weixin.qq.com/sns/jscode2session 发起请求，获取 session_key 和 openid
+
+微信请求接口：https://developers.weixin.qq.com/miniprogram/dev/OpenApiDoc/user-login/code2Session.html
+
+分析设计
+
+接口设计
+
+请求路径：/user/user/login
+
+请求方式：POST
+
+请求参数：code String (微信用户授权码)
+
+返回数据：
+
+
+  id integer (用户 id)
+  op...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -286,60 +346,6 @@ JS 引入方式
 
 &amp;lt;html&amp;gt;
     &amp;lt;head...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>三层架构与分层解耦</title>
-    <link href="https://blog.yexca.net/archives/147" rel="alternate" type="text/html" title="三层架构与分层解耦" />
-    <published>2024-01-19T10:37:00+08:00</published>
-  
-    <updated>2024-01-19T10:37:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/147</id>
-    <content src="https://blog.yexca.net/archives/147" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="后端" />
-    
-    <category term="Spring" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      案例引入
-
-获取员工数据，返回统一响应结果，在页面渲染展示
-
-首先需要引入 dom4j 依赖，用于解析 xml 文件
-
-&amp;lt;dependency&amp;gt;
-    &amp;lt;groupId&amp;gt;org.dom4j&amp;lt;/groupId&amp;gt;
-    &amp;lt;artifactId&amp;gt;dom4j&amp;lt;/artifactId&amp;gt;
-    &amp;lt;version&amp;gt;2.1.3&amp;lt;/version&amp;gt;
-&amp;lt;/dependency&amp;gt;
-
-
-引入解析 XML 的工具类 XMLParserUtils、对应实体类 Emp、XML 文件 emp.xml
-
-引入静态页面文件，放在 resources/static
-
-
-  SpringBoot 项目的静态资源 (h5+css+js 等前端资源) 默认存放目录为 clsspath:/static, classpath:/p...
     </summary>
   
 
