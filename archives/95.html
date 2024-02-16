@@ -50,7 +50,7 @@
 <meta name="twitter:site" content="@yexcano" />
 <meta name="twitter:creator" content="@yexcano" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2023-12-02T21:22:50+08:00","datePublished":"2023-03-05T15:03:43+08:00","description":"整理一下自己学的 Git 相关的内容吧","headline":"Git 学习","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/95"},"url":"https://blog.yexca.net/archives/95"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2024-02-16T09:17:48+08:00","datePublished":"2023-03-05T15:03:43+08:00","description":"整理一下自己学的 Git 相关的内容吧","headline":"Git 学习","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/95"},"url":"https://blog.yexca.net/archives/95"}</script>
 <!-- End Jekyll SEO tag -->
 
     
@@ -766,13 +766,13 @@
 
 <em
   class=""
-  data-ts="1701523370"
+  data-ts="1708046268"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Dec  2, 2023
+  Feb 16, 2024
 </em>
 
     </span>
@@ -819,9 +819,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1400 words"
+  title="1467 words"
 >
-  <em>7 min</em> read</span>
+  <em>8 min</em> read</span>
 
     </div>
 
@@ -974,6 +974,26 @@ git add <span class="nb">.</span>
 
 <p>也有一些现成的文件，可以参考一下：<a href="https://github.com/github/gitignore">https://github.com/github/gitignore</a></p>
 
+<blockquote>
+  <p>如果在使用过程中需要再次修改文件，需要先清除缓存</p>
+
+  <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="c"># 清除缓存</span>
+git <span class="nb">rm</span> <span class="nt">-r</span> <span class="nt">--cached</span> <span class="nb">.</span>
+<span class="c"># 重新遍历文件</span>
+git add <span class="nb">.</span>
+<span class="c"># 提交文件</span>
+git commit <span class="nt">-m</span> <span class="s2">"update .gitignore"</span>
+</pre></td></tr></tbody></table></code></div>  </div>
+</blockquote>
+
 <h2 id="五日志与撤销"><span class="me-2">五、日志与撤销</span><a href="#五日志与撤销" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>使用 <code class="language-plaintext highlighter-rouge">git status</code> 可以查看仓库的状态</p>
@@ -1073,6 +1093,8 @@ git reset <span class="nt">--hard</span> eaadf4
 <p><a href="https://chinese.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github/">如何在 GitHub 提交第一个 pull request</a></p>
 
 <p><a href="https://blog.csdn.net/jiahongfei1213895/article/details/128661543">将本地master分支代码提交到远程main分支</a></p>
+
+<p><a href="https://blog.csdn.net/mingjie1212/article/details/51689606">git 修改.gitignore后生效</a></p>
 
 </div>
 
@@ -1216,6 +1238,13 @@ git reset <span class="nt">--hard</span> eaadf4
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/95">Git 学习</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/64">HTTP 学习</a>
         </li>
       
@@ -1238,13 +1267,6 @@ git reset <span class="nt">--hard</span> eaadf4
         
         <li class="text-truncate lh-lg">
           <a href="/archives/88">数据库学习三 SQL 语言</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/89">数据库学习四 关系数据库理论</a>
         </li>
       
     </ul>
