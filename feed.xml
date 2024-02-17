@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-02-17T17:34:22+08:00</updated>
+  <updated>2024-02-18T03:04:45+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,75 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>CentOS 7 安装 Xfce</title>
+    <link href="https://blog.yexca.net/archives/153" rel="alternate" type="text/html" title="CentOS 7 安装 Xfce" />
+    <published>2024-02-17T22:51:00+08:00</published>
+  
+    <updated>2024-02-17T22:51:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/153</id>
+    <content src="https://blog.yexca.net/archives/153" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      这是什么时候写的文章啊（
+
+查看是否有 Xfce 组
+
+yum grouplist
+
+
+如果没有，需要安装额外包 yum 源
+
+yum install epel-release -y
+
+
+安装 X Window system
+
+yum groupinstall "X Window system"
+
+
+安装 Xfce
+
+yum groupinstall xfce
+
+
+安装中文字体 (楷体)
+
+yum install cjkuni-ukai-fonts
+
+
+进入 Xfce 桌面
+
+systemctl isolate graphical.target
+
+
+参考文章
+
+CentOS 7安装Xfce桌面环境过程_qq_28641401的博客-CSDN博客
+
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -280,72 +349,6 @@ vi /usr/lib/systemd/system/rc-local.service
 #  systemd is free software; you can redistribute it and/or modify it
 #  under the terms of the GNU Lesser General Public License as published by
 #  the Free Software F...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>JavaScript 学习</title>
-    <link href="https://blog.yexca.net/archives/148" rel="alternate" type="text/html" title="JavaScript 学习" />
-    <published>2024-01-22T19:51:00+08:00</published>
-  
-    <updated>2024-01-22T19:51:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/148</id>
-    <content src="https://blog.yexca.net/archives/148" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="前端" />
-    
-    <category term="JavaScript" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      JS 是一门跨平台、面向对象的脚本语言，是用来控制网页行为的，使网页可交互
-
-JS 引入方式
-
-分为内部脚本和外部脚本两种
-
-内部脚本
-
-将 js 代码定义在 HTML 页面中
-
-
-  JS 代码必须位于 &amp;lt;script&amp;gt;&amp;lt;/script&amp;gt; 标签之间
-  在 HTML 文档中，可以在任意地方，放置任意数量的 &amp;lt;script&amp;gt;
-  一般会把脚本置于 &amp;lt;body&amp;gt; 元素的底部，可以改善显示速度
-
-
-&amp;lt;script&amp;gt;
-	alert("Hello JavaScript")
-&amp;lt;/script&amp;gt;
-
-
-外部脚本
-
-将 JS 代码定义在外部 JS 文件中，然后引入到 HTML 页面中
-
-
-  外部 JS 文件中，只包含 JS 代码，不包含 &amp;lt;script&amp;gt; 标签
-
-
-&amp;lt;html&amp;gt;
-    &amp;lt;head...
     </summary>
   
 

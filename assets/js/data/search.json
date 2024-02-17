@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "CentOS 7 安装 Xfce",
+    "url": "/archives/153",
+    "categories": "Linux",
+    "tags": "",
+    "date": "2024-02-17 22:51:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "这是什么时候写的文章啊（查看是否有 Xfce 组yum grouplist如果没有，需要安装额外包 yum 源yum install epel-release -y安装 X Window systemyum groupinstall \"X Window system\"安装 Xfceyum groupinstall xfce安装中文字体 (楷体)yum install cjkuni-ukai-...",
+    "content": "这是什么时候写的文章啊（查看是否有 Xfce 组yum grouplist如果没有，需要安装额外包 yum 源yum install epel-release -y安装 X Window systemyum groupinstall \"X Window system\"安装 Xfceyum groupinstall xfce安装中文字体 (楷体)yum install cjkuni-ukai-fonts进入 Xfce 桌面systemctl isolate graphical.target参考文章CentOS 7安装Xfce桌面环境过程_qq_28641401的博客-CSDN博客"
+  },
+  
+  {
     "title": "微信登录后端",
     "url": "/archives/152",
     "categories": "后端, Spring",
