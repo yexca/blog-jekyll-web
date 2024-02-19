@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-02-19T16:02:38+08:00</updated>
+  <updated>2024-02-20T06:45:03+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,92 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>GoLand 变量与常量</title>
+    <link href="https://blog.yexca.net/archives/155" rel="alternate" type="text/html" title="GoLand 变量与常量" />
+    <published>2024-02-20T06:41:00+08:00</published>
+  
+    <updated>2024-02-20T06:41:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/155</id>
+    <content src="https://blog.yexca.net/archives/155" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="编程基础" />
+    
+    <category term="编程语言" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      变量
+
+声明变量一般使用 var 关键字
+
+单变量
+
+
+  定义类型
+
+
+不指定初始值的声明，默认为 0
+
+package main
+
+import "fmt"
+
+func main() {
+	var a int
+	fmt.Println("a =", a)
+}
+
+
+指定初始值，a 为 100
+
+package main
+
+import "fmt"
+
+func main() {
+	var a int = 100
+	fmt.Println("a =", a)
+}
+
+
+
+  省略类型
+
+
+在声明时不知道类型的话，Go 会自动判断变量类型
+
+package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+func main() {
+	var a = 100
+	fmt.Println("a =", a)
+	fmt.Printf("Type of a = %s", re...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -279,84 +365,6 @@ CentOS 7安装Xfce桌面环境过程_qq_28641401的博客-CSDN博客
     
       app.js
       小程序...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>HTML 学习二 - 列表、表格与表单</title>
-    <link href="https://blog.yexca.net/archives/150" rel="alternate" type="text/html" title="HTML 学习二 - 列表、表格与表单" />
-    <published>2024-01-29T13:24:00+08:00</published>
-  
-    <updated>2024-01-29T13:24:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/150</id>
-    <content src="https://blog.yexca.net/archives/150" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="前端" />
-    
-    <category term="HTML" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      列表
-
-列表分为无序、有序列表和定义列表
-
-无序列表
-
-unordered list -&amp;gt; list
-
-&amp;lt;ul&amp;gt;
-    &amp;lt;li&amp;gt;第一项&amp;lt;/li&amp;gt;
-    &amp;lt;li&amp;gt;第二项&amp;lt;/li&amp;gt;
-    &amp;lt;li&amp;gt;第三项&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-
-
-效果如下
-
-
-    第一项
-    第二项
-    第三项
-
-有序列表
-
-ordered list -&amp;gt; list
-
-&amp;lt;ol&amp;gt;
-    &amp;lt;li&amp;gt;第一项&amp;lt;/li&amp;gt;
-    &amp;lt;li&amp;gt;第二项&amp;lt;/li&amp;gt;
-    &amp;lt;li&amp;gt;第三项&amp;lt;/li&amp;gt;
-&amp;lt;/ol&amp;gt;
-
-
-效果如下
-
-
-    第一项
-    第二项
-    第三项
-
-定义列表
-
-个人记忆: define list...
     </summary>
   
 

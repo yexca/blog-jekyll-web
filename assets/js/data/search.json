@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "GoLand 变量与常量",
+    "url": "/archives/155",
+    "categories": "编程基础, 编程语言",
+    "tags": "Go",
+    "date": "2024-02-20 06:41:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "变量声明变量一般使用 var 关键字单变量  定义类型不指定初始值的声明，默认为 0package mainimport \"fmt\"func main() {\tvar a int\tfmt.Println(\"a =\", a)}指定初始值，a 为 100package mainimport \"fmt\"func main() {\tvar a int = 100\tfmt.Println(\"a =\",...",
+    "content": "变量声明变量一般使用 var 关键字单变量  定义类型不指定初始值的声明，默认为 0package mainimport \"fmt\"func main() {\tvar a int\tfmt.Println(\"a =\", a)}指定初始值，a 为 100package mainimport \"fmt\"func main() {\tvar a int = 100\tfmt.Println(\"a =\", a)}  省略类型在声明时不知道类型的话，Go 会自动判断变量类型package mainimport (\t\"fmt\"\t\"reflect\")func main() {\tvar a = 100\tfmt.Println(\"a =\", a)\tfmt.Printf(\"Type of a = %s\", reflect.TypeOf(a))}  :=基于省略类型会自动判断，可以使用 := 直接声明变量package mainimport (\t\"fmt\"\t\"reflect\")func main() {\tp := 3.14\tfmt.Println(\"p =\", p)\tfmt.Printf(\"Type of p is %s\", reflect.TypeOf(p))}/* * 输出 * p = 3.14 * Type of p is float64 */多变量  相同类型package mainimport \"fmt\"func main() {\tvar a, b int\tfmt.Println(\"a =\", a)\tfmt.Println(\"b =\", b)}  相同类型赋值package mainimport \"fmt\"func main() {\tvar a, b int = 100, 200\tfmt.Println(\"a =\", a)\tfmt.Println(\"b =\", b)}  不同类型 1package mainimport (\t\"fmt\"\t\"reflect\")func main() {\tvar a, b = 100, 3.14\tfmt.Println(\"a =\", a)\tfmt.Printf(\"Type of a is %s\\n\", reflect.TypeOf(a))\tfmt.Println(\"b =\", b)\tfmt.Printf(\"Type of b is %s\", reflect.TypeOf(b))}/* * 输出 * a = 100 * Type of a is int * b = 3.14 * Type of b is float64 */  不同类型 2package mainimport (\t\"fmt\"\t\"reflect\")func main() {\ta, b := 100, \"Hello\"\tfmt.Println(\"a =\", a)\tfmt.Printf(\"Type of a is %s\\n\", reflect.TypeOf(a))\tfmt.Println(\"b =\", b)\tfmt.Printf(\"Type of b is %s\", reflect.TypeOf(b))}  字符串类型在 go 里是个结构，包含指向底层数组的指针和长度，这两部分每部分都是 8 个字节，所以字符串类型大小为 16 个字节  可以使用 unsafe.Sizeof() 函数查看类型占用全局变量全局变量的声明不能使用 :=package mainimport (\t\"fmt\"\t\"reflect\")var a, b intfunc main() {\tfmt.Println(\"a =\", a)\tfmt.Printf(\"Type of a is %s\\n\", reflect.TypeOf(a))\tfmt.Println(\"b =\", b)\tfmt.Printf(\"Type of b is %s\", reflect.TypeOf(b))}或者使用分解的写法，这种写法一般用于全局变量package mainimport (\t\"fmt\"\t\"reflect\")var (\ta int    = 1\tb string = \"Go\")func main() {\tfmt.Println(\"a =\", a)\tfmt.Printf(\"Type of a is %s\\n\", reflect.TypeOf(a))\tfmt.Println(\"b =\", b)\tfmt.Printf(\"Type of b is %s\", reflect.TypeOf(b))}常量常量一般用 const 关键字定义定义package mainimport \"fmt\"func main() {\tconst c int = 9\tfmt.Println(\"c = \", c)}也可以省略类型package mainimport \"fmt\"func main() {\tconst c = 9\tfmt.Println(\"c = \", c)}枚举常量定义可以用于枚举package mainfunc main() {\tconst (\t\tBEIJING = 0\t\tSHANGHAI = 1\t\tSHENZHEN = 2\t)}iota 自增长上述枚举以 0 开始递增，可以使用 iota 代替package mainimport \"fmt\"func main() {\tconst (\t\tBEIJING = iota\t// 0\t\tSHANGHAI\t\t// 1\t\tSHENZHEN\t\t// 2\t)\tfmt.Println(BEIJING, SHANGHAI, SHENZHEN)}  iota 可以用于表达式，但一般用于自增"
+  },
+  
+  {
     "title": "Hello GoLand",
     "url": "/archives/154",
     "categories": "编程基础, 编程语言",

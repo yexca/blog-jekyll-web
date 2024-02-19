@@ -931,6 +931,13 @@ go build hello.go
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/73">个人内网折腾</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/31">Beat Saber添加自定义歌单</a>
         </li>
       
@@ -953,13 +960,6 @@ go build hello.go
         
         <li class="text-truncate lh-lg">
           <a href="/archives/86">数据库学习一 数据库导论</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/87">数据库学习二 关系模型</a>
         </li>
       
     </ul>
@@ -2141,6 +2141,18 @@ go build hello.go
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4002,6 +4014,87 @@ go build hello.go
         
         
         <div class="col">
+          <a href="/archives/155" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1708382460"
+  data-df="ll"
+  
+>
+  Feb 20, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>GoLand 变量与常量</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  变量
+
+声明变量一般使用 var 关键字
+
+单变量
+
+
+  定义类型
+
+
+不指定初始值的声明，默认为 0
+
+1
+2
+3
+4
+5
+6
+7
+8
+package main
+
+import &quot;fmt&quot;
+
+func main() {
+	var a int
+	fmt.Println(&quot;a =&quot;, a)
+}
+
+
+指定初始值，a 为 100
+
+1
+2
+3
+4
+5
+6
+7
+8
+package main
+
+im...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/archives/64" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4101,54 +4194,6 @@ HTTP请求报文分为3个部分，第一部分叫起始行(Request line)，第�
           </a>
         </div>
       
-        
-        
-        <div class="col">
-          <a href="/archives/87" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1675720800"
-  data-df="ll"
-  
->
-  Feb  7, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>数据库学习二 关系模型</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  关系模型中的基本术语
-
-关系数据库系统是支持关系模型的数据库系统。有关关系模型的的一些基本术语如下：
-
-
-  关系：一个关系就是一张二维表，每个关系有一个关系名
-  元组：表中的一行即为一个元组，对应存储文件中的一个记录值
-  属性：表中的列称为属性，每一列有一个属性名，属性值相当于记录中的数据项或者字段值
-  域：属性的取值范围，即不同元组对同一个属性的值所限定的范围
-  关系模式：对关系...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
     </div>
     <!-- .card-deck -->
   </div>
@@ -4171,12 +4216,13 @@ HTTP请求报文分为3个部分，第一部分叫起始行(Request line)，第�
   
 
   
-    <div
-      class="btn btn-outline-primary disabled"
+    <a
+      href="/archives/155"
+      class="btn btn-outline-primary"
       prompt="Newer"
     >
-      <p>-</p>
-    </div>
+      <p>GoLand 变量与常量</p>
+    </a>
   
 </div>
 
