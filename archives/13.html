@@ -1072,7 +1072,7 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/%E5%B0%8F%E8%AF%B4/'>小说</a>
+      <a href='/categories/%E6%97%A5%E5%B8%B8/'>日常</a>
   </div>
   
 
@@ -4264,36 +4264,6 @@
 
 
 
-  
-    
-    
-      
-      
-        
-        
-        
-      
-    
-  
-    
-    
-      
-      
-        
-        
-        
-      
-    
-  
-    
-    
-      
-      
-        
-        
-        
-          
-
 
 
   <div id="related-posts" class="mb-2 mb-sm-4">
@@ -4305,7 +4275,7 @@
         
         
         <div class="col">
-          <a href="/archives/155" class="card post-preview h-100">
+          <a href="/archives/58" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4318,14 +4288,14 @@
 
 <em
   class="small"
-  data-ts="1708382460"
+  data-ts="1660502687"
   data-df="ll"
   
 >
-  Feb 20, 2024
+  Aug 15, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>GoLand 变量与常量</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Github 拒绝访问Connection refused</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4334,49 +4304,9 @@
 
 
 
-                  变量
+                  引言
 
-声明变量一般使用 var 关键字
-
-单变量
-
-
-  定义类型
-
-
-不指定初始值的声明，默认为 0
-
-1
-2
-3
-4
-5
-6
-7
-8
-package main
-
-import &quot;fmt&quot;
-
-func main() {
-	var a int
-	fmt.Println(&quot;a =&quot;, a)
-}
-
-
-指定初始值，a 为 100
-
-1
-2
-3
-4
-5
-6
-7
-8
-package main
-
-im...
+今日使用Git推送提示fatal: unable to access &#39;https://github.com/yexca-VRChat/yexca-VRChat.github.io.git/&#39;: Failed to connect to 127.0.0.1 port 1081 after 2074 ms: Connection refused，重启电脑也没用，遂寻找解决方法（为什么不...
                 </p>
               </div>
             </div>
@@ -4386,7 +4316,7 @@ im...
         
         
         <div class="col">
-          <a href="/archives/154" class="card post-preview h-100">
+          <a href="/archives/66" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4399,14 +4329,14 @@ im...
 
 <em
   class="small"
-  data-ts="1708300680"
+  data-ts="1662384263"
   data-df="ll"
   
 >
-  Feb 19, 2024
+  Sep  5, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Hello GoLand</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>记录 OpenWRT 通过深澜网络认证折腾</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4415,33 +4345,15 @@ im...
 
 
 
-                  Go 下载：https://go.dev/dl/
+                  引言
 
-JetBrains GoLand：https://www.jetbrains.com/go/
+记录我使用OpenWRT路由器连接学校网的折腾过程，虽然最后的结果挺 emm？但在这个过程中还是了解到不少东西
 
-Go 简介
+起始
 
-Go 可以直接编译，直接运行即可部署，静态类型语言
+通过在浏览器搜索openwrt通过深澜认证得到恩山无线论坛帖子回复下的一个开源项目：coffeehat/BIT-srun-login-script，通过项目知道了有支持多平台（包括openwrt）的golang版本，于是开始折腾
 
-1
-2
-3
-4
-5
-6
-7
-# 直接运行
-go run hello.go
-
-# 编译
-go build hello.go
-# 编译后运行
-./hello
-
-
-Go 的一些应用
-
-...
+这是项目作者的文章：深澜校园网登...
                 </p>
               </div>
             </div>
@@ -4451,7 +4363,7 @@ Go 的一些应用
         
         
         <div class="col">
-          <a href="/archives/153" class="card post-preview h-100">
+          <a href="/archives/71" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4464,14 +4376,14 @@ Go 的一些应用
 
 <em
   class="small"
-  data-ts="1708181460"
+  data-ts="1663152436"
   data-df="ll"
   
 >
-  Feb 17, 2024
+  Sep 14, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>CentOS 7 安装 Xfce</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Fedora 安装 Komga 折腾记录</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4480,33 +4392,23 @@ Go 的一些应用
 
 
 
-                  这是什么时候写的文章啊（
+                  引言
 
-查看是否有 Xfce 组
+为了在内网更方便得看漫画
 
-1
-yum grouplist
+IP 设置
 
+路由器为 OpenWRT 系统
 
-如果没有，需要安装额外包 yum 源
+路由器设置
 
-1
-yum install epel-release -y
+在 网络- IP/MAC 绑定 将电脑绑定一个固定的 IP
 
+Fedora 设置
 
-安装 X Window system
+因为我设置的 IP 与自动分配的不一致 (有线连接) ，固需要手动修改
 
-1
-yum groupinstall &quot;X Window system&quot;
-
-
-安装 Xfce
-
-1
-yum groupinstall xfce
-
-
-安装中文字...
+在 网络-设置 的 身份 加上 MAC 地址，IPv4 改为 手动，地址依次为 IP、255.255.255.255、路由器 IP，DNS...
                 </p>
               </div>
             </div>

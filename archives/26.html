@@ -824,7 +824,8 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/%E6%8A%80%E6%9C%AF%E5%B7%A5%E5%85%B7/'>技术工具</a>
+      <a href='/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/'>软件工具</a>,
+      <a href='/categories/%E5%A8%B1%E4%B9%90%E7%9B%B8%E5%85%B3/'>娱乐相关</a>
   </div>
   
 
@@ -4032,7 +4033,7 @@
         
         
         <div class="col">
-          <a href="/archives/57" class="card post-preview h-100">
+          <a href="/archives/62" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4045,14 +4046,14 @@
 
 <em
   class="small"
-  data-ts="1660357730"
+  data-ts="1662044798"
   data-df="ll"
   
 >
-  Aug 13, 2022
+  Sep  1, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>搭建Git服务端及同步到指定目录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Aria2+AriaNG配置使用</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4061,21 +4062,13 @@
 
 
 
-                  引言
+                  Aria2是Linux下的一个下载工具,这里介绍Windows下的安装与配置,官方Aria2没有GUI界面所以配合AriaNG直接在Web界面进行操作.
 
-使用Git可以更好的和朋友一起管理代码，也便于同步代码。由于我比较喜欢静态网站，因此使用Git同步网页文件很是实用
+AriaNg 是一个让 aria2 更容易使用的现代 Web 前端. AriaNg 使用纯 html &amp;amp; javascript 开发, 所以其不需要任何编译器或运行环境.
 
-安装Git
+下载Aria2+AriaNG最新安装包
 
-登录ROOT账户，依次输入以下命令
-
-1
-2
-yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel perl-devel
-yum install git
-
-
-创...
+首先先在官网下...
                 </p>
               </div>
             </div>
@@ -4085,7 +4078,7 @@ yum install git
         
         
         <div class="col">
-          <a href="/archives/65" class="card post-preview h-100">
+          <a href="/archives/12" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4098,14 +4091,14 @@ yum install git
 
 <em
   class="small"
-  data-ts="1662367298"
+  data-ts="1636528890"
   data-df="ll"
   
 >
-  Sep  5, 2022
+  Nov 10, 2021
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>ffmpeg批量转换视频格式</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>原神树脂查看/推送</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4114,22 +4107,19 @@ yum install git
 
 
 
-                  引言
+                  虽然米忽悠的米游社提供了原神树脂的查看，但是使用电脑时每次查看还要打开手机然后打开米游社着实有亿点不方便
 
-因为接触了YouTube-dl，下载频道的所有内容非常好用，但是下载下来是webm格式兼容性不是太好，于是查看了使用ffmpeg转换格式的命令
+原作者文章：自己做了一个树脂记录软件
 
-配置文件
+原文软件链接：提取码：1w5b
 
-后来发现改下配置文件就行，在文件后加上
+下载完成后打开，会提示输入uid和cookie，下面是如何抓取米游社的cookie
 
-1
---merge-output-format mp4
+首先打开米游社并登录
 
+然后按F12打开开发者工具，这时刷新网页
 
-放下我的配置文件
-
-1
--o &#39;C:/Users/yexca/Downloads/Video/%(uploader)s/%(u...
+然后点击“网络-ys/”，找到请求标头，然后在cookie...
                 </p>
               </div>
             </div>
@@ -4139,7 +4129,7 @@ yum install git
         
         
         <div class="col">
-          <a href="/archives/95" class="card post-preview h-100">
+          <a href="/archives/20" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4152,14 +4142,14 @@ yum install git
 
 <em
   class="small"
-  data-ts="1677999823"
+  data-ts="1642146820"
   data-df="ll"
   
 >
-  Mar  5, 2023
+  Jan 14, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Git 学习</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>转区软件Locale Emulator</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4168,27 +4158,17 @@ yum install git
 
 
 
-                  整理一下自己学的 Git 相关的内容吧
+                  前言
 
-一、安装
+在游玩外区一些小游戏时，常常会由于乱码而不能游玩或者报错无法运行，此时需要转区以匹配正确文字
 
+虽然可以通过修改Windows的地区设置以运行，但很多时候此方法略显繁琐，并且需要重启电脑，游玩后如果不改回则可能导致正常软件无法使用，此时便需要相关转区软件
 
-  在 Windows 上安装 Git
+软件获取
 
+软件官网：Locale Emulator
 
-从 Git 官网下载安装：https://git-scm.com/download/win
-
-安装完成后运行一次 Git Bash
-
-
-  在 Linux 上安装 Git
-
-
-Debian：sudo apt-get install git
-
-Fedora：dnf install git
-
-Ce...
+GitHub项目地址(releases)：Locale Emulator...
                 </p>
               </div>
             </div>

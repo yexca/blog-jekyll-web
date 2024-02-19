@@ -1490,7 +1490,8 @@ find <span class="o">[</span>options] <span class="nt">-ok</span> <span class="n
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/linux/'>Linux</a>
+      <a href='/categories/linux/'>Linux</a>,
+      <a href='/categories/linuxstudy/'>LinuxStudy</a>
   </div>
   
 
@@ -4706,7 +4707,7 @@ find <span class="o">[</span>options] <span class="nt">-ok</span> <span class="n
         
         
         <div class="col">
-          <a href="/archives/64" class="card post-preview h-100">
+          <a href="/archives/69" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4719,14 +4720,14 @@ find <span class="o">[</span>options] <span class="nt">-ok</span> <span class="n
 
 <em
   class="small"
-  data-ts="1662365016"
+  data-ts="1662966250"
   data-df="ll"
   
 >
-  Sep  5, 2022
+  Sep 12, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>HTTP 学习</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Linux学习 第三章 使用 shell</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4735,17 +4736,9 @@ find <span class="o">[</span>options] <span class="nt">-ok</span> <span class="n
 
 
 
-                  引言
+                  第三章 使用 shell
 
-这是在我阅读了肖佳老师的书《HTTP抓包实战》后对HTTP相关内容的总结，主要还是报文相关(记录：阅读此书与写出此文章耗时5天)
-
-HTTP协议报文的结构
-
-HTTP报文分2个：一个是HTTP请求报文，一个是HTTP响应报文
-
-HTTP请求报文(Request)
-
-HTTP请求报文分为3个部分，第一部分叫起始行(Request line)，第二部分叫首部(Request Header...
+本章介绍的 Linux shell 称为 Bash shell，其全称为 Bourne Again shell。还有其他的 shell，例如在 BSD UNIX 用户中流行的 C shell (csh) ，以及在 UNIX System V 用户中非常流行的 Korn shel (ksh) ，Ubuntu 默认启动 Dash shell (速度比 Bash快) ，...
                 </p>
               </div>
             </div>
@@ -4755,7 +4748,7 @@ HTTP请求报文分为3个部分，第一部分叫起始行(Request line)，第�
         
         
         <div class="col">
-          <a href="/archives/80" class="card post-preview h-100">
+          <a href="/archives/75" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4768,14 +4761,14 @@ HTTP请求报文分为3个部分，第一部分叫起始行(Request line)，第�
 
 <em
   class="small"
-  data-ts="1670144069"
+  data-ts="1664109302"
   data-df="ll"
   
 >
-  Dec  4, 2022
+  Sep 25, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>欧姆社漫画数字电路读后</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Linux 学习 第四章 在文件系统中移动</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4784,31 +4777,25 @@ HTTP请求报文分为3个部分，第一部分叫起始行(Request line)，第�
 
 
 
-                  引言
+                  第四章 在文件系统中移动
 
-最近？看了《漫画数字电路》一书，大概记录一下
-
-书上的很多东西并没有记录在此处
-
-前述
-
-数字电路分 组合电路 与 时序电路
-
-组合电路：现在输入信息的组合决定输出的电路
-
-时序电路：带有 “记忆” 的电路
-
-MIL 符号
-
-逻辑电路的 与门 与 或门 符号引申为多个输入一个输出
+Linux 文件系统存储了计算机上所有的信息
 
 
-  符号含义
-
-
-与门 (ALL) ：多个输入全 1，输出为 1
-
-或门 (EXIST) ：有一个输...
+  
+    
+      目录
+      描述
+    
+  
+  
+    
+      /bin
+      包含常见的 Linux 用户命令，比如 ls、sort、date 和 chmod
+    
+    
+      /boot
+      包含可启动的 Linux 内核、最初的 RAM 盘和启动加载...
                 </p>
               </div>
             </div>
@@ -4818,7 +4805,7 @@ MIL 符号
         
         
         <div class="col">
-          <a href="/archives/29" class="card post-preview h-100">
+          <a href="/archives/79" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4831,14 +4818,14 @@ MIL 符号
 
 <em
   class="small"
-  data-ts="1647446208"
+  data-ts="1670051223"
   data-df="ll"
   
 >
-  Mar 16, 2022
+  Dec  3, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>《图解HTTP》读后总结及浅谈</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Linux 学习 第六章 管理运行中的进程</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4847,11 +4834,15 @@ MIL 符号
 
 
 
-                  第一章：了解Web及网络基础
+                  第六章 管理运行中的进程
 
-1.1简介
+Linux 是一种多用户的操作系统，也是一种多任务系统。多任务意味着可以同时运行多个程序，运行程序的实例通常被称为进程
 
-为理解HTTP应事先了解一下TCP/IP协议族，我们通常使用的网络（包括互联网）是在TCP/IP协议族的基础上运作，而HTTP属于它内部的一个子集。在互联网上的设备需要相互通信双方就必须要遵从相同的规则，我们把这些规则称为协议。（TCP/IP是对互联网相关的各类协议族的一个总称包括但不限于：PPPoE、HTTP、TCP、IP、UDP、IEEE 8...
+可通过 shell 启动、暂停、停止或杀死进程，还可将进程放到后台以及带到前台
+
+6.1 理解进程
+
+进程是命令的运行实例。系统中的进程通过一个进程 ID (PID) 进行识别，PID 相对于当前系统是唯一的。除了 PID 号之外，进程还与一个...
                 </p>
               </div>
             </div>

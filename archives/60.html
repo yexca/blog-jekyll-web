@@ -861,7 +861,8 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/linux/'>Linux</a>
+      <a href='/categories/linux/'>Linux</a>,
+      <a href='/categories/linuxstudy/'>LinuxStudy</a>
   </div>
   
 
@@ -4069,74 +4070,6 @@
         
         
         <div class="col">
-          <a href="/archives/59" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1661314410"
-  data-df="ll"
-  
->
-  Aug 24, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Fedora安装后</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  引言
-
-个人安装Fedora后装的一些东西
-
-修改终端快捷键
-
-打开设置-键盘，在最下方查看及自定义快捷键
-
-自定义快捷键
-
-名称：Shell终端
-
-命令：gnome-terminal
-
-快捷键：自定
-
-更新系统
-
-sudo dnf update
-
-
-修改截图快捷键
-
-还是习惯Win的快捷键
-
-上述截图处交互式截图改为Win+Shift+S
-
-User目录修改为英文
-
-中文目录及其不易使用终...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/69" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4178,7 +4111,7 @@ User目录修改为英文
         
         
         <div class="col">
-          <a href="/archives/70" class="card post-preview h-100">
+          <a href="/archives/75" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4191,14 +4124,71 @@ User目录修改为英文
 
 <em
   class="small"
-  data-ts="1662981865"
+  data-ts="1664109302"
   data-df="ll"
   
 >
-  Sep 12, 2022
+  Sep 25, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>SSH 公钥登录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Linux 学习 第四章 在文件系统中移动</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  第四章 在文件系统中移动
+
+Linux 文件系统存储了计算机上所有的信息
+
+
+  
+    
+      目录
+      描述
+    
+  
+  
+    
+      /bin
+      包含常见的 Linux 用户命令，比如 ls、sort、date 和 chmod
+    
+    
+      /boot
+      包含可启动的 Linux 内核、最初的 RAM 盘和启动加载...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/76" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1664689166"
+  data-df="ll"
+  
+>
+  Oct  2, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>虚拟机中 Arch Linux 安装记录</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4209,25 +4199,25 @@ User目录修改为英文
 
                   引言
 
-每次连接机子都要输入密码属实有点麻烦 (因为我忘了
+使用虚拟机安装，软件为 Fedora 的 盒子
 
-OneClick
+安装前准备
 
-如果自己的电脑没有公钥需要先生成，一般在 ~/.ssh/id_rsa.pub
+下载镜像
+
+从官方下载页面下载，推荐使用 BT 下载 (请使用正规 torrent 客户端，例如 qBittorrent)
+
+然后放到虚拟机里
+
+验证引导模式
+
+列出 efivars 目录
 
 1
-ssh-keygen
+ls /sys/firmware/efi/efivars
 
 
-然后在自己的电脑上运行下个命令
-
-1
-ssh-copy-id username@RemoteIP
-
-
-其中 username 替换为要登录的账户，RemoteIP 替换为要登录的 IP 地址
-
-等待提示...
+如果正确显示目录并且没有报告错误，则系统以 UEFI 模式引导，...
                 </p>
               </div>
             </div>

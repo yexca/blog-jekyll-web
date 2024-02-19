@@ -803,7 +803,8 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/%E6%8A%80%E6%9C%AF%E5%B7%A5%E5%85%B7/'>技术工具</a>
+      <a href='/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/'>软件工具</a>,
+      <a href='/categories/%E5%B7%A5%E5%85%B7%E7%BD%91%E7%AB%99/'>工具网站</a>
   </div>
   
 
@@ -4014,7 +4015,7 @@
         
         
         <div class="col">
-          <a href="/archives/57" class="card post-preview h-100">
+          <a href="/archives/21" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4027,14 +4028,120 @@
 
 <em
   class="small"
-  data-ts="1660357730"
+  data-ts="1642660132"
   data-df="ll"
   
 >
-  Aug 13, 2022
+  Jan 20, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>搭建Git服务端及同步到指定目录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>在Microsoft Word中插入代码（高亮）</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引言(废话)
+
+有些时候会有在Word文档中插入代码的需求，但是直接把代码拷贝过去会不大美观，而且没有高亮看着也非常难受
+
+工具一
+
+CodeInWord 在word中优雅展现的代码/代码高亮/word中插入代码/代码格式化
+
+工具二
+
+Syntax Highlight Code In Microsoft Word
+
+使用说明
+
+没什么要说明的，把代码复制过去，选择相应语言，点击生成再复制到...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/25" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1644752798"
+  data-df="ll"
+  
+>
+  Feb 13, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>查看服务器端口是否开放</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  国内工具
+
+使用站长工具的端口扫描，输入IP地址或域名和端口后点击开始扫描
+
+如果显示关闭，则端口未开放或无法连接
+
+工具链接：端口扫描 – 站长工具
+
+国外工具
+
+使用 you get signal 的 Port Forwarding Tester 进行扫描
+
+进入后会自动填写您的IP和80端口，可修改为想要扫描的IP和端口后点击Check
+
+如果出现红旗并显示Port ** is clo...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/33" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1647766476"
+  data-df="ll"
+  
+>
+  Mar 20, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>图床网站总结</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4045,132 +4152,19 @@
 
                   引言
 
-使用Git可以更好的和朋友一起管理代码，也便于同步代码。由于我比较喜欢静态网站，因此使用Git同步网页文件很是实用
+本文章为我自行搜集的一些免费图床，部分图床曾经使用过。当然，如果您想要使用图床，我推荐您阅读使用PicX自建免费图床 – yexca’Blog
 
-安装Git
+一、路过图床
 
-登录ROOT账户，依次输入以下命令
+官网链接：路过图床 – 免费图片上传, 专业图片外链, 免费公共图床 (imgtu.com)
 
-1
-2
-yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel perl-devel
-yum install git
+高速稳定，单图最大 10 MB
 
+二、ImgURL
 
-创...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/65" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+官网链接：ImgURL免费图床
 
-
-
-
-
-<em
-  class="small"
-  data-ts="1662367298"
-  data-df="ll"
-  
->
-  Sep  5, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>ffmpeg批量转换视频格式</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  引言
-
-因为接触了YouTube-dl，下载频道的所有内容非常好用，但是下载下来是webm格式兼容性不是太好，于是查看了使用ffmpeg转换格式的命令
-
-配置文件
-
-后来发现改下配置文件就行，在文件后加上
-
-1
---merge-output-format mp4
-
-
-放下我的配置文件
-
-1
--o &#39;C:/Users/yexca/Downloads/Video/%(uploader)s/%(u...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/95" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1677999823"
-  data-df="ll"
-  
->
-  Mar  5, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Git 学习</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  整理一下自己学的 Git 相关的内容吧
-
-一、安装
-
-
-  在 Windows 上安装 Git
-
-
-从 Git 官网下载安装：https://git-scm.com/download/win
-
-安装完成后运行一次 Git Bash
-
-
-  在 Linux 上安装 Git
-
-
-Debian：sudo apt-get install git
-
-Fedora：dnf install git
-
-Ce...
+游客每日限 10 次上传，单图最大 5 ...
                 </p>
               </div>
             </div>

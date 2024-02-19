@@ -1220,7 +1220,8 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/'>软件配置</a>
+      <a href='/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/'>软件工具</a>,
+      <a href='/categories/%E7%BC%96%E7%A0%81%E7%9B%B8%E5%85%B3/'>编码相关</a>
   </div>
   
 
@@ -4434,7 +4435,7 @@
         
         
         <div class="col">
-          <a href="/archives/106" class="card post-preview h-100">
+          <a href="/archives/5" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4447,14 +4448,14 @@
 
 <em
   class="small"
-  data-ts="1684230811"
+  data-ts="1636255738"
   data-df="ll"
   
 >
-  May 16, 2023
+  Nov  7, 2021
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>算法 电路布线问题 (动态规划)</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>VsCode配置Python环境</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4463,11 +4464,17 @@
 
 
 
-                  问题描述
+                  安装完成VS Code和Python并配置环境变量后
 
-在一块电路板的上下两端分别有 n 个接线柱。根据电路设计，用 $(i, \pi(i))$ 表示将上端接线柱 i 与下端接线柱 $\pi(i)$ 相连，称其为该电路板上的第 i 条连线
+打开VS Code，进入拓展搜索并下载Python
 
-下图所示的 $\pi(i)$ 排列为 ${8, 7, 4, 2, 5, 1, 9, 3, 10, 6}$ 对于任何 $1 \le i &amp;lt; j \le n $ ，第 i 条连线和第 j 条连线...
+在资源管理器新建一个Python源文件(.py)后，资源管理器会在.vscode文件夹下生成setting.json文件（若没有自动生成可自己创建）
+
+打开setting.json文件，并替换为以下代码
+
+
+{
+    &quot;python.linting.flake8Enabled&quot;: ...
                 </p>
               </div>
             </div>
@@ -4477,7 +4484,7 @@
         
         
         <div class="col">
-          <a href="/archives/109" class="card post-preview h-100">
+          <a href="/archives/24" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4490,14 +4497,14 @@
 
 <em
   class="small"
-  data-ts="1684412255"
+  data-ts="1644587276"
   data-df="ll"
   
 >
-  May 18, 2023
+  Feb 11, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>算法 假币问题 (分治)</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>使用VS Code收发QQ消息</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4506,16 +4513,18 @@
 
 
 
-                  问题描述
+                  引言
 
-有 $n$ 枚硬币，其中有一枚是假币，已知假币的重量较轻。现只有一个天平，要求用尽量少的比较次数找出这枚假币
+由于QQ软件过于臃肿并且权限过大，并且经常性卡住无法加载，所以便寻找其他方法，首先是通过Telegram收发QQ消息，但配置较为复杂且并不稳定，于是弃用并改用VS Code。
 
-问题分析
+插件简介
 
-将 $n$ 枚硬币分成相等的两部分：
-
-
-  当 $n$ 为偶数时，将前后两部分，即 $1\cdots\frac{n}{2}$ 和 $\frac{n}{2}+1\cdots n$ 放在天平的两端，较轻的一端里有假币，继续在较轻的这部分硬币中用同样的方法找出假...
+名称: QQ
+ID: takayama.vscode-qq
+说明: lite qq for chat in working
+版本: 1.4.2
+发布者: takayama
+VS Marketpla...
                 </p>
               </div>
             </div>
@@ -4525,7 +4534,7 @@
         
         
         <div class="col">
-          <a href="/archives/110" class="card post-preview h-100">
+          <a href="/archives/45" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4538,14 +4547,14 @@
 
 <em
   class="small"
-  data-ts="1685187428"
+  data-ts="1654034460"
   data-df="ll"
   
 >
-  May 27, 2023
+  Jun  1, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>算法 钢条切割问题 (动态规划 分治)</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>VS Code右下角嘉然</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4554,13 +4563,23 @@
 
 
 
-                  问题描述
+                  引言
 
-某公司购买长钢条，将其切割后进行出售。切割钢条的成本可以忽略不计，钢条的长度为英寸。已知价格表 $p$ ，其中 $p_{i}(i=1,2,\cdots,m)$ 表示长度为 $i$ 英寸的钢条的价格。现要求解使销售收益最大的切割方案
+首先我不是嘉心糖，我只是觉得很可爱(我刚开始甚至都不知道是嘉然)，然后这个Bug挺多，自启动不是每次都能触发，但她太可爱啦
 
-问题分析
+然后这个拓展还可以改背景，但我个人不是太喜欢就没改
 
-假设长钢条的长度为 $n$ 英寸，最佳切割方案的最左边切割段长度为 $i$ 英寸，则继续求解剩余长度为 $m-1$ 英寸钢条的最佳切割方...
+效果预览如下
+
+
+
+安装
+
+打开VS Code然后在拓展搜索A-SOUL-live2d安装
+
+拓展地址：A-SOUL-live2d - Visual Studio Marketplace
+
+其实可以直接去拓...
                 </p>
               </div>
             </div>

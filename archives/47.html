@@ -4311,6 +4311,110 @@ ONEPUSH={“notifier”:”discord”,”params”:{“markdown”:true,”webho
         
         
         <div class="col">
+          <a href="/archives/12" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1636528890"
+  data-df="ll"
+  
+>
+  Nov 10, 2021
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>原神树脂查看/推送</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  虽然米忽悠的米游社提供了原神树脂的查看，但是使用电脑时每次查看还要打开手机然后打开米游社着实有亿点不方便
+
+原作者文章：自己做了一个树脂记录软件
+
+原文软件链接：提取码：1w5b
+
+下载完成后打开，会提示输入uid和cookie，下面是如何抓取米游社的cookie
+
+首先打开米游社并登录
+
+然后按F12打开开发者工具，这时刷新网页
+
+然后点击“网络-ys/”，找到请求标头，然后在cookie...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/141" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1704808200"
+  data-df="ll"
+  
+>
+  Jan  9, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Docker 创建与推送 H5 镜像</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  新建目录，将网页文件放入 ./dict
+
+根目录装进文件 dockerfile 内容如下：
+
+1
+2
+3
+4
+5
+6
+# 基于nginx:1.20镜像
+FROM nginx:1.20
+# 将dist文件中的内容复制到 /usr/share/nginx/html/ 这个目录下面
+COPY dist/ /usr/share/nginx/html/dist/
+# 用本地的 nginx.conf 配...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/archives/71" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4357,124 +4461,6 @@ Fedora 设置
 因为我设置的 IP 与自动分配的不一致 (有线连接) ，固需要手动修改
 
 在 网络-设置 的 身份 加上 MAC 地址，IPv4 改为 手动，地址依次为 IP、255.255.255.255、路由器 IP，DNS...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/73" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1663311601"
-  data-df="ll"
-  
->
-  Sep 16, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>个人内网折腾</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  引言
-
-人嘛，有了比较好的就会追求更好的，欲望无穷无尽。本想整 NAS，奈何经济实力不够，于是通过四个项目在自己电脑整了入口、动画、漫画以及音声库，那么
-
-书接上回，继续折腾
-
-成品展示
-
-全部使用 Docker 部署，理论上应该只要 Docker 支持的平台就能复现
-
-
-
-
-  
-    调整了域名为 link.start.icu，本没有 .icu，可浏览器不能解析，只能加上 (不过莫名更...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/102" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1680618705"
-  data-df="ll"
-  
->
-  Apr  4, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>服务器用 Docker 部署记录</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  从想法产生到彻底实现，一共耗时三个月 (主要是太懒了)
-
-安装 Docker
-
-使用了 APT 进行安装
-
-
-  添加 HTTPS 传输的软件包以及 CA 证书
-
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-# 先更新一下
-sudo apt-get update
-
-# 然后安装
-sudo apt-get install \
-     apt-transport-https \
-     ca...
                 </p>
               </div>
             </div>

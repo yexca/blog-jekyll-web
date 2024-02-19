@@ -1212,7 +1212,8 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/'>软件配置</a>
+      <a href='/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/'>软件工具</a>,
+      <a href='/categories/%E5%A8%B1%E4%B9%90%E7%9B%B8%E5%85%B3/'>娱乐相关</a>
   </div>
   
 
@@ -4428,7 +4429,7 @@
         
         
         <div class="col">
-          <a href="/archives/61" class="card post-preview h-100">
+          <a href="/archives/12" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4441,14 +4442,14 @@
 
 <em
   class="small"
-  data-ts="1661991452"
+  data-ts="1636528890"
   data-df="ll"
   
 >
-  Sep  1, 2022
+  Nov 10, 2021
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Fiddler抓包HTTPS</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>原神树脂查看/推送</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4457,17 +4458,19 @@
 
 
 
-                  引言
+                  虽然米忽悠的米游社提供了原神树脂的查看，但是使用电脑时每次查看还要打开手机然后打开米游社着实有亿点不方便
 
-默认情况下Fiddler仅抓包HTTP，需要设置后才能捕获HTTPS。现在大部分网站都是使用HTTPS或者HSTS，所以开启HTTPS抓包是很必要的
+原作者文章：自己做了一个树脂记录软件
 
-Fiddler设置
+原文软件链接：提取码：1w5b
 
-在设置-HTTPS中勾选Capture HTTPS traffic即可，下一个Ignore server certificate errors(unsafe)也可勾选，不过可能不安全吧，然后保存
+下载完成后打开，会提示输入uid和cookie，下面是如何抓取米游社的cookie
 
-浏览器设置
+首先打开米游社并登录
 
-...
+然后按F12打开开发者工具，这时刷新网页
+
+然后点击“网络-ys/”，找到请求标头，然后在cookie...
                 </p>
               </div>
             </div>
@@ -4477,7 +4480,7 @@ Fiddler设置
         
         
         <div class="col">
-          <a href="/archives/63" class="card post-preview h-100">
+          <a href="/archives/20" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4490,14 +4493,14 @@ Fiddler设置
 
 <em
   class="small"
-  data-ts="1662111471"
+  data-ts="1642146820"
   data-df="ll"
   
 >
-  Sep  2, 2022
+  Jan 14, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Fedora安装java8(Oracle JDK)</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>转区软件Locale Emulator</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4506,22 +4509,17 @@ Fiddler设置
 
 
 
-                  引言
+                  前言
 
-尽管 Fedora 系统自带 java 环境，不过是 OpenJDK 。有时候还是需要使用 Oracle 的
+在游玩外区一些小游戏时，常常会由于乱码而不能游玩或者报错无法运行，此时需要转区以匹配正确文字
 
-下载
+虽然可以通过修改Windows的地区设置以运行，但很多时候此方法略显繁琐，并且需要重启电脑，游玩后如果不改回则可能导致正常软件无法使用，此时便需要相关转区软件
 
+软件获取
 
-  
-    
-      进入官网下载：[Java Downloads
-      Oracle](https://www.oracle.com/java/technologies/downloads/) (下载需要登陆)
-    
-  
+软件官网：Locale Emulator
 
-
-找到 java8-...
+GitHub项目地址(releases)：Locale Emulator...
                 </p>
               </div>
             </div>
@@ -4531,7 +4529,7 @@ Fiddler设置
         
         
         <div class="col">
-          <a href="/archives/68" class="card post-preview h-100">
+          <a href="/archives/23" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4544,14 +4542,14 @@ Fiddler设置
 
 <em
   class="small"
-  data-ts="1662809398"
+  data-ts="1644154665"
   data-df="ll"
   
 >
-  Sep 10, 2022
+  Feb  6, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Linux下载youtube视频</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>去除Potplayer右下弹窗</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4562,19 +4560,19 @@ Fiddler设置
 
                   引言
 
-既然都有Win命令行了，那怎么能没有Linux呢
+Potplayer是非常优秀的视频播放软件，但最近的版本右下开始有弹窗广告非常的让人困扰，本文讲述两种方法解决右下弹窗
 
-Windows的文章：命令行下载YouTube视频
+使用无弹窗的旧版本（推荐）
 
-下载yt-dlp
+最后一个无广告弹窗的版本是1.7.18958
 
-建议配置好Python环境，然后到Releases · yt-dlp/yt-dlp · GitHub下载yt-dlp，如果不想配置Python就下载yt-dlp_linux
+旧版本的所有PotPlayer都可以在以下地址下载获得：
+PotPlayer Old Versions Downloads
 
-下载完成后赋予执行权限放在/usr/local/bin/下
 
-下载ffmpeg
-
-参...
+  
+    
+      1.7.18958版本直接下载...
                 </p>
               </div>
             </div>

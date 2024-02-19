@@ -821,7 +821,8 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/linux/'>Linux</a>
+      <a href='/categories/linux/'>Linux</a>,
+      <a href='/categories/linuxtools/'>LinuxTools</a>
   </div>
   
 
@@ -4097,7 +4098,7 @@ User目录修改为英文
         
         
         <div class="col">
-          <a href="/archives/60" class="card post-preview h-100">
+          <a href="/archives/63" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4110,14 +4111,14 @@ User目录修改为英文
 
 <em
   class="small"
-  data-ts="1661876829"
+  data-ts="1662111471"
   data-df="ll"
   
 >
-  Aug 31, 2022
+  Sep  2, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Linux 下 bin 目录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Fedora安装java8(Oracle JDK)</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4128,11 +4129,20 @@ User目录修改为英文
 
                   引言
 
-事实上命令文件放在哪都可自行决定，也就是自己想放哪就放哪，这些目录不过是约定，不过遵守约定会更好啦，毕竟没有人会想要自己的电脑一团糟吧，尤其是Linux
+尽管 Fedora 系统自带 java 环境，不过是 OpenJDK 。有时候还是需要使用 Oracle 的
 
-优先级
+下载
 
-Linux下的这些bin目录都是存放命令的，如果不同的目录下有相同名称的可执行程序，将通过优先级决定先运行哪个目录的二进制文件，可以通过使用命令echo $PATH查看环境变量以确定命令执行的优先级，比如我的系统输出如下...
+
+  
+    
+      进入官网下载：[Java Downloads
+      Oracle](https://www.oracle.com/java/technologies/downloads/) (下载需要登陆)
+    
+  
+
+
+找到 java8-...
                 </p>
               </div>
             </div>
@@ -4142,7 +4152,7 @@ Linux下的这些bin目录都是存放命令的，如果不同的目录下有相
         
         
         <div class="col">
-          <a href="/archives/69" class="card post-preview h-100">
+          <a href="/archives/68" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4155,14 +4165,14 @@ Linux下的这些bin目录都是存放命令的，如果不同的目录下有相
 
 <em
   class="small"
-  data-ts="1662966250"
+  data-ts="1662809398"
   data-df="ll"
   
 >
-  Sep 12, 2022
+  Sep 10, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Linux学习 第三章 使用 shell</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Linux下载youtube视频</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4171,9 +4181,21 @@ Linux下的这些bin目录都是存放命令的，如果不同的目录下有相
 
 
 
-                  第三章 使用 shell
+                  引言
 
-本章介绍的 Linux shell 称为 Bash shell，其全称为 Bourne Again shell。还有其他的 shell，例如在 BSD UNIX 用户中流行的 C shell (csh) ，以及在 UNIX System V 用户中非常流行的 Korn shel (ksh) ，Ubuntu 默认启动 Dash shell (速度比 Bash快) ，...
+既然都有Win命令行了，那怎么能没有Linux呢
+
+Windows的文章：命令行下载YouTube视频
+
+下载yt-dlp
+
+建议配置好Python环境，然后到Releases · yt-dlp/yt-dlp · GitHub下载yt-dlp，如果不想配置Python就下载yt-dlp_linux
+
+下载完成后赋予执行权限放在/usr/local/bin/下
+
+下载ffmpeg
+
+参...
                 </p>
               </div>
             </div>

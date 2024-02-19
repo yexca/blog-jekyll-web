@@ -1107,6 +1107,7 @@
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
+      <a href='/categories/%E6%97%A5%E5%B8%B8/'>日常</a>,
       <a href='/categories/%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95/'>折腾记录</a>
   </div>
   
@@ -4323,7 +4324,7 @@
         
         
         <div class="col">
-          <a href="/archives/133" class="card post-preview h-100">
+          <a href="/archives/73" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4336,116 +4337,14 @@
 
 <em
   class="small"
-  data-ts="1701523380"
+  data-ts="1663311601"
   data-df="ll"
   
 >
-  Dec  2, 2023
+  Sep 16, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>hvdb 注册检测</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  从 ???? 我记不清了 开始喜欢上 ASMR 后就接触到了音声，不过高昂的价格显然会驱使我去广袤的互联网上搜索，于是便知道了这个网站，可此网站只有登录后才可以看到更多内容，而每年也几乎是不定时开放注册，这使我很好奇这个网站
-
-于是我便想着让服务器运行程序检测是否可以注册，然后通知
-
-Github: yexca/hvdb
-
-目标
-
-检测是否可以注册，如果可以便通过 Telegram 通知
-
-...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/141" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1704808200"
-  data-df="ll"
-  
->
-  Jan  9, 2024
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Docker 创建与推送 H5 镜像</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  新建目录，将网页文件放入 ./dict
-
-根目录装进文件 dockerfile 内容如下：
-
-1
-2
-3
-4
-5
-6
-# 基于nginx:1.20镜像
-FROM nginx:1.20
-# 将dist文件中的内容复制到 /usr/share/nginx/html/ 这个目录下面
-COPY dist/ /usr/share/nginx/html/dist/
-# 用本地的 nginx.conf 配...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/47" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1654752822"
-  data-df="ll"
-  
->
-  Jun  9, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>原神自动签到(Linux服务器Docker)</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>个人内网折腾</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4456,20 +4355,133 @@ COPY dist/ /usr/share/nginx/html/dist/
 
                   引言
 
-由于腾讯云函数从六月开始收费，于是便弃用改在自己的服务器上搭建
+人嘛，有了比较好的就会追求更好的，欲望无穷无尽。本想整 NAS，奈何经济实力不够，于是通过四个项目在自己电脑整了入口、动画、漫画以及音声库，那么
 
-既然六月收费为什么现在才写文章呢？因为可能还有三个月的免费试用我米游社的Cookie过期更换，故记录
+书接上回，继续折腾
 
-工具&amp;amp;原教程
+成品展示
 
-原神签到小助手 每日福利不用愁 - 银弹博客 (yindan.me)
+全部使用 Docker 部署，理论上应该只要 Docker 支持的平台就能复现
 
-由于原文介绍了多种使用方法，自己的阅读体验不是太好，故写此文
 
-腾讯云函数处理
 
-请将腾讯云函数冻结已确保不会收取费用
-...
+
+  
+    调整了域名为 link.start.icu，本没有 .icu，可浏览器不能解析，只能加上 (不过莫名更...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/102" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1680618705"
+  data-df="ll"
+  
+>
+  Apr  4, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>服务器用 Docker 部署记录</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  从想法产生到彻底实现，一共耗时三个月 (主要是太懒了)
+
+安装 Docker
+
+使用了 APT 进行安装
+
+
+  添加 HTTPS 传输的软件包以及 CA 证书
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+# 先更新一下
+sudo apt-get update
+
+# 然后安装
+sudo apt-get install \
+     apt-transport-https \
+     ca...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/105" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1682965659"
+  data-df="ll"
+  
+>
+  May  2, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>搭建个人音乐网站</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  使用 Rclone 挂载 Onedrive 歌曲文件，Navidrome 搭建网站，采用 docker 部署
+
+Rclone
+
+首先需要在 Windows 系统上运行获取配置，然后再在服务器上安装并挂载文件
+
+获取 Token
+
+在 Windows 电脑上下载 Rclone，下载地址：https://rclone.org/downloads/
+
+下载完成后解压，解压完成后通过 cmd 进入该...
                 </p>
               </div>
             </div>

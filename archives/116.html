@@ -835,7 +835,8 @@ _redirect.acg  IN  TXT    "https://blog.yexca.net/acg"
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/%E6%8A%80%E6%9C%AF%E5%B7%A5%E5%85%B7/'>技术工具</a>
+      <a href='/categories/%E6%97%A5%E5%B8%B8/'>日常</a>,
+      <a href='/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/'>网站建设</a>
   </div>
   
 
@@ -4043,7 +4044,7 @@ _redirect.acg  IN  TXT    "https://blog.yexca.net/acg"
         
         
         <div class="col">
-          <a href="/archives/57" class="card post-preview h-100">
+          <a href="/archives/56" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4056,14 +4057,62 @@ _redirect.acg  IN  TXT    "https://blog.yexca.net/acg"
 
 <em
   class="small"
-  data-ts="1660357730"
+  data-ts="1660234277"
   data-df="ll"
   
 >
-  Aug 13, 2022
+  Aug 12, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>搭建Git服务端及同步到指定目录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>博客视频外链引用</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  现在主流流媒体网站都支持外链嵌入代码，但是B站(什么时候倒闭?)现在(2022/8/11)自带的外链引用默认为360P，且不能调节清晰度，非常的恶心，与Youtube相比高下立判，下面重点介绍一下B站的引用外链的参数和方法:
+
+Bilibili外链引用参数key
+具体视频演示
+
+Bilibili外链引用
+
+原版引用链接：
+
+&amp;lt;pre class=&quot;language-html&quot; data...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/58" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1660502687"
+  data-df="ll"
+  
+>
+  Aug 15, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Github 拒绝访问Connection refused</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4074,18 +4123,7 @@ _redirect.acg  IN  TXT    "https://blog.yexca.net/acg"
 
                   引言
 
-使用Git可以更好的和朋友一起管理代码，也便于同步代码。由于我比较喜欢静态网站，因此使用Git同步网页文件很是实用
-
-安装Git
-
-登录ROOT账户，依次输入以下命令
-
-yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel perl-devel
-yum install git
-
-
-创建用户
-...
+今日使用Git推送提示fatal: unable to access &#39;https://github.com/yexca-VRChat/yexca-VRChat.github.io.git/&#39;: Failed to connect to 127.0.0.1 port 1081 after 2074 ms: Connection refused，重启电脑也没用，遂寻找解决方法（为什么不...
                 </p>
               </div>
             </div>
@@ -4095,7 +4133,7 @@ yum install git
         
         
         <div class="col">
-          <a href="/archives/65" class="card post-preview h-100">
+          <a href="/archives/66" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4108,14 +4146,14 @@ yum install git
 
 <em
   class="small"
-  data-ts="1662367298"
+  data-ts="1662384263"
   data-df="ll"
   
 >
   Sep  5, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>ffmpeg批量转换视频格式</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>记录 OpenWRT 通过深澜网络认证折腾</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4126,77 +4164,13 @@ yum install git
 
                   引言
 
-因为接触了YouTube-dl，下载频道的所有内容非常好用，但是下载下来是webm格式兼容性不是太好，于是查看了使用ffmpeg转换格式的命令
+记录我使用OpenWRT路由器连接学校网的折腾过程，虽然最后的结果挺 emm？但在这个过程中还是了解到不少东西
 
-配置文件
+起始
 
-后来发现改下配置文件就行，在文件后加上
+通过在浏览器搜索openwrt通过深澜认证得到恩山无线论坛帖子回复下的一个开源项目：coffeehat/BIT-srun-login-script，通过项目知道了有支持多平台（包括openwrt）的golang版本，于是开始折腾
 
---merge-output-format mp4
-
-
-放下我的配置文件
-
--o &#39;C:/Users/yexca/Downloads/Video/%(uploader)s/%(uploa...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/95" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1677999823"
-  data-df="ll"
-  
->
-  Mar  5, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Git 学习</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  整理一下自己学的 Git 相关的内容吧
-
-一、安装
-
-
-  在 Windows 上安装 Git
-
-
-从 Git 官网下载安装：https://git-scm.com/download/win
-
-安装完成后运行一次 Git Bash
-
-
-  在 Linux 上安装 Git
-
-
-Debian：sudo apt-get install git
-
-Fedora：dnf install git
-
-Ce...
+这是项目作者的文章：深澜校园网登...
                 </p>
               </div>
             </div>

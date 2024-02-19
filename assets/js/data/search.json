@@ -37,7 +37,7 @@
   {
     "title": "CentOS 7 安装 Xfce",
     "url": "/archives/153",
-    "categories": "Linux",
+    "categories": "Linux, LinuxTools",
     "tags": "",
     "date": "2024-02-17 22:51:00 +0800",
     
@@ -105,7 +105,7 @@
   {
     "title": "Fedora 开机启动运行脚本",
     "url": "/archives/149",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "Fedora",
     "date": "2024-01-28 14:25:00 +0800",
     
@@ -411,7 +411,7 @@
   {
     "title": "2023 新服务器部署记录",
     "url": "/archives/131",
-    "categories": "折腾记录",
+    "categories": "日常, 折腾记录",
     "tags": "Docker",
     "date": "2023-11-03 15:34:00 +0800",
     
@@ -445,7 +445,7 @@
   {
     "title": "Linux 学习 Index",
     "url": "/archives/129",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "读书笔记",
     "date": "2023-10-21 14:18:00 +0800",
     
@@ -666,7 +666,7 @@
   {
     "title": "使用 CNAME 将域名重定向到带路径的 URL",
     "url": "/archives/116",
-    "categories": "技术工具",
+    "categories": "日常, 网站建设",
     "tags": "",
     "date": "2023-08-28 15:31:00 +0800",
     
@@ -768,7 +768,7 @@
   {
     "title": "算法 钢条切割问题 (动态规划 分治)",
     "url": "/archives/110",
-    "categories": "算法",
+    "categories": "编程基础, 算法",
     "tags": "c/c++, 分治, 动态规划",
     "date": "2023-05-27 19:37:08 +0800",
     
@@ -785,7 +785,7 @@
   {
     "title": "算法 假币问题 (分治)",
     "url": "/archives/109",
-    "categories": "算法",
+    "categories": "编程基础, 算法",
     "tags": "c/c++, 分治",
     "date": "2023-05-18 20:17:35 +0800",
     
@@ -836,7 +836,7 @@
   {
     "title": "算法 电路布线问题 (动态规划)",
     "url": "/archives/106",
-    "categories": "算法",
+    "categories": "编程基础, 算法",
     "tags": "c/c++, 动态规划",
     "date": "2023-05-16 17:53:31 +0800",
     
@@ -853,7 +853,7 @@
   {
     "title": "搭建个人音乐网站",
     "url": "/archives/105",
-    "categories": "折腾记录",
+    "categories": "日常, 折腾记录",
     "tags": "Docker",
     "date": "2023-05-02 02:27:39 +0800",
     
@@ -904,7 +904,7 @@
   {
     "title": "服务器用 Docker 部署记录",
     "url": "/archives/102",
-    "categories": "折腾记录",
+    "categories": "日常, 折腾记录",
     "tags": "Docker",
     "date": "2023-04-04 22:31:45 +0800",
     
@@ -1023,7 +1023,7 @@
   {
     "title": "Git 学习",
     "url": "/archives/95",
-    "categories": "技术工具",
+    "categories": "软件工具, 编码相关",
     "tags": "Git",
     "date": "2023-03-05 15:03:43 +0800",
     
@@ -1040,7 +1040,7 @@
   {
     "title": "数据库记录已下载画师作品",
     "url": "/archives/94",
-    "categories": "折腾记录",
+    "categories": "日常, 折腾记录",
     "tags": "MySQL, Pixiv",
     "date": "2023-03-02 10:16:38 +0800",
     
@@ -1193,7 +1193,7 @@
   {
     "title": "Linux 学习 第十二章 管理磁盘和文件系统",
     "url": "/archives/85",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "读书笔记",
     "date": "2023-01-03 13:37:48 +0800",
     
@@ -1210,7 +1210,7 @@
   {
     "title": "Linux 学习 第十一章 获取用户账户",
     "url": "/archives/84",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "读书笔记",
     "date": "2023-01-02 12:29:03 +0800",
     
@@ -1227,7 +1227,7 @@
   {
     "title": "Linux 学习 第十章 获取和管理软件",
     "url": "/archives/83",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "读书笔记",
     "date": "2022-12-08 16:35:57 +0800",
     
@@ -1244,7 +1244,7 @@
   {
     "title": "Linux 学习 第八、九章 学习系统管理与安装 Linux",
     "url": "/archives/82",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "读书笔记",
     "date": "2022-12-07 16:29:05 +0800",
     
@@ -1261,7 +1261,7 @@
   {
     "title": "Linux 学习 第七章 编写简单的 shell 脚本",
     "url": "/archives/81",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "读书笔记",
     "date": "2022-12-05 20:47:43 +0800",
     
@@ -1295,7 +1295,7 @@
   {
     "title": "Linux 学习 第六章 管理运行中的进程",
     "url": "/archives/79",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "读书笔记",
     "date": "2022-12-03 15:07:03 +0800",
     
@@ -1312,7 +1312,7 @@
   {
     "title": "Linux 学习 第五章 使用文本文件",
     "url": "/archives/78",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "读书笔记",
     "date": "2022-11-19 21:07:03 +0800",
     
@@ -1346,7 +1346,7 @@
   {
     "title": "虚拟机中 Arch Linux 安装记录",
     "url": "/archives/76",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "",
     "date": "2022-10-02 13:39:26 +0800",
     
@@ -1363,7 +1363,7 @@
   {
     "title": "Linux 学习 第四章 在文件系统中移动",
     "url": "/archives/75",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "读书笔记",
     "date": "2022-09-25 20:35:02 +0800",
     
@@ -1380,7 +1380,7 @@
   {
     "title": "Fedora 桌面折腾",
     "url": "/archives/74",
-    "categories": "折腾记录",
+    "categories": "日常, 折腾记录",
     "tags": "Fedora",
     "date": "2022-09-18 11:10:58 +0800",
     
@@ -1397,7 +1397,7 @@
   {
     "title": "个人内网折腾",
     "url": "/archives/73",
-    "categories": "折腾记录",
+    "categories": "日常, 折腾记录",
     "tags": "DLsite, Docker",
     "date": "2022-09-16 15:00:01 +0800",
     
@@ -1431,7 +1431,7 @@
   {
     "title": "Fedora 安装 Komga 折腾记录",
     "url": "/archives/71",
-    "categories": "折腾记录",
+    "categories": "日常, 折腾记录",
     "tags": "Docker",
     "date": "2022-09-14 18:47:16 +0800",
     
@@ -1448,7 +1448,7 @@
   {
     "title": "SSH 公钥登录",
     "url": "/archives/70",
-    "categories": "Linux",
+    "categories": "Linux, LinuxTools",
     "tags": "",
     "date": "2022-09-12 19:24:25 +0800",
     
@@ -1465,7 +1465,7 @@
   {
     "title": "Linux学习 第三章 使用 shell",
     "url": "/archives/69",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "读书笔记",
     "date": "2022-09-12 15:04:10 +0800",
     
@@ -1482,7 +1482,7 @@
   {
     "title": "Linux下载youtube视频",
     "url": "/archives/68",
-    "categories": "软件配置",
+    "categories": "Linux, LinuxTools",
     "tags": "Youtube",
     "date": "2022-09-10 19:29:58 +0800",
     
@@ -1516,7 +1516,7 @@
   {
     "title": "记录 OpenWRT 通过深澜网络认证折腾",
     "url": "/archives/66",
-    "categories": "折腾记录",
+    "categories": "日常, 折腾记录",
     "tags": "OpenWRT",
     "date": "2022-09-05 21:24:23 +0800",
     
@@ -1533,7 +1533,7 @@
   {
     "title": "ffmpeg批量转换视频格式",
     "url": "/archives/65",
-    "categories": "技术工具",
+    "categories": "软件工具, 编码相关",
     "tags": "FFmpeg",
     "date": "2022-09-05 16:41:38 +0800",
     
@@ -1567,7 +1567,7 @@
   {
     "title": "Fedora安装java8(Oracle JDK)",
     "url": "/archives/63",
-    "categories": "软件配置",
+    "categories": "Linux, LinuxTools",
     "tags": "Fedora, Java",
     "date": "2022-09-02 17:37:51 +0800",
     
@@ -1584,7 +1584,7 @@
   {
     "title": "Aria2+AriaNG配置使用",
     "url": "/archives/62",
-    "categories": "软件配置",
+    "categories": "软件工具, 娱乐相关",
     "tags": "Aria2",
     "date": "2022-09-01 23:06:38 +0800",
     
@@ -1601,7 +1601,7 @@
   {
     "title": "Fiddler抓包HTTPS",
     "url": "/archives/61",
-    "categories": "软件配置",
+    "categories": "软件工具, 编码相关",
     "tags": "HTTP",
     "date": "2022-09-01 08:17:32 +0800",
     
@@ -1618,7 +1618,7 @@
   {
     "title": "Linux 下 bin 目录",
     "url": "/archives/60",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "",
     "date": "2022-08-31 00:27:09 +0800",
     
@@ -1635,7 +1635,7 @@
   {
     "title": "Fedora安装后",
     "url": "/archives/59",
-    "categories": "Linux",
+    "categories": "Linux, LinuxTools",
     "tags": "Fedora",
     "date": "2022-08-24 12:13:30 +0800",
     
@@ -1669,7 +1669,7 @@
   {
     "title": "搭建Git服务端及同步到指定目录",
     "url": "/archives/57",
-    "categories": "技术工具",
+    "categories": "软件工具, 编码相关",
     "tags": "Git",
     "date": "2022-08-13 10:28:50 +0800",
     
@@ -1737,7 +1737,7 @@
   {
     "title": "使用Git上传文件至Github",
     "url": "/archives/53",
-    "categories": "技术工具",
+    "categories": "软件工具, 编码相关",
     "tags": "Git, Github",
     "date": "2022-08-03 12:49:27 +0800",
     
@@ -1754,7 +1754,7 @@
   {
     "title": "命令行下载YouTube视频",
     "url": "/archives/52",
-    "categories": "软件配置",
+    "categories": "软件工具, 娱乐相关",
     "tags": "Youtube",
     "date": "2022-07-25 12:52:27 +0800",
     
@@ -1771,7 +1771,7 @@
   {
     "title": "VS Code更换字体",
     "url": "/archives/51",
-    "categories": "软件配置",
+    "categories": "软件工具, 编码相关",
     "tags": "VS Code",
     "date": "2022-07-13 17:47:57 +0800",
     
@@ -1856,7 +1856,7 @@
   {
     "title": "VS Code实时预览Markdown",
     "url": "/archives/46",
-    "categories": "软件配置",
+    "categories": "软件工具, 编码相关",
     "tags": "Markdown, VS Code",
     "date": "2022-06-09 00:03:34 +0800",
     
@@ -1873,7 +1873,7 @@
   {
     "title": "VS Code右下角嘉然",
     "url": "/archives/45",
-    "categories": "日常",
+    "categories": "软件工具, 编码相关",
     "tags": "VS Code",
     "date": "2022-06-01 06:01:00 +0800",
     
@@ -1907,7 +1907,7 @@
   {
     "title": "Markdown简述(学习笔记)",
     "url": "/archives/43",
-    "categories": "技术工具",
+    "categories": "软件工具, 编码相关",
     "tags": "Markdown",
     "date": "2022-05-28 00:59:23 +0800",
     
@@ -1941,7 +1941,7 @@
   {
     "title": "Linux添加用户和管理员用户",
     "url": "/archives/41",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "",
     "date": "2022-05-16 15:29:21 +0800",
     
@@ -1958,7 +1958,7 @@
   {
     "title": "Liunx随手笔记",
     "url": "/archives/40",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "",
     "date": "2022-04-30 04:24:07 +0800",
     
@@ -1975,7 +1975,7 @@
   {
     "title": "在虚拟机中设置静态IP（centos为例）",
     "url": "/archives/39",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "",
     "date": "2022-04-22 18:13:42 +0800",
     
@@ -1992,7 +1992,7 @@
   {
     "title": "系统学习Linux笔记",
     "url": "/archives/38",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "",
     "date": "2022-04-19 02:53:27 +0800",
     
@@ -2009,7 +2009,7 @@
   {
     "title": "免启动steam打开OBS",
     "url": "/archives/37",
-    "categories": "日常",
+    "categories": "软件工具, 娱乐相关",
     "tags": "",
     "date": "2022-04-11 22:19:48 +0800",
     
@@ -2026,7 +2026,7 @@
   {
     "title": "查询B站注册时间(精确到秒)",
     "url": "/archives/36",
-    "categories": "技术工具",
+    "categories": "软件工具, 工具网站",
     "tags": "",
     "date": "2022-04-09 13:47:52 +0800",
     
@@ -2077,7 +2077,7 @@
   {
     "title": "图床网站总结",
     "url": "/archives/33",
-    "categories": "技术工具",
+    "categories": "软件工具, 工具网站",
     "tags": "图床",
     "date": "2022-03-20 16:54:36 +0800",
     
@@ -2162,7 +2162,7 @@
   {
     "title": "将MMD模型导入unity",
     "url": "/archives/28",
-    "categories": "技术工具",
+    "categories": "软件工具, 娱乐相关",
     "tags": "",
     "date": "2022-03-10 13:15:26 +0800",
     
@@ -2179,7 +2179,7 @@
   {
     "title": "使用PicX自建免费图床",
     "url": "/archives/27",
-    "categories": "技术工具",
+    "categories": "软件工具, 编码相关",
     "tags": "Github, 图床",
     "date": "2022-02-17 23:02:13 +0800",
     
@@ -2196,7 +2196,7 @@
   {
     "title": "将课程表导入日历（树维教务）",
     "url": "/archives/26",
-    "categories": "技术工具",
+    "categories": "软件工具, 娱乐相关",
     "tags": "",
     "date": "2022-02-16 17:53:16 +0800",
     
@@ -2213,7 +2213,7 @@
   {
     "title": "查看服务器端口是否开放",
     "url": "/archives/25",
-    "categories": "技术工具",
+    "categories": "软件工具, 工具网站",
     "tags": "",
     "date": "2022-02-13 19:46:38 +0800",
     
@@ -2230,7 +2230,7 @@
   {
     "title": "使用VS Code收发QQ消息",
     "url": "/archives/24",
-    "categories": "软件配置",
+    "categories": "软件工具, 编码相关",
     "tags": "VS Code",
     "date": "2022-02-11 21:47:56 +0800",
     
@@ -2247,7 +2247,7 @@
   {
     "title": "去除Potplayer右下弹窗",
     "url": "/archives/23",
-    "categories": "软件配置",
+    "categories": "软件工具, 娱乐相关",
     "tags": "",
     "date": "2022-02-06 21:37:45 +0800",
     
@@ -2264,7 +2264,7 @@
   {
     "title": "FIR300M路由器刷固件OpenWRT",
     "url": "/archives/22",
-    "categories": "折腾记录",
+    "categories": "日常, 折腾记录",
     "tags": "OpenWRT",
     "date": "2022-02-06 20:44:10 +0800",
     
@@ -2281,7 +2281,7 @@
   {
     "title": "在Microsoft Word中插入代码（高亮）",
     "url": "/archives/21",
-    "categories": "软件配置",
+    "categories": "软件工具, 工具网站",
     "tags": "",
     "date": "2022-01-20 14:28:52 +0800",
     
@@ -2298,7 +2298,7 @@
   {
     "title": "转区软件Locale Emulator",
     "url": "/archives/20",
-    "categories": "技术工具",
+    "categories": "软件工具, 娱乐相关",
     "tags": "",
     "date": "2022-01-14 15:53:40 +0800",
     
@@ -2315,7 +2315,7 @@
   {
     "title": "Linux服务器（网络相关）",
     "url": "/archives/19",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "",
     "date": "2022-01-14 01:30:54 +0800",
     
@@ -2332,7 +2332,7 @@
   {
     "title": "使用xshell连接虚拟机的centos7系统",
     "url": "/archives/18",
-    "categories": "Linux",
+    "categories": "Linux, LinuxStudy",
     "tags": "",
     "date": "2021-12-26 15:34:59 +0800",
     
@@ -2417,7 +2417,7 @@
   {
     "title": "扬州杏雨后",
     "url": "/archives/13",
-    "categories": "小说",
+    "categories": "日常",
     "tags": "",
     "date": "2021-11-11 18:01:33 +0800",
     
@@ -2434,7 +2434,7 @@
   {
     "title": "原神树脂查看/推送",
     "url": "/archives/12",
-    "categories": "技术工具",
+    "categories": "软件工具, 娱乐相关",
     "tags": "miHoYo",
     "date": "2021-11-10 15:21:30 +0800",
     
@@ -2451,7 +2451,7 @@
   {
     "title": "微博视频下载",
     "url": "/archives/11",
-    "categories": "技术工具",
+    "categories": "软件工具, 工具网站",
     "tags": "微博",
     "date": "2021-11-10 11:29:51 +0800",
     
@@ -2485,7 +2485,7 @@
   {
     "title": "Win11官方安卓子系统安装",
     "url": "/archives/9",
-    "categories": "技术工具",
+    "categories": "软件工具, 编码相关",
     "tags": "Windows",
     "date": "2021-11-09 23:45:42 +0800",
     
@@ -2536,7 +2536,7 @@
   {
     "title": "VsCode配置C语言环境",
     "url": "/archives/6",
-    "categories": "软件配置",
+    "categories": "软件工具, 编码相关",
     "tags": "c/c++, VS Code",
     "date": "2021-11-07 23:32:26 +0800",
     
@@ -2553,7 +2553,7 @@
   {
     "title": "VsCode配置Python环境",
     "url": "/archives/5",
-    "categories": "软件配置",
+    "categories": "软件工具, 编码相关",
     "tags": "Python, VS Code",
     "date": "2021-11-07 11:28:58 +0800",
     
