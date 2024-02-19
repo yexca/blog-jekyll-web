@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-02-18T03:04:45+08:00</updated>
+  <updated>2024-02-19T08:03:25+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,77 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Hello GoLand</title>
+    <link href="https://blog.yexca.net/archives/154" rel="alternate" type="text/html" title="Hello GoLand" />
+    <published>2024-02-19T07:58:00+08:00</published>
+  
+    <updated>2024-02-19T07:58:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/154</id>
+    <content src="https://blog.yexca.net/archives/154" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="编程基础" />
+    
+    <category term="编程语言" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Go 下载：https://go.dev/dl/
+
+JetBrains GoLand：https://www.jetbrains.com/go/
+
+Go 简介
+
+Go 可以直接编译，直接运行即可部署，静态类型语言
+
+# 直接运行
+go run hello.go
+
+# 编译
+go build hello.go
+# 编译后运行
+./hello
+
+
+Go 的一些应用
+
+(1)、云计算基础设施领域
+
+代表项目：docker、kubernetes、etcd、consul、cloudflare CDN、七牛云存储等
+
+(2)、基础后端软件
+
+代表项目：tidb、influxdb、cockroachdb 等
+
+(3)、微服务
+
+代表项目：go-kit、micro、monzo bank的typhon、bilibili 等
+
+(4)、互联网基础设施
+
+代表项目：以太坊、hyperledger 等
+
+H...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -286,69 +357,6 @@ ordered list -&amp;gt; list
 定义列表
 
 个人记忆: define list...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Fedora 开机启动运行脚本</title>
-    <link href="https://blog.yexca.net/archives/149" rel="alternate" type="text/html" title="Fedora 开机启动运行脚本" />
-    <published>2024-01-28T14:25:00+08:00</published>
-  
-    <updated>2024-01-28T14:25:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/149</id>
-    <content src="https://blog.yexca.net/archives/149" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="Linux" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      引言
-
-千万不要把死循环放进去啊！！！使用 systemd 方式
-
-新建脚本
-
-在此文件中写入您的脚本
-
-vi /etc/rc.d/rc.local
-
-
-赋予执行权限
-
-chmod +x /etc/rc.d/rc.local
-
-
-编辑启动状态
-
-编辑文件
-
-vi /usr/lib/systemd/system/rc-local.service
-
-
-在最后一行加入 [Install]
-
-#  This file is part of systemd.
-#
-#  systemd is free software; you can redistribute it and/or modify it
-#  under the terms of the GNU Lesser General Public License as published by
-#  the Free Software F...
     </summary>
   
 
