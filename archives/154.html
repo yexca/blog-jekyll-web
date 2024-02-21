@@ -931,35 +931,35 @@ go build hello.go
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/73">个人内网折腾</a>
+          <a href="/archives/57">搭建Git服务端及同步到指定目录</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/31">Beat Saber添加自定义歌单</a>
+          <a href="/archives/59">Fedora安装后</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/95">Git 学习</a>
+          <a href="/archives/60">Linux 下 bin 目录</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/64">HTTP 学习</a>
+          <a href="/archives/61">Fiddler抓包HTTPS</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/86">数据库学习一 数据库导论</a>
+          <a href="/archives/62">Aria2+AriaNG配置使用</a>
         </li>
       
     </ul>
@@ -2141,6 +2141,18 @@ go build hello.go
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4095,6 +4107,77 @@ im...
         
         
         <div class="col">
+          <a href="/archives/156" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1708548420"
+  data-df="ll"
+  
+>
+  Feb 22, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>GoLand 函数</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  多返回值
+
+Go 函数可以返回多个值
+
+匿名返回
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+package main
+
+import &quot;fmt&quot;
+
+func swap(a, b int) (int, int) {
+	return b, a
+}
+
+func main() {
+	var x, y = swap(10, 20)
+	fmt.Println(x, ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/archives/64" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4135,59 +4218,6 @@ HTTP报文分2个：一个是HTTP请求报文，一个是HTTP响应报文
 HTTP请求报文(Request)
 
 HTTP请求报文分为3个部分，第一部分叫起始行(Request line)，第二部分叫首部(Request Header...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/86" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1675684655"
-  data-df="ll"
-  
->
-  Feb  6, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>数据库学习一 数据库导论</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  引言
-
-之前数据库的写的很不好看，重新复习编写一下 (虽然这个也挺乱就是了)
-
-数据库的四个基本概念
-
-数据
-
-描述事物的符号记录
-
-数据库
-
-概括地讲，数据库数据具有永久存储、有组织和可共享的三个基本特点
-
-严格地讲，数据库是长期储存在计算机内、有组织的、可共享的大量数据的集合。数据库中的数据按一定的数据模型组织、描述和储存，具有较小的冗余度、较高的数据独立性和易拓展性，并可为各种用户共享...
                 </p>
               </div>
             </div>

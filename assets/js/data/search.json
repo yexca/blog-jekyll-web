@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "GoLand 函数",
+    "url": "/archives/156",
+    "categories": "编程基础, 编程语言",
+    "tags": "Go",
+    "date": "2024-02-22 04:47:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "多返回值Go 函数可以返回多个值匿名返回package mainimport \"fmt\"func swap(a, b int) (int, int) {\treturn b, a}func main() {\tvar x, y = swap(10, 20)\tfmt.Println(x, y)}/* 输出 * 20 10 */有形参名返回package mainimport \"fmt\"func s...",
+    "content": "多返回值Go 函数可以返回多个值匿名返回package mainimport \"fmt\"func swap(a, b int) (int, int) {\treturn b, a}func main() {\tvar x, y = swap(10, 20)\tfmt.Println(x, y)}/* 输出 * 20 10 */有形参名返回package mainimport \"fmt\"func swap(a, b int) (x int, y int) {\tx = b\ty = a\treturn}func main() {\tvar x, y = swap(10, 20)\tfmt.Println(x, y)}上述返回值类型相同，可以合并package mainimport \"fmt\"func swap(a, b int) (x, y int) {\tx = b\ty = a    // 如果不给 x,y 赋值，默认为0\treturn}func main() {\tvar x, y = swap(10, 20)\tfmt.Println(x, y)}init 与 maininit 可以在任意包，也可以在同一个包中出现多次，但建议只写一个main 只能在 package main 中，且该包必须有该函数这两个函数为保留函数，定义时不能有参数和返回值Go 程序会自动调用 init() 和 main()程序执行程序的初始化和执行都起始于 main 包，同一个包就算被多个包 import 导入也只会导入一次，下图为执行顺序例子假设结构如下hello  -- InitLib1    -- lib1.go  -- InitLib2    -- lib2.go  main.go内容如下lib1.gopackage InitLib1import \"fmt\"func init() {\tfmt.Println(\"lib1 init\")}lib2.gopackage InitLib2import \"fmt\"func init() {\tfmt.Println(\"lib2 init\")}main.gopackage mainimport (\t\"fmt\"    // 此处下划线为包起别名，不起别名，导入不调用编译不通过\t_ \"hello/InitLib1\"\t_ \"hello/InitLib2\")func init() {\tfmt.Println(\"main init\")}func main() {\tfmt.Println(\"main\")}运行结果lib1 initlib2 initmain initmain现在将 Lib1 包导入 Lib2，main 代码不变lib1.gopackage InitLib1import (\t\"fmt\"\t_ \"hello/InitLib2\")func init() {\tfmt.Println(\"lib1 init\")}运行 main 结果lib2 initlib1 initmain initmainlib2 只出现一次调用其他包函数上例使用 _ 作为别名是匿名的，无法调用相应包的方法在 lib1 中增加函数，lib1.gopackage InitLib1import (\t\"fmt\"\t//_ \"hello/InitLib2\")// 首字母大写才可在其他包调用func Lib1Test() {\tfmt.Println(\"lib1 test\")}func init() {\tfmt.Println(\"lib1 init\")}main.gopackage mainimport (\t\"fmt\"    // 给包起别名\tmylib1 \"hello/InitLib1\"\t_ \"hello/InitLib2\")func main() {    // 通过别名.方法调用\tmylib1.Lib1Test()\tfmt.Println(\"main\")}/* * 输出 * lib1 init * lib2 init * lib1 test * main */或者可以直接使用 .，文件 main.gopackage mainimport (\t\"fmt\"    // 别名改为 .\t. \"hello/InitLib1\"\t_ \"hello/InitLib2\")func main() {    // 直接使用\tLib1Test()\tfmt.Println(\"main\")}  不推荐使用，假设俩包有同名函数，将发生歧义指针与 C 指针类似调用函数可以使用两种方式传递参数，值传递与指针 (引用传递) 。默认情况使用值传递，像本文第一段代码即为值传递使用 &amp; 可以获取变量对应的内存地址package mainimport (\t\"fmt\")func main() {\tvar a int\tfmt.Printf(\"%x\", &amp;a)}引用传递将内存地址传递给函数，函数修改将影响实际参数，同样是交换函数，这次使用指针package mainimport \"fmt\"func swap(a, b *int) {\tvar tmp = *a\t*a = *b\t*b = tmp}func main() {\tx, y := 10, 20\tswap(&amp;x, &amp;y)\tfmt.Println(\"x =\", x, \"y =\", y)}deferdefer 语句用于预定对一个函数的调用，可以称为延迟函数，作用：  释放占用的资源  捕捉处理异常  输出日志类似于 try…catch…finally 的 finally  常用于处理成对的操作，如打开/关闭文件、获取/释放锁、连接/断开连接等，确保资源被适当地释放，即使在发生错误或提前返回的情况下也能保证执行如果一个函数中有多个 defer 语句，类似于栈，以 LIFO(后进先出) 顺序执行package mainimport \"fmt\"func deferDemo() {\tdefer fmt.Println(\"1\")\tdefer fmt.Println(\"2\")\tdefer fmt.Println(\"3\")\tdefer fmt.Println(\"4\")}func main() {\tdeferDemo()}/* * 输出 * 4 * 3 * 2 * 1 */recover运行时 panic 异常一旦被引发就会导致程序崩溃，recover 为用于 “拦截” 运行时 panic 的内建函数，类似 Java 的 try…catch 的抓取异常  recover 只有在 defer 调用的函数中有效package mainimport \"fmt\"func deferDemo(i int) {\tvar arr [10]int\t// 错误拦截在错误前设置\tdefer func() {\t\t// 设置recover拦截错误信息\t\terr := recover()\t\tif err != nil {\t\t\tfmt.Println(err)\t\t}\t}()\tarr[i] = 10}func main() {\tdeferDemo(10)\tfmt.Println(\"main code\")}/* * 输出 * runtime error: index out of range [10] with length 10 * main code */"
+  },
+  
+  {
     "title": "GoLand 变量与常量",
     "url": "/archives/155",
     "categories": "编程基础, 编程语言",

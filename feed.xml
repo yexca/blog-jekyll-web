@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-02-20T07:24:53+08:00</updated>
+  <updated>2024-02-22T04:55:37+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,90 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>GoLand 函数</title>
+    <link href="https://blog.yexca.net/archives/156" rel="alternate" type="text/html" title="GoLand 函数" />
+    <published>2024-02-22T04:47:00+08:00</published>
+  
+    <updated>2024-02-22T04:47:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/156</id>
+    <content src="https://blog.yexca.net/archives/156" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="编程基础" />
+    
+    <category term="编程语言" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      多返回值
+
+Go 函数可以返回多个值
+
+匿名返回
+
+package main
+
+import "fmt"
+
+func swap(a, b int) (int, int) {
+	return b, a
+}
+
+func main() {
+	var x, y = swap(10, 20)
+	fmt.Println(x, y)
+}
+
+/* 输出
+ * 20 10
+ */
+
+
+有形参名返回
+
+package main
+
+import "fmt"
+
+func swap(a, b int) (x int, y int) {
+	x = b
+	y = a
+	return
+}
+
+func main() {
+	var x, y = swap(10, 20)
+	fmt.Println(x, y)
+}
+
+
+上述返回值类型相同，可以合并
+
+package main
+
+import "fmt"
+
+func swa...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -181,7 +265,7 @@ H...
     <link href="https://blog.yexca.net/archives/153" rel="alternate" type="text/html" title="CentOS 7 安装 Xfce" />
     <published>2024-02-17T22:51:00+08:00</published>
   
-    <updated>2024-02-17T22:51:00+08:00</updated>
+    <updated>2024-02-20T07:26:43+08:00</updated>
   
     <id>https://blog.yexca.net/archives/153</id>
     <content src="https://blog.yexca.net/archives/153" />
@@ -301,72 +385,6 @@ CentOS 7安装Xfce桌面环境过程_qq_28641401的博客-CSDN博客
 
   id integer (用户 id)
   op...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>了解微信小程序</title>
-    <link href="https://blog.yexca.net/archives/151" rel="alternate" type="text/html" title="了解微信小程序" />
-    <published>2024-01-31T16:50:00+08:00</published>
-  
-    <updated>2024-01-31T16:50:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/151</id>
-    <content src="https://blog.yexca.net/archives/151" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="前端" />
-    
-    <category term="微信小程序" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      官网：https://mp.weixin.qq.com/cgi-bin/wx
-
-开发小程序之前需要先注册一个小程序，可以使用不同主体注册小程序，相应的权限也不同。例如以个人的身份注册小程序是无法获得支付权限的 (也可以使用测试号体验)
-
-注册完成后设置相关信息，获取 AppID 与 AppSecret，下载开发者工具，登录，创建项目
-
-
-  首先右上 详情-本地设置，勾选 不校验合法域名、web-view(业务域名)、TLS 版本以及 HTTPS 证书
-
-
-小程序的开发属于前端开发，主要使用 JavaScript
-
-小程序目录结构
-
-小程序包含一个描述整体程序的 app 和多个描述各自页面的 page
-
-主体部分
-
-由三个文件组成，必须放在项目的根目录
-
-
-  
-    
-      文件
-      作用
-    
-  
-  
-    
-      app.js
-      小程序...
     </summary>
   
 
