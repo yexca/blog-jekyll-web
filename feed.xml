@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-02-23T16:47:07+08:00</updated>
+  <updated>2024-02-25T18:03:09+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,80 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Hi SpringCloud</title>
+    <link href="https://blog.yexca.net/archives/158" rel="alternate" type="text/html" title="Hi SpringCloud" />
+    <published>2024-02-25T17:56:00+08:00</published>
+  
+    <updated>2024-02-25T17:56:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/158</id>
+    <content src="https://blog.yexca.net/archives/158" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="后端" />
+    
+    <category term="Spring" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      服务架构
+
+单体架构
+
+将业务的所有功能集中在一个项目中开发，打包一个包部署
+
+优点：架构简单、扩展性差、部署成本低，适合小型项目
+
+缺点：耦合度高
+
+分布式架构
+
+根据业务功能对系统进行拆分，每个业务模块作为独立项目开发，称为一个服务
+
+优点：降低服务耦合、有利于服务升级拓展
+
+缺点：架构复杂、难度大，适合大型互联网项目
+
+微服务
+
+微服务是一种经过良好架构设计的分布式架构方案，微服务架构特征：
+
+
+  单一职责：微服务拆分粒度更小，每一个服务都对应唯一的业务能力，做到单一职责，避免重复业务开发
+  面向服务：微服务对外暴露业务接口
+  自治：团队独立、技术独立、数据独立、部署独立
+  隔离性强：服务调用做好隔离、容错、降级，避免出现级联问题
+
+
+微服务技术
+
+微服务方案需要技术框架落地，常见的：
+
+
+  
+    
+       
+      Dubbo
+      Spring...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -322,77 +396,6 @@ Go 的一些应用
 代表项目：以太坊、hyperledger 等
 
 H...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>CentOS 7 安装 Xfce</title>
-    <link href="https://blog.yexca.net/archives/153" rel="alternate" type="text/html" title="CentOS 7 安装 Xfce" />
-    <published>2024-02-17T22:51:00+08:00</published>
-  
-    <updated>2024-02-20T07:26:43+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/153</id>
-    <content src="https://blog.yexca.net/archives/153" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="Linux" />
-    
-    <category term="LinuxTools" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      这是什么时候写的文章啊（
-
-查看是否有 Xfce 组
-
-yum grouplist
-
-
-如果没有，需要安装额外包 yum 源
-
-yum install epel-release -y
-
-
-安装 X Window system
-
-yum groupinstall "X Window system"
-
-
-安装 Xfce
-
-yum groupinstall xfce
-
-
-安装中文字体 (楷体)
-
-yum install cjkuni-ukai-fonts
-
-
-进入 Xfce 桌面
-
-systemctl isolate graphical.target
-
-
-参考文章
-
-CentOS 7安装Xfce桌面环境过程_qq_28641401的博客-CSDN博客
-
     </summary>
   
 
