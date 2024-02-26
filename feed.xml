@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-02-25T18:03:09+08:00</updated>
+  <updated>2024-02-26T21:48:19+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,57 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Linux 定时任务 crontab</title>
+    <link href="https://blog.yexca.net/archives/159" rel="alternate" type="text/html" title="Linux 定时任务 crontab" />
+    <published>2024-02-26T21:34:00+08:00</published>
+  
+    <updated>2024-02-26T21:34:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/159</id>
+    <content src="https://blog.yexca.net/archives/159" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="Linux" />
+    
+    <category term="LinuxTools" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      这篇文章还是有点久远的，书写习惯和现在不同，甚至看着有点不习惯
+
+通过 crontab 命令，我们可以在固定的间隔时间执行指定的系统指令或 shell script 脚本。时间间隔的单位可以是分钟、小时、日、月、周及以上的任意组合
+
+命令格式
+
+crontab [-u user] file crontab [-u user] [ -e | -l | -r ]
+
+
+命令参数
+
+
+  -u user：用来设定某个用户的 crontab 服务
+  file：file 是命令文件的名字,表示将 file 做为 crontab 的任务列表文件并载入 crontab。如果在命令行中没有指定这个文件，crontab 命令将接受标准输入（键盘）上键入的命令，并将它们载入 crontab
+  -e：编辑某个用户的 crontab 文件内容。如果不指定用户，则表示编辑当前用户的 crontab 文件
+ ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -325,77 +376,6 @@ func main() {
 	var a = 100
 	fmt.Println("a =", a)
 	fmt.Printf("Type of a = %s", re...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Hello GoLand</title>
-    <link href="https://blog.yexca.net/archives/154" rel="alternate" type="text/html" title="Hello GoLand" />
-    <published>2024-02-19T07:58:00+08:00</published>
-  
-    <updated>2024-02-19T07:58:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/154</id>
-    <content src="https://blog.yexca.net/archives/154" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="编程基础" />
-    
-    <category term="编程语言" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Go 下载：https://go.dev/dl/
-
-JetBrains GoLand：https://www.jetbrains.com/go/
-
-Go 简介
-
-Go 可以直接编译，直接运行即可部署，静态类型语言
-
-# 直接运行
-go run hello.go
-
-# 编译
-go build hello.go
-# 编译后运行
-./hello
-
-
-Go 的一些应用
-
-(1)、云计算基础设施领域
-
-代表项目：docker、kubernetes、etcd、consul、cloudflare CDN、七牛云存储等
-
-(2)、基础后端软件
-
-代表项目：tidb、influxdb、cockroachdb 等
-
-(3)、微服务
-
-代表项目：go-kit、micro、monzo bank的typhon、bilibili 等
-
-(4)、互联网基础设施
-
-代表项目：以太坊、hyperledger 等
-
-H...
     </summary>
   
 
