@@ -2225,6 +2225,18 @@ go build hello.go
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4234,7 +4246,7 @@ func main() {
         
         
         <div class="col">
-          <a href="/archives/64" class="card post-preview h-100">
+          <a href="/archives/160" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4247,14 +4259,14 @@ func main() {
 
 <em
   class="small"
-  data-ts="1662365016"
+  data-ts="1709035200"
   data-df="ll"
   
 >
-  Sep  5, 2022
+  Feb 27, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>HTTP 学习</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>GoLand 切片</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4263,17 +4275,47 @@ func main() {
 
 
 
-                  引言
+                  Go 的切片是对数组的抽象
 
-这是在我阅读了肖佳老师的书《HTTP抓包实战》后对HTTP相关内容的总结，主要还是报文相关(记录：阅读此书与写出此文章耗时5天)
+数组
 
-HTTP协议报文的结构
+数组的长度不可改变
 
-HTTP报文分2个：一个是HTTP请求报文，一个是HTTP响应报文
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+package main
 
-HTTP请求报文(Request)
+import &quot;fmt&quot;
 
-HTTP请求报文分为3个部分，第一部分叫起始行(Request line)，第二部分叫首部(Request Header...
+func main() {
+    // 定义方式一
+	var arr1 [10]int
+    // 遍历
+	for i := 0; i ...
                 </p>
               </div>
             </div>

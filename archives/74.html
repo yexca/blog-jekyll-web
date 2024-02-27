@@ -4021,6 +4021,18 @@ gsettings <span class="nb">set </span>org.gnome.desktop.background picture-uri f
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4972,6 +4984,71 @@ gsettings <span class="nb">set </span>org.gnome.desktop.background picture-uri f
         
         
         <div class="col">
+          <a href="/archives/149" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1706423100"
+  data-df="ll"
+  
+>
+  Jan 28, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Fedora 开机启动运行脚本</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引言
+
+千万不要把死循环放进去啊！！！使用 systemd 方式
+
+新建脚本
+
+在此文件中写入您的脚本
+
+1
+vi /etc/rc.d/rc.local
+
+
+赋予执行权限
+
+1
+chmod +x /etc/rc.d/rc.local
+
+
+编辑启动状态
+
+编辑文件
+
+1
+vi /usr/lib/systemd/system/rc-local.service
+
+
+在最后一行加入 [Install...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/archives/59" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -5031,71 +5108,6 @@ sudo dnf update
 User目录修改为英文
 
 中文目录及其不易使用终...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/149" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1706423100"
-  data-df="ll"
-  
->
-  Jan 28, 2024
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Fedora 开机启动运行脚本</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  引言
-
-千万不要把死循环放进去啊！！！使用 systemd 方式
-
-新建脚本
-
-在此文件中写入您的脚本
-
-1
-vi /etc/rc.d/rc.local
-
-
-赋予执行权限
-
-1
-chmod +x /etc/rc.d/rc.local
-
-
-编辑启动状态
-
-编辑文件
-
-1
-vi /usr/lib/systemd/system/rc-local.service
-
-
-在最后一行加入 [Install...
                 </p>
               </div>
             </div>

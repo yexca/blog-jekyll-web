@@ -3992,6 +3992,18 @@ linux时钟相关命令<br />
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4229,51 +4241,6 @@ linux时钟相关命令<br />
         
         
         <div class="col">
-          <a href="/archives/60" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1661876829"
-  data-df="ll"
-  
->
-  Aug 31, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Linux 下 bin 目录</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  引言
-
-事实上命令文件放在哪都可自行决定，也就是自己想放哪就放哪，这些目录不过是约定，不过遵守约定会更好啦，毕竟没有人会想要自己的电脑一团糟吧，尤其是Linux
-
-优先级
-
-Linux下的这些bin目录都是存放命令的，如果不同的目录下有相同名称的可执行程序，将通过优先级决定先运行哪个目录的二进制文件，可以通过使用命令echo $PATH查看环境变量以确定命令执行的优先级，比如我的系统输出如下...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/69" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4363,6 +4330,65 @@ Linux 文件系统存储了计算机上所有的信息
     
       /boot
       包含可启动的 Linux 内核、最初的 RAM 盘和启动加载...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/76" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1664689166"
+  data-df="ll"
+  
+>
+  Oct  2, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>虚拟机中 Arch Linux 安装记录</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引言
+
+使用虚拟机安装，软件为 Fedora 的 盒子
+
+安装前准备
+
+下载镜像
+
+从官方下载页面下载，推荐使用 BT 下载 (请使用正规 torrent 客户端，例如 qBittorrent)
+
+然后放到虚拟机里
+
+验证引导模式
+
+列出 efivars 目录
+
+1
+ls /sys/firmware/efi/efivars
+
+
+如果正确显示目录并且没有报告错误，则系统以 UEFI 模式引导，...
                 </p>
               </div>
             </div>

@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "GoLand 切片",
+    "url": "/archives/160",
+    "categories": "编程基础, 编程语言",
+    "tags": "Go",
+    "date": "2024-02-27 20:00:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "Go 的切片是对数组的抽象数组数组的长度不可改变package mainimport \"fmt\"func main() {    // 定义方式一\tvar arr1 [10]int    // 遍历\tfor i := 0; i &lt; len(arr1); i++ {\t\tfmt.Println(\"arr1[\", i, \"]:\", arr1[i])\t}    // 定义方式二，赋值\tarr2...",
+    "content": "Go 的切片是对数组的抽象数组数组的长度不可改变package mainimport \"fmt\"func main() {    // 定义方式一\tvar arr1 [10]int    // 遍历\tfor i := 0; i &lt; len(arr1); i++ {\t\tfmt.Println(\"arr1[\", i, \"]:\", arr1[i])\t}    // 定义方式二，赋值\tarr2 := [10]int{0, 1, 2, 3}    // range遍历\tfor index, value := range arr2 {\t\tfmt.Println(\"index =\", index, \"value =\", value)\t}    // 定义不同长度\tvar arr3 [4]int\tfmt.Printf(\"type of arr1 is %T\\n\", arr1) // [10]int\tfmt.Printf(\"type of arr1 is %T\\n\", arr2) // [10]int\tfmt.Printf(\"type of arr1 is %T\", arr3)\t // [4]int}编译运行后可以发现 arr3 与 arr1，arr2 类型不同，那么在定义函数形参时也需要指定相应类型func test(arr [4]int) {\tfor i := 0; i &lt; len(arr); i++ {\t\tfmt.Println(\"fmt_arr[\", i, \"]:\", arr[i])\t}}上述函数只能传递 arr3，值传递，修改值不影响原数据定义切片与数组相比切片长度不固定，可追加元素 (动态数组)，在追加时可能使切片的容量增大定义切片可以通过声明一个未指定大小的数组var name []type// 例如var s []int或者使用 make() 函数来创建切片var slice []type = make([]type, len) // len 为切片初始长度// 也可以简写为slice := make([]type, len)可以使用可选参数 capacity 指定容量，省略与 length 相同var slice []type = make([]type, length, capacity)切片初始化直接初始化s := []int {1, 2, 3}将数组值为切片初始化，从 startIndex 到 endIndex-1，这俩值都可省略s := arr[startIndex:endIndex]省略 startIndex 或 endIndex 表示从第一个元素开始索引或索引到最后一个元素len() and cap()切片是可以索引的，通过 len() 函数获取长度而 cap() 为计算容量的方法，可以测量切片最长可以达到多少package mainimport \"fmt\"// 切片传递为引用传递，函数内修改影响原数据func printSlice(slice []int) {\tfmt.Printf(\"len=%d, cap=%d, slice=%v\", len(slice), cap(slice), slice)}func main() {\ts := make([]int, 3, 5)\tprintSlice(s)}/* * 输出 * len=3, cap=5, slice=[0 0 0] */空切片一个切片在未初始化之前默认为 nil (空切片)，长度为 0package mainimport \"fmt\"func printSlice(slice []int) {\tfmt.Printf(\"len=%d, cap=%d, slice=%v\\n\", len(slice), cap(slice), slice)}func main() {\tvar s []int\tprintSlice(s)    // 判断是否为空\tif s == nil {\t\tfmt.Println(\"slice is empty\")\t}}切片截取通过设置上下限截取切片package mainimport \"fmt\"func printSlice(slice []int) {\tfmt.Printf(\"len=%d, cap=%d, slice=%v\\n\", len(slice), cap(slice), slice)}func main() {\ts := []int{0, 1, 2, 3, 4, 5, 6, 7}    // 打印原始切片    fmt.Println(s)        // 从2(包含)到5(不包含)\tprintSlice(s[2:5])    // 从第一个到5(不包含)\tprintSlice(s[:5])    // 从第二个到最后一个\tprintSlice(s[2:])    // 这样赋值修改 subS 将影响到 s\tsubS := s[1:6]\tprintSlice(subS)}append() and copy()增加切片的容量与拷贝切片package mainimport \"fmt\"func printSlice(slice []int) {\tfmt.Printf(\"len=%d, cap=%d, slice=%v\\n\", len(slice), cap(slice), slice)}func main() {\tvar s []int\tprintSlice(s)    // 增加一个元素\ts = append(s, 0)\tprintSlice(s)    // 增加多个元素\ts = append(s, 1, 2, 3, 4)\tprintSlice(s)    // 创建一个容量为 s 两倍的 s2\ts2 := make([]int, len(s), cap(s)*2)    // 拷贝 s 到 s2，此时修改 s2 不影响 s\tcopy(s2, s)\tprintSlice(s2)}  切片的扩容：如果追加值超过容量，则将容量增加两倍mapmap 有两种声明方式package mainimport \"fmt\"func main() {\tvar map1 = make(map[string]string)\t// 插入数据\tmap1[\"one\"] = \"1\"\tmap1[\"two\"] = \"2\"\tfmt.Println(map1) // map[one:1 two:2]}第二种package mainimport \"fmt\"func main() {\tmap1 := map[string]string{\t\t\"one\": \"1\",\t\t\"two\": \"2\",\t}\tfmt.Println(map1)}map 嵌套package mainimport \"fmt\"func main() {\tmap1 := make(map[string]map[string]string)\tmap1[\"first\"] = make(map[string]string, 2)\tmap1[\"first\"][\"one\"] = \"1\"\tmap1[\"first\"][\"two\"] = \"2\"\tfmt.Println(map1)}/* * 输出 * map[first:map[one:1 two:2]] */修改遍历与删除package mainimport \"fmt\"func main() {\tmap1 := make(map[string]map[string]string)\tmap1[\"first\"] = make(map[string]string, 2)\tmap1[\"first\"][\"one\"] = \"1\"\tmap1[\"first\"][\"two\"] = \"2\"\t// 修改\tmap1[\"first\"][\"one\"] = \"one\"\tfmt.Println(map1)    //遍历    for key, value := range map1{        fmt.println(\"key =\", key, \"value =\", value)    }\t// 删除\tdelete(map1, \"first\")\tfmt.Println(map1)}判断是否有某值package mainimport \"fmt\"func main() {\tmap1 := make(map[string]string)\tmap1[\"one\"] = \"1\"\tval, key := map1[\"one\"]\tif key {\t\tfmt.Println(val)\t} else {\t\tfmt.Println(\"empty\")\t}}"
+  },
+  
+  {
     "title": "Linux 定时任务 crontab",
     "url": "/archives/159",
     "categories": "Linux, LinuxTools",
