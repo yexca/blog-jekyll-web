@@ -2371,6 +2371,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4276,6 +4288,59 @@
         
         
         <div class="col">
+          <a href="/archives/161" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1709196780"
+  data-df="ll"
+  
+>
+  Feb 29, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>注册中心 - Eureka</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引入注册中心之前先引入提供者与消费者概念
+
+提供者与消费者
+
+服务提供者：一次业务中，被其它微服务调用的服务。（提供接口给其它微服务）
+
+服务消费者：一次业务中，调用其它微服务的服务。（调用其它微服务提供的接口）
+
+提供者与消费者是相对的，一个服务既可以是提供者也可以是消费者
+
+Eureka
+
+若提供者有多个，消费者如何获取提供者信息，如何得知提供者的健康状态
+
+在启动时，微服务向 Eure...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/archives/152" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4361,51 +4426,6 @@
 然后创建控制类，路径在 *Application.java 同级创建文件 Controller/HelloController.java
 
 @RestCo...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
-          <a href="/archives/144" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1705222020"
-  data-df="ll"
-  
->
-  Jan 14, 2024
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Spring 请求响应</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  浏览器发送请求会先经过 DispatcherServlet 转给各 *Controller 程序进行处理，处理完成后返回给 DispatcherServlet 处理结果，然后再返回浏览器
-
-DispatcherServlet 被称为核心控制器或前端控制器
-
-对于浏览器请求数据，会被封装到 HttpServletRequest 对象，响应数据被封装到 HttpServletResponse
-
-...
                 </p>
               </div>
             </div>

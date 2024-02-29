@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "注册中心 - Eureka",
+    "url": "/archives/161",
+    "categories": "后端, Spring",
+    "tags": "SpringCloud",
+    "date": "2024-02-29 16:53:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "引入注册中心之前先引入提供者与消费者概念提供者与消费者服务提供者：一次业务中，被其它微服务调用的服务。（提供接口给其它微服务）服务消费者：一次业务中，调用其它微服务的服务。（调用其它微服务提供的接口）提供者与消费者是相对的，一个服务既可以是提供者也可以是消费者Eureka若提供者有多个，消费者如何获取提供者信息，如何得知提供者的健康状态在启动时，微服务向 Eureka 注册服务信息，消费者可...",
+    "content": "引入注册中心之前先引入提供者与消费者概念提供者与消费者服务提供者：一次业务中，被其它微服务调用的服务。（提供接口给其它微服务）服务消费者：一次业务中，调用其它微服务的服务。（调用其它微服务提供的接口）提供者与消费者是相对的，一个服务既可以是提供者也可以是消费者Eureka若提供者有多个，消费者如何获取提供者信息，如何得知提供者的健康状态在启动时，微服务向 Eureka 注册服务信息，消费者可通过 Eureka 拉取提供者信息，然后远程调用。微服务会每 30s 向 Eureka 说明自己还活着，Eureka 会更新记录服务列表信息，剔除不健康服务器如果有多个服务提供者，消费者利用负载均衡算法，从服务列表中挑选一个搭建新建一个 Maven Module，引入依赖&lt;dependency&gt;    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;    &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-server&lt;/artifactId&gt;&lt;/dependency&gt;编写启动类@EnableEurekaServer@SpringBootApplicationpublic class EurekaApplication {    public static void main(String[] args) {        SpringApplication.run(EurekaApplication.class,args);    }}配置文件server:  port: 7995spring:  application:    name: eureka-servereureka:  client:    service-url:      defaultZone: http://127.0.0.1:7995/eureka注册服务引入依赖&lt;dependency&gt;    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;    &lt;artifactId&gt;spring-cloud-starter-netflix-eureka-client&lt;/artifactId&gt;&lt;/dependency&gt;编写配置spring:  application:    name: userServiceeureka:  client:    service-url:      defaultZone: http://127.0.0.1:7995/eureka服务使用上例注册@Bean@LoadBalancedpublic RestTemplate restTemplate(){    return new RestTemplate();}修改调用的域名为服务名@Servicepublic class OrderService {    @Autowired    private OrderMapper orderMapper;    @Autowired    private RestTemplate restTemplate;    public Order queryOrderById(Long orderId) {        // 1.查询订单        Order order = orderMapper.findById(orderId);        // 2.查询用户        // String url = \"http://localhost:8081/user/\" + order.getUserId();        String url = \"http://userService/user/\" + order.getUserId();        User user = restTemplate.getForObject(url, User.class);        // 3.封装用户信息        order.setUser(user);        // 4.返回        return order;    }}"
+  },
+  
+  {
     "title": "GoLand 切片",
     "url": "/archives/160",
     "categories": "编程基础, 编程语言",
