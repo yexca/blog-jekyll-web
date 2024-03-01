@@ -3340,6 +3340,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -5065,53 +5077,6 @@
         
         
         <div class="col">
-          <a href="/archives/152" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1707559740"
-  data-df="ll"
-  
->
-  Feb 10, 2024
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>微信登录后端</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Happy Lunar Year!
-
-
-
-流程：https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html
-
-前端获取授权码，向 https://api.weixin.qq.com/sns/jscode2session 发起请求，获取 session_key 和 openid
-
-微信请求...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/157" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -5196,6 +5161,51 @@ Redis 基于内存存储，读写性能高，适合存储热点数据 (商品、
 然后创建控制类，路径在 *Application.java 同级创建文件 Controller/HelloController.java
 
 @RestCo...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/144" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1705222020"
+  data-df="ll"
+  
+>
+  Jan 14, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Spring 请求响应</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  浏览器发送请求会先经过 DispatcherServlet 转给各 *Controller 程序进行处理，处理完成后返回给 DispatcherServlet 处理结果，然后再返回浏览器
+
+DispatcherServlet 被称为核心控制器或前端控制器
+
+对于浏览器请求数据，会被封装到 HttpServletRequest 对象，响应数据被封装到 HttpServletResponse
+
+...
                 </p>
               </div>
             </div>

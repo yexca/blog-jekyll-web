@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-02-29T16:58:58+08:00</updated>
+  <updated>2024-03-01T15:39:42+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,84 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>GoLand 面向对象</title>
+    <link href="https://blog.yexca.net/archives/162" rel="alternate" type="text/html" title="GoLand 面向对象" />
+    <published>2024-03-01T15:35:00+08:00</published>
+  
+    <updated>2024-03-01T15:35:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/162</id>
+    <content src="https://blog.yexca.net/archives/162" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="编程基础" />
+    
+    <category term="编程语言" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      通过使用结构体构建类与对象的概念
+
+
+  了解面向对象：面向对象基础
+
+
+struct
+
+首先是自定义类型，使用 type 关键字，类似于 C
+
+package main
+
+import "fmt"
+
+type myType int
+
+func main() {
+	var a myType
+	fmt.Println("a =", a)
+	fmt.Printf("type of a is %T", a)
+}
+
+/*
+ * 输出
+ * a = 0
+ * type of a is main.myTye
+ */
+
+
+定义类型使用 stuct
+
+package main
+
+import "fmt"
+
+type Person struct {
+	name string
+	age  int
+}
+
+func main() {
+	var zhang Person
+	zhang.name = "zhan...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -261,74 +339,6 @@ crontab [-u user] file crontab [-u user] [ -e | -l | -r ]
        
       Dubbo
       Spring...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Redis</title>
-    <link href="https://blog.yexca.net/archives/157" rel="alternate" type="text/html" title="Redis" />
-    <published>2024-02-23T16:40:00+08:00</published>
-  
-    <updated>2024-02-23T16:40:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/157</id>
-    <content src="https://blog.yexca.net/archives/157" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="后端" />
-    
-    <category term="Redis" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Redis 是一个基于内存的 key-value 结构数据库，是互联网技术领域使用最为广泛的存储中间件
-
-
-  官网：https://redis.io
-  中文网：https://www.redis.net.cn/
-
-
-Redis 基于内存存储，读写性能高，适合存储热点数据 (商品、资讯、新闻) 。是用 C 语言开发的一个开源的高性能键值对数据库，存储 value 类型比较丰富，也被称为结构化的 NoSql (Not Only SQL) 数据库
-
-NoSql 泛指非关系型数据库，并不是要取代关系型数据库，而是关系型数据库的补充
-
-关系型数据库 (RDBMS)：
-
-
-  MySQL
-  Oracle
-  DB2
-  SQLServer
-
-
-非关系型数据库 (NoSQL)：
-
-
-  Redis
-  Mongo DB
-  MemCached
-
-
-Redis 下载安装与运行
-
-下载地址：
-
-...
     </summary>
   
 
