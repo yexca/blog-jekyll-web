@@ -3287,6 +3287,18 @@ PubkeyAuthentication <span class="nb">yes</span>　　　　　　　# 公钥登
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4136,60 +4148,6 @@ PubkeyAuthentication <span class="nb">yes</span>　　　　　　　# 公钥登
         
         
         <div class="col">
-          <a href="/archives/63" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1662111471"
-  data-df="ll"
-  
->
-  Sep  2, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Fedora安装java8(Oracle JDK)</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  引言
-
-尽管 Fedora 系统自带 java 环境，不过是 OpenJDK 。有时候还是需要使用 Oracle 的
-
-下载
-
-
-  
-    
-      进入官网下载：[Java Downloads
-      Oracle](https://www.oracle.com/java/technologies/downloads/) (下载需要登陆)
-    
-  
-
-
-找到 java8-...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/68" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4243,7 +4201,7 @@ Windows的文章：命令行下载YouTube视频
         
         
         <div class="col">
-          <a href="/archives/153" class="card post-preview h-100">
+          <a href="/archives/159" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4256,14 +4214,14 @@ Windows的文章：命令行下载YouTube视频
 
 <em
   class="small"
-  data-ts="1708181460"
+  data-ts="1708954440"
   data-df="ll"
   
 >
-  Feb 17, 2024
+  Feb 26, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>CentOS 7 安装 Xfce</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Linux 定时任务 crontab</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4272,33 +4230,88 @@ Windows的文章：命令行下载YouTube视频
 
 
 
-                  这是什么时候写的文章啊（
+                  这篇文章还是有点久远的，书写习惯和现在不同，甚至看着有点不习惯
 
-查看是否有 Xfce 组
+通过 crontab 命令，我们可以在固定的间隔时间执行指定的系统指令或 shell script 脚本。时间间隔的单位可以是分钟、小时、日、月、周及以上的任意组合
 
-1
-yum grouplist
-
-
-如果没有，需要安装额外包 yum 源
+命令格式
 
 1
-yum install epel-release -y
+crontab [-u user] file crontab [-u user] [ -e | -l | -r ]
 
 
-安装 X Window system
-
-1
-yum groupinstall &quot;X Window system&quot;
+命令参数
 
 
-安装 Xfce
+  -u ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/59" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
 
-1
-yum groupinstall xfce
 
 
-安装中文字...
+
+
+<em
+  class="small"
+  data-ts="1661314410"
+  data-df="ll"
+  
+>
+  Aug 24, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Fedora安装后</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引言
+
+个人安装Fedora后装的一些东西
+
+修改终端快捷键
+
+打开设置-键盘，在最下方查看及自定义快捷键
+
+自定义快捷键
+
+名称：Shell终端
+
+命令：gnome-terminal
+
+快捷键：自定
+
+更新系统
+
+sudo dnf update
+
+
+修改截图快捷键
+
+还是习惯Win的快捷键
+
+上述截图处交互式截图改为Win+Shift+S
+
+User目录修改为英文
+
+中文目录及其不易使用终...
                 </p>
               </div>
             </div>

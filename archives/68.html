@@ -3345,6 +3345,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4273,7 +4285,7 @@ Bilibili外链引用
         
         
         <div class="col">
-          <a href="/archives/63" class="card post-preview h-100">
+          <a href="/archives/70" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4286,14 +4298,14 @@ Bilibili外链引用
 
 <em
   class="small"
-  data-ts="1662111471"
+  data-ts="1662981865"
   data-df="ll"
   
 >
-  Sep  2, 2022
+  Sep 12, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Fedora安装java8(Oracle JDK)</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>SSH 公钥登录</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4304,20 +4316,25 @@ Bilibili外链引用
 
                   引言
 
-尽管 Fedora 系统自带 java 环境，不过是 OpenJDK 。有时候还是需要使用 Oracle 的
+每次连接机子都要输入密码属实有点麻烦 (因为我忘了
 
-下载
+OneClick
 
+如果自己的电脑没有公钥需要先生成，一般在 ~/.ssh/id_rsa.pub
 
-  
-    
-      进入官网下载：[Java Downloads
-      Oracle](https://www.oracle.com/java/technologies/downloads/) (下载需要登陆)
-    
-  
+1
+ssh-keygen
 
 
-找到 java8-...
+然后在自己的电脑上运行下个命令
+
+1
+ssh-copy-id username@RemoteIP
+
+
+其中 username 替换为要登录的账户，RemoteIP 替换为要登录的 IP 地址
+
+等待提示...
                 </p>
               </div>
             </div>
