@@ -3299,6 +3299,18 @@ PubkeyAuthentication <span class="nb">yes</span>　　　　　　　# 公钥登
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4253,7 +4265,7 @@ crontab [-u user] file crontab [-u user] [ -e | -l | -r ]
         
         
         <div class="col">
-          <a href="/archives/59" class="card post-preview h-100">
+          <a href="/archives/153" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4266,14 +4278,14 @@ crontab [-u user] file crontab [-u user] [ -e | -l | -r ]
 
 <em
   class="small"
-  data-ts="1661314410"
+  data-ts="1708181460"
   data-df="ll"
   
 >
-  Aug 24, 2022
+  Feb 17, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Fedora安装后</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>CentOS 7 安装 Xfce</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4282,36 +4294,33 @@ crontab [-u user] file crontab [-u user] [ -e | -l | -r ]
 
 
 
-                  引言
+                  这是什么时候写的文章啊（
 
-个人安装Fedora后装的一些东西
+查看是否有 Xfce 组
 
-修改终端快捷键
-
-打开设置-键盘，在最下方查看及自定义快捷键
-
-自定义快捷键
-
-名称：Shell终端
-
-命令：gnome-terminal
-
-快捷键：自定
-
-更新系统
-
-sudo dnf update
+1
+yum grouplist
 
 
-修改截图快捷键
+如果没有，需要安装额外包 yum 源
 
-还是习惯Win的快捷键
+1
+yum install epel-release -y
 
-上述截图处交互式截图改为Win+Shift+S
 
-User目录修改为英文
+安装 X Window system
 
-中文目录及其不易使用终...
+1
+yum groupinstall &quot;X Window system&quot;
+
+
+安装 Xfce
+
+1
+yum groupinstall xfce
+
+
+安装中文字...
                 </p>
               </div>
             </div>
