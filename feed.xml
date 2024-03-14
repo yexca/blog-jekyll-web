@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-03-11T16:42:32+08:00</updated>
+  <updated>2024-03-14T21:10:05+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,88 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>CSS 文字控制属性</title>
+    <link href="https://blog.yexca.net/archives/165" rel="alternate" type="text/html" title="CSS 文字控制属性" />
+    <published>2024-03-14T21:07:00+08:00</published>
+  
+    <updated>2024-03-14T21:07:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/165</id>
+    <content src="https://blog.yexca.net/archives/165" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="前端" />
+    
+    <category term="CSS" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      文字控制属性可控制的内容如下
+
+
+  
+    
+      名称
+      属性
+    
+  
+  
+    
+      字体大小
+      font-size
+    
+    
+      字体粗细
+      font-weight
+    
+    
+      字体倾斜
+      font-style
+    
+    
+      行高
+      line-height
+    
+    
+      字体族
+      font-family
+    
+    
+      字体复合属性
+      font
+    
+    
+      文本缩进
+      text-indent
+    
+    
+      文本对齐
+      text-align
+    
+    
+      修饰线
+      text-decoration
+    
+ ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -94,7 +176,7 @@
     <link href="https://blog.yexca.net/archives/163" rel="alternate" type="text/html" title="CSS 选择器" />
     <published>2024-03-02T17:15:00+08:00</published>
   
-    <updated>2024-03-02T17:15:00+08:00</updated>
+    <updated>2024-03-11T16:44:10+08:00</updated>
   
     <id>https://blog.yexca.net/archives/163</id>
     <content src="https://blog.yexca.net/archives/163" />
@@ -280,70 +362,6 @@ Eureka
 
 &amp;lt;dependency&amp;gt;
     &amp;lt;groupId&amp;gt;org....
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>GoLand 切片</title>
-    <link href="https://blog.yexca.net/archives/160" rel="alternate" type="text/html" title="GoLand 切片" />
-    <published>2024-02-27T20:00:00+08:00</published>
-  
-    <updated>2024-02-27T20:00:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/160</id>
-    <content src="https://blog.yexca.net/archives/160" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="编程基础" />
-    
-    <category term="编程语言" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Go 的切片是对数组的抽象
-
-数组
-
-数组的长度不可改变
-
-package main
-
-import "fmt"
-
-func main() {
-    // 定义方式一
-	var arr1 [10]int
-    // 遍历
-	for i := 0; i &amp;lt; len(arr1); i++ {
-		fmt.Println("arr1[", i, "]:", arr1[i])
-	}
-
-    // 定义方式二，赋值
-	arr2 := [10]int{0, 1, 2, 3}
-    // range遍历
-	for index, value := range arr2 {
-		fmt.Println("index =", index, "value =", value)
-	}
-
-    // 定义不同长度
-	var arr3 [4]int
-
-	fmt.Printf("type of a...
     </summary>
   
 
