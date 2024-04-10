@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-03-14T21:10:05+08:00</updated>
+  <updated>2024-04-10T16:24:19+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,87 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>CSS 背景属性</title>
+    <link href="https://blog.yexca.net/archives/166" rel="alternate" type="text/html" title="CSS 背景属性" />
+    <published>2024-04-10T16:21:00+08:00</published>
+  
+    <updated>2024-04-10T16:21:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/166</id>
+    <content src="https://blog.yexca.net/archives/166" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="前端" />
+    
+    <category term="CSS" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      背景属性有以下这些
+
+
+  
+    
+      描述
+      属性
+    
+  
+  
+    
+      背景色
+      background-color
+    
+    
+      背景图
+      background-image
+    
+    
+      背景图平铺方式
+      background-repeat
+    
+    
+      背景图位置
+      background-position
+    
+    
+      背景图缩放
+      background-size
+    
+    
+      背景图固定
+      background-attachment
+    
+    
+      背景图复合属性
+      background
+    
+  
+
+
+背景图
+
+网页中使用背景图实现装饰性的图片效果
+
+d...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -303,65 +384,6 @@ type Person struct {
 func main() {
 	var zhang Person
 	zhang.name = "zhan...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>注册中心 - Eureka</title>
-    <link href="https://blog.yexca.net/archives/161" rel="alternate" type="text/html" title="注册中心 - Eureka" />
-    <published>2024-02-29T16:53:00+08:00</published>
-  
-    <updated>2024-02-29T16:53:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/161</id>
-    <content src="https://blog.yexca.net/archives/161" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="后端" />
-    
-    <category term="Spring" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      引入注册中心之前先引入提供者与消费者概念
-
-提供者与消费者
-
-服务提供者：一次业务中，被其它微服务调用的服务。（提供接口给其它微服务）
-
-服务消费者：一次业务中，调用其它微服务的服务。（调用其它微服务提供的接口）
-
-提供者与消费者是相对的，一个服务既可以是提供者也可以是消费者
-
-Eureka
-
-若提供者有多个，消费者如何获取提供者信息，如何得知提供者的健康状态
-
-在启动时，微服务向 Eureka 注册服务信息，消费者可通过 Eureka 拉取提供者信息，然后远程调用。微服务会每 30s 向 Eureka 说明自己还活着，Eureka 会更新记录服务列表信息，剔除不健康服务器
-
-如果有多个服务提供者，消费者利用负载均衡算法，从服务列表中挑选一个
-
-搭建
-
-新建一个 Maven Module，引入依赖
-
-&amp;lt;dependency&amp;gt;
-    &amp;lt;groupId&amp;gt;org....
     </summary>
   
 

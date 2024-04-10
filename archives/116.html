@@ -985,6 +985,13 @@ _redirect.acg  IN  TXT    "https://blog.yexca.net/acg"
         
         
         <li class="text-truncate lh-lg">
+          <a href="/archives/148">JavaScript 学习</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/archives/163">CSS 选择器</a>
         </li>
       
@@ -1007,13 +1014,6 @@ _redirect.acg  IN  TXT    "https://blog.yexca.net/acg"
         
         <li class="text-truncate lh-lg">
           <a href="/archives/86">数据库学习一 数据库导论</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/archives/87">数据库学习二 关系模型</a>
         </li>
       
     </ul>
@@ -2215,6 +2215,18 @@ _redirect.acg  IN  TXT    "https://blog.yexca.net/acg"
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4208,53 +4220,6 @@ _redirect.acg  IN  TXT    "https://blog.yexca.net/acg"
         
         
         <div class="col">
-          <a href="/archives/66" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1662384263"
-  data-df="ll"
-  
->
-  Sep  5, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>记录 OpenWRT 通过深澜网络认证折腾</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  引言
-
-记录我使用OpenWRT路由器连接学校网的折腾过程，虽然最后的结果挺 emm？但在这个过程中还是了解到不少东西
-
-起始
-
-通过在浏览器搜索openwrt通过深澜认证得到恩山无线论坛帖子回复下的一个开源项目：coffeehat/BIT-srun-login-script，通过项目知道了有支持多平台（包括openwrt）的golang版本，于是开始折腾
-
-这是项目作者的文章：深澜校园网登...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/67" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4355,6 +4320,71 @@ Fedora 设置
 因为我设置的 IP 与自动分配的不一致 (有线连接) ，固需要手动修改
 
 在 网络-设置 的 身份 加上 MAC 地址，IPv4 改为 手动，地址依次为 IP、255.255.255.255、路由器 IP，DNS...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/72" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1663251422"
+  data-df="ll"
+  
+>
+  Sep 15, 2022
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>WordPress 数据库禁用插件</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引言
+
+启用某插件后台 502 了
+
+进入数据库
+
+
+  
+    选择进入 wp_options 表
+  
+  
+    找到 active_plugins 条目，一般在第二页
+  
+  
+    编辑此项目的 option_value 行
+  
+
+
+删除不要的插件
+
+注意：删除前先备份！！！
+
+
+  
+    找到不需要的插件的名字
+
+    删除从 i 开始到 ;，例如 i:1;s:2...
                 </p>
               </div>
             </div>
