@@ -35,27 +35,27 @@
     
       <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Linux 学习 第八、九章 学习系统管理与安装 Linux" />
+<meta property="og:title" content="CSS 盒子模型" />
 <meta name="author" content="yexca" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="第八章 学习系统管理" />
-<meta property="og:description" content="第八章 学习系统管理" />
-<link rel="canonical" href="https://blog.yexca.net/archives/82" />
-<meta property="og:url" content="https://blog.yexca.net/archives/82" />
+<meta name="description" content="显示模式" />
+<meta property="og:description" content="显示模式" />
+<link rel="canonical" href="https://blog.yexca.net/archives/167" />
+<meta property="og:url" content="https://blog.yexca.net/archives/167" />
 <meta property="og:site_name" content="yexca’Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-12-07T16:29:05+08:00" />
+<meta property="article:published_time" content="2024-04-13T22:06:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Linux 学习 第八、九章 学习系统管理与安装 Linux" />
+<meta property="twitter:title" content="CSS 盒子模型" />
 <meta name="twitter:site" content="@yexcano" />
 <meta name="twitter:creator" content="@yexcano" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2024-02-20T07:26:43+08:00","datePublished":"2022-12-07T16:29:05+08:00","description":"第八章 学习系统管理","headline":"Linux 学习 第八、九章 学习系统管理与安装 Linux","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/82"},"url":"https://blog.yexca.net/archives/82"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2024-04-13T22:06:00+08:00","datePublished":"2024-04-13T22:06:00+08:00","description":"显示模式","headline":"CSS 盒子模型","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/167"},"url":"https://blog.yexca.net/archives/167"}</script>
 <!-- End Jekyll SEO tag -->
 
     
   
-    <title>Linux 学习 第八、九章 学习系统管理与安装 Linux - yexca'Blog
+    <title>CSS 盒子模型 - yexca'Blog
     </title>
   
     <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>Linux 学习 第八、九章 学习系统管理与安装 Linux</span>
+              <span>CSS 盒子模型</span>
             
 
           
@@ -687,6 +687,30 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -703,42 +727,6 @@
       
         
         
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
       
 
       
@@ -805,7 +793,7 @@
 
 
 
-<h1 data-toc-skip>Linux 学习 第八、九章 学习系统管理与安装 Linux</h1>
+<h1 data-toc-skip>CSS 盒子模型</h1>
 
 <div class="post-meta text-muted">
     <!-- published date -->
@@ -822,42 +810,18 @@
 
 <em
   class=""
-  data-ts="1670401745"
+  data-ts="1713017160"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Dec  7, 2022
+  Apr 13, 2024
 </em>
 
     </span>
 
     <!-- lastmod date -->
-    
-    <span>
-      Updated
-      <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1708385203"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Feb 20, 2024
-</em>
-
-    </span>
     
 
   
@@ -901,9 +865,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1216 words"
+  title="1333 words"
 >
-  <em>6 min</em> read</span>
+  <em>7 min</em> read</span>
 
     </div>
 
@@ -912,277 +876,486 @@
 </div> <!-- .post-meta -->
 
 <div class="post-content">
-  <h2 id="第八章-学习系统管理"><span class="me-2">第八章 学习系统管理</span><a href="#第八章-学习系统管理" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <h2 id="显示模式"><span class="me-2">显示模式</span><a href="#显示模式" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h3 id="81-理解系统管理"><span class="me-2">8.1 理解系统管理</span><a href="#81-理解系统管理" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>显示模式即标签的显示方式，用于布局网页的时候，根据标签的显示模式选择合适的标签摆放内容</p>
 
 <ul>
-  <li>
-    <p>su 命令 — 以 root 用户身份打开一个 shell</p>
+  <li>块级元素 (例如 div)
+    <ul>
+      <li>独占一行</li>
+      <li>宽度默认是父级的 100%</li>
+      <li>添加宽高属性生效</li>
+    </ul>
   </li>
-  <li>
-    <p>sudo 命令 — 普通用户通过此命令运行其他命令时，该才会被赋予 root 权限</p>
+  <li>行内元素 (例如 span)
+    <ul>
+      <li>一行可以显示多个</li>
+      <li>设置宽高属性不生效</li>
+      <li>宽高尺寸由内容撑开</li>
+    </ul>
+  </li>
+  <li>行内块元素 (例如 img)
+    <ul>
+      <li>一行可以显示多个</li>
+      <li>设置宽高属性生效</li>
+      <li>宽高尺寸也可以由内容撑开</li>
+    </ul>
   </li>
 </ul>
 
-<h3 id="82-使用图形化管理工具"><span class="me-2">8.2 使用图形化管理工具</span><a href="#82-使用图形化管理工具" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>Cockpit 是基于浏览器的系统管理工具</p>
-
-<ol>
-  <li>安装 Cockpit</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>dnf <span class="nb">install </span>cockpit
-</pre></td></tr></tbody></table></code></div></div>
-
-<ol>
-  <li>以 root 身份登录，启用 Cockpit 套接字</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>systemctl <span class="nb">enable</span> <span class="nt">--now</span> cockpit.socker
-</pre></td></tr></tbody></table></code></div></div>
-
-<ol>
-  <li>在浏览器打开界面： <code class="language-plaintext highlighter-rouge">localhost:9090</code></li>
-</ol>
-
-<h4 id="821-使用-system-config--工具"><span class="me-2">8.2.1 使用 system-config-* 工具</span><a href="#821-使用-system-config--工具" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>可以通过 CSS 属性 <code class="language-plaintext highlighter-rouge">display</code> 转换显示模式，取值为：</p>
 
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>工具</th>
-      <th>命令</th>
-      <th>描述</th>
+      <th>效果</th>
+      <th>块级</th>
+      <th>行内</th>
+      <th>行内块</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>域名系统</td>
-      <td>system-config-bind</td>
-      <td>如果计算机充当 DNS 服务器，应创建和配置区域 (Zone)</td>
-    </tr>
-    <tr>
-      <td>HTTP</td>
-      <td>system-config-httpd</td>
-      <td>Apache Web 服务器</td>
-    </tr>
-    <tr>
-      <td>NFS</td>
-      <td>system-config-nfs</td>
-      <td>设置与其他使用了 NFS 服务的计算机共享的目录</td>
-    </tr>
-    <tr>
-      <td>Root Password</td>
-      <td>system-config-rootpassword</td>
-      <td>更改 root 密码</td>
-    </tr>
-    <tr>
-      <td>Samba NFS</td>
-      <td>system-config-samba</td>
-      <td>配置 Win 共享文件夹</td>
-    </tr>
-    <tr>
-      <td>Services</td>
-      <td>system-config-services</td>
-      <td>显示和更改 Fedora 中在不同运行级别的服务</td>
-    </tr>
-    <tr>
-      <td>Authentication</td>
-      <td>authconfig-gtk</td>
-      <td>更改系统中对用户进行身份验证的方式</td>
-    </tr>
-    <tr>
-      <td>Date &amp; Time</td>
-      <td>system-config-date</td>
-      <td>设置日期和时间或与 NTP 服务器保存同步</td>
-    </tr>
-    <tr>
-      <td>Firewall</td>
-      <td>system-config-firewall</td>
-      <td>配置防火墙</td>
-    </tr>
-    <tr>
-      <td>Language</td>
-      <td>system-config-language</td>
-      <td>选择语言</td>
-    </tr>
-    <tr>
-      <td>Printing</td>
-      <td>system-config-printer</td>
-      <td>配置本地和网络打印机</td>
-    </tr>
-    <tr>
-      <td>SELinux Management</td>
-      <td>policycoreutils-gui</td>
-      <td>设置 SELinux 的强制模式和默认策略</td>
-    </tr>
-    <tr>
-      <td>Users &amp; Groups</td>
-      <td>system-config-users</td>
-      <td>用户账户相关</td>
+      <td>属性值</td>
+      <td>block</td>
+      <td>inline</td>
+      <td>inline-block</td>
     </tr>
   </tbody>
 </table></div>
 
-<h3 id="83-使用-root-用户账户"><span class="me-2">8.3 使用 root 用户账户</span><a href="#83-使用-root-用户账户" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h2 id="盒子模型"><span class="me-2">盒子模型</span><a href="#盒子模型" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h4 id="831-通过-shell-成为-root-用户"><span class="me-2">8.3.1 通过 shell 成为 root 用户</span><a href="#831-通过-shell-成为-root-用户" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>作用：布局网页，摆放盒子和内容</p>
 
-<p>使用命令 <code class="language-plaintext highlighter-rouge">su</code> 即可转为 root 用户，但此时环境变量还是原来的账户</p>
+<p>盒子模型组成部分：</p>
 
-<p>使用 <code class="language-plaintext highlighter-rouge">su -</code> 以将变量也转变为 root 用户的</p>
+<ul>
+  <li>内容区域：width &amp; height</li>
+  <li>内边距：padding (出现在内容与盒子边缘之间)</li>
+  <li>边框线：border</li>
+  <li>外边距：margin (出现在盒子外面)</li>
+</ul>
 
-<p>此外，通过 <code class="language-plaintext highlighter-rouge">su - username</code> 可切换到指定用户</p>
+<h3 id="边框线"><span class="me-2">边框线</span><a href="#边框线" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<h4 id="832-使用-sudo-获取管理访问权限"><span class="me-2">8.3.2 使用 sudo 获取管理访问权限</span><a href="#832-使用-sudo-获取管理访问权限" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>属性值：<code class="language-plaintext highlighter-rouge">边框线粗细 线条样式 颜色</code> 不区分顺序</p>
 
-<p>使用 sudo 运行的命令拥有 root 权限，而且不需要 root 密码，只需要赋予相应用户权限即可</p>
+<p>常见线条样式有：</p>
 
-<p>以下为赋予 sudo 权限</p>
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>线条样式</th>
+      <th>实线</th>
+      <th>虚线</th>
+      <th>点线</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>属性值</td>
+      <td>solid</td>
+      <td>dashed</td>
+      <td>dotted</td>
+    </tr>
+  </tbody>
+</table></div>
 
-<ol>
-  <li>
-    <p>以 root 身份运行 <code class="language-plaintext highlighter-rouge">visudo</code> 命令</p>
-  </li>
-  <li>
-    <p>添加如下所示行</p>
-  </li>
-</ol>
+<div class="language-css highlighter-rouge"><div class="code-header">
+        <span data-label-text="CSS"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">aqua</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+<hr />
+
+<p>当然，还有可以设置单独方向的属性，属性值同上</p>
+
+<div class="language-css highlighter-rouge"><div class="code-header">
+        <span data-label-text="CSS"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
-</pre></td><td class="rouge-code"><pre>yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span>    ALL
-
-<span class="c"># 或下面为使用 sudo 时不需要密码</span>
-<span class="c"># (该用户的密码，不是 root 用户的密码)</span>
-yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span>    NOPASSWD:ALL
+6
+</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">border-top</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">red</span><span class="p">;</span>
+    <span class="nl">border-left</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">dashed</span> <span class="no">red</span><span class="p">;</span>
+    <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">dotted</span> <span class="no">red</span><span class="p">;</span>
+    <span class="nl">border-right</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>这样将赋予用户 yexca 以 sudo 权限</p>
+<h3 id="内边距"><span class="me-2">内边距</span><a href="#内边距" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<ol>
-  <li>保存更改后文件</li>
-</ol>
+<p>设置内容与盒子边缘之间的距离</p>
 
-<h4 id="842-管理配置文件"><span class="me-2">8.4.2 管理配置文件</span><a href="#842-管理配置文件" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<div class="language-css highlighter-rouge"><div class="code-header">
+        <span data-label-text="CSS"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="c">/* 四个方向内边距相同 */</span>
+<span class="nt">div</span> <span class="p">{</span>
+	<span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
 
-<p>大部分配置文件以纯文本的形式存在 /etc 目录下，以下为部分文件</p>
+<span class="c">/* 分别设置四个方向 */</span>
+<span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">padding-top</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="nl">padding-right</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+    <span class="nl">padding-left</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<hr />
+
+<p>padding 也有多值写法，可以通过一个属性控制四个内边距</p>
 
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>目录</th>
-      <th>描述</th>
+      <th>取值个数</th>
+      <th>示例</th>
+      <th>含义</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>/etc/cron*</td>
-      <td>定义了 crond 计划执行的程序，如 cron.daily、cron.hourly</td>
+      <td>一个</td>
+      <td><code class="language-plaintext highlighter-rouge">padding: 10px;</code></td>
+      <td>四个方向均为 10px</td>
     </tr>
     <tr>
-      <td>/etc/cups</td>
-      <td>配置 CUPS 打印服务的文件</td>
+      <td>四个</td>
+      <td><code class="language-plaintext highlighter-rouge">padding: 10px 20px 30px 40px;</code></td>
+      <td>上 右 下 左 (顺时针)</td>
     </tr>
     <tr>
-      <td>/etc/default</td>
-      <td>为各种实用工具设置默认值的文件</td>
+      <td>两个</td>
+      <td><code class="language-plaintext highlighter-rouge">padding: 10px 30px 20px;</code></td>
+      <td>上 左右 下</td>
     </tr>
     <tr>
-      <td>/etc/httpd</td>
-      <td>配置 Apache Web 服务器行为</td>
-    </tr>
-    <tr>
-      <td>/etc/rc?.d</td>
-      <td>针对每一种有效的系统状态，都有一个单独的 rc?.d 目录：rc0.d (关闭状态)、rc1.d (单用户状态)、rc2.d (多用户状态)、rc3.d (多用户加网络状态)、rc4.d (用户定义的状态)、rc5.d (多用户、网络与 GUI 登录状态) 和 rc6.d (重新启动状态)</td>
-    </tr>
-    <tr>
-      <td>/etc/skel</td>
-      <td>创建新用户时，该目录文件被复制到新用户的主目录</td>
-    </tr>
-    <tr>
-      <td>/etc/sysconfig</td>
-      <td>包含各种服务所创建和维护的重要系统配置文件</td>
-    </tr>
-    <tr>
-      <td>/etc/systemd</td>
-      <td>包含与 systemd 实用工具 (用来管理启动进程和系统服务) 相关联的文件</td>
-    </tr>
-    <tr>
-      <td>/etc/xinetd.d</td>
-      <td>包含一组文件，每一个文件定义了一个 xinted 守护进程监听某一个特定端口所需的点播网络服务</td>
+      <td>三个</td>
+      <td><code class="language-plaintext highlighter-rouge">padding: 10px 20px;</code></td>
+      <td>上下 左右</td>
     </tr>
   </tbody>
 </table></div>
 
-<h4 id="843-管理日志文件和-systemdjournal"><span class="me-2">8.4.3 管理日志文件和 Systemd.Journal</span><a href="#843-管理日志文件和-systemdjournal" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<h3 id="尺寸内减模式"><span class="me-2">尺寸内减模式</span><a href="#尺寸内减模式" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>rsyslogd 和 systemd 的 <code class="language-plaintext highlighter-rouge">journalctl</code> 命令</p>
+<p>默认情况下 盒子尺寸=内容尺寸+内边距尺寸+边框尺寸，也就是说当给盒子加上 padding 和 border 属性后，盒子会变大</p>
 
-<p>rsyslogd 及前身 syslogd 将文件放到 <code class="language-plaintext highlighter-rouge">/var/log</code> 目录</p>
+<div class="language-css highlighter-rouge"><div class="code-header">
+        <span data-label-text="CSS"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="c">/* 此盒子尺寸会变为 240*240 */</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<h3 id="85-使用其他管理账户"><span class="me-2">8.5 使用其他管理账户</span><a href="#85-使用其他管理账户" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>如果想要盒子大小为 200*200，需要手动计算并将 heigh 和 width 值调为 160px</p>
 
-<p>例如 lp 、apache 、bin 等用户，默认不允许登录</p>
+<p>而加上 <code class="language-plaintext highlighter-rouge">box-sizing: border-box</code> 后，盒子的大小将恒保持为 heigh 和 width 值</p>
 
-<p>如果要登录需要将默认 shell 从 <code class="language-plaintext highlighter-rouge">/sbin/nologin</code> 或 <code class="language-plaintext highlighter-rouge">/bin/false</code> 改为真实 shell，例如 <code class="language-plaintext highlighter-rouge">/bin/bash</code></p>
+<div class="language-css highlighter-rouge"><div class="code-header">
+        <span data-label-text="CSS"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="c">/* 此盒子尺寸为 200*200 */</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<h3 id="86-检查和配置硬件"><span class="me-2">8.6 检查和配置硬件</span><a href="#86-检查和配置硬件" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="外边距"><span class="me-2">外边距</span><a href="#外边距" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<h4 id="861-检查硬件"><span class="me-2">8.6.1 检查硬件</span><a href="#861-检查硬件" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>作用：拉开两个盒子之间的距离。属性值与 padding 写法相同</p>
 
-<p>通过 <code class="language-plaintext highlighter-rouge">dmesg</code> 或 <code class="language-plaintext highlighter-rouge">journalctl</code> 命令查看 Linux 启动时硬件检测信息以及驱动加载信息</p>
+<p>外边距不会使盒子变大</p>
 
-<p>通过 <code class="language-plaintext highlighter-rouge">lspci</code> 命令查看计算机上 PCI 总线及连接到这些总线上的设备，<code class="language-plaintext highlighter-rouge">lsusb</code> 命令列出 USB 设备信息，<code class="language-plaintext highlighter-rouge">lscpu</code> 列出处理器信息</p>
+<p>如果将 margin 的左右属性值设置为 auto 将会使该盒子水平居中</p>
 
-<h4 id="862-使用可加载模块"><span class="me-2">8.6.2 使用可加载模块</span><a href="#862-使用可加载模块" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<div class="language-css highlighter-rouge"><div class="code-header">
+        <span data-label-text="CSS"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">800px</span><span class="p">;</span>
+    <span class="c">/* 此盒子将水平居中 */</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>如果想添加未被正确识别的硬件，可能需要手动加载</p>
+<h4 id="合并现象"><span class="me-2">合并现象</span><a href="#合并现象" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<ol>
-  <li>列出可加载模块</li>
-</ol>
+<p>垂直排列的同级元素，上下 margin 会合并，取值为较大的 margin</p>
 
-<p>通过 <code class="language-plaintext highlighter-rouge">lsmod</code> 命令，如要获取某一模块详情，通过 <code class="language-plaintext highlighter-rouge">modinfo -d 模块</code> 命令</p>
+<div class="language-html highlighter-rouge"><div class="code-header">
+        <span data-label-text="HTML"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;style&gt;</span>
+	<span class="nc">.box1</span> <span class="p">{</span>
+		<span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+		<span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+		<span class="nl">background-color</span><span class="p">:</span> <span class="no">aqua</span><span class="p">;</span>
+		<span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+	<span class="p">}</span>
+    <span class="c">/* 俩盒子之间间隔 20px */</span>
+	<span class="nc">.box2</span> <span class="p">{</span>
+		<span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+		<span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+		<span class="nl">background-color</span><span class="p">:</span> <span class="no">aquamarine</span><span class="p">;</span>
+		<span class="nl">margin-top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
 
-<ol>
-  <li>加载模块</li>
-</ol>
+<span class="nt">&lt;body&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box1"</span><span class="nt">&gt;&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box2"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>使用 <code class="language-plaintext highlighter-rouge">modprobe</code> 命令加载任何被编译并安装到运行内核的模块</p>
+<h4 id="塌陷问题"><span class="me-2">塌陷问题</span><a href="#塌陷问题" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<ol>
-  <li>删除模块</li>
-</ol>
+<p>父子级标签，子级添加上外边距将产生塌陷。会导致父级一起向下</p>
 
-<p>使用 <code class="language-plaintext highlighter-rouge">rmmod</code> 命令，或使用 <code class="language-plaintext highlighter-rouge">modprobe -r</code> 以将依赖模块一起删除</p>
+<div class="language-html highlighter-rouge"><div class="code-header">
+        <span data-label-text="HTML"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;style&gt;</span>
+    <span class="nc">.father</span><span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nc">.son</span><span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="no">aqua</span><span class="p">;</span>
+        <span class="c">/* 俩盒子将一起向下塌陷 50px */</span>
+        <span class="nl">margin-top</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
 
-<h3 id="87-小结"><span class="me-2">8.7 小结</span><a href="#87-小结" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"father"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"son"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>在 Linux中应该把各项服务 (http、git 等) 单独创建用户并限制登录权限以保证系统安全</p>
+<p>解决方法：</p>
 
-<h2 id="第九章-安装-linux"><span class="me-2">第九章 安装 Linux</span><a href="#第九章-安装-linux" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ul>
+  <li>取消子级 margin，父级使用 padding</li>
+  <li>父级设置 <code class="language-plaintext highlighter-rouge">overflow: hidden</code></li>
+  <li>父级设置 border-top</li>
+</ul>
 
-<p>なし</p>
+<h3 id="元素溢出"><span class="me-2">元素溢出</span><a href="#元素溢出" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>图形化安装不必多说，其他安装可参考 <a href="https://wiki.archlinux.org/title/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">Arch 参考手册</a></p>
+<p>当盒子内容超过盒子大小是将产生溢出，可以用 overflow 属性控制溢出元素的内容的显示方式</p>
 
-<p>我也写了一篇比 Arch 手册垃圾的文章：<a href="http://blog.yexca.net/archives/76">虚拟机中 Arch Linux 安装记录 – yexca’Blog</a></p>
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>属性值</th>
+      <th>效果</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>hidden</td>
+      <td>溢出隐藏</td>
+    </tr>
+    <tr>
+      <td>scroll</td>
+      <td>溢出滚动 (无论是否溢出，都显示滚动条)</td>
+    </tr>
+    <tr>
+      <td>auto</td>
+      <td>溢出滚动 (溢出才显示滚动条)</td>
+    </tr>
+  </tbody>
+</table></div>
 
-<p>另有远程安装例 PXE 启动之类因无法复现，无法理解</p>
+<h3 id="行内元素垂直位置"><span class="me-2">行内元素垂直位置</span><a href="#行内元素垂直位置" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>行内元素 (如 span) 添加 margin 和 padding 无法改变垂直位置，此时可以通过行高改变</p>
+
+<div class="language-css highlighter-rouge"><div class="code-header">
+        <span data-label-text="CSS"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nt">span</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+    
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="圆角效果"><span class="me-2">圆角效果</span><a href="#圆角效果" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>使用属性 <code class="language-plaintext highlighter-rouge">border-radius</code> 设置元素的外边框为圆角，属性值为圆角半径，可以使用数字+px 或百分比，多值与 padding 类似</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>取值个数</th>
+      <th>含义</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>一个</td>
+      <td>四个角均为设定值</td>
+    </tr>
+    <tr>
+      <td>四个</td>
+      <td>左上 右上 右下 左下 (顺时针)</td>
+    </tr>
+    <tr>
+      <td>三个</td>
+      <td>左上 右上+左下 右下</td>
+    </tr>
+    <tr>
+      <td>两个</td>
+      <td>左上+右下 右上+左下</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h4 id="正圆形状"><span class="me-2">正圆形状</span><a href="#正圆形状" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p>给正方形盒子设置圆角属性值为宽高的一半或 50%</p>
+
+<div class="language-css highlighter-rouge"><div class="code-header">
+        <span data-label-text="CSS"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">aqua</span><span class="p">;</span>
+    
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+    <span class="c">/* 或者 border-radius: 50px */</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h4 id="胶囊形状"><span class="me-2">胶囊形状</span><a href="#胶囊形状" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p>给长方形盒子设置圆角属性值为盒子高度的一半</p>
+
+<div class="language-css highlighter-rouge"><div class="code-header">
+        <span data-label-text="CSS"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">aqua</span><span class="p">;</span>
+    
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="阴影效果"><span class="me-2">阴影效果</span><a href="#阴影效果" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>使用 box-shadow 设置，属性值：<code class="language-plaintext highlighter-rouge">x y 模糊半径 扩散半径 颜色 内外阴影</code></p>
+
+<p>其中 x 与 y 是必填，默认为外阴影，若设置内阴影属性值为 <code class="language-plaintext highlighter-rouge">inset</code></p>
 
 </div>
 
@@ -1193,20 +1366,12 @@ yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/linux/'>Linux</a>,
-      <a href='/categories/linuxstudy/'>LinuxStudy</a>
+      <a href='/categories/%E5%89%8D%E7%AB%AF/'>前端</a>,
+      <a href='/categories/css/'>CSS</a>
   </div>
   
 
   <!-- tags -->
-  
-  <div class="post-tags">
-    <i class="fa fa-tags fa-fw me-1"></i>
-      
-      <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"
-          class="post-tag no-text-decoration" >读书笔记</a>
-      
-  </div>
   
 
   <div class="post-tail-bottom
@@ -1238,7 +1403,7 @@ yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=Linux%20%E5%AD%A6%E4%B9%A0%20%E7%AC%AC%E5%85%AB%E3%80%81%E4%B9%9D%E7%AB%A0%20%E5%AD%A6%E4%B9%A0%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%89%E8%A3%85%20Linux%20-%20yexca'Blog&url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F82"
+        href="https://twitter.com/intent/tweet?text=CSS%20%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%20-%20yexca'Blog&url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F167"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -1251,7 +1416,7 @@ yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=Linux%20%E5%AD%A6%E4%B9%A0%20%E7%AC%AC%E5%85%AB%E3%80%81%E4%B9%9D%E7%AB%A0%20%E5%AD%A6%E4%B9%A0%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%89%E8%A3%85%20Linux%20-%20yexca'Blog&u=https%3A%2F%2Fblog.yexca.net%2Farchives%2F82"
+        href="https://www.facebook.com/sharer/sharer.php?title=CSS%20%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%20-%20yexca'Blog&u=https%3A%2F%2Fblog.yexca.net%2Farchives%2F167"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -1264,7 +1429,7 @@ yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">
     
       
       <a
-        href="https://t.me/share/url?url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F82&text=Linux%20%E5%AD%A6%E4%B9%A0%20%E7%AC%AC%E5%85%AB%E3%80%81%E4%B9%9D%E7%AB%A0%20%E5%AD%A6%E4%B9%A0%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E4%B8%8E%E5%AE%89%E8%A3%85%20Linux%20-%20yexca'Blog"
+        href="https://t.me/share/url?url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F167&text=CSS%20%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%20-%20yexca'Blog"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -2561,1027 +2726,1027 @@ yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -4574,7 +4739,7 @@ yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">
         
         
         <div class="col">
-          <a href="/archives/69" class="card post-preview h-100">
+          <a href="/archives/163" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4587,14 +4752,14 @@ yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">
 
 <em
   class="small"
-  data-ts="1662966250"
+  data-ts="1709370900"
   data-df="ll"
   
 >
-  Sep 12, 2022
+  Mar  2, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Linux学习 第三章 使用 shell</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>CSS 选择器</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4603,9 +4768,18 @@ yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">
 
 
 
-                  第三章 使用 shell
+                  CSS 引入方式
 
-本章介绍的 Linux shell 称为 Bash shell，其全称为 Bourne Again shell。还有其他的 shell，例如在 BSD UNIX 用户中流行的 C shell (csh) ，以及在 UNIX System V 用户中非常流行的 Korn shel (ksh) ，Ubuntu 默认启动 Dash shell (速度比 Bash快) ，...
+CSS 有三种引入方式，第一种为内部样式表，此方式仅学习使用
+
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
+        &amp;lt;style&amp;gt;
+        	/* 此处写 CSS */
+        &amp;lt;/style&amp;gt;
+    &amp;lt;/head&amp;gt;
+   ...
                 </p>
               </div>
             </div>
@@ -4615,7 +4789,7 @@ yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">
         
         
         <div class="col">
-          <a href="/archives/75" class="card post-preview h-100">
+          <a href="/archives/164" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4628,14 +4802,14 @@ yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">
 
 <em
   class="small"
-  data-ts="1664109302"
+  data-ts="1710146280"
   data-df="ll"
   
 >
-  Sep 25, 2022
+  Mar 11, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Linux 学习 第四章 在文件系统中移动</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>CSS 三大特性</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4644,25 +4818,22 @@ yexca    <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">
 
 
 
-                  第四章 在文件系统中移动
+                  CSS 三大特性：继承性、层叠性、优先级
 
-Linux 文件系统存储了计算机上所有的信息
+继承性
 
+子级默认继承父级的文字控制属性，若子级有自己的样式则不继承
 
-  
-    
-      目录
-      描述
-    
-  
-  
-    
-      /bin
-      包含常见的 Linux 用户命令，比如 ls、sort、date 和 chmod
-    
-    
-      /boot
-      包含可启动的 Linux 内核、最初的 RAM 盘和启动加载...
+&amp;lt;style&amp;gt;
+	body {
+		font: 30px/0.5 楷体;
+		color: aqua;
+	}
+&amp;lt;/style&amp;gt;
+
+&amp;lt;body&amp;gt;
+	&amp;lt;div&amp;gt;div&amp;lt;/div&amp;gt;
+	&amp;lt;p&amp;gt;p&amp;lt;/p&amp;gt;...
                 </p>
               </div>
             </div>
@@ -4672,7 +4843,7 @@ Linux 文件系统存储了计算机上所有的信息
         
         
         <div class="col">
-          <a href="/archives/78" class="card post-preview h-100">
+          <a href="/archives/165" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4685,14 +4856,14 @@ Linux 文件系统存储了计算机上所有的信息
 
 <em
   class="small"
-  data-ts="1668863223"
+  data-ts="1710421620"
   data-df="ll"
   
 >
-  Nov 19, 2022
+  Mar 14, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Linux 学习 第五章 使用文本文件</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>CSS 文字控制属性</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4701,15 +4872,31 @@ Linux 文件系统存储了计算机上所有的信息
 
 
 
-                  第五章 使用文本文件
+                  文字控制属性可控制的内容如下
 
-Linux 的大多数配置通过编辑纯文本文件完成。无论是修改 /etc 目录的文件配置本地服务，还是编辑 Ansible 目录文件配置主机的集合，纯文本文件仍然在这些任务中普遍使用
 
-5.1 使用 vim 和 vi 编辑文件
-
-vim 是 vi 的改良版本，两者使用差不多，但 vim 会有引导和代码高亮等，建议使用 vim
-
-事实上，在部分 Linux 发行版中，vi ...
+  
+    
+      名称
+      属性
+    
+  
+  
+    
+      字体大小
+      font-size
+    
+    
+      字体粗细
+      font-weight
+    
+    
+      字体倾斜
+      font-style
+    
+    
+      行高
+      line-heig...
                 </p>
               </div>
             </div>
@@ -4729,22 +4916,21 @@ vim 是 vi 的改良版本，两者使用差不多，但 vim 会有引导和代�
 <div class="post-navigation d-flex justify-content-between">
   
     <a
-      href="/archives/81"
+      href="/archives/166"
       class="btn btn-outline-primary"
       prompt="Older"
     >
-      <p>Linux 学习 第七章 编写简单的 shell 脚本</p>
+      <p>CSS 背景属性</p>
     </a>
   
 
   
-    <a
-      href="/archives/83"
-      class="btn btn-outline-primary"
+    <div
+      class="btn btn-outline-primary disabled"
       prompt="Newer"
     >
-      <p>Linux 学习 第十章 获取和管理软件</p>
-    </a>
+      <p>-</p>
+    </div>
   
 </div>
 

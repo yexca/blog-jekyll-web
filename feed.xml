@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-04-10T16:24:19+08:00</updated>
+  <updated>2024-04-13T22:09:54+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,84 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>CSS 盒子模型</title>
+    <link href="https://blog.yexca.net/archives/167" rel="alternate" type="text/html" title="CSS 盒子模型" />
+    <published>2024-04-13T22:06:00+08:00</published>
+  
+    <updated>2024-04-13T22:06:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/167</id>
+    <content src="https://blog.yexca.net/archives/167" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="前端" />
+    
+    <category term="CSS" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      显示模式
+
+显示模式即标签的显示方式，用于布局网页的时候，根据标签的显示模式选择合适的标签摆放内容
+
+
+  块级元素 (例如 div)
+    
+      独占一行
+      宽度默认是父级的 100%
+      添加宽高属性生效
+    
+  
+  行内元素 (例如 span)
+    
+      一行可以显示多个
+      设置宽高属性不生效
+      宽高尺寸由内容撑开
+    
+  
+  行内块元素 (例如 img)
+    
+      一行可以显示多个
+      设置宽高属性生效
+      宽高尺寸也可以由内容撑开
+    
+  
+
+
+可以通过 CSS 属性 display 转换显示模式，取值为：
+
+
+  
+    
+      效果
+      块级
+      行内
+      行内块
+    
+  
+  
+    
+      属性值
+      b...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -306,84 +384,6 @@ CSS 有三种引入方式，第一种为内部样式表，此方式仅学习使�
 
 &amp;lt;head&amp;gt;
     &amp;lt;title&amp;gt;&amp;lt;/...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>GoLand 面向对象</title>
-    <link href="https://blog.yexca.net/archives/162" rel="alternate" type="text/html" title="GoLand 面向对象" />
-    <published>2024-03-01T15:35:00+08:00</published>
-  
-    <updated>2024-03-01T15:35:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/162</id>
-    <content src="https://blog.yexca.net/archives/162" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="编程基础" />
-    
-    <category term="编程语言" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      通过使用结构体构建类与对象的概念
-
-
-  了解面向对象：面向对象基础
-
-
-struct
-
-首先是自定义类型，使用 type 关键字，类似于 C
-
-package main
-
-import "fmt"
-
-type myType int
-
-func main() {
-	var a myType
-	fmt.Println("a =", a)
-	fmt.Printf("type of a is %T", a)
-}
-
-/*
- * 输出
- * a = 0
- * type of a is main.myTye
- */
-
-
-定义类型使用 stuct
-
-package main
-
-import "fmt"
-
-type Person struct {
-	name string
-	age  int
-}
-
-func main() {
-	var zhang Person
-	zhang.name = "zhan...
     </summary>
   
 

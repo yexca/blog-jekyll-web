@@ -3566,6 +3566,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4355,7 +4367,7 @@ yt-dlp基于youtube-dl修改，实测下载速度较快
         
         
         <div class="col">
-          <a href="/archives/67" class="card post-preview h-100">
+          <a href="/archives/72" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4368,14 +4380,14 @@ yt-dlp基于youtube-dl修改，实测下载速度较快
 
 <em
   class="small"
-  data-ts="1662385883"
+  data-ts="1663251422"
   data-df="ll"
   
 >
-  Sep  5, 2022
+  Sep 15, 2022
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>萌百黑幕在 Argon 主题 WordPress 实现</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>WordPress 数据库禁用插件</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4386,20 +4398,31 @@ yt-dlp基于youtube-dl修改，实测下载速度较快
 
                   引言
 
-这个黑幕很好玩啊，非常好玩啊，可惜首页无法渲染出来，而且Markdown编写渲染也难
+启用某插件后台 502 了
 
-使用
-
-编写文章时选择作为HTML编辑，插入以下语句
-
-1
-&amp;lt;span class=&quot;heimu&quot; title=&quot;黑幕弹框里的字&quot;&amp;gt;需要隐藏的文字&amp;lt;/span&amp;gt;
+进入数据库
 
 
-插入CSS
+  
+    选择进入 wp_options 表
+  
+  
+    找到 active_plugins 条目，一般在第二页
+  
+  
+    编辑此项目的 option_value 行
+  
 
-本是想着实现首页也有黑幕，但实际测试发现首页不会渲染为什么不渲染啊啊啊啊啊啊啊！！！！！！！
-...
+
+删除不要的插件
+
+注意：删除前先备份！！！
+
+
+  
+    找到不需要的插件的名字
+
+    删除从 i 开始到 ;，例如 i:1;s:2...
                 </p>
               </div>
             </div>
