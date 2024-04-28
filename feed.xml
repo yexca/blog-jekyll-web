@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-04-13T22:09:54+08:00</updated>
+  <updated>2024-04-28T15:53:20+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,58 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Ribbon 负载均衡</title>
+    <link href="https://blog.yexca.net/archives/168" rel="alternate" type="text/html" title="Ribbon 负载均衡" />
+    <published>2024-04-28T15:50:00+08:00</published>
+  
+    <updated>2024-04-28T15:50:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/168</id>
+    <content src="https://blog.yexca.net/archives/168" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="后端" />
+    
+    <category term="Spring" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      消费者发起请求会被 Ribbon 拦截，Ribbon 从 Eureka 拉取提供者列表，Eureka 返回提供者列表，Ribbon 根据 IRule 选择服务器发起请求
+
+详细拦截：请求-&amp;gt;DynamicServerListLoadBalancer (获取url中的服务id,userService)-&amp;gt;DynamicServerListLoadBalancer-&amp;gt;Eureka-&amp;gt;DynamicServerListLoadBalancer-&amp;gt;IRule-&amp;gt;DynamicServerListLoadBalancer -&amp;gt;发起请求
+
+负载均衡策略
+
+
+  
+    
+      内置负载均衡规则类
+      规则描述
+    
+  
+  
+    
+      ZoneAvoidanceRule(Eureka 默认)
+      以区域可用的服务...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -324,66 +376,6 @@ d...
 	div {
 		color: red;
 	...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>CSS 选择器</title>
-    <link href="https://blog.yexca.net/archives/163" rel="alternate" type="text/html" title="CSS 选择器" />
-    <published>2024-03-02T17:15:00+08:00</published>
-  
-    <updated>2024-03-11T16:44:10+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/163</id>
-    <content src="https://blog.yexca.net/archives/163" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="前端" />
-    
-    <category term="CSS" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      CSS 引入方式
-
-CSS 有三种引入方式，第一种为内部样式表，此方式仅学习使用
-
-&amp;lt;html&amp;gt;
-    &amp;lt;head&amp;gt;
-        &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
-        &amp;lt;style&amp;gt;
-        	/* 此处写 CSS */
-        &amp;lt;/style&amp;gt;
-    &amp;lt;/head&amp;gt;
-    &amp;lt;body&amp;gt;
-    &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-
-
-第二种为行内样式，一般配合 JavaScript 使用
-
-&amp;lt;div style="此处写 CSS"&amp;gt;&amp;lt;/div&amp;gt;
-
-
-最后一种为外部样式表，将 CSS 代码写在单独文件，通过 link 标签引入，开发时常用
-
-&amp;lt;head&amp;gt;
-    &amp;lt;title&amp;gt;&amp;lt;/...
     </summary>
   
 
