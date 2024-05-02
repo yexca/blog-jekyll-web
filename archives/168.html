@@ -2194,6 +2194,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4331,7 +4343,7 @@ Eureka
         
         
         <div class="col">
-          <a href="/archives/142" class="card post-preview h-100">
+          <a href="/archives/169" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4344,14 +4356,14 @@ Eureka
 
 <em
   class="small"
-  data-ts="1704880380"
+  data-ts="1714660560"
   data-df="ll"
   
 >
-  Jan 10, 2024
+  May  2, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>JavaWeb 入门</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Nacos 注册中心</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4360,15 +4372,24 @@ Eureka
 
 
 
-                  SpringBoot 入门例子
+                  需先安装软件，官网：https://nacos.io/zh-cn/
 
-需求：使用 SpringBoot 开发一个 web 应用，浏览器发起 /hello 后，返回字符串 “Hello Spring”
+在 conf/application.properties 文件中可以更改端口，默认为 8848
 
-首先需要创建 SpringBoot 工程，并勾选 web 开发相关依赖
+注册服务
 
-然后创建控制类，路径在 *Application.java 同级创建文件 Controller/HelloController.java
+父工程中添加管理依赖
 
-@RestCo...
+1
+2
+3
+4
+5
+6
+7
+&amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;com.alibaba.cloud&amp;lt;/groupId&amp;gt;
+    &amp;lt;...
                 </p>
               </div>
             </div>
@@ -4397,12 +4418,13 @@ Eureka
   
 
   
-    <div
-      class="btn btn-outline-primary disabled"
+    <a
+      href="/archives/169"
+      class="btn btn-outline-primary"
       prompt="Newer"
     >
-      <p>-</p>
-    </div>
+      <p>Nacos 注册中心</p>
+    </a>
   
 </div>
 
