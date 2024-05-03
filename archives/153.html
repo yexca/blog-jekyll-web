@@ -2397,6 +2397,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4242,63 +4254,6 @@
         
         
         <div class="col">
-          <a href="/archives/70" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1662981865"
-  data-df="ll"
-  
->
-  Sep 12, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>SSH 公钥登录</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  引言
-
-每次连接机子都要输入密码属实有点麻烦 (因为我忘了
-
-OneClick
-
-如果自己的电脑没有公钥需要先生成，一般在 ~/.ssh/id_rsa.pub
-
-ssh-keygen
-
-
-然后在自己的电脑上运行下个命令
-
-ssh-copy-id username@RemoteIP
-
-
-其中 username 替换为要登录的账户，RemoteIP 替换为要登录的 IP 地址
-
-等待提示输入密码...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/59" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4358,6 +4313,58 @@ sudo dnf update
 User目录修改为英文
 
 中文目录及其不易使用终...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/159" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1708954440"
+  data-df="ll"
+  
+>
+  Feb 26, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Linux 定时任务 crontab</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  这篇文章还是有点久远的，书写习惯和现在不同，甚至看着有点不习惯
+
+通过 crontab 命令，我们可以在固定的间隔时间执行指定的系统指令或 shell script 脚本。时间间隔的单位可以是分钟、小时、日、月、周及以上的任意组合
+
+命令格式
+
+1
+crontab [-u user] file crontab [-u user] [ -e | -l | -r ]
+
+
+命令参数
+
+
+  -u ...
                 </p>
               </div>
             </div>

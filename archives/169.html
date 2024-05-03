@@ -2537,6 +2537,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4627,6 +4639,47 @@ Eureka
         
         
         <div class="col">
+          <a href="/archives/168" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1714290600"
+  data-df="ll"
+  
+>
+  Apr 28, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Ribbon 负载均衡</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  消费者发起请求会被 Ribbon 拦截，Ribbon 从 Eureka 拉取提供者列表，Eureka 返回提供者列表，Ribbon 根据 IRule 选择服务器发起请求
+
+详细拦截：请求-&amp;gt;DynamicServerListLoadBalancer (获取url中的服务id,userService)-&amp;gt;DynamicServerListLoadBalancer-&amp;gt;Eurek...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
           <a href="/archives/158" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4683,47 +4736,6 @@ Eureka
           </a>
         </div>
       
-        
-        
-        <div class="col">
-          <a href="/archives/168" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1714290600"
-  data-df="ll"
-  
->
-  Apr 28, 2024
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Ribbon 负载均衡</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  消费者发起请求会被 Ribbon 拦截，Ribbon 从 Eureka 拉取提供者列表，Eureka 返回提供者列表，Ribbon 根据 IRule 选择服务器发起请求
-
-详细拦截：请求-&amp;gt;DynamicServerListLoadBalancer (获取url中的服务id,userService)-&amp;gt;DynamicServerListLoadBalancer-&amp;gt;Eurek...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
     </div>
     <!-- .card-deck -->
   </div>
@@ -4746,12 +4758,13 @@ Eureka
   
 
   
-    <div
-      class="btn btn-outline-primary disabled"
+    <a
+      href="/archives/170"
+      class="btn btn-outline-primary"
       prompt="Newer"
     >
-      <p>-</p>
-    </div>
+      <p>Feign 远程调用</p>
+    </a>
   
 </div>
 

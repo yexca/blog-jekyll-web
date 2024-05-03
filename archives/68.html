@@ -3429,6 +3429,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4357,7 +4369,7 @@ Bilibili外链引用
         
         
         <div class="col">
-          <a href="/archives/70" class="card post-preview h-100">
+          <a href="/archives/153" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4370,14 +4382,14 @@ Bilibili外链引用
 
 <em
   class="small"
-  data-ts="1662981865"
+  data-ts="1708181460"
   data-df="ll"
   
 >
-  Sep 12, 2022
+  Feb 17, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>SSH 公钥登录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>CentOS 7 安装 Xfce</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4386,27 +4398,33 @@ Bilibili外链引用
 
 
 
-                  引言
+                  这是什么时候写的文章啊（
 
-每次连接机子都要输入密码属实有点麻烦 (因为我忘了
-
-OneClick
-
-如果自己的电脑没有公钥需要先生成，一般在 ~/.ssh/id_rsa.pub
+查看是否有 Xfce 组
 
 1
-ssh-keygen
+yum grouplist
 
 
-然后在自己的电脑上运行下个命令
+如果没有，需要安装额外包 yum 源
 
 1
-ssh-copy-id username@RemoteIP
+yum install epel-release -y
 
 
-其中 username 替换为要登录的账户，RemoteIP 替换为要登录的 IP 地址
+安装 X Window system
 
-等待提示...
+1
+yum groupinstall &quot;X Window system&quot;
+
+
+安装 Xfce
+
+1
+yum groupinstall xfce
+
+
+安装中文字...
                 </p>
               </div>
             </div>

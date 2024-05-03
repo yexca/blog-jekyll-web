@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-05-02T22:40:57+08:00</updated>
+  <updated>2024-05-03T23:15:13+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,64 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Feign 远程调用</title>
+    <link href="https://blog.yexca.net/archives/170" rel="alternate" type="text/html" title="Feign 远程调用" />
+    <published>2024-05-03T23:11:00+08:00</published>
+  
+    <updated>2024-05-03T23:11:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/170</id>
+    <content src="https://blog.yexca.net/archives/170" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="后端" />
+    
+    <category term="Spring" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Feign是一个声明式的 Http 客户端，Github：https://github.com/OpenFeign/feign
+
+简单使用
+
+引入依赖
+
+&amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-cloud-starter-openfeign&amp;lt;/artifactId&amp;gt;
+&amp;lt;/dependency&amp;gt;
+
+
+在启动类添加注解开启 Feign 的功能
+
+@EnableFeignClients
+@SpringBootApplication
+
+
+编写 Feign 客户端
+
+@FeignClient("userService")
+public interface UserClient {
+    @Ge...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -277,88 +335,6 @@
 网页中使用背景图实现装饰性的图片效果
 
 d...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>CSS 文字控制属性</title>
-    <link href="https://blog.yexca.net/archives/165" rel="alternate" type="text/html" title="CSS 文字控制属性" />
-    <published>2024-03-14T21:07:00+08:00</published>
-  
-    <updated>2024-03-14T21:07:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/165</id>
-    <content src="https://blog.yexca.net/archives/165" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="前端" />
-    
-    <category term="CSS" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      文字控制属性可控制的内容如下
-
-
-  
-    
-      名称
-      属性
-    
-  
-  
-    
-      字体大小
-      font-size
-    
-    
-      字体粗细
-      font-weight
-    
-    
-      字体倾斜
-      font-style
-    
-    
-      行高
-      line-height
-    
-    
-      字体族
-      font-family
-    
-    
-      字体复合属性
-      font
-    
-    
-      文本缩进
-      text-indent
-    
-    
-      文本对齐
-      text-align
-    
-    
-      修饰线
-      text-decoration
-    
- ...
     </summary>
   
 
