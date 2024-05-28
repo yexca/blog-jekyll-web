@@ -1383,7 +1383,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/73">个人内网折腾</a>
+          <a href="/archives/85">Linux 学习 第十二章 管理磁盘和文件系统</a>
         </li>
       
     </ul>
@@ -2656,6 +2656,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -4823,7 +4835,7 @@
         
         
         <div class="col">
-          <a href="/archives/158" class="card post-preview h-100">
+          <a href="/archives/171" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4836,14 +4848,14 @@
 
 <em
   class="small"
-  data-ts="1708854960"
+  data-ts="1714841640"
   data-df="ll"
   
 >
-  Feb 25, 2024
+  May  5, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Hi SpringCloud</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Gateway 服务网关</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4852,27 +4864,12 @@
 
 
 
-                  服务架构
+                  Gateway  是所有微服务的统一入口，有以下功能
 
-单体架构
 
-将业务的所有功能集中在一个项目中开发，打包一个包部署
-
-优点：架构简单、扩展性差、部署成本低，适合小型项目
-
-缺点：耦合度高
-
-分布式架构
-
-根据业务功能对系统进行拆分，每个业务模块作为独立项目开发，称为一个服务
-
-优点：降低服务耦合、有利于服务升级拓展
-
-缺点：架构复杂、难度大，适合大型互联网项目
-
-微服务
-
-微服务是一种经过良好架构设计的分布式架构方案，微服务架构...
+  身份认证和权限检验：网关作为微服务入口，需要校验用户是是否有请求资格，如果没有则进行拦截
+  请求路由、负载均衡：一切请求都必须先经过gateway，但网关不处理业务，而是根据某种规则，把请求转发到某个微服务，这个过程叫做路由。当然路由的目标服务有多个时，还需要做负载均衡
+  请求限流：当请求流量过高时，在网关中按照下流的微服务能...
                 </p>
               </div>
             </div>
