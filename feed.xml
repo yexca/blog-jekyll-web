@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-05-28T16:37:39+08:00</updated>
+  <updated>2024-06-03T18:08:54+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,65 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>ElementUI</title>
+    <link href="https://blog.yexca.net/archives/174" rel="alternate" type="text/html" title="ElementUI" />
+    <published>2024-06-03T18:04:00+08:00</published>
+  
+    <updated>2024-06-03T18:04:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/174</id>
+    <content src="https://blog.yexca.net/archives/174" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="前端" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      ElementUI 是饿了么团队开发的，一套为开发者、设计师和产品经理准备的基于 Vue2.0 的桌面端组件库
+
+组件是组成网页的部件，例如超链接、按钮、图片、表格、表单、分页条等
+
+Vue2.x 官网：国际 中国大陆
+
+Vue3.x 官网：https://element-plus.org/zh-CN/#/zh-CN
+
+安装
+
+安装 ElementUI 库 (在当前工程的目录下)，命令
+
+npm install element-ui@2.15.3
+
+
+引入 ElementUI 组件库
+
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+Vue.use(ElementUI);
+
+
+入门使用
+
+创建 src/views/element/elementView.vue 组件...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -242,59 +301,6 @@ SpringCloud 的网关实现有两种
 @FeignClient("userService")
 public interface UserClient {
     @Ge...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Nacos 注册中心</title>
-    <link href="https://blog.yexca.net/archives/169" rel="alternate" type="text/html" title="Nacos 注册中心" />
-    <published>2024-05-02T22:36:00+08:00</published>
-  
-    <updated>2024-05-02T22:36:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/169</id>
-    <content src="https://blog.yexca.net/archives/169" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="后端" />
-    
-    <category term="Spring" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      需先安装软件，官网：https://nacos.io/zh-cn/
-
-在 conf/application.properties 文件中可以更改端口，默认为 8848
-
-注册服务
-
-父工程中添加管理依赖
-
-&amp;lt;dependency&amp;gt;
-    &amp;lt;groupId&amp;gt;com.alibaba.cloud&amp;lt;/groupId&amp;gt;
-    &amp;lt;artifactId&amp;gt;spring-cloud-alibaba-dependencies&amp;lt;/artifactId&amp;gt;
-    &amp;lt;version&amp;gt;2.2.6.RELEASE&amp;lt;/version&amp;gt;
-    &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;
-    &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;
-&amp;lt;/dependency&amp;gt;
-
-
-注释掉 E...
     </summary>
   
 

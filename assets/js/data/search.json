@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "ElementUI",
+    "url": "/archives/174",
+    "categories": "前端",
+    "tags": "",
+    "date": "2024-06-03 18:04:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "ElementUI 是饿了么团队开发的，一套为开发者、设计师和产品经理准备的基于 Vue2.0 的桌面端组件库组件是组成网页的部件，例如超链接、按钮、图片、表格、表单、分页条等Vue2.x 官网：国际 中国大陆Vue3.x 官网：https://element-plus.org/zh-CN/#/zh-CN安装安装 ElementUI 库 (在当前工程的目录下)，命令npm install e...",
+    "content": "ElementUI 是饿了么团队开发的，一套为开发者、设计师和产品经理准备的基于 Vue2.0 的桌面端组件库组件是组成网页的部件，例如超链接、按钮、图片、表格、表单、分页条等Vue2.x 官网：国际 中国大陆Vue3.x 官网：https://element-plus.org/zh-CN/#/zh-CN安装安装 ElementUI 库 (在当前工程的目录下)，命令npm install element-ui@2.15.3引入 ElementUI 组件库import ElementUI from 'element-ui';import 'element-ui/lib/theme-chalk/index.css';Vue.use(ElementUI);入门使用创建 src/views/element/elementView.vue 组件，从官网复制代码，如&lt;template&gt;    &lt;div&gt;        &lt;!-- 按钮 --&gt;        &lt;el-row&gt;            &lt;el-button&gt;默认按钮&lt;/el-button&gt;            &lt;el-button type=\"primary\"&gt;主要按钮&lt;/el-button&gt;            &lt;el-button type=\"success\"&gt;成功按钮&lt;/el-button&gt;            &lt;el-button type=\"info\"&gt;信息按钮&lt;/el-button&gt;            &lt;el-button type=\"warning\"&gt;警告按钮&lt;/el-button&gt;            &lt;el-button type=\"danger\"&gt;危险按钮&lt;/el-button&gt;        &lt;/el-row&gt;    &lt;/div&gt;&lt;/template&gt;&lt;script&gt;export default {    }&lt;/script&gt;&lt;style&gt;&lt;/style&gt;在 App.vue 导入组件&lt;template&gt;  &lt;div id=\"app\"&gt;    &lt;element-view&gt;&lt;/element-view&gt;  &lt;/div&gt;&lt;/template&gt;&lt;script&gt;import elementView from './views/element/elementView.vue'export default {  components: { elementView },}&lt;/script&gt;&lt;style&gt;&lt;/style&gt;  针对其他组件亦是如此导入 Axios安装npm install axios导入import axios from 'axios';Vue 路由Vue Router 是 Vue 的官方路由，组成：  VueRouter：路由器类，根据路由请求在路由视图中动态渲染选中的组件  &lt;router-link&gt;：请求链接组件，浏览器会解析成链接标签  &lt;router-view&gt;：动态视图组件，用于渲染展示与路由对应的组件安装命令npm install vue-router@3.5.1定义路由在 src/router/index.jsimport HomeView from '../views/HomeView.vue'const routes = [  {    path: '/',    name: 'home',    component: HomeView // 上方导入方式  },  {    path: '/emp',    name: 'emp',      // 直接导入方式    component: () =&gt; import('../views/tlias/empView.vue')  },  {    path: '/redirect',      // 重定向    redirect: '/emp'  }]使用在需要使用的地方&lt;router-link to=\"/dept\"&gt;部门管理&lt;/router-link&gt;在 App.vue&lt;template&gt;  &lt;div id=\"app\"&gt;    &lt;router-view&gt;&lt;/router-view&gt;  &lt;/div&gt;&lt;/template&gt;在 main.jsimport router from './router'new Vue({  router, // 使用路由  render: h =&gt; h(App)}).$mount('#app')打包部署命令npm run build命令执行完成后会生成 dist 目录，将该目录文件部署即可"
+  },
+  
+  {
     "title": "简单Vue项目",
     "url": "/archives/173",
     "categories": "前端",
