@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Hexo 安装与使用",
+    "url": "/archives/177",
+    "categories": "日常, 网站建设",
+    "tags": "",
+    "date": "2024-08-09 08:49:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "最近服务器快过期了，便想着把 VRC Blog 迁移到 Github 上，于是便想着看看有什么好的主题没，刚开始是想着现在用的 Typecho 主题是从 Jekyll 移植，但 半年前 去搜索找不到了，然后最近又有点想了解 Hexo，找了半天主题又想到了之前挺喜欢的 Argon 好像有 Hexo 来着，然后便有了这篇文章环境需要安装 Node.js 10.13 以上版本，推荐 12.0 以上...",
+    "content": "最近服务器快过期了，便想着把 VRC Blog 迁移到 Github 上，于是便想着看看有什么好的主题没，刚开始是想着现在用的 Typecho 主题是从 Jekyll 移植，但 半年前 去搜索找不到了，然后最近又有点想了解 Hexo，找了半天主题又想到了之前挺喜欢的 Argon 好像有 Hexo 来着，然后便有了这篇文章环境需要安装 Node.js 10.13 以上版本，推荐 12.0 以上需要安装 Git安装运行命令npm install -g hexo-cli检测安装是否成功hexo -h创建新博客选择到要安装的文件夹hexo init &lt;folder_name&gt;进入文件夹cd &lt;folder_name&gt;安装依赖npm i创建完成后可以修改 ./_config 进行配置安装主题到主题站挑选一个主题，不同主题可能安装方法不同，具体参考主题文档以下为 Argon 主题的安装克隆主题首先在 ./themes 文件夹克隆主题仓库git clone https://github.com/solstice23/hexo-theme-argon.git重命名克隆下的文件夹为 argon安装 ejs 渲染器npm install hexo-renderer-ejs在 ./_config.yml 文件将 theme 改为 argon配置文件修改文件 ./themes/argon/_config.yml 以更改配置配置搜索在根目录运行npm install hexo-generator-search --save然后在 ./_config.yml 中添加选项search:  path: search.xml  field: post  content: true写作创建新文章hexo new [layout] &lt;title&gt;其中 [layout] 是一个可选属性，具体如下            Layout      描述      路径                  post      文章，默认      source/_posts              page      页面      source              draft      草稿      source/_drafts      创建完成后进行文章的编写预览hexo s访问 localhost:4000 查看构造静态文件运行命令hexo generate运行命令后只会针对没有的进行构造，把原先删除再构造好点参考文章https://hexo.io/docs/https://github.com/solstice23/hexo-theme-argon"
+  },
+  
+  {
     "title": "算法 n-皇后问题 回溯法",
     "url": "/archives/176",
     "categories": "编程基础, 算法",

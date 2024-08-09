@@ -3873,6 +3873,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4458,61 +4470,6 @@
         
         
         <div class="col">
-          <a href="/archives/77" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1667118187"
-  data-df="ll"
-  
->
-  Oct 30, 2022
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>NovelAI 绘图 (WebUI)</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  使用 Windows11 部署，其他系统 (如 Linux ) 请参考：AUTOMATIC1111/stable-diffusion-webui: Stable Diffusion web UI
-
-空间占用
-
-程序：5.3GiB (不含模型)
-
-运行：5.5GiB 以上
-
-请确保 C 盘空间至少 6GiB 再运行，否则电脑可能黑屏卡死
-
-环境
-
-首先是网络环境，请确保连接上互联网
-
-
-  
-...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/80" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4612,6 +4569,71 @@ MIL 符号
 下载与安装
 
 经过思考，决定使用 MySQL ，下载可参考...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/102" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1680618705"
+  data-df="ll"
+  
+>
+  Apr  4, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>服务器用 Docker 部署记录</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  从想法产生到彻底实现，一共耗时三个月 (主要是太懒了)
+
+安装 Docker
+
+使用了 APT 进行安装
+
+
+  添加 HTTPS 传输的软件包以及 CA 证书
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+# 先更新一下
+sudo apt-get update
+
+# 然后安装
+sudo apt-get install \
+     apt-transport-https \
+     ca...
                 </p>
               </div>
             </div>

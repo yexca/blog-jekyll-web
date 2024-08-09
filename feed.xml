@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-07-28T14:31:36+08:00</updated>
+  <updated>2024-08-09T10:23:18+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,82 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Hexo 安装与使用</title>
+    <link href="https://blog.yexca.net/archives/177" rel="alternate" type="text/html" title="Hexo 安装与使用" />
+    <published>2024-08-09T08:49:00+08:00</published>
+  
+    <updated>2024-08-09T08:49:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/177</id>
+    <content src="https://blog.yexca.net/archives/177" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="日常" />
+    
+    <category term="网站建设" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      最近服务器快过期了，便想着把 VRC Blog 迁移到 Github 上，于是便想着看看有什么好的主题没，刚开始是想着现在用的 Typecho 主题是从 Jekyll 移植，但 半年前 去搜索找不到了，然后最近又有点想了解 Hexo，找了半天主题又想到了之前挺喜欢的 Argon 好像有 Hexo 来着，然后便有了这篇文章
+
+环境
+
+需要安装 Node.js 10.13 以上版本，推荐 12.0 以上
+
+需要安装 Git
+
+安装
+
+运行命令
+
+npm install -g hexo-cli
+
+
+检测安装是否成功
+
+hexo -h
+
+
+创建新博客
+
+选择到要安装的文件夹
+
+hexo init &amp;lt;folder_name&amp;gt;
+
+
+进入文件夹
+
+cd &amp;lt;folder_name&amp;gt;
+
+
+安装依赖
+
+npm i
+
+
+创建完成后可以修改 ./_config 进行配置
+
+安装主题
+...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -247,58 +323,6 @@ Vue-cli 是 Vue 官方提供的一个脚手架，用于快速生成一个 Vue �
 
 Vue-cli 提供了如下功能：
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>博客运行时间</title>
-    <link href="https://blog.yexca.net/archives/172" rel="alternate" type="text/html" title="博客运行时间" />
-    <published>2024-05-14T11:08:00+08:00</published>
-  
-    <updated>2024-05-14T11:08:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/172</id>
-    <content src="https://blog.yexca.net/archives/172" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-    <category term="网站建设" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      引言
-
-毕业论文真是折磨呢。这是什么时候的文章呢，这个文件创建时间 2023.11.30 而修改时间 2022.09.18，我看不懂，但我大受震撼
-
-代码
-
-&amp;lt;script&amp;gt;
-    function secondToDate(second) {
-        if (!second) {
-            return 0;
-        }
-        var time = new Array(0, 0, 0, 0, 0);
-        if (second &amp;gt;= 365 * 24 * 3600) {
-            time[0] = parseInt(second / (365 * 24 * 3600));
-            second %= 365 * 24 * 3600;
-        }
-        if (se...
     </summary>
   
 
