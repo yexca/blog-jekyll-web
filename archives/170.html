@@ -2759,6 +2759,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4808,47 +4820,6 @@
         
         
         <div class="col">
-          <a href="/archives/168" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1714290600"
-  data-df="ll"
-  
->
-  Apr 28, 2024
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Ribbon 负载均衡</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  消费者发起请求会被 Ribbon 拦截，Ribbon 从 Eureka 拉取提供者列表，Eureka 返回提供者列表，Ribbon 根据 IRule 选择服务器发起请求
-
-详细拦截：请求-&amp;gt;DynamicServerListLoadBalancer (获取url中的服务id,userService)-&amp;gt;DynamicServerListLoadBalancer-&amp;gt;Eurek...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/169" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4933,6 +4904,65 @@
   身份认证和权限检验：网关作为微服务入口，需要校验用户是是否有请求资格，如果没有则进行拦截
   请求路由、负载均衡：一切请求都必须先经过gateway，但网关不处理业务，而是根据某种规则，把请求转发到某个微服务，这个过程叫做路由。当然路由的目标服务有多个时，还需要做负载均衡
   请求限流：当请求流量过高时，在网关中按照下流的微服务能...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/158" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1708854960"
+  data-df="ll"
+  
+>
+  Feb 25, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Hi SpringCloud</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  服务架构
+
+单体架构
+
+将业务的所有功能集中在一个项目中开发，打包一个包部署
+
+优点：架构简单、扩展性差、部署成本低，适合小型项目
+
+缺点：耦合度高
+
+分布式架构
+
+根据业务功能对系统进行拆分，每个业务模块作为独立项目开发，称为一个服务
+
+优点：降低服务耦合、有利于服务升级拓展
+
+缺点：架构复杂、难度大，适合大型互联网项目
+
+微服务
+
+微服务是一种经过良好架构设计的分布式架构方案，微服务架构...
                 </p>
               </div>
             </div>
