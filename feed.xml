@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-08-16T15:02:19+08:00</updated>
+  <updated>2024-08-23T17:21:41+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,77 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>宝塔面板搭建 OLAINDEX</title>
+    <link href="https://blog.yexca.net/archives/179" rel="alternate" type="text/html" title="宝塔面板搭建 OLAINDEX" />
+    <published>2024-08-23T17:14:00+08:00</published>
+  
+    <updated>2024-08-23T17:14:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/179</id>
+    <content src="https://blog.yexca.net/archives/179" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="日常" />
+    
+    <category term="网站建设" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      文章写于 2022.06.09，因早已不使用该面板与 OLAINDEX，文章并无最新适配，可能无法复现
+
+不建议使用宝塔面板
+
+环境要求
+
+PHP拓展要求
+
+
+  PHP &amp;gt;= 7.4
+  PHP OpenSSL 扩展
+  PHP PDO 扩展
+  PHP Mbstring 扩展
+  PHP Tokenizer 扩展
+  PHP XML 扩展
+  PHP Ctype 扩展
+  PHP JSON 扩展
+  PHP BCMath 扩展
+  PHP Fileinfo 扩展
+
+
+最低安装标准 nginx+php
+
+环境安装
+
+PHP
+
+宝塔的软件商店搜索安装PHP7.4
+
+然后打开PHP7.4的设置，到禁用函数
+
+将这三个proc_open，proc_get_status和putenv函数从其中删除
+
+composer
+
+宝塔官方默认composer源为阿里云无需修改，其他版本可能需要...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -261,65 +332,6 @@ define('__TYPECHO_SECURE__', true);
 成因分析
 
 参考资料中猜测是因为用户与浏览器之间是 HTTPS 交互，但实际上 PHP 接收到的是来自 Cloud Flare 的 HTTP 交互，所以 PHP 使用了 HTTP 进行响应从而构成...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>ElementUI</title>
-    <link href="https://blog.yexca.net/archives/174" rel="alternate" type="text/html" title="ElementUI" />
-    <published>2024-06-03T18:04:00+08:00</published>
-  
-    <updated>2024-06-03T18:04:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/174</id>
-    <content src="https://blog.yexca.net/archives/174" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="前端" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      ElementUI 是饿了么团队开发的，一套为开发者、设计师和产品经理准备的基于 Vue2.0 的桌面端组件库
-
-组件是组成网页的部件，例如超链接、按钮、图片、表格、表单、分页条等
-
-Vue2.x 官网：国际 中国大陆
-
-Vue3.x 官网：https://element-plus.org/zh-CN/#/zh-CN
-
-安装
-
-安装 ElementUI 库 (在当前工程的目录下)，命令
-
-npm install element-ui@2.15.3
-
-
-引入 ElementUI 组件库
-
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-
-Vue.use(ElementUI);
-
-
-入门使用
-
-创建 src/views/element/elementView.vue 组件...
     </summary>
   
 

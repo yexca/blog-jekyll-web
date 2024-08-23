@@ -2771,6 +2771,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4820,55 +4832,6 @@
         
         
         <div class="col">
-          <a href="/archives/169" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1714660560"
-  data-df="ll"
-  
->
-  May  2, 2024
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Nacos 注册中心</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  需先安装软件，官网：https://nacos.io/zh-cn/
-
-在 conf/application.properties 文件中可以更改端口，默认为 8848
-
-注册服务
-
-父工程中添加管理依赖
-
-&amp;lt;dependency&amp;gt;
-    &amp;lt;groupId&amp;gt;com.alibaba.cloud&amp;lt;/groupId&amp;gt;
-    &amp;lt;artifactId&amp;gt;...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/171" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4963,6 +4926,59 @@
 微服务
 
 微服务是一种经过良好架构设计的分布式架构方案，微服务架构...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/161" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1709196780"
+  data-df="ll"
+  
+>
+  Feb 29, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>注册中心 - Eureka</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引入注册中心之前先引入提供者与消费者概念
+
+提供者与消费者
+
+服务提供者：一次业务中，被其它微服务调用的服务。（提供接口给其它微服务）
+
+服务消费者：一次业务中，调用其它微服务的服务。（调用其它微服务提供的接口）
+
+提供者与消费者是相对的，一个服务既可以是提供者也可以是消费者
+
+Eureka
+
+若提供者有多个，消费者如何获取提供者信息，如何得知提供者的健康状态
+
+在启动时，微服务向 Eure...
                 </p>
               </div>
             </div>

@@ -2673,6 +2673,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4578,62 +4590,6 @@
         
         
         <div class="col">
-          <a href="/archives/169" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1714660560"
-  data-df="ll"
-  
->
-  May  2, 2024
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Nacos 注册中心</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  需先安装软件，官网：https://nacos.io/zh-cn/
-
-在 conf/application.properties 文件中可以更改端口，默认为 8848
-
-注册服务
-
-父工程中添加管理依赖
-
-1
-2
-3
-4
-5
-6
-7
-&amp;lt;dependency&amp;gt;
-    &amp;lt;groupId&amp;gt;com.alibaba.cloud&amp;lt;/groupId&amp;gt;
-    &amp;lt;...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/170" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4720,6 +4676,59 @@
   身份认证和权限检验：网关作为微服务入口，需要校验用户是是否有请求资格，如果没有则进行拦截
   请求路由、负载均衡：一切请求都必须先经过gateway，但网关不处理业务，而是根据某种规则，把请求转发到某个微服务，这个过程叫做路由。当然路由的目标服务有多个时，还需要做负载均衡
   请求限流：当请求流量过高时，在网关中按照下流的微服务能...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/161" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1709196780"
+  data-df="ll"
+  
+>
+  Feb 29, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>注册中心 - Eureka</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引入注册中心之前先引入提供者与消费者概念
+
+提供者与消费者
+
+服务提供者：一次业务中，被其它微服务调用的服务。（提供接口给其它微服务）
+
+服务消费者：一次业务中，调用其它微服务的服务。（调用其它微服务提供的接口）
+
+提供者与消费者是相对的，一个服务既可以是提供者也可以是消费者
+
+Eureka
+
+若提供者有多个，消费者如何获取提供者信息，如何得知提供者的健康状态
+
+在启动时，微服务向 Eure...
                 </p>
               </div>
             </div>
