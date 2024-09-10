@@ -2755,6 +2755,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4792,50 +4804,6 @@
         
         
         <div class="col">
-          <a href="/archives/171" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1714841640"
-  data-df="ll"
-  
->
-  May  5, 2024
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Gateway 服务网关</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Gateway  是所有微服务的统一入口，有以下功能
-
-
-  身份认证和权限检验：网关作为微服务入口，需要校验用户是是否有请求资格，如果没有则进行拦截
-  请求路由、负载均衡：一切请求都必须先经过gateway，但网关不处理业务，而是根据某种规则，把请求转发到某个微服务，这个过程叫做路由。当然路由的目标服务有多个时，还需要做负载均衡
-  请求限流：当请求流量过高时，在网关中按照下流的微服务能...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/158" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4939,6 +4907,47 @@ Eureka
 若提供者有多个，消费者如何获取提供者信息，如何得知提供者的健康状态
 
 在启动时，微服务向 Eure...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/168" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1714290600"
+  data-df="ll"
+  
+>
+  Apr 28, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Ribbon 负载均衡</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  消费者发起请求会被 Ribbon 拦截，Ribbon 从 Eureka 拉取提供者列表，Eureka 返回提供者列表，Ribbon 根据 IRule 选择服务器发起请求
+
+详细拦截：请求-&amp;gt;DynamicServerListLoadBalancer (获取url中的服务id,userService)-&amp;gt;DynamicServerListLoadBalancer-&amp;gt;Eurek...
                 </p>
               </div>
             </div>

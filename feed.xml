@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-08-27T11:03:30+08:00</updated>
+  <updated>2024-09-10T23:15:08+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,69 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>宝塔面板搭建 CuteOne</title>
+    <link href="https://blog.yexca.net/archives/181" rel="alternate" type="text/html" title="宝塔面板搭建 CuteOne" />
+    <published>2024-09-10T23:06:00+08:00</published>
+  
+    <updated>2024-09-10T23:06:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/181</id>
+    <content src="https://blog.yexca.net/archives/181" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="日常" />
+    
+    <category term="网站建设" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      文章写于 2022.11.30，因早已不使用该面板与 CuteOne，文章并无最新适配，可能无法复现
+
+同时当时文章并未写完，我无相关需求，仅记录
+
+搭建过程
+
+两篇文章
+
+
+  
+    宝塔面板Python项目管理器安装CuteOne – OneDrive多网盘挂载程序 - 大鸟博客 (daniao.org)
+  
+  
+    CuteOne搭建个人云盘最全教学！_将暮的博客-CSDN博客
+  
+
+
+第一篇我在Python项目管理器部署后一直无法成功运行，遂找到第二篇文章，非常详细
+
+视频一直转圈不能播放、图片不显示
+
+你可能遇到安装之后，图片也不显示，播放视频也一直在转圈圈；
+这个问题是因为SSL引起的，假设你不是SSL的，那么你应该没这个问题；
+
+如果你是SSL的，那么你需要修改：
+
+
+  app\templates\themes\default\public\layout...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -279,68 +342,6 @@ npm i
 
 安装主题
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>算法 n-皇后问题 回溯法</title>
-    <link href="https://blog.yexca.net/archives/176" rel="alternate" type="text/html" title="算法 n-皇后问题 回溯法" />
-    <published>2024-07-28T14:26:00+08:00</published>
-  
-    <updated>2024-07-28T14:26:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/176</id>
-    <content src="https://blog.yexca.net/archives/176" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="编程基础" />
-    
-    <category term="算法" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      问题描述
-
-n-皇后问题是在 n 行 n 列的棋盘上放置 n 个皇后，使得皇后彼此之间不受攻击，其规则是任意两个皇后不在同一行、同一列和相同的对角线上 (也就算国际象棋的皇后移动范围)
-
-问题分析
-
-拟采用以下思路解决 n-皇后问题：
-
-第 i 个皇后放在第 i 行
-
-从第一个皇后开始，对每个皇后，从其对应行 (第 i 个皇后对应第 i 行) 的第一列开始尝试
-若可以放置，确定位置，考虑下一个皇后
-若与之前的皇后冲突，则考虑下一列
-若超出最后一列，则重新确定上一个皇后的位置
-
-重复该过程，直到找到所有的放置方案
-
-C 代码
-
-#include &amp;lt;stdio.h&amp;gt;
-#include &amp;lt;math.h&amp;gt;
-
-#define N 4 //皇后个数
-
-// 判断第 k 个皇后目前放置位置是否与前面的皇后冲突
-int isplace(int pos[], int k){
- ...
     </summary>
   
 
