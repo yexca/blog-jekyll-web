@@ -2429,6 +2429,18 @@ composer <span class="nb">install</span> <span class="nt">-vvv</span> <span clas
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4586,7 +4598,7 @@ composer <span class="nb">install</span> <span class="nt">-vvv</span> <span clas
         
         
         <div class="col">
-          <a href="/archives/172" class="card post-preview h-100">
+          <a href="/archives/175" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4599,14 +4611,14 @@ composer <span class="nb">install</span> <span class="nt">-vvv</span> <span clas
 
 <em
   class="small"
-  data-ts="1715656080"
+  data-ts="1722003720"
   data-df="ll"
   
 >
-  May 14, 2024
+  Jul 26, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>博客运行时间</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Typecho HTTPS 无法登录访问后台</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4617,16 +4629,7 @@ composer <span class="nb">install</span> <span class="nt">-vvv</span> <span clas
 
                   引言
 
-毕业论文真是折磨呢。这是什么时候的文章呢，这个文件创建时间 2023.11.30 而修改时间 2022.09.18，我看不懂，但我大受震撼
-
-代码
-
-&amp;lt;script&amp;gt;
-    function secondToDate(second) {
-        if (!second) {
-            return 0;
-        }
-        var ...
+之前在移植 typecho 到 Docker 容器后，在开启 HTTPS 后登录后台将会报错，而将 HTTPS 关闭后则可以正常访问。因为在之前非 Docker 部署的时候可以正常访问，我以为是 Docker 网络的问题，而当时的修改是一次性的，不会再进行更新，所以我在关闭 HTTPS 修改完成后便不再管理。如今再次使用 typecho 再次遇到相同问题，考虑到需要更新文章，遂寻解决...
                 </p>
               </div>
             </div>
@@ -4681,7 +4684,7 @@ composer <span class="nb">install</span> <span class="nt">-vvv</span> <span clas
         
         
         <div class="col">
-          <a href="/archives/175" class="card post-preview h-100">
+          <a href="/archives/177" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4694,14 +4697,14 @@ composer <span class="nb">install</span> <span class="nt">-vvv</span> <span clas
 
 <em
   class="small"
-  data-ts="1722003720"
+  data-ts="1723164540"
   data-df="ll"
   
 >
-  Jul 26, 2024
+  Aug  9, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Typecho HTTPS 无法登录访问后台</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Hexo 安装与使用</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4710,9 +4713,11 @@ composer <span class="nb">install</span> <span class="nt">-vvv</span> <span clas
 
 
 
-                  引言
+                  最近服务器快过期了，便想着把 VRC Blog 迁移到 Github 上，于是便想着看看有什么好的主题没，刚开始是想着现在用的 Typecho 主题是从 Jekyll 移植，但 半年前 去搜索找不到了，然后最近又有点想了解 Hexo，找了半天主题又想到了之前挺喜欢的 Argon 好像有 Hexo 来着，然后便有了这篇文章
 
-之前在移植 typecho 到 Docker 容器后，在开启 HTTPS 后登录后台将会报错，而将 HTTPS 关闭后则可以正常访问。因为在之前非 Docker 部署的时候可以正常访问，我以为是 Docker 网络的问题，而当时的修改是一次性的，不会再进行更新，所以我在关闭 HTTPS 修改完成后便不再管理。如今再次使用 typecho 再次遇到相同问题，考虑到需要更新文章，遂寻解决...
+环境
+
+需要安装 Node.js 10.13 以上版本，推荐 12....
                 </p>
               </div>
             </div>

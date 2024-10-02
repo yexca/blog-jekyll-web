@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-09-10T23:15:08+08:00</updated>
+  <updated>2024-10-02T21:46:46+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,56 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>2024 装机记录</title>
+    <link href="https://blog.yexca.net/archives/182" rel="alternate" type="text/html" title="2024 装机记录" />
+    <published>2024-10-02T21:35:00+08:00</published>
+  
+    <updated>2024-10-02T21:35:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/182</id>
+    <content src="https://blog.yexca.net/archives/182" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="日常" />
+    
+    <category term="折腾记录" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      引言
+
+最近因为替换硬碟而重新装了电脑系统，当我掏出那多年未动的 U 盘时里面的软件多少有点过时，有些是已经无法在新系统上运行的，还有好多我已经使用了相同功能的替代品，以及使用了一些新的软件，遂写此文章记录装机用到的软件
+
+回头发现这是 24.09.16 的文章，之间有事耽误，以及状态不是特别好，直到 24.10.02 才把文章写完
+
+系统
+
+因为用了较长时间的 Win11，所以还是打算继续使用 Win11，U 盘里的系统太老了，于是去 MSDN itellyou 下载了新版镜像
+
+但是在装的时候却发现这玩意居然必须要联网才能装了，就是设置新系统的时候必须联网登录微软账户，要是没网络的话最好使用老版本 (记得应该是可以跳过的) 或者装 Win10 (然后再升级 Win11 (doge))
+
+软件相关
+
+我的装机盘已经好久没有使用了，里面的软件有些我已经不再使用，并且也开始使用一些新的...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -266,82 +316,6 @@ CentOS release 6.5 (Final)
 3、lsb_release -a，即可列出所有版本信息：
 
 [root@S-CentOS ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Hexo 安装与使用</title>
-    <link href="https://blog.yexca.net/archives/177" rel="alternate" type="text/html" title="Hexo 安装与使用" />
-    <published>2024-08-09T08:49:00+08:00</published>
-  
-    <updated>2024-08-09T08:49:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/177</id>
-    <content src="https://blog.yexca.net/archives/177" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-    <category term="网站建设" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      最近服务器快过期了，便想着把 VRC Blog 迁移到 Github 上，于是便想着看看有什么好的主题没，刚开始是想着现在用的 Typecho 主题是从 Jekyll 移植，但 半年前 去搜索找不到了，然后最近又有点想了解 Hexo，找了半天主题又想到了之前挺喜欢的 Argon 好像有 Hexo 来着，然后便有了这篇文章
-
-环境
-
-需要安装 Node.js 10.13 以上版本，推荐 12.0 以上
-
-需要安装 Git
-
-安装
-
-运行命令
-
-npm install -g hexo-cli
-
-
-检测安装是否成功
-
-hexo -h
-
-
-创建新博客
-
-选择到要安装的文件夹
-
-hexo init &amp;lt;folder_name&amp;gt;
-
-
-进入文件夹
-
-cd &amp;lt;folder_name&amp;gt;
-
-
-安装依赖
-
-npm i
-
-
-创建完成后可以修改 ./_config 进行配置
-
-安装主题
-...
     </summary>
   
 

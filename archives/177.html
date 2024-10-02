@@ -2499,6 +2499,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4632,7 +4644,7 @@
         
         
         <div class="col">
-          <a href="/archives/172" class="card post-preview h-100">
+          <a href="/archives/175" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4645,14 +4657,14 @@
 
 <em
   class="small"
-  data-ts="1715656080"
+  data-ts="1722003720"
   data-df="ll"
   
 >
-  May 14, 2024
+  Jul 26, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>博客运行时间</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Typecho HTTPS 无法登录访问后台</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4663,16 +4675,7 @@
 
                   引言
 
-毕业论文真是折磨呢。这是什么时候的文章呢，这个文件创建时间 2023.11.30 而修改时间 2022.09.18，我看不懂，但我大受震撼
-
-代码
-
-&amp;lt;script&amp;gt;
-    function secondToDate(second) {
-        if (!second) {
-            return 0;
-        }
-        var ...
+之前在移植 typecho 到 Docker 容器后，在开启 HTTPS 后登录后台将会报错，而将 HTTPS 关闭后则可以正常访问。因为在之前非 Docker 部署的时候可以正常访问，我以为是 Docker 网络的问题，而当时的修改是一次性的，不会再进行更新，所以我在关闭 HTTPS 修改完成后便不再管理。如今再次使用 typecho 再次遇到相同问题，考虑到需要更新文章，遂寻解决...
                 </p>
               </div>
             </div>
@@ -4727,7 +4730,7 @@
         
         
         <div class="col">
-          <a href="/archives/175" class="card post-preview h-100">
+          <a href="/archives/178" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4740,14 +4743,14 @@
 
 <em
   class="small"
-  data-ts="1722003720"
+  data-ts="1723790580"
   data-df="ll"
   
 >
-  Jul 26, 2024
+  Aug 16, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Typecho HTTPS 无法登录访问后台</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>宝塔面板搭建 ZFile</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4756,9 +4759,21 @@
 
 
 
-                  引言
+                  文章写于 2022.06.12，本不想发布，但见文章写的较为完整想着发出来留念吧。因早已不使用该面板与 ZFile，文章并无最新适配，可能无法复现
 
-之前在移植 typecho 到 Docker 容器后，在开启 HTTPS 后登录后台将会报错，而将 HTTPS 关闭后则可以正常访问。因为在之前非 Docker 部署的时候可以正常访问，我以为是 Docker 网络的问题，而当时的修改是一次性的，不会再进行更新，所以我在关闭 HTTPS 修改完成后便不再管理。如今再次使用 typecho 再次遇到相同问题，考虑到需要更新文章，遂寻解决...
+不建议使用宝塔面板
+
+安装依赖
+
+查看系统版本
+
+1、cat /etc/issue，此命令也适用于所有的 Linux 发行版。
+
+1
+2
+3
+[root@S-CentOS home]# cat /etc/issue
+CentOS release...
                 </p>
               </div>
             </div>

@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "2024 装机记录",
+    "url": "/archives/182",
+    "categories": "日常, 折腾记录",
+    "tags": "",
+    "date": "2024-10-02 21:35:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "引言最近因为替换硬碟而重新装了电脑系统，当我掏出那多年未动的 U 盘时里面的软件多少有点过时，有些是已经无法在新系统上运行的，还有好多我已经使用了相同功能的替代品，以及使用了一些新的软件，遂写此文章记录装机用到的软件回头发现这是 24.09.16 的文章，之间有事耽误，以及状态不是特别好，直到 24.10.02 才把文章写完系统因为用了较长时间的 Win11，所以还是打算继续使用 Win11...",
+    "content": "引言最近因为替换硬碟而重新装了电脑系统，当我掏出那多年未动的 U 盘时里面的软件多少有点过时，有些是已经无法在新系统上运行的，还有好多我已经使用了相同功能的替代品，以及使用了一些新的软件，遂写此文章记录装机用到的软件回头发现这是 24.09.16 的文章，之间有事耽误，以及状态不是特别好，直到 24.10.02 才把文章写完系统因为用了较长时间的 Win11，所以还是打算继续使用 Win11，U 盘里的系统太老了，于是去 MSDN itellyou 下载了新版镜像但是在装的时候却发现这玩意居然必须要联网才能装了，就是设置新系统的时候必须联网登录微软账户，要是没网络的话最好使用老版本 (记得应该是可以跳过的) 或者装 Win10 (然后再升级 Win11 (doge))软件相关我的装机盘已经好久没有使用了，里面的软件有些我已经不再使用，并且也开始使用一些新的软件，部分替代了原来的功能了，所以还是有必要写一下的，说不定下次装机看这篇文章的时候我又会换一批软件了 (虽然现在我不是很喜欢麻烦的事情)办公软件基础的 Office 必不可少，采用 Office Tool 进行安装方便快捷以下所写仅安装 Word、Excel 和 PowerPoint下载 Office Tool: https://otp.landian.vip/zh-cn/download.html启动 Office Tool，运行代码安装deploy /add O365ProPlusRetail_zh-cn /O365ProPlusRetail.exclapps Access,Bing,Groove,Lync,OneDrive,OneNote,Outlook,Publisher,Teams /channel Current /dlfirst利用 kms 激活 Office，运行代码激活ospp /inslicid MondoVolume /sethst:kms.loli.beer /setprt:1688 /act# or use kms.03k.orgospp /inslicid MondoVolume /sethst:kms.03k.org /setprt:1688 /act参考文章https://www.coolhub.top/archives/11https://www.coolhub.top/archives/14下载工具与网盘迅雷: 使用的忘了从哪找的精简版。虽然吸血，但有些东西确实还是得用迅雷下载BitComet: BT 下载工具，同样使用了精简版。类似的工具还有 qBittorrent, µTorrent 等Resilio Sync: 基于 BT 技术的同步软件，方便各端文件同步Internet Download Manage: 即 IDM，比较好用的多线程下载工具115: 用于下载一些下不动的 BT。类似的工具有 pikpak百度网盘: 开了会员很好用，但没会员就是折磨。时间，加钱可及。与之类似的如阿里网盘、夸克网盘可以需要时再下载社交软件暂时使用的社交软件也就那样吧Tencent  QQ: 最近出的 NT 版本确实还行吧  WeChat: https://www.wechat.com/Telegram: https://desktop.telegram.org/解压工具之前的电脑上倒是装了不少的解压工具，但实际上使用的也就俩个，于是这次就只装两个了Bandizip: 应该是较为流行的吧，之前当我刚听说时学校机房都用上了WinRAR: 比较古老的软件，但有些 rar 只有使用此软件才能解压其他的:  7zip: 最为流行的解压软件  NanaZip: 7z 的美化，并且可以在 Win11 一级右键菜单显示其他工具Utools: 非常便捷的工具，官网有动画介绍，通过插件拓展使得其非常方便，比如本文就是使用其 MarkDown 拓展写的虽然有些地方不如 Typora 但胜在方便QuickLook: 快速预览文件的工具，用起来不是太理想，希望未来可以找到替代品。非安装版需要解锁后使用: https://github.com/QL-Win/QuickLook/issues/11Password: 密码管理工具，可以使用开源替代 bitwarden。我已经彻底离不开密码管理器啦pdf 阅读器: 感觉大部分都差不多，随缘用用  Foxit PDF  Wondershare PDFelement  PDF XChangesandboxie: 沙盒工具，对于不想直接运行电脑上污染环境的很好用，非安装版每次运行需要管理员权限TickTick: To Do List 软件，全平台同步，不过最近感觉同步不是太顺畅QuiteRSS: RSS 订阅管理工具，但界面较为古老，不过由于我使用喜欢了也无所谓。毕竟转移只用压缩解压，RSS 订阅也不会少Duplicate Cleaner Pro: 之前用的清理软件找不到了，就用八酱的这个啦。虽然有些时候不是太好用，但使用长了后还行吧PixPin: 截图工具Code ToolsVS Code: 只能说装机必备了Typora: Markdown 可视化书写工具Git: https://git-scm.com/downloads/win  Git 安装后需要配置名称和邮箱。同时可以更新下 Github 的 SSH 公钥了  git config --global user.name \"Your Name\"git config --global user.email \"email@example.com\"    参考文章: https://blog.yexca.net/archives/95JetBrains  IntelliJ IDEA: Java 编程  GoLand: Go 编程Dataflare: 连接数据库的工具Docker我已经完全离不开 Docker 了下载地址: https://docs.docker.com/desktop/install/windows-install/单独分一个章节是因为安装时出错 WSL Update Failed其实就是需要去下载最新版本的 WSL，然后重启电脑就好了参考文章https://forums.docker.com/t/wsl-update-failed/140473/3https://github.com/docker/for-win/issues/13845https://github.com/docker/for-win/issues/13580#issuecomment-1619667316MySQL Docker: 因为使用其存储一些数据，所以还是挺有必要使用的，但使用频率不是太高，我觉得可以直接装 Docker 里，这样换系统之类的也方便啦 (也想过装服务器上，但觉得有时候可能会没有网络连接欸  安装  docker pull mysql:5.7    运行时需要配置端口和 ROOT 密码的环境变量 MYSQL_ROOT_PASSWORD博客因为我博客使用 Jekyll 框架，还需要重新安装下，希望不要出问题运行环境  Ruby: https://www.ruby-lang.org/en/downloads/  RubyGems: https://rubygems.org/pages/download  Node.js: https://nodejs.org/zh-cn安装 Jekyllgem install jekyll初始化博客bundle好吧，有几个插件我重启也装不上，同时参考了 Installation Issues on MacOSX - Gem::Ext::BuildError: ERROR: Failed to build gem native extension 等文章也无法安装经朋友的提醒，确实还是得用 Docker 比较好，天天整环境得烦死，明明项目都用 Docker 我博客居然还在用本地安装参考我主题安装文章安装 VS Code 插件 Dev Containers extension 用于查看容器内部文件打开 VS Code 按下 F1 输入 Dev Containers: Clone Repository in Container Volume... 选择后输入一个 Git 链接 (即我的 blog 的源代码)等待一会后 (右下角可以看日志) 选择要使用的系统、软件等配置，我选择 Debian 系统，软件我没选首先更新软件sudo apt-get update参考官方教程安装 Jekyllsudo apt-get install ruby-full build-essential# 上方是依赖sudo gem install jekyll bundler安装 NodeJSsudo apt install nodejs安装依赖sudo bundle  会提示不要用 root 权限运行，但这只是容器，随便造，无视尝试部署项目bundle exec jekyll s项目成功运行，但因为是容器的端口，需要映射到本地才能看，打开直接能看，VS Code nb (doge感觉比 Win 编译的要快，非常 Nice参考文章:https://jekyllcn.com/docs/installation/https://jekyllrb.com/docs/installation/windows/#installation-via-bash-on-windows-10https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-a-git-repository-or-github-pr-in-an-isolated-container-volume结尾暂时需要用的就这些吧，有一些貌似自己用不到了或者使用频率低就想不卡里，就酱，加纳"
+  },
+  
+  {
     "title": "宝塔面板搭建 CuteOne",
     "url": "/archives/181",
     "categories": "日常, 网站建设",
