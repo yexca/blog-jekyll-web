@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-10-02T21:46:46+08:00</updated>
+  <updated>2024-10-14T22:03:30+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,58 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>东京大学大学院理工学 数学 2020 问题一 / 東大院理工学 数学 2020 問題一</title>
+    <link href="https://blog.yexca.net/archives/183" rel="alternate" type="text/html" title="东京大学大学院理工学 数学 2020 问题一 / 東大院理工学 数学 2020 問題一" />
+    <published>2024-10-14T21:37:00+08:00</published>
+  
+    <updated>2024-10-14T21:37:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/183</id>
+    <content src="https://blog.yexca.net/archives/183" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="Math" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      引言
+
+日本語のタイトルを書いても、この文章は主に日本語の内容ではありません。時間があれば追加かもしれません
+
+最近几年总是会觉得自己在学习上没有任何的收获，尽管自己可能确实听了课程。于是我便想着尝试去做题目 (是的，学习却不做题这种可能不是特别正常的现象会让当时的我觉得很正常，应该是太懒了)，结果这一做题目，怎么说呢，做我是不会，搜怎么做我倒是有上过相关课程的印象，于是我几乎是重新学了一遍的同时解完了该题
+
+同时，因为没有参考答案，前三题我用 Python 可以计算出来，答案应该是正确的，但最后两题是证明题，不保证证明是对的
+
+题目
+
+Source: https://www.i.u-tokyo.ac.jp/edu/entra/examarchive.shtml
+
+
+  题目版权属于东京大学所有，仅为了方便观看而引用，无盈利行为
+
+
+正方行列 $A,B$ を
+
+\[A=\begin{...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -60,9 +112,10 @@
 
 但是在装的时候却发现这玩意居然必须要联网才能装了，就是设置新系统的时候必须联网登录微软账户，要是没网络的话最好使用老版本 (记得应该是可以跳过的) 或者装 Win10 (然后再升级 Win11 (doge))
 
-软件相关
 
-我的装机盘已经好久没有使用了，里面的软件有些我已经不再使用，并且也开始使用一些新的...
+  2024.10.03
+今天刷到了俩个跳过网络验证的方法，没尝试记录下
+第一个是按 Ctr...
     </summary>
   
 
@@ -257,65 +310,6 @@ PHP
 composer
 
 宝塔官方默认composer源为阿里云无需修改，其他版本可能需要...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>宝塔面板搭建 ZFile</title>
-    <link href="https://blog.yexca.net/archives/178" rel="alternate" type="text/html" title="宝塔面板搭建 ZFile" />
-    <published>2024-08-16T14:43:00+08:00</published>
-  
-    <updated>2024-08-16T14:43:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/178</id>
-    <content src="https://blog.yexca.net/archives/178" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-    <category term="网站建设" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      文章写于 2022.06.12，本不想发布，但见文章写的较为完整想着发出来留念吧。因早已不使用该面板与 ZFile，文章并无最新适配，可能无法复现
-
-不建议使用宝塔面板
-
-安装依赖
-
-查看系统版本
-
-1、cat /etc/issue，此命令也适用于所有的 Linux 发行版。
-
-[root@S-CentOS home]# cat /etc/issue
-CentOS release 6.5 (Final)
-Kernel \r on an \m
-
-
-2、cat /etc/redhat-release，这种方法只适合 Redhat 系的 Linux：
-
-[root@S-CentOS home]# cat /etc/redhat-release
-CentOS release 6.5 (Final)
-
-
-3、lsb_release -a，即可列出所有版本信息：
-
-[root@S-CentOS ...
     </summary>
   
 

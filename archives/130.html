@@ -2810,6 +2810,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4480,7 +4492,7 @@ sudo apt-get install \
         
         
         <div class="col">
-          <a href="/archives/105" class="card post-preview h-100">
+          <a href="/archives/175" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4493,14 +4505,14 @@ sudo apt-get install \
 
 <em
   class="small"
-  data-ts="1682965659"
+  data-ts="1722003720"
   data-df="ll"
   
 >
-  May  2, 2023
+  Jul 26, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>搭建个人音乐网站</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Typecho HTTPS 无法登录访问后台</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4509,17 +4521,9 @@ sudo apt-get install \
 
 
 
-                  使用 Rclone 挂载 Onedrive 歌曲文件，Navidrome 搭建网站，采用 docker 部署
+                  引言
 
-Rclone
-
-首先需要在 Windows 系统上运行获取配置，然后再在服务器上安装并挂载文件
-
-获取 Token
-
-在 Windows 电脑上下载 Rclone，下载地址：https://rclone.org/downloads/
-
-下载完成后解压，解压完成后通过 cmd 进入该...
+之前在移植 typecho 到 Docker 容器后，在开启 HTTPS 后登录后台将会报错，而将 HTTPS 关闭后则可以正常访问。因为在之前非 Docker 部署的时候可以正常访问，我以为是 Docker 网络的问题，而当时的修改是一次性的，不会再进行更新，所以我在关闭 HTTPS 修改完成后便不再管理。如今再次使用 typecho 再次遇到相同问题，考虑到需要更新文章，遂寻解决...
                 </p>
               </div>
             </div>
