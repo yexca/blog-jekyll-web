@@ -3640,6 +3640,18 @@ collar, detached sleeves, double bun, eyebrows visible through hair, frills, hai
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4667,7 +4679,7 @@ collar, detached sleeves, double bun, eyebrows visible through hair, frills, hai
         
         
         <div class="col">
-          <a href="/archives/102" class="card post-preview h-100">
+          <a href="/archives/175" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4680,14 +4692,14 @@ collar, detached sleeves, double bun, eyebrows visible through hair, frills, hai
 
 <em
   class="small"
-  data-ts="1680618705"
+  data-ts="1722003720"
   data-df="ll"
   
 >
-  Apr  4, 2023
+  Jul 26, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>服务器用 Docker 部署记录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Typecho HTTPS 无法登录访问后台</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4696,33 +4708,9 @@ collar, detached sleeves, double bun, eyebrows visible through hair, frills, hai
 
 
 
-                  从想法产生到彻底实现，一共耗时三个月 (主要是太懒了)
+                  引言
 
-安装 Docker
-
-使用了 APT 进行安装
-
-
-  添加 HTTPS 传输的软件包以及 CA 证书
-
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-# 先更新一下
-sudo apt-get update
-
-# 然后安装
-sudo apt-get install \
-     apt-transport-https \
-     ca...
+之前在移植 typecho 到 Docker 容器后，在开启 HTTPS 后登录后台将会报错，而将 HTTPS 关闭后则可以正常访问。因为在之前非 Docker 部署的时候可以正常访问，我以为是 Docker 网络的问题，而当时的修改是一次性的，不会再进行更新，所以我在关闭 HTTPS 修改完成后便不再管理。如今再次使用 typecho 再次遇到相同问题，考虑到需要更新文章，遂寻解决...
                 </p>
               </div>
             </div>

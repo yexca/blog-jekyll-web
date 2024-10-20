@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-10-14T22:20:36+08:00</updated>
+  <updated>2024-10-20T20:36:23+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,50 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>2022 SA am1 -01-02</title>
+    <link href="https://blog.yexca.net/archives/184" rel="alternate" type="text/html" title="2022 SA am1 -01-02" />
+    <published>2024-10-20T20:19:00+08:00</published>
+  
+    <updated>2024-10-20T20:19:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/184</id>
+    <content src="https://blog.yexca.net/archives/184" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="考试" />
+    
+    <category term="SA" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      引言
+
+自己最近两年确实很浑浑噩噩了，以至于现在对于事情的处理方法也受到该状态的很大影响。一直这么下去终究不是办法，既然无法选择，那就尽力做好吧，我想要可以至少我去尝试一下吧，没有尝试的勇气才是最可怕的，这已经让我最近失去了一个机会了，还是应该有些改变或者变化才会比较可以生活得较为真实点，我也确实有时候觉得我活在梦里，倒不是活得好，而是不真实。文字得力量是有限得，事实的经历更具有说服力，尽管可能是虚假的被创造的事实，我开始去相信一些看似很离谱的事情
+
+emm，感觉在写日记似的，まあまあ、就这样吧
+
+那么关于这篇文章，是我想要挑战一下，也没想着会成功，去参加系统架构师考试，也就是计算机专业技术与软件专业技术资格的高级考试，这个考试拿下来的证和学习到的知识可能大多数编码的时候用不上 (其实能用上只是想不到)，但有总比没有好，我尽量可以把这张试卷做完吧，这应该也可以慢慢将我从梦中拉回吧
+
+...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -33,6 +77,8 @@
     </author>
 
   
+    
+    <category term="考试" />
     
     <category term="Math" />
     
@@ -239,77 +285,6 @@ Onedrive Directory Index，不占用服务器空间，不走服务器流量，�
 检测
 
 首先是同意条款，如果点击同意会返回，请将地址栏中最后的 &amp;amp;mdu...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>宝塔面板搭建 OLAINDEX</title>
-    <link href="https://blog.yexca.net/archives/179" rel="alternate" type="text/html" title="宝塔面板搭建 OLAINDEX" />
-    <published>2024-08-23T17:14:00+08:00</published>
-  
-    <updated>2024-08-23T17:14:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/179</id>
-    <content src="https://blog.yexca.net/archives/179" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-    <category term="网站建设" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      文章写于 2022.06.09，因早已不使用该面板与 OLAINDEX，文章并无最新适配，可能无法复现
-
-不建议使用宝塔面板
-
-环境要求
-
-PHP拓展要求
-
-
-  PHP &amp;gt;= 7.4
-  PHP OpenSSL 扩展
-  PHP PDO 扩展
-  PHP Mbstring 扩展
-  PHP Tokenizer 扩展
-  PHP XML 扩展
-  PHP Ctype 扩展
-  PHP JSON 扩展
-  PHP BCMath 扩展
-  PHP Fileinfo 扩展
-
-
-最低安装标准 nginx+php
-
-环境安装
-
-PHP
-
-宝塔的软件商店搜索安装PHP7.4
-
-然后打开PHP7.4的设置，到禁用函数
-
-将这三个proc_open，proc_get_status和putenv函数从其中删除
-
-composer
-
-宝塔官方默认composer源为阿里云无需修改，其他版本可能需要...
     </summary>
   
 

@@ -4709,6 +4709,18 @@ ifconfig eth0 192.168.1.110
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4934,53 +4946,6 @@ ifconfig eth0 192.168.1.110
         
         
         <div class="col">
-          <a href="/archives/84" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1672633743"
-  data-df="ll"
-  
->
-  Jan  2, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>Linux 学习 第十一章 获取用户账户</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  第十一章 获取用户账户
-
-用户账户保持了使用系统的人与运行在系统中的进程之间的边界，而组是一种将系统的权限一次性分配给多个用户的方法
-
-11.1 创建用户账户
-
-每一个使用 Linux 系统的人都应该有一个单独的用户账户。通过拥有一个用户账户，可以提供用来完全存储文件的区域，以及调整用户界面 (GUI、路径、环境变量等) ，从而适合用户使用电脑的习惯
-
-可以通过 Cockpit 使用 GUI...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/85" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -5078,6 +5043,71 @@ Linux 的历史。总结：Linux NB
 
 
 第二部分：成为一名 Linu...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/149" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1706423100"
+  data-df="ll"
+  
+>
+  Jan 28, 2024
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Fedora 开机启动运行脚本</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  引言
+
+千万不要把死循环放进去啊！！！使用 systemd 方式
+
+新建脚本
+
+在此文件中写入您的脚本
+
+1
+vi /etc/rc.d/rc.local
+
+
+赋予执行权限
+
+1
+chmod +x /etc/rc.d/rc.local
+
+
+编辑启动状态
+
+编辑文件
+
+1
+vi /usr/lib/systemd/system/rc-local.service
+
+
+在最后一行加入 [Install...
                 </p>
               </div>
             </div>
