@@ -28,6 +28,11 @@ bundle exec jekyll s
 bundle exec jekyll b
 ```
 
+# 打包
+```
+tar -cvf site.tar _site/
+```
+
 https://jekyllrb.com/docs/usage/
 
 https://gist.github.com/petterobam/557f9b0e172d45a0984e0bdfacece6e3

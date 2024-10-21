@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-10-20T20:36:23+08:00</updated>
+  <updated>2024-10-21T20:46:41+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,66 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>2022 SA am1 -03-05</title>
+    <link href="https://blog.yexca.net/archives/185" rel="alternate" type="text/html" title="2022 SA am1 -03-05" />
+    <published>2024-10-21T20:35:00+08:00</published>
+  
+    <updated>2024-10-21T20:35:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/185</id>
+    <content src="https://blog.yexca.net/archives/185" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="考试" />
+    
+    <category term="SA" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      引言
+
+星期一总是很累，在经历了周末的休息后总会在今天提不起精神。不过今天也不知道怎么回事我突然就一改之前快抑郁的感觉，尽管什么也没有做来着，突然就变得及其乐观。情感或者状态确实很奇妙
+
+所以呢，今天也摸了不少捏，差点就不写了感觉。不过这张试卷有 30 个试题，照目前的速度不得至少半个月才能看完 :cry:
+
+第三问
+
+ポログラム言語のうち、ブロックの範囲を指定する方法として特定の記号や予約語を用いず、等しい文字数の字下げを用いるという特徴をもつものはどれか。
+
+ア　C
+
+イ　Java
+
+ウ　PHP
+
+エ　Python
+
+题目翻译: 在编程语言中，哪种语言的特点是不使用特定的符号或保留字来指定代码块的范围，而是通过相同字符数的缩进来指定范围？
+
+显然是 Python，即选项 エ
+
+第四问
+
+キャッシュメモリのアクセス時間が主記憶のアクセス時間の1/30で、ヒット率が95％のとき、実効...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -68,7 +128,7 @@ emm，感觉在写日记似的，まあまあ、就这样吧
     <link href="https://blog.yexca.net/archives/183" rel="alternate" type="text/html" title="东京大学大学院理工学 数学 2020 问题一 / 東大院理工学 数学 2020 問題一" />
     <published>2024-10-14T21:37:00+08:00</published>
   
-    <updated>2024-10-14T21:37:00+08:00</updated>
+    <updated>2024-10-20T20:37:33+08:00</updated>
   
     <id>https://blog.yexca.net/archives/183</id>
     <content src="https://blog.yexca.net/archives/183" />
@@ -225,66 +285,6 @@ Source: https://www.i.u-tokyo.ac.jp/edu/entra/examarchive.shtml
 
 
   app\templates\themes\default\public\layout...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>基于 Onedrive 建站 (oneindex)</title>
-    <link href="https://blog.yexca.net/archives/180" rel="alternate" type="text/html" title="基于 Onedrive 建站 (oneindex)" />
-    <published>2024-08-27T11:00:00+08:00</published>
-  
-    <updated>2024-08-27T11:00:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/180</id>
-    <content src="https://blog.yexca.net/archives/180" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-    <category term="网站建设" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      文章写于 2022.05.09，文章并无最新适配，可能无法复现。另推荐使用较新的项目
-
-通过 Onedrive 可以建立网盘网站，例如我的VRChat网盘已经没了，还可以直接建立网页，或者图床
-
-oneindex 简介
-
-Github: https://github.com/avedu/oneindex
-
-Onedrive Directory Index，不占用服务器空间，不走服务器流量，直接列出 OneDrive 目录，文件直链下载。
-
-环境
-
-需要 PHP5.6+，需打开 curl 支持，新手(比如我)建议直接使用宝塔直接部署，方便快捷
-
-另因宝塔隐私泄露风波，有一些其他版本如宝塔纯净版，请自行识别安装
-
-安装
-
-从 Github 将仓库下载并上传至网站根目录并解压缩
-
-然后访问网站，进入安装程序
-
-检测
-
-首先是同意条款，如果点击同意会返回，请将地址栏中最后的 &amp;amp;mdu...
     </summary>
   
 
