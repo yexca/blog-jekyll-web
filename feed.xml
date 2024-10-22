@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-10-21T20:46:41+08:00</updated>
+  <updated>2024-10-22T15:42:18+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,67 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>2022 SA am1 -06-10</title>
+    <link href="https://blog.yexca.net/archives/186" rel="alternate" type="text/html" title="2022 SA am1 -06-10" />
+    <published>2024-10-22T15:37:00+08:00</published>
+  
+    <updated>2024-10-22T15:37:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/186</id>
+    <content src="https://blog.yexca.net/archives/186" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="考试" />
+    
+    <category term="SA" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      引言
+
+可能因为是多场考试共用的试卷吧，问题还是挺基础的，感觉像软考中级软件设计师的程度。不过一共有四场考试呢，也不知道啥时候能把这第一个写完呢
+
+第六问
+
+一つの $I^2C$ バスに接続された二つのセンサがある。それぞれのセンサ値を読み込む二つのタスで排他的に制御したい。利用するリアルタイムOSの機能として、適切なものはどれか。
+
+ア　キュー
+
+イ　セマフォ
+
+ウ　マルチスレッド
+
+エ　ラウンドロビン
+
+题目翻译：有两个连接到同一个 I²C 总线的传感器。为了排他性地控制两个任务读取各自的传感器值，应使用哪种实时操作系统的功能？
+
+ア：队列 (queue)
+イ：信号量 (semaphore)
+ウ：多线程 (Multithreading)
+エ：轮转调度 (Round Robin)
+
+队列是一种数据结构，遵循 FIFO 即先进先出原则，适用于多个任务之间的通信或数据传递
+
+信号量是一...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -222,69 +283,6 @@ Source: https://www.i.u-tokyo.ac.jp/edu/entra/examarchive.shtml
   2024.10.03
 今天刷到了俩个跳过网络验证的方法，没尝试记录下
 第一个是按 Ctr...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>宝塔面板搭建 CuteOne</title>
-    <link href="https://blog.yexca.net/archives/181" rel="alternate" type="text/html" title="宝塔面板搭建 CuteOne" />
-    <published>2024-09-10T23:06:00+08:00</published>
-  
-    <updated>2024-09-10T23:06:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/181</id>
-    <content src="https://blog.yexca.net/archives/181" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-    <category term="网站建设" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      文章写于 2022.11.30，因早已不使用该面板与 CuteOne，文章并无最新适配，可能无法复现
-
-同时当时文章并未写完，我无相关需求，仅记录
-
-搭建过程
-
-两篇文章
-
-
-  
-    宝塔面板Python项目管理器安装CuteOne – OneDrive多网盘挂载程序 - 大鸟博客 (daniao.org)
-  
-  
-    CuteOne搭建个人云盘最全教学！_将暮的博客-CSDN博客
-  
-
-
-第一篇我在Python项目管理器部署后一直无法成功运行，遂找到第二篇文章，非常详细
-
-视频一直转圈不能播放、图片不显示
-
-你可能遇到安装之后，图片也不显示，播放视频也一直在转圈圈；
-这个问题是因为SSL引起的，假设你不是SSL的，那么你应该没这个问题；
-
-如果你是SSL的，那么你需要修改：
-
-
-  app\templates\themes\default\public\layout...
     </summary>
   
 
