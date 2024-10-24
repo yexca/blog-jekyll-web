@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-10-22T15:42:18+08:00</updated>
+  <updated>2024-10-24T23:05:17+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,62 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>东京大学大学院理工学 数学 2020 问题二 / 東大院理工学 数学 2020 問題二</title>
+    <link href="https://blog.yexca.net/archives/187" rel="alternate" type="text/html" title="东京大学大学院理工学 数学 2020 问题二 / 東大院理工学 数学 2020 問題二" />
+    <published>2024-10-24T22:46:00+08:00</published>
+  
+    <updated>2024-10-24T22:46:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/187</id>
+    <content src="https://blog.yexca.net/archives/187" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="考试" />
+    
+    <category term="Math" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      引言
+
+日本語のタイトルを書いても、この文章は主に日本語の内容ではありません。時間があれば追加かもしれません
+
+唉，干劲总是会被现实所打败，不过这次我伤心的时间倒是变短了，希望慢慢的可以好起来
+
+关于这题的话，应该属于一个单独的向量的课程吧，我是一点没看懂，后来想到 3b1b 的线性代数的本质才想到了数学中向量的一般表示，然后慢慢想
+
+不过事实上题目几乎也把这些东西的定义都给了出来，如果日本的教学不学的话，相当于是当场看定义，然后据此解题。只能说能解出来是真的很厉害，望而却步
+
+同时，因为全是证明题，无法确保过程是否正确
+
+题目
+
+Source: https://www.i.u-tokyo.ac.jp/edu/entra/examarchive.shtml
+
+
+  题目版权属于东京大学所有，仅为了方便观看而引用，无盈利行为
+
+
+$xy$ 平面内の滑らかな曲線 $\boldsymbol...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -232,57 +288,6 @@ Source: https://www.i.u-tokyo.ac.jp/edu/entra/examarchive.shtml
 正方行列 $A,B$ を
 
 \[A=\begin{...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>2024 装机记录</title>
-    <link href="https://blog.yexca.net/archives/182" rel="alternate" type="text/html" title="2024 装机记录" />
-    <published>2024-10-02T21:35:00+08:00</published>
-  
-    <updated>2024-10-14T22:03:55+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/182</id>
-    <content src="https://blog.yexca.net/archives/182" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-    <category term="折腾记录" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      引言
-
-最近因为替换硬碟而重新装了电脑系统，当我掏出那多年未动的 U 盘时里面的软件多少有点过时，有些是已经无法在新系统上运行的，还有好多我已经使用了相同功能的替代品，以及使用了一些新的软件，遂写此文章记录装机用到的软件
-
-回头发现这是 24.09.16 的文章，之间有事耽误，以及状态不是特别好，直到 24.10.02 才把文章写完
-
-系统
-
-因为用了较长时间的 Win11，所以还是打算继续使用 Win11，U 盘里的系统太老了，于是去 MSDN itellyou 下载了新版镜像
-
-但是在装的时候却发现这玩意居然必须要联网才能装了，就是设置新系统的时候必须联网登录微软账户，要是没网络的话最好使用老版本 (记得应该是可以跳过的) 或者装 Win10 (然后再升级 Win11 (doge))
-
-
-  2024.10.03
-今天刷到了俩个跳过网络验证的方法，没尝试记录下
-第一个是按 Ctr...
     </summary>
   
 

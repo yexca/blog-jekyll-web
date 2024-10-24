@@ -4318,6 +4318,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4407,54 +4419,6 @@
       Further Reading
     </h3>
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
-      
-        
-        
-        <div class="col">
-          <a href="/archives/87" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1675720800"
-  data-df="ll"
-  
->
-  Feb  7, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>数据库学习二 关系模型</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  关系模型中的基本术语
-
-关系数据库系统是支持关系模型的数据库系统。有关关系模型的的一些基本术语如下：
-
-
-  关系：一个关系就是一张二维表，每个关系有一个关系名
-  元组：表中的一行即为一个元组，对应存储文件中的一个记录值
-  属性：表中的列称为属性，每一列有一个属性名，属性值相当于记录中的数据项或者字段值
-  域：属性的取值范围，即不同元组对同一个属性的值所限定的范围
-  关系模式：对关系...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
       
         
         
@@ -4553,6 +4517,49 @@ R&amp;lt;U, D, dom, F&amp;gt;
 
 
 由于第三点与第四点对模式设计关系不大，因此通常把关系模式看作是一个三元组：R&amp;lt;U, F&amp;gt;...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/90" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1675987980"
+  data-df="ll"
+  
+>
+  Feb 10, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>数据库学习五 范式</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  关系数据库中的关系必须满足一定的规范化要求，对于不同的规范化程度可以使用范式来衡量。目前主要有 6 钟范式：1NF、2NF、3NF、BCNF、4NF 和 5NF
+
+满足最低要求的称为 1NF，在 1NF 基础上进一步满足一些要求的为 2NF，以此类推。在这些范式中，最重要的是 3NF 和 BCNF，它们是进行规范化的主要目标
+
+一个低一级范式的关系模式，通过模式分解可以转换为若干个高一级范式...
                 </p>
               </div>
             </div>
