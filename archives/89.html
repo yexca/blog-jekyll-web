@@ -3596,6 +3596,18 @@ F = {BCD-&gt;A, BC-&gt;E, A-&gt;F, F-&gt;G, C-&gt;D, A-&gt;G}  求F的最小依�
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4673,56 +4685,6 @@ F = {BCD-&gt;A, BC-&gt;E, A-&gt;F, F-&gt;G, C-&gt;D, A-&gt;G}  求F的最小依�
         
         
         <div class="col">
-          <a href="/archives/88" class="card post-preview h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class="small"
-  data-ts="1675814400"
-  data-df="ll"
-  
->
-  Feb  8, 2023
-</em>
-
-              <h4 class="pt-0 my-2" data-toc-skip>数据库学习三 SQL 语言</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  SQL 语言的分类
-
-
-  DDL (Data Definition Language, 数据定义语言)
-
-
-在数据库系统中，每一个数据库、数据库中的表、视图和索引等都是数据库的对象，要建立和删除一个数据库对象，都可以通过 SQL 语言来完成。DDL 包括 CREATE、ALTER 和 DROP 等
-
-
-  DML (Data Manipulation Language, 数据操纵语言)
-
-...
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      
-        
-        
-        <div class="col">
           <a href="/archives/90" class="card post-preview h-100">
             <div class="card-body">
               <!--
@@ -4811,6 +4773,67 @@ F = {BCD-&gt;A, BC-&gt;E, A-&gt;F, F-&gt;G, C-&gt;D, A-&gt;G}  求F的最小依�
 
 
 然后进行数据...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/archives/92" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1676160900"
+  data-df="ll"
+  
+>
+  Feb 12, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>数据库学习七 数据库的控制功能</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  事务管理
+
+事务是一个操作序列，这些操作 “要么都做，要么都不做”
+
+事务和程序是两个不同的概念，一般一个程序可包含多个事务
+
+在 SQL 语言中，事务定义的语句有以下三条
+
+1
+2
+3
+4
+5
+6
+-- 事务开始
+BEGIN TRANSACTION
+-- 事务提交
+COMMIT
+-- 事务回滚
+ROLLBACK
+
+
+事务具有 ACID 性质，原子性 (Atomicity) 、一致性 (Co...
                 </p>
               </div>
             </div>
