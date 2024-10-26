@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-10-25T19:39:09+08:00</updated>
+  <updated>2024-10-26T21:45:23+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,56 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>2022 SA am1 -11-15</title>
+    <link href="https://blog.yexca.net/archives/189" rel="alternate" type="text/html" title="2022 SA am1 -11-15" />
+    <published>2024-10-26T21:41:00+08:00</published>
+  
+    <updated>2024-10-26T21:41:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/189</id>
+    <content src="https://blog.yexca.net/archives/189" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="考试" />
+    
+    <category term="SA" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      引言
+
+最近眼睛越来越疼了，看屏幕可能一小时就开始了，而且看东西很模糊，感觉需要休息眼睛了，不然再近视看不见真的会很难受 (要是不疼的话我应该都能更新完这张试卷了)
+
+第 11 问
+
+OpenFlow を使った SDN(Software-Defined Networking) に関する記述として、適切なものはどれか。
+
+ア　インターネットのドメイン名を管理する世界規模の分散データベースを用いて、IPアドレスの代わりに名前を指定して通信できるようにする仕組む
+
+イ　携帯電話網において、回線交換方式ではなく、パケット交換方式で音声通話を実現する方式
+
+ウ　ストレージ装置とサーバを接続し、WWN(World Wide Name) によってノードやポートを識別するストレージ用ネットワーク
+
+エ　データ転送機能とネットワーク制御機能を論理的に分離し、ネットワーク制御を集中的に行う可能にしたアー...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -79,7 +129,7 @@ Source: https://www.i.u-tokyo.ac.jp/edu/entra/examarchive.shtml
     <link href="https://blog.yexca.net/archives/187" rel="alternate" type="text/html" title="东京大学大学院理工学 数学 2020 问题二 / 東大院理工学 数学 2020 問題二" />
     <published>2024-10-24T22:46:00+08:00</published>
   
-    <updated>2024-10-24T22:46:00+08:00</updated>
+    <updated>2024-10-25T19:41:10+08:00</updated>
   
     <id>https://blog.yexca.net/archives/187</id>
     <content src="https://blog.yexca.net/archives/187" />
@@ -245,50 +295,6 @@ Source: https://www.i.u-tokyo.ac.jp/ed...
 第四问
 
 キャッシュメモリのアクセス時間が主記憶のアクセス時間の1/30で、ヒット率が95％のとき、実効...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>2022 SA am1 -01-02</title>
-    <link href="https://blog.yexca.net/archives/184" rel="alternate" type="text/html" title="2022 SA am1 -01-02" />
-    <published>2024-10-20T20:19:00+08:00</published>
-  
-    <updated>2024-10-20T20:19:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/184</id>
-    <content src="https://blog.yexca.net/archives/184" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="考试" />
-    
-    <category term="SA" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      引言
-
-自己最近两年确实很浑浑噩噩了，以至于现在对于事情的处理方法也受到该状态的很大影响。一直这么下去终究不是办法，既然无法选择，那就尽力做好吧，我想要可以至少我去尝试一下吧，没有尝试的勇气才是最可怕的，这已经让我最近失去了一个机会了，还是应该有些改变或者变化才会比较可以生活得较为真实点，我也确实有时候觉得我活在梦里，倒不是活得好，而是不真实。文字得力量是有限得，事实的经历更具有说服力，尽管可能是虚假的被创造的事实，我开始去相信一些看似很离谱的事情
-
-emm，感觉在写日记似的，まあまあ、就这样吧
-
-那么关于这篇文章，是我想要挑战一下，也没想着会成功，去参加系统架构师考试，也就是计算机专业技术与软件专业技术资格的高级考试，这个考试拿下来的证和学习到的知识可能大多数编码的时候用不上 (其实能用上只是想不到)，但有总比没有好，我尽量可以把这张试卷做完吧，这应该也可以慢慢将我从梦中拉回吧
-
-...
     </summary>
   
 
