@@ -3736,6 +3736,18 @@ collar, detached sleeves, double bun, eyebrows visible through hair, frills, hai
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4763,7 +4775,7 @@ collar, detached sleeves, double bun, eyebrows visible through hair, frills, hai
         
         
         <div class="col">
-          <a href="/archives/182" class="card post-preview h-100">
+          <a href="/archives/102" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4776,14 +4788,14 @@ collar, detached sleeves, double bun, eyebrows visible through hair, frills, hai
 
 <em
   class="small"
-  data-ts="1727876100"
+  data-ts="1680618705"
   data-df="ll"
   
 >
-  Oct  2, 2024
+  Apr  4, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>2024 装机记录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>服务器用 Docker 部署记录</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4792,15 +4804,33 @@ collar, detached sleeves, double bun, eyebrows visible through hair, frills, hai
 
 
 
-                  引言
+                  从想法产生到彻底实现，一共耗时三个月 (主要是太懒了)
 
-最近因为替换硬碟而重新装了电脑系统，当我掏出那多年未动的 U 盘时里面的软件多少有点过时，有些是已经无法在新系统上运行的，还有好多我已经使用了相同功能的替代品，以及使用了一些新的软件，遂写此文章记录装机用到的软件
+安装 Docker
 
-回头发现这是 24.09.16 的文章，之间有事耽误，以及状态不是特别好，直到 24.10.02 才把文章写完
+使用了 APT 进行安装
 
-系统
 
-因为用了较长时间的 Win11，所以还是打算继续...
+  添加 HTTPS 传输的软件包以及 CA 证书
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+# 先更新一下
+sudo apt-get update
+
+# 然后安装
+sudo apt-get install \
+     apt-transport-https \
+     ca...
                 </p>
               </div>
             </div>
