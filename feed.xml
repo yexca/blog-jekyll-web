@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-11-05T00:51:47+08:00</updated>
+  <updated>2024-11-06T22:07:52+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,60 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>2022 SA am2 -16-20</title>
+    <link href="https://blog.yexca.net/archives/193" rel="alternate" type="text/html" title="2022 SA am2 -16-20" />
+    <published>2024-11-06T22:05:00+08:00</published>
+  
+    <updated>2024-11-06T22:05:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/193</id>
+    <content src="https://blog.yexca.net/archives/193" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="考试" />
+    
+    <category term="SA" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      引言
+
+渐渐不会起来了呢，不过还是可控的 (doge
+
+16
+
+e シールの説明はどれか。
+
+ア　インターネット上のゲーム内に限定されたキャラクターのイメージデータの作成者を証明する仕組みの一つである。
+
+イ　個人の意思表示をしている個人の本人確認が必要な電子文書データについて、その電子文書データの作成者の証明と改ざん防止のために、個人が行う電子署名である。
+
+ウ　電子文書データの作成者の証明と改ざん防止のために、重要文書を扱う国や地方自治体などの公共機関だけに使用が許されている電子署名である。
+
+エ　法人が作成した電子文書データについて、その電子文書データの作成者が間違いなくその法人であり、かつその電子文書データは作成後に改ざんされていないことを証明するものである。
+
+题目翻译：e シール 的说明是哪一项
+
+ア　这是在互联网上证明游戏角色形象数据的创建者的一种机制，限定于游戏内使用...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -70,7 +124,7 @@
     <link href="https://blog.yexca.net/archives/191" rel="alternate" type="text/html" title="2022 SA am2 -01-08" />
     <published>2024-11-03T23:11:00+08:00</published>
   
-    <updated>2024-11-03T23:11:00+08:00</updated>
+    <updated>2024-11-05T00:52:24+08:00</updated>
   
     <id>https://blog.yexca.net/archives/191</id>
     <content src="https://blog.yexca.net/archives/191" />
@@ -114,7 +168,7 @@
     <link href="https://blog.yexca.net/archives/190" rel="alternate" type="text/html" title="2022 SA am1 -16-30" />
     <published>2024-10-28T19:04:00+08:00</published>
   
-    <updated>2024-10-28T19:04:00+08:00</updated>
+    <updated>2024-11-05T00:52:24+08:00</updated>
   
     <id>https://blog.yexca.net/archives/190</id>
     <content src="https://blog.yexca.net/archives/190" />
@@ -168,7 +222,7 @@
     <link href="https://blog.yexca.net/archives/189" rel="alternate" type="text/html" title="2022 SA am1 -11-15" />
     <published>2024-10-26T21:41:00+08:00</published>
   
-    <updated>2024-10-26T21:41:00+08:00</updated>
+    <updated>2024-11-05T00:52:24+08:00</updated>
   
     <id>https://blog.yexca.net/archives/189</id>
     <content src="https://blog.yexca.net/archives/189" />
@@ -209,61 +263,6 @@
 OpenFlow を使った SDN(Software-Defined Networking) に関する記述として、適切なものはどれか。
 
 ア　インターネットのドメイン名...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>东京大学大学院理工学 数学 2020 问题三 / 東大院理工学 数学 2020 問題三</title>
-    <link href="https://blog.yexca.net/archives/188" rel="alternate" type="text/html" title="东京大学大学院理工学 数学 2020 问题三 / 東大院理工学 数学 2020 問題三" />
-    <published>2024-10-25T19:24:00+08:00</published>
-  
-    <updated>2024-10-25T19:24:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/188</id>
-    <content src="https://blog.yexca.net/archives/188" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="考试" />
-    
-    <category term="Math" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      引言
-
-日本語のタイトルを書いても、この文章は主に日本語の内容ではありません。時間があれば追加かもしれません
-
-题目一：https://blog.yexca.net/archives/183
-
-题目二：https://blog.yexca.net/archives/187
-
-题目三：本文
-
-全部做下来的感觉就是可能因为是多专业共用的数学试题吧，线代不知道，高数和概率论几乎就是引导这让考生完成某一结论的证明或者了解某项东西。其中高数是弧长参数化，线代是 37% 法则。而如果知道这些结论会很好解出题目，事先没学过的话做出来的人是真厉害。至少让我从零开始那是包挂的
-
-同时因为是已有的理论，解题答案应该是对的，过程嘛，就不知道了 XD
-
-题目
-
-Source: https://www.i.u-tokyo.ac.jp/edu/entra/examarchive.shtml
-
-
-  题目版权属于...
     </summary>
   
 
