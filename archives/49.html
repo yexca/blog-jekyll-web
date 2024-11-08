@@ -874,13 +874,6 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/184">2022 SA am1 -01-02</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/archives/185">2022 SA am1 -03-05</a>
         </li>
       
@@ -903,6 +896,13 @@
         
         <li class="text-truncate lh-lg">
           <a href="/archives/190">2022 SA am1 -16-30</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/archives/191">2022 SA am2 -01-08</a>
         </li>
       
     </ul>
@@ -3922,6 +3922,18 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -4617,7 +4629,7 @@
         
         
         <div class="col">
-          <a href="/archives/94" class="card post-preview h-100">
+          <a href="/archives/102" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -4630,14 +4642,14 @@
 
 <em
   class="small"
-  data-ts="1677723398"
+  data-ts="1680618705"
   data-df="ll"
   
 >
-  Mar  2, 2023
+  Apr  4, 2023
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>数据库记录已下载画师作品</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>服务器用 Docker 部署记录</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -4646,13 +4658,33 @@
 
 
 
-                  秉持着 “不在自己硬盘的东西就不是自己的” 的原则，以及个人手机中日益增多的图片迫切需要整理放入硬盘中保存，以缓解手机内存危机，于是决定采取分画师下载储存。于是便需要一个方便记录，快速查询修改的方法，原来使用 Markdown 的清单，可随着画师增多，查询不免变得很慢
+                  从想法产生到彻底实现，一共耗时三个月 (主要是太懒了)
 
-时隔两天再次回想，「记录」这个东西，最好用的不就是数据库嘛！
+安装 Docker
 
-下载与安装
+使用了 APT 进行安装
 
-经过思考，决定使用 MySQL ，下载可参考...
+
+  添加 HTTPS 传输的软件包以及 CA 证书
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+# 先更新一下
+sudo apt-get update
+
+# 然后安装
+sudo apt-get install \
+     apt-transport-https \
+     ca...
                 </p>
               </div>
             </div>
