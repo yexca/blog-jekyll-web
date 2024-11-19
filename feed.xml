@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-11-15T20:50:07+08:00</updated>
+  <updated>2024-11-19T22:44:10+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,58 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>形式语言与自动机 - 基本概念</title>
+    <link href="https://blog.yexca.net/archives/197" rel="alternate" type="text/html" title="形式语言与自动机 - 基本概念" />
+    <published>2024-11-19T22:18:00+08:00</published>
+  
+    <updated>2024-11-19T22:18:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/197</id>
+    <content src="https://blog.yexca.net/archives/197" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="编程基础" />
+    
+    <category term="形式语言与自动机" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      引言
+
+Sometimes it’s the people who no one imagines anything of who do the things that no one can imagine
+
+最近从毕导视频弹幕中得知关于图灵的记录片 The Imitation Game(模拟游戏)，顺便看了一下，对于片中出现的该句话感触颇深，以此当作形式语言与自动机文章的开篇题引
+
+当您开始有点抑郁的时候，也请看看 Amy 关于此句的感悟吧
+
+基本概念
+
+字母表：符号 (字符) 的非空又穷集
+
+\[{\textstyle \sum_1} = \{0, 1\}\]
+
+字符串：由某字母表中符号组成的有穷序列
+
+\[若 \space {\textstyle \sum_1} = \{0, 1\}，那么 \space 0，1，00，101011 \space 为 \space {\texts...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -231,52 +283,6 @@ e シールの説明はどれか。
 题目翻译：e シール 的说明是哪一项
 
 ア　这是在互联网上证明游戏角色形象数据的创建者的一种机制，限定于游戏内使用...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>2022 SA am2 -09-15</title>
-    <link href="https://blog.yexca.net/archives/192" rel="alternate" type="text/html" title="2022 SA am2 -09-15" />
-    <published>2024-11-04T23:29:00+08:00</published>
-  
-    <updated>2024-11-04T23:29:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/192</id>
-    <content src="https://blog.yexca.net/archives/192" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="考试" />
-    
-    <category term="SA" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      引言
-
-从中间的题目开始，难度开始上来了，几乎都是没有学过的了，可以收回之前说的我觉得可以过的言论了，不过要是真不学什么东西直接过道还不如不去考呢，就算考不过，但学到的知识可以影响自己 (怎么又有要开始的迹象了)
-
-碎碎念
-
-因为写的太多了，不用引言了，改成碎碎念得了 (本来是放前面的，但觉得还是文章相关放前面比较好，所以衔接可能有点怪)
-
-最近每个文章是不是都得来个感悟啊 doge (不知道人的脑洞是有极限的嘛)
-
-事实上这些感悟或者思考的出现是从去年，我的眼睛开始非常的疼痛，然后我经常就只是躺在床上听音乐 (不仅是屏幕，就算是看自然的景色也会疼痛)，就是在躺着的时间里我可能是梦也可能是胡思乱想 (我已经不知道躺着时候我是在梦境还是现实了，眼睛疼痛，同时有时候身体还会难受) 使我想到了可以说对我影响比较深的两个理论，我将其命名为「状态行为理论」与「圈理论」，从我将它们大体想出来后，...
     </summary>
   
 
