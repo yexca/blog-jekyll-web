@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-11-19T22:44:10+08:00</updated>
+  <updated>2024-11-21T16:12:19+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,66 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>东京科学大学大学院情报理工学院 2020 问题一 / 科学大院理工学 2020 問題一</title>
+    <link href="https://blog.yexca.net/archives/198" rel="alternate" type="text/html" title="东京科学大学大学院情报理工学院 2020 问题一 / 科学大院理工学 2020 問題一" />
+    <published>2024-11-21T15:42:00+08:00</published>
+  
+    <updated>2024-11-21T15:42:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/198</id>
+    <content src="https://blog.yexca.net/archives/198" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="考试" />
+    
+    <category term="Math" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      まえがき
+
+本文是首次使用非母语写的文章，又因为 比较懒 没有参考其他文章，存在用词出错的可能性。
+
+この文章は初めて母国語じゃない言語で書いて、他の文章を参考しないので、言葉遣いがてきせつではないかも。それで、参考の答えはなくて、文章の答えが自分でできたので、正しくないかも。
+
+
+  科学大とは東京工業大学の新しい名前で、略称が何か知らなくてこれを使った。
+
+
+1
+
+以下の極限を求めよ。
+
+a) $\lim_{x\to\infty}{ \log_e(2x+3)-\log_e(x) }$
+
+b) $\lim_{x\to 0}\frac{1-\cos x}{x\sin x}$
+
+c) $\lim_{x\to 0}\frac{e^{3x}-\cos x}{x}$
+
+回答
+
+a
+
+\[a=\lim_{x \to \infty}\log_e\frac{2x+3}{x}=\lim_{x\to ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -229,60 +289,6 @@ HTML 学习三 - 网页布局: https://blog.yexca.net/archives/195
 
 应该先从学无止境开始吧。“学无止境”本身是正确的，但是我对这个概念的理解有些偏颇。我一直认为知识是无限的，总觉得自己不可能完全掌握任何东西，也因此产生了“什么都不会”的心态。实际上，虽然知识的确无穷无尽，但并不意味着每个领域都必须完全精通才能实际应用。有时，掌握其中一部分内容已经足够应对工作和任务了
 例如我常常在通过一门考试之后，依然会觉得自己一无所知，仍然无法胜任相关工作。然而，客观来说，只要掌握了必要的部分内容，就已经具备了完成相关任务的能力。这个心态可能和我过去受到的...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>2022 SA am2 -16-20</title>
-    <link href="https://blog.yexca.net/archives/193" rel="alternate" type="text/html" title="2022 SA am2 -16-20" />
-    <published>2024-11-06T22:05:00+08:00</published>
-  
-    <updated>2024-11-06T22:05:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/193</id>
-    <content src="https://blog.yexca.net/archives/193" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="考试" />
-    
-    <category term="SA" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      引言
-
-渐渐不会起来了呢，不过还是可控的 (doge
-
-16
-
-e シールの説明はどれか。
-
-ア　インターネット上のゲーム内に限定されたキャラクターのイメージデータの作成者を証明する仕組みの一つである。
-
-イ　個人の意思表示をしている個人の本人確認が必要な電子文書データについて、その電子文書データの作成者の証明と改ざん防止のために、個人が行う電子署名である。
-
-ウ　電子文書データの作成者の証明と改ざん防止のために、重要文書を扱う国や地方自治体などの公共機関だけに使用が許されている電子署名である。
-
-エ　法人が作成した電子文書データについて、その電子文書データの作成者が間違いなくその法人であり、かつその電子文書データは作成後に改ざんされていないことを証明するものである。
-
-题目翻译：e シール 的说明是哪一项
-
-ア　这是在互联网上证明游戏角色形象数据的创建者的一种机制，限定于游戏内使用...
     </summary>
   
 
