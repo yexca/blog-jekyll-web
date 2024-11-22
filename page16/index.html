@@ -595,6 +595,80 @@
 
 <div id="post-list">
   
+    <a href="/archives/49" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            OpenWRT中继WIFI
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              引言
+
+今日尝试了一下之前试过的无线中继，发现已经不会了，果然做一项东西还是要写个文章记录一下比较好啊
+
+本文中，将OpenWRT路由器连接的WIFI称为上级路由，OpenWRT路由器称为路由器
+
+前提
+
+确保路由器与上层路由的LAN口地址(即进入路由器后台的地址)不可与上级路由一致，如一致将无法上网
+
+修改路由器LAN口地址
+
+进入路由器后台的网络-接口，点击LAN的修改，改变其IPv4地...
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1655967021"
+  data-df="ll"
+  
+>
+  Jun 23, 2022
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    日常
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
     <a href="/archives/48" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
@@ -1278,81 +1352,6 @@ vim /etc/sudoers
       </div>
     </a>
   
-    <a href="/archives/39" class="card-wrapper">
-      <div class="card post-preview flex-md-row-reverse">
-        
-
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title my-2 mt-md-0">
-            在虚拟机中设置静态IP（centos为例）
-          </h1>
-
-          <div class="card-text post-content mt-0 mb-2">
-            <p>
-              
-
-
-
-
-
-              一、虚拟机设置
-
-在菜单栏选择编辑→ 虚拟网络编辑器，打开虚拟网络编辑器对话框，选择Net网络连接方式，随意设置子网IP，点击NAT设置页面，查看子网掩码和网关，后面修改静态IP会用到。
-
-在VMnet8模式下选择nat连接，并且取消DHCP服务。
-
-点击NAT设置，记录下此时的网关
-
-在系统的网络设置处，检查VMnet8的网络配置
-
-二、Liunx主机设置
-
-在root权限下输入命令 cd...
-            </p>
-          </div>
-
-          <div class="post-meta flex-grow-1 d-flex align-items-end">
-            <div class="me-auto">
-              <!-- posted date -->
-              <i class="far fa-calendar fa-fw me-1"></i>
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1650622422"
-  data-df="ll"
-  
->
-  Apr 22, 2022
-</em>
-
-
-              <!-- categories -->
-              
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  
-                    Linux,
-                    LinuxStudy
-                </span>
-              
-            </div>
-
-            
-          </div>
-          <!-- .post-meta -->
-        </div>
-        <!-- .card-body -->
-      </div>
-    </a>
-  
 </div>
 <!-- #post-list -->
 
@@ -1751,7 +1750,7 @@ vim /etc/sudoers
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/189">2022 SA am1 -11-15</a>
+          <a href="/archives/190">2022 SA am1 -16-30</a>
         </li>
       
     </ul>

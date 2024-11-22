@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "内网穿透",
+    "url": "/archives/199",
+    "categories": "日常",
+    "tags": "",
+    "date": "2024-11-22 22:05:00 +0800",
+    
+
+
+
+
+
+    
+    "snippet": "以前写的小文章，系统创建时间 2023.12.01现在看着之前写的小文章都不大想发布，但也舍不得删，思来想去还是发布吧，也是自己写的ngrok OneClick      到官网注册账号并验证邮箱后会获得 Authtoken        下载程序：ngrok - download        添加 Token  ngrok config add-authtoken YourToken  ...",
+    "content": "以前写的小文章，系统创建时间 2023.12.01现在看着之前写的小文章都不大想发布，但也舍不得删，思来想去还是发布吧，也是自己写的ngrok OneClick      到官网注册账号并验证邮箱后会获得 Authtoken        下载程序：ngrok - download        添加 Token  ngrok config add-authtoken YourToken  运行ngrok http [Port]替换 [Port] 为要监听的本地端口自搭建ngrok参考：ngrok内网穿透 学海无涯-回头是岸 学海无涯，回头是岸frp参考：frp 内网穿透"
+  },
+  
+  {
     "title": "东京科学大学大学院情报理工学院 2020 问题一 / 科学大院理工学 2020 問題一",
     "url": "/archives/198",
     "categories": "考试, Math",

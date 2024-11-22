@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-11-21T16:12:19+08:00</updated>
+  <updated>2024-11-22T22:10:30+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,80 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>内网穿透</title>
+    <link href="https://blog.yexca.net/archives/199" rel="alternate" type="text/html" title="内网穿透" />
+    <published>2024-11-22T22:05:00+08:00</published>
+  
+    <updated>2024-11-22T22:05:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/199</id>
+    <content src="https://blog.yexca.net/archives/199" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="日常" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      以前写的小文章，系统创建时间 2023.12.01
+
+现在看着之前写的小文章都不大想发布，但也舍不得删，思来想去还是发布吧，也是自己写的
+
+ngrok OneClick
+
+
+  
+    到官网注册账号并验证邮箱后会获得 Authtoken
+  
+  
+    下载程序：ngrok - download
+  
+  
+    添加 Token
+  
+
+
+ngrok config add-authtoken YourToken
+
+
+
+  运行
+
+
+ngrok http [Port]
+
+
+替换 [Port] 为要监听的本地端口
+
+自搭建
+
+ngrok
+
+参考：ngrok内网穿透 学海无涯-回头是岸 学海无涯，回头是岸
+
+frp
+
+参考：frp 内网穿透
+
+
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -243,52 +317,6 @@ HTML 学习三 - 网页布局: https://blog.yexca.net/archives/195
 额外标签法
 
 在父元素的最后添加一个块级元素，设置 CS...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>2022 SA am2 -21-25</title>
-    <link href="https://blog.yexca.net/archives/194" rel="alternate" type="text/html" title="2022 SA am2 -21-25" />
-    <published>2024-11-08T18:29:00+08:00</published>
-  
-    <updated>2024-11-08T18:29:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/194</id>
-    <content src="https://blog.yexca.net/archives/194" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="考试" />
-    
-    <category term="SA" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      引言
-
-这五题的难度还好，本来解完充满自信来着，不小心看了下下午论述题，我瞬间没自信了 :cry:
-
-碎碎念
-
-思考人生这种事情也确实是空闲的人会思考的，忙起来后也就没时间去胡思乱想了 但忙过头了说不定也会想呢
-我如今应该是意识到自己之前的两点不足了。首先是总觉得随时都能复习；其次是“学无止境”这个观念的误用。
-
-应该先从学无止境开始吧。“学无止境”本身是正确的，但是我对这个概念的理解有些偏颇。我一直认为知识是无限的，总觉得自己不可能完全掌握任何东西，也因此产生了“什么都不会”的心态。实际上，虽然知识的确无穷无尽，但并不意味着每个领域都必须完全精通才能实际应用。有时，掌握其中一部分内容已经足够应对工作和任务了
-例如我常常在通过一门考试之后，依然会觉得自己一无所知，仍然无法胜任相关工作。然而，客观来说，只要掌握了必要的部分内容，就已经具备了完成相关任务的能力。这个心态可能和我过去受到的...
     </summary>
   
 
