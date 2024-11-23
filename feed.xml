@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-11-22T22:10:30+08:00</updated>
+  <updated>2024-11-23T20:55:26+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,68 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>东京科学大学大学院情报理工学院 2020 问题三 / 科学大院理工学 2020 問題三</title>
+    <link href="https://blog.yexca.net/archives/200" rel="alternate" type="text/html" title="东京科学大学大学院情报理工学院 2020 问题三 / 科学大院理工学 2020 問題三" />
+    <published>2024-11-23T20:35:00+08:00</published>
+  
+    <updated>2024-11-23T20:35:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/200</id>
+    <content src="https://blog.yexca.net/archives/200" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="考试" />
+    
+    <category term="CS" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      問題一：https://blog.yexca.net/archives/198
+問題二：まだ
+問題三：この文章  
+問題四：まだ
+問題五：まだ
+
+引言
+
+这个答题是算法题，初看有种要放弃治疗的感觉，但是在做了一遍后可以感觉到难度不是太大，但是需要较高的对于已有算法的理解力。之所以说难度不是太大可能跟我的心里预期有关吧，因为我觉得会不会要设计一个什么算法来着 (我想表达的意思是我并不觉得这个题目简单)
+
+
+  题目版权属于东京科学大学所有，仅为了方便观看而引用，无盈利行为
+
+
+1
+
+ｎ個の要素からなる整数の配列aを昇順に整列させる処理を、二つの異なるアルゴリズムに基づきＣ言語で実装した。プログラム3.1、3.2のキャプションＡ、Ｂを埋めるのに最も適切なアルゴリズムの名称を選択肢から選び、その記号を答えよ。
+
+「選択肢」
+
+ア　選択ソート
+
+イ　バブルソート
+
+ウ　クイックソート
+
+エ　...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -122,7 +184,13 @@ frp
 
 
 
-      まえがき
+      問題一：この文章
+問題二：まだ
+問題三：https://blog.yexca.net/archives/200
+問題四：まだ
+問題五：まだ
+
+まえがき
 
 本文是首次使用非母语写的文章，又因为 比较懒 没有参考其他文章，存在用词出错的可能性。
 
@@ -130,6 +198,7 @@ frp
 
 
   科学大とは東京工業大学の新しい名前で、略称が何か知らなくてこれを使った。
+問題の著作権は東京科学大学に帰属します。閲覧の便宜のためにのみ引用されており、営利を目的とするものではありません。
 
 
 1
@@ -138,15 +207,7 @@ frp
 
 a) $\lim_{x\to\infty}{ \log_e(2x+3)-\log_e(x) }$
 
-b) $\lim_{x\to 0}\frac{1-\cos x}{x\sin x}$
-
-c) $\lim_{x\to 0}\frac{e^{3x}-\cos x}{x}$
-
-回答
-
-a
-
-\[a=\lim_{x \to \infty}\log_e\frac{2x+3}{x}=\lim_{x\to ...
+b) $\lim_{x\to 0}\fr...
     </summary>
   
 
@@ -257,66 +318,6 @@ v-html
 			const app = new Vue({
 				el: '#app',
 				da...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>HTML 学习三 - 网页布局</title>
-    <link href="https://blog.yexca.net/archives/195" rel="alternate" type="text/html" title="HTML 学习三 - 网页布局" />
-    <published>2024-11-10T21:36:00+08:00</published>
-  
-    <updated>2024-11-10T21:36:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/195</id>
-    <content src="https://blog.yexca.net/archives/195" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="前端" />
-    
-    <category term="HTML" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      引言
-
-HTML 学习一 - 基础: https://blog.yexca.net/archives/146
-HTML 学习二 - 列表、表格与表单: https://blog.yexca.net/archives/150
-HTML 学习三 - 网页布局: https://blog.yexca.net/archives/195
-
-标准流也叫文档流，指的是标签在页面中默认的排布规则，例如：块元素独占一行，行内元素可以一行显示多个
-
-若不按标准流布局可使用浮动或 Flex 布局
-
-浮动
-
-作用：使块元素水平排列，属性名 float，属性值有两个：left 和 right
-
-加了浮动的盒子将脱离标准流
-
-清除浮动影响
-
-因为浮动元素会脱离标准流，如果父级没有高度，自己将无法撑开父级高度，可能导致页面布局错乱
-
-清除浮动常用四种方法
-
-额外标签法
-
-在父元素的最后添加一个块级元素，设置 CS...
     </summary>
   
 
