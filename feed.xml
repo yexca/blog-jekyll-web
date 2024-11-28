@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-11-24T22:57:19+08:00</updated>
+  <updated>2024-11-28T16:10:05+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,54 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>东京科学大学大学院情报理工学院 2020 问题四 / 科学大院理工学 2020 問題四</title>
+    <link href="https://blog.yexca.net/archives/202" rel="alternate" type="text/html" title="东京科学大学大学院情报理工学院 2020 问题四 / 科学大院理工学 2020 問題四" />
+    <published>2024-11-28T15:51:00+08:00</published>
+  
+    <updated>2024-11-28T15:51:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/202</id>
+    <content src="https://blog.yexca.net/archives/202" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      問題一：https://blog.yexca.net/archives/198
+問題二：https://blog.yexca.net/archives/201
+問題三：https://blog.yexca.net/archives/200
+問題四：この文章
+問題五：まだ
+
+引言
+
+一整题都是考拉普拉斯变换的，同时最后一题是应用。如果不知道拉普拉斯变换是比较难快速解题，虽然速度快的话可以做出前两大题以及第三题的前三问 (其实也很多了)，对于最后两问倒是属于不知道相关原理便不会做了 (我在最后一问倒是写了不知道相关情况如何解题，但考场那种情况下真的可以反应过来吗？)
+
+
+  题目版权属于东京科学大学所有，仅为了方便观看而引用，无盈利行为
+
+
+背景
+
+実数 $t(\ge0)$ を変数とする2回微分可能な実関数 $f(t)$ のラプラス変換 $F(S)=\mathcal{L}[f(t)]$ ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -46,8 +94,8 @@
 
       問題一：https://blog.yexca.net/archives/198
 問題二：この文章
-問題三：https://blog.yexca.net/archives/200  
-問題四：まだ
+問題三：
+問題四：https://blog.yexca.net/archives/202
 問題五：まだ
 
 引言
@@ -55,11 +103,15 @@
 这一大题刚看的时候还以为属于形式语言 (与自动机理论) 呢，实际上手做题发现是数理的内容 (俩都没学过，也都一样)
 总体的难度不是特别难 (因为做过东大试卷吧，看这个的题目都不太难) 但还是需要掌握较多的理论基础才可解出
 
+
+  题目版权属于东京科学大学所有，仅为了方便观看而引用，无盈利行为
+
+
 1
 
 命題論理について考える。命題 $\varphi$ を $(\neg p_0 \to \neg p_1) \wedge (\neg p_1 \to p_0)$ とする。ただし、$p_0, p_1$ は命題記号である。
 
-a）以下の表が $\varphi$ の真理値表になるように（ア）～（エ）にあてはまる値を答えよ。ただし、1は真を表し、0は偽を...
+a）以下の表が $\varphi$ の真理値表になるように（...
     </summary>
   
 
@@ -71,7 +123,7 @@ a）以下の表が $\varphi$ の真理値表になるように（ア）～（�
     <link href="https://blog.yexca.net/archives/200" rel="alternate" type="text/html" title="东京科学大学大学院情报理工学院 2020 问题三 / 科学大院理工学 2020 問題三" />
     <published>2024-11-23T20:35:00+08:00</published>
   
-    <updated>2024-11-23T20:35:00+08:00</updated>
+    <updated>2024-11-24T22:59:01+08:00</updated>
   
     <id>https://blog.yexca.net/archives/200</id>
     <content src="https://blog.yexca.net/archives/200" />
@@ -96,9 +148,9 @@ a）以下の表が $\varphi$ の真理値表になるように（ア）～（�
 
 
       問題一：https://blog.yexca.net/archives/198
-問題二：https://blog.yexca.net/archives/201 
-問題三：この文章  
-問題四：まだ
+問題二：https://blog.yexca.net/archives/201
+問題三：この文章
+問題四：https://blog.yexca.net/archives/202
 問題五：まだ
 
 引言
@@ -111,9 +163,7 @@ a）以下の表が $\varphi$ の真理値表になるように（ア）～（�
 
 1
 
-ｎ個の要素からなる整数の配列aを昇順に整列させる処理を、二つの異なるアルゴリズムに基づきＣ言語で実装した。プログラム3.1、3.2のキャプションＡ、Ｂを埋めるのに最も適切なアルゴリズムの名称を選択肢から選び、その記号を答えよ。
-
-「選択肢」...
+ｎ個の要素からなる整数の配列aを昇順に整列させる処理を、二つの異なるアルゴリズムに基づきＣ言語で実装した。プログラム3.1、3.2のキャプションＡ、Ｂを埋めるのに最も適切なアルゴリ...
     </summary>
   
 
@@ -199,7 +249,7 @@ frp
     <link href="https://blog.yexca.net/archives/198" rel="alternate" type="text/html" title="东京科学大学大学院情报理工学院 2020 问题一 / 科学大院理工学 2020 問題一" />
     <published>2024-11-21T15:42:00+08:00</published>
   
-    <updated>2024-11-23T20:56:58+08:00</updated>
+    <updated>2024-11-24T22:59:01+08:00</updated>
   
     <id>https://blog.yexca.net/archives/198</id>
     <content src="https://blog.yexca.net/archives/198" />
@@ -226,7 +276,7 @@ frp
       問題一：この文章
 問題二：https://blog.yexca.net/archives/201
 問題三：https://blog.yexca.net/archives/200
-問題四：まだ
+問題四：https://blog.yexca.net/archives/202
 問題五：まだ
 
 まえがき
@@ -244,59 +294,7 @@ frp
 
 以下の極限を求めよ。
 
-a) $\lim_{x\to\infty}{ \log_e(2x+3)-\...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>形式语言与自动机 - 基本概念</title>
-    <link href="https://blog.yexca.net/archives/197" rel="alternate" type="text/html" title="形式语言与自动机 - 基本概念" />
-    <published>2024-11-19T22:18:00+08:00</published>
-  
-    <updated>2024-11-19T22:18:00+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/197</id>
-    <content src="https://blog.yexca.net/archives/197" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="编程基础" />
-    
-    <category term="形式语言与自动机" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      引言
-
-Sometimes it’s the people who no one imagines anything of who do the things that no one can imagine
-
-最近从毕导视频弹幕中得知关于图灵的记录片 The Imitation Game(模拟游戏)，顺便看了一下，对于片中出现的该句话感触颇深，以此当作形式语言与自动机文章的开篇题引
-
-当您开始有点抑郁的时候，也请看看 Amy 关于此句的感悟吧
-
-基本概念
-
-字母表：符号 (字符) 的非空又穷集
-
-\[{\textstyle \sum_1} = \{0, 1\}\]
-
-字符串：由某字母表中符号组成的有穷序列
-
-\[若 \space {\textstyle \sum_1} = \{0, 1\}，那么 \space 0，1，00，101011 \space 为 \space {\texts...
+a) $...
     </summary>
   
 
