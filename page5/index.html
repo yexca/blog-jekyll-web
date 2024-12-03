@@ -595,6 +595,84 @@
 
 <div id="post-list">
   
+    <a href="/archives/164" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            CSS 三大特性
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              CSS 三大特性：继承性、层叠性、优先级
+
+继承性
+
+子级默认继承父级的文字控制属性，若子级有自己的样式则不继承
+
+&amp;lt;style&amp;gt;
+	body {
+		font: 30px/0.5 楷体;
+		color: aqua;
+	}
+&amp;lt;/style&amp;gt;
+
+&amp;lt;body&amp;gt;
+	&amp;lt;div&amp;gt;div&amp;lt;/div&amp;gt;
+	&amp;lt;p&amp;gt;p&amp;lt;/p&amp;gt;...
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1710146280"
+  data-df="ll"
+  
+>
+  Mar 11, 2024
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    前端,
+                    CSS
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
     <a href="/archives/163" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
@@ -686,26 +764,10 @@ CSS 有三种引入方式，第一种为内部样式表，此方式仅学习使�
 
 
 
-              通过使用结构体构建类与对象的概念
-
-
-  了解面向对象：面向对象基础
-
-
-struct
-
-首先是自定义类型，使用 type 关键字，类似于 C
-
-package main
-
-import &quot;fmt&quot;
-
-type myType int
-
-func main() {
-	var a myType
-	fmt.Println(&quot;a =&quot;, a)
-	fmt.Printf(&quot;type of a is %T...
+              Hello GoLand: https://blog.yexca.net/archives/154
+GoLand (var and const) 变量与常量: https://blog.yexca.net/archives/155
+GoLand (func) 函数: https://blog.yexca.net/archives/156
+GoLand (slice and map) 切片: ...
             </p>
           </div>
 
@@ -845,25 +907,10 @@ Eureka
 
 
 
-              Go 的切片是对数组的抽象
-
-数组
-
-数组的长度不可改变
-
-package main
-
-import &quot;fmt&quot;
-
-func main() {
-    // 定义方式一
-	var arr1 [10]int
-    // 遍历
-	for i := 0; i &amp;lt; len(arr1); i++ {
-		fmt.Println(&quot;arr1[&quot;, i, &quot;]:&quot;, arr1[i])
-	}
-
-  ...
+              Hello GoLand: https://blog.yexca.net/archives/154
+GoLand (var and const) 变量与常量: https://blog.yexca.net/archives/155
+GoLand (func) 函数: https://blog.yexca.net/archives/156
+GoLand (slice and map) 切片: ...
             </p>
           </div>
 
@@ -1154,33 +1201,10 @@ Redis 基于内存存储，读写性能高，适合存储热点数据 (商品、
 
 
 
-              多返回值
-
-Go 函数可以返回多个值
-
-匿名返回
-
-package main
-
-import &quot;fmt&quot;
-
-func swap(a, b int) (int, int) {
-	return b, a
-}
-
-func main() {
-	var x, y = swap(10, 20)
-	fmt.Println(x, y)
-}
-
-/* 输出
- * 20 10
- */
-
-
-有形参名返回
-
-pack...
+              Hello GoLand: https://blog.yexca.net/archives/154
+GoLand (var and const) 变量与常量: https://blog.yexca.net/archives/155
+GoLand (func) 函数: This Page
+GoLand (slice and map) 切片: https://blog.yexca.net/arc...
             </p>
           </div>
 
@@ -1243,36 +1267,10 @@ pack...
 
 
 
-              变量
-
-声明变量一般使用 var 关键字
-
-单变量
-
-
-  定义类型
-
-
-不指定初始值的声明，默认为 0
-
-package main
-
-import &quot;fmt&quot;
-
-func main() {
-	var a int
-	fmt.Println(&quot;a =&quot;, a)
-}
-
-
-指定初始值，a 为 100
-
-package main
-
-import &quot;fmt&quot;
-
-func main() {
-	var a...
+              Hello GoLand: https://blog.yexca.net/archives/154
+GoLand (var and const) 变量与常量: This Page
+GoLand (func) 函数: https://blog.yexca.net/archives/156
+GoLand (slice and map) 切片: https://blog.yexca.net/arc...
             </p>
           </div>
 
@@ -1296,89 +1294,6 @@ func main() {
   
 >
   Feb 20, 2024
-</em>
-
-
-              <!-- categories -->
-              
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  
-                    编程基础,
-                    编程语言
-                </span>
-              
-            </div>
-
-            
-          </div>
-          <!-- .post-meta -->
-        </div>
-        <!-- .card-body -->
-      </div>
-    </a>
-  
-    <a href="/archives/154" class="card-wrapper">
-      <div class="card post-preview flex-md-row-reverse">
-        
-
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title my-2 mt-md-0">
-            Hello GoLand
-          </h1>
-
-          <div class="card-text post-content mt-0 mb-2">
-            <p>
-              
-
-
-
-
-
-              Go 下载：https://go.dev/dl/
-
-JetBrains GoLand：https://www.jetbrains.com/go/
-
-Go 简介
-
-Go 可以直接编译，直接运行即可部署，静态类型语言
-
-# 直接运行
-go run hello.go
-
-# 编译
-go build hello.go
-# 编译后运行
-./hello
-
-
-Go 的一些应用
-
-(1)、云计算基础设施领域
-...
-            </p>
-          </div>
-
-          <div class="post-meta flex-grow-1 d-flex align-items-end">
-            <div class="me-auto">
-              <!-- posted date -->
-              <i class="far fa-calendar fa-fw me-1"></i>
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1708300680"
-  data-df="ll"
-  
->
-  Feb 19, 2024
 </em>
 
 
@@ -1805,14 +1720,14 @@ Go 的一些应用
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/183">东京大学大学院理工学 数学 2020 问题一 / 東大院理工学 数学 2020 問題一</a>
+          <a href="/archives/202">东京科学大学大学院情报理工学院 2020 问题四 / 科学大院理工学 2020 問題四</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/archives/187">东京大学大学院理工学 数学 2020 问题二 / 東大院理工学 数学 2020 問題二</a>
+          <a href="/archives/183">东京大学大学院理工学 数学 2020 问题一 / 東大院理工学 数学 2020 問題一</a>
         </li>
       
     </ul>
@@ -2609,6 +2524,77 @@ Go 的一些应用
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -2693,6 +2679,8 @@ Go 的一些应用
     
     
     
+      
+    
   
     
     
@@ -2819,138 +2807,7 @@ Go 的一些应用
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -3003,13 +2860,6 @@ Go 的一些应用
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -3052,6 +2902,9 @@ Go 的一些应用
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/go/">Go</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/javaweb/">JavaWeb</a>
       
         
@@ -3059,9 +2912,6 @@ Go 的一些应用
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/springcloud/">SpringCloud</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
       
     </div>
   </div>
@@ -3870,6 +3720,77 @@ Go 的一些应用
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -3954,6 +3875,8 @@ Go 的一些应用
     
     
     
+      
+    
   
     
     
@@ -4080,138 +4003,7 @@ Go 的一些应用
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
     
   
     
@@ -4264,13 +4056,6 @@ Go 的一些应用
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -4313,6 +4098,9 @@ Go 的一些应用
         <a class="post-tag btn btn-outline-primary" href="/tags/%E5%AF%B9%E8%B1%A1%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">对象结构型模式</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/go/">Go</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/javaweb/">JavaWeb</a>
       
         
@@ -4320,9 +4108,6 @@ Go 的一些应用
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/springcloud/">SpringCloud</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/vs-code/">VS Code</a>
       
     </div>
   </div>
