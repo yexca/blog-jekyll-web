@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-12-11T19:34:16+08:00</updated>
+  <updated>2024-12-17T21:20:32+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,50 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>GoLang go 程</title>
+    <link href="https://blog.yexca.net/archives/206" rel="alternate" type="text/html" title="GoLang go 程" />
+    <published>2024-12-17T21:16:00+08:00</published>
+  
+    <updated>2024-12-17T21:16:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/206</id>
+    <content src="https://blog.yexca.net/archives/206" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="编程基础" />
+    
+    <category term="编程语言" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  Golang Series
+Hello GoLang: https://blog.yexca.net/archives/154
+GoLang (var and const) 变量与常量: https://blog.yexca.net/archives/155
+GoLang (func) 函数: https://blog.yexca.net/archives/156
+GoLang (slice and map) 切片: https://blog.yexca.net/archives/160
+GoLang (OOP) 面向对象: https://blog.yexca.net/archives/162
+GoLang (reflect) 反射: https://blog.yexca.net/archives/204
+GoLang (struct tag) 结构体标签: https://...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -204,59 +248,6 @@ GoLang (struct tag) 结构体标签: https://blog.yexca.net/archives/20...
 背景
 
 実数 $t(\ge0)$ を変数とする2回微分可能な実関数 $f(t)$ ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>东京科学大学大学院情报理工学院 2020 问题二 / 科学大院理工学 2020 問題二</title>
-    <link href="https://blog.yexca.net/archives/201" rel="alternate" type="text/html" title="东京科学大学大学院情报理工学院 2020 问题二 / 科学大院理工学 2020 問題二" />
-    <published>2024-11-24T22:42:00+08:00</published>
-  
-    <updated>2024-12-01T18:34:28+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/201</id>
-    <content src="https://blog.yexca.net/archives/201" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="考试" />
-    
-    <category term="Math" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      問題一：https://blog.yexca.net/archives/198
-問題二：この文章
-問題三：https://blog.yexca.net/archives/200
-問題四：https://blog.yexca.net/archives/202
-問題五：https://blog.yexca.net/archives/203
-
-引言
-
-这一大题刚看的时候还以为属于形式语言 (与自动机理论) 呢，实际上手做题发现是数理的内容 (俩都没学过，也都一样)
-总体的难度不是特别难 (因为做过东大试卷吧，看这个的题目都不太难) 但还是需要掌握较多的理论基础才可解出
-
-
-  题目版权属于东京科学大学所有，仅为了方便观看而引用，无盈利行为
-
-
-1
-
-命題論理について考える。命題 $\varphi$ を $(\neg p_0 \to \neg p_1) \wedge (\neg p_1 \t...
     </summary>
   
 
