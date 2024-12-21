@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-12-17T21:20:32+08:00</updated>
+  <updated>2024-12-21T15:02:46+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,51 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>GoLang 通道</title>
+    <link href="https://blog.yexca.net/archives/207" rel="alternate" type="text/html" title="GoLang 通道" />
+    <published>2024-12-21T14:52:00+08:00</published>
+  
+    <updated>2024-12-21T14:52:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/207</id>
+    <content src="https://blog.yexca.net/archives/207" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="编程基础" />
+    
+    <category term="编程语言" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  Golang Series
+
+  Hello GoLang: https://blog.yexca.net/archives/154
+GoLang (var and const) 变量与常量: https://blog.yexca.net/archives/155
+GoLang (func) 函数: https://blog.yexca.net/archives/156
+GoLang (slice and map) 切片: https://blog.yexca.net/archives/160
+GoLang (OOP) 面向对象: https://blog.yexca.net/archives/162
+GoLang (reflect) 反射: https://blog.yexca.net/archives/204
+GoLang (struct tag) 结构体标签: https...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -50,13 +95,14 @@
 
       
   Golang Series
-Hello GoLang: https://blog.yexca.net/archives/154
+
+  Hello GoLang: https://blog.yexca.net/archives/154
 GoLang (var and const) 变量与常量: https://blog.yexca.net/archives/155
 GoLang (func) 函数: https://blog.yexca.net/archives/156
 GoLang (slice and map) 切片: https://blog.yexca.net/archives/160
 GoLang (OOP) 面向对象: https://blog.yexca.net/archives/162
 GoLang (reflect) 反射: https://blog.yexca.net/archives/204
-GoLang (struct tag) 结构体标签: https://...
+GoLang (struct tag) 结构体标签: https...
     </summary>
   
 
@@ -68,7 +114,7 @@ GoLang (struct tag) 结构体标签: https://...
     <link href="https://blog.yexca.net/archives/205" rel="alternate" type="text/html" title="GoLang 结构体标签" />
     <published>2024-12-11T18:31:00+08:00</published>
   
-    <updated>2024-12-11T18:31:00+08:00</updated>
+    <updated>2024-12-17T21:21:36+08:00</updated>
   
     <id>https://blog.yexca.net/archives/205</id>
     <content src="https://blog.yexca.net/archives/205" />
@@ -94,13 +140,14 @@ GoLang (struct tag) 结构体标签: https://...
 
       
   Golang Series
-Hello GoLang: https://blog.yexca.net/archives/154
+
+  Hello GoLang: https://blog.yexca.net/archives/154
 GoLang (var and const) 变量与常量: https://blog.yexca.net/archives/155
 GoLang (func) 函数: https://blog.yexca.net/archives/156
 GoLang (slice and map) 切片: https://blog.yexca.net/archives/160
 GoLang (OOP) 面向对象: https://blog.yexca.net/archives/162
 GoLang (reflect) 反射: https://blog.yexca.net/archives/204
-GoLang (struct tag) 结构体标签: This Pag...
+GoLang (struct tag) 结构体标签: This ...
     </summary>
   
 
@@ -112,7 +159,7 @@ GoLang (struct tag) 结构体标签: This Pag...
     <link href="https://blog.yexca.net/archives/204" rel="alternate" type="text/html" title="GoLang 反射" />
     <published>2024-12-03T14:07:00+08:00</published>
   
-    <updated>2024-12-03T14:07:00+08:00</updated>
+    <updated>2024-12-17T21:21:36+08:00</updated>
   
     <id>https://blog.yexca.net/archives/204</id>
     <content src="https://blog.yexca.net/archives/204" />
@@ -138,13 +185,14 @@ GoLang (struct tag) 结构体标签: This Pag...
 
       
   Golang Series
-Hello GoLang: https://blog.yexca.net/archives/154
+
+  Hello GoLang: https://blog.yexca.net/archives/154
 GoLang (var and const) 变量与常量: https://blog.yexca.net/archives/155
 GoLang (func) 函数: https://blog.yexca.net/archives/156
 GoLang (slice and map) 切片: https://blog.yexca.net/archives/160
 GoLang (OOP) 面向对象: https://blog.yexca.net/archives/162
 GoLang (reflect) 反射: This Page
-GoLang (struct tag) 结构体标签: https://blog.yexca.net/archives/20...
+GoLang (struct tag) 结构体标签: https://blog.yexca.net/archives...
     </summary>
   
 
@@ -196,58 +244,6 @@ GoLang (struct tag) 结构体标签: https://blog.yexca.net/archives/20...
 
 
   你就不能一手抓考...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>东京科学大学大学院情报理工学院 2020 问题四 / 科学大院理工学 2020 問題四</title>
-    <link href="https://blog.yexca.net/archives/202" rel="alternate" type="text/html" title="东京科学大学大学院情报理工学院 2020 问题四 / 科学大院理工学 2020 問題四" />
-    <published>2024-11-28T15:51:00+08:00</published>
-  
-    <updated>2024-12-01T18:34:28+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/202</id>
-    <content src="https://blog.yexca.net/archives/202" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="考试" />
-    
-    <category term="Math" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      問題一：https://blog.yexca.net/archives/198
-問題二：https://blog.yexca.net/archives/201
-問題三：https://blog.yexca.net/archives/200
-問題四：この文章
-問題五：https://blog.yexca.net/archives/203
-
-引言
-
-一整题都是考拉普拉斯变换的，同时最后一题是应用。如果不知道拉普拉斯变换是比较难快速解题，虽然速度快的话可以做出前两大题以及第三题的前三问 (其实也很多了)，对于最后两问倒是属于不知道相关原理便不会做了 (我在最后一问倒是写了不知道相关情况如何解题，但考场那种情况下真的可以反应过来吗？)
-
-
-  题目版权属于东京科学大学所有，仅为了方便观看而引用，无盈利行为
-
-
-背景
-
-実数 $t(\ge0)$ を変数とする2回微分可能な実関数 $f(t)$ ...
     </summary>
   
 

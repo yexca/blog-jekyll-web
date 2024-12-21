@@ -35,27 +35,27 @@
     
       <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="服务器用 Docker 部署记录" />
+<meta property="og:title" content="GoLang 通道" />
 <meta name="author" content="yexca" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="从想法产生到彻底实现，一共耗时三个月 (主要是太懒了)" />
-<meta property="og:description" content="从想法产生到彻底实现，一共耗时三个月 (主要是太懒了)" />
-<link rel="canonical" href="https://blog.yexca.net/archives/102" />
-<meta property="og:url" content="https://blog.yexca.net/archives/102" />
+<meta name="description" content="Golang Series Hello GoLang: https://blog.yexca.net/archives/154 GoLang (var and const) 变量与常量: https://blog.yexca.net/archives/155 GoLang (func) 函数: https://blog.yexca.net/archives/156 GoLang (slice and map) 切片: https://blog.yexca.net/archives/160 GoLang (OOP) 面向对象: https://blog.yexca.net/archives/162 GoLang (reflect) 反射: https://blog.yexca.net/archives/204 GoLang (struct tag) 结构体标签: https://blog.yexca.net/archives/205 GoLang (goroutine) go 程: https://blog.yexca.net/archives/206 GoLang (channel) 通道: This Page" />
+<meta property="og:description" content="Golang Series Hello GoLang: https://blog.yexca.net/archives/154 GoLang (var and const) 变量与常量: https://blog.yexca.net/archives/155 GoLang (func) 函数: https://blog.yexca.net/archives/156 GoLang (slice and map) 切片: https://blog.yexca.net/archives/160 GoLang (OOP) 面向对象: https://blog.yexca.net/archives/162 GoLang (reflect) 反射: https://blog.yexca.net/archives/204 GoLang (struct tag) 结构体标签: https://blog.yexca.net/archives/205 GoLang (goroutine) go 程: https://blog.yexca.net/archives/206 GoLang (channel) 通道: This Page" />
+<link rel="canonical" href="https://blog.yexca.net/archives/207" />
+<meta property="og:url" content="https://blog.yexca.net/archives/207" />
 <meta property="og:site_name" content="yexca’Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-04-04T22:31:45+08:00" />
+<meta property="article:published_time" content="2024-12-21T14:52:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="服务器用 Docker 部署记录" />
+<meta property="twitter:title" content="GoLang 通道" />
 <meta name="twitter:site" content="@yexcano" />
 <meta name="twitter:creator" content="@yexcano" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2024-02-20T07:26:43+08:00","datePublished":"2023-04-04T22:31:45+08:00","description":"从想法产生到彻底实现，一共耗时三个月 (主要是太懒了)","headline":"服务器用 Docker 部署记录","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/102"},"url":"https://blog.yexca.net/archives/102"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yexca","url":"https://blog.yexca.net/"},"dateModified":"2024-12-21T14:52:00+08:00","datePublished":"2024-12-21T14:52:00+08:00","description":"Golang Series Hello GoLang: https://blog.yexca.net/archives/154 GoLang (var and const) 变量与常量: https://blog.yexca.net/archives/155 GoLang (func) 函数: https://blog.yexca.net/archives/156 GoLang (slice and map) 切片: https://blog.yexca.net/archives/160 GoLang (OOP) 面向对象: https://blog.yexca.net/archives/162 GoLang (reflect) 反射: https://blog.yexca.net/archives/204 GoLang (struct tag) 结构体标签: https://blog.yexca.net/archives/205 GoLang (goroutine) go 程: https://blog.yexca.net/archives/206 GoLang (channel) 通道: This Page","headline":"GoLang 通道","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yexca.net/archives/207"},"url":"https://blog.yexca.net/archives/207"}</script>
 <!-- End Jekyll SEO tag -->
 
     
   
-    <title>服务器用 Docker 部署记录 - yexca'Blog
+    <title>GoLang 通道 - yexca'Blog
     </title>
   
     <!--
@@ -473,7 +473,7 @@
         
           
             
-              <span>服务器用 Docker 部署记录</span>
+              <span>GoLang 通道</span>
             
 
           
@@ -659,42 +659,6 @@
       
 
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
 
     
 
@@ -702,41 +666,6 @@
 
   
   
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-
-    
 
   
 
@@ -758,7 +687,7 @@
 
 
 
-<h1 data-toc-skip>服务器用 Docker 部署记录</h1>
+<h1 data-toc-skip>GoLang 通道</h1>
 
 <div class="post-meta text-muted">
     <!-- published date -->
@@ -775,42 +704,18 @@
 
 <em
   class=""
-  data-ts="1680618705"
+  data-ts="1734763920"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Apr  4, 2023
+  Dec 21, 2024
 </em>
 
     </span>
 
     <!-- lastmod date -->
-    
-    <span>
-      Updated
-      <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1708385203"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Feb 20, 2024
-</em>
-
-    </span>
     
 
   
@@ -854,9 +759,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1785 words"
+  title="1022 words"
 >
-  <em>9 min</em> read</span>
+  <em>5 min</em> read</span>
 
     </div>
 
@@ -865,142 +770,72 @@
 </div> <!-- .post-meta -->
 
 <div class="post-content">
-  <p>从想法产生到彻底实现，一共耗时三个月 <del>(主要是太懒了)</del></p>
+  <blockquote>
+  <p><strong>Golang Series</strong></p>
 
-<h2 id="安装-docker"><span class="me-2">安装 Docker</span><a href="#安装-docker" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>使用了 APT 进行安装</p>
-
-<ol>
-  <li>添加 HTTPS 传输的软件包以及 CA 证书</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="rouge-code"><pre><span class="c"># 先更新一下</span>
-<span class="nb">sudo </span>apt-get update
-
-<span class="c"># 然后安装</span>
-<span class="nb">sudo </span>apt-get <span class="nb">install</span> <span class="se">\</span>
-     apt-transport-https <span class="se">\</span>
-     ca-certificates <span class="se">\</span>
-     curl <span class="se">\</span>
-     gnupg <span class="se">\</span>
-     lsb-release
-</pre></td></tr></tbody></table></code></div></div>
-
-<ol>
-  <li>为了确认所下载软件包的合法性，需要添加软件源的 GPG 密钥</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="rouge-code"><pre><span class="c"># 国内源</span>
-curl <span class="nt">-fsSL</span> https://mirrors.aliyun.com/docker-ce/linux/debian/gpg | <span class="nb">sudo </span>gpg <span class="nt">--dearmor</span> <span class="nt">-o</span> /usr/share/keyrings/docker-archive-keyring.gpg
-
-
-<span class="c"># 官方源</span>
-curl <span class="nt">-fsSL</span> https://download.docker.com/linux/debian/gpg | <span class="nb">sudo </span>gpg <span class="nt">--dearmor</span> <span class="nt">-o</span> /usr/share/keyrings/docker-archive-keyring.gpg
-</pre></td></tr></tbody></table></code></div></div>
-
-<ol>
-  <li>向 <em>sources.list</em> 中添加 Docker 软件源</li>
-</ol>
-
-<blockquote>
-  <p>首先需要确定 Debian 的版本号，然后替换下面命令的 <code class="language-plaintext highlighter-rouge">$(lsb_release -cs)</code></p>
-
-  <p>版本号需要在 <a href="https://mirrors.aliyun.com/docker-ce/linux/debian/dists/">https://mirrors.aliyun.com/docker-ce/linux/debian/dists/</a> 中</p>
+  <p>Hello GoLang: <a href="https://blog.yexca.net/archives/154">https://blog.yexca.net/archives/154</a><br />
+GoLang (var and const) 变量与常量: <a href="https://blog.yexca.net/archives/155">https://blog.yexca.net/archives/155</a><br />
+GoLang (func) 函数: <a href="https://blog.yexca.net/archives/156">https://blog.yexca.net/archives/156</a><br />
+GoLang (slice and map) 切片: <a href="https://blog.yexca.net/archives/160">https://blog.yexca.net/archives/160</a><br />
+GoLang (OOP) 面向对象: <a href="https://blog.yexca.net/archives/162">https://blog.yexca.net/archives/162</a><br />
+GoLang (reflect) 反射: <a href="https://blog.yexca.net/archives/204">https://blog.yexca.net/archives/204</a><br />
+GoLang (struct tag) 结构体标签: <a href="https://blog.yexca.net/archives/205">https://blog.yexca.net/archives/205</a><br />
+GoLang (goroutine) go 程: <a href="https://blog.yexca.net/archives/206">https://blog.yexca.net/archives/206</a><br />
+GoLang (channel) 通道: This Page</p>
 </blockquote>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="rouge-code"><pre><span class="c"># 国内源</span>
-<span class="nb">echo</span> <span class="se">\</span>
-  <span class="s2">"deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://mirrors.aliyun.com/docker-ce/linux/debian </span><span class="se">\</span><span class="s2">
-  </span><span class="si">$(</span>lsb_release <span class="nt">-cs</span><span class="si">)</span><span class="s2"> stable"</span> | <span class="nb">sudo tee</span> /etc/apt/sources.list.d/docker.list <span class="o">&gt;</span> /dev/null
-
-
-<span class="c"># 官方源</span>
-<span class="nb">echo</span> <span class="se">\</span>
-   <span class="s2">"deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian </span><span class="se">\</span><span class="s2">
-   </span><span class="si">$(</span>lsb_release <span class="nt">-cs</span><span class="si">)</span><span class="s2"> stable"</span> | <span class="nb">sudo tee</span> /etc/apt/sources.list.d/docker.list <span class="o">&gt;</span> /dev/null
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>如 Debian10 的是 <code class="language-plaintext highlighter-rouge">buster</code> ，Debian11 的为 <code class="language-plaintext highlighter-rouge">bullseye</code></p>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="rouge-code"><pre><span class="c"># 此为 Debian11 的</span>
-<span class="nb">echo</span> <span class="se">\</span>
-  <span class="s2">"deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://mirrors.aliyun.com/docker-ce/linux/debian </span><span class="se">\</span><span class="s2">
-  bullseye stable"</span> | <span class="nb">sudo tee</span> /etc/apt/sources.list.d/docker.list <span class="o">&gt;</span> /dev/null
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote>
-  <p>以上命令会添加稳定版本的 Docker APT 源，如果需要测试版本的 Docker 请将 <code class="language-plaintext highlighter-rouge">stable</code> 改为 <code class="language-plaintext highlighter-rouge">test</code></p>
-</blockquote>
-
-<ol>
-  <li>然后安装</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="rouge-code"><pre><span class="c"># 更新缓存</span>
-<span class="nb">sudo </span>apt-get update
-
-<span class="c"># 安装 docker</span>
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>docker-ce docker-ce-cli containerd.io
-
-<span class="c"># 安装 docker-compose</span>
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>docker-compose
-</pre></td></tr></tbody></table></code></div></div>
 
 <hr />
 
-<p>或者可以试试一键安装脚本</p>
+<p>Go 程 (goroutine) 可以通过 channel 进行传递数据，引用类型 channel 可用于多个 goroutine 通讯，其内部实现了同步，确保并发安全</p>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+<blockquote>
+  <p>有点类似 RabbitMQ (仅个人为方便学习所类比，实则为不同东西)</p>
+</blockquote>
+
+<h2 id="定义变量"><span class="me-2">定义变量</span><a href="#定义变量" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>channel 为引用类型，复制或函数调用时将引用同一个 channel 对象，零值为 nil</p>
+
+<p>通过 make() 函数创建，例如</p>
+
+<div class="language-go highlighter-rouge"><div class="code-header">
+        <span data-label-text="Go"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="n">c</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="k">chan</span> <span class="kt">int</span><span class="p">)</span>
+<span class="c">// 添加容量为3</span>
+<span class="n">c</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="k">chan</span> <span class="kt">int</span><span class="p">,</span> <span class="m">3</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>当容量为 0 时，channel 是无缓冲阻塞读写的，大于 0 时有缓存是非阻塞的，直至写满才阻塞</p>
+
+<p>通过 <code class="language-plaintext highlighter-rouge">&lt;-</code> 来接收和发送数据</p>
+
+<div class="language-go highlighter-rouge"><div class="code-header">
+        <span data-label-text="Go"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="c">// 发送数据到 channel</span>
+<span class="n">channel</span> <span class="o">&lt;-</span> <span class="m">3</span>
+<span class="c">// 接收并丢弃</span>
+<span class="o">&lt;-</span><span class="n">channel</span> <span class="c">// 注意无空格</span>
+<span class="c">// 接收并赋值给变量</span>
+<span class="n">x</span> <span class="o">:=</span> <span class="o">&lt;-</span><span class="n">channel</span>
+<span class="c">// 接收并赋值给变量，并判断是否接收成功(channel 是否为空)</span>
+<span class="n">data</span><span class="p">,</span> <span class="n">flag</span> <span class="o">:=</span> <span class="o">&lt;-</span><span class="n">channel</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="无缓冲"><span class="me-2">无缓冲</span><a href="#无缓冲" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-go highlighter-rouge"><div class="code-header">
+        <span data-label-text="Go"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -1012,41 +847,35 @@ curl <span class="nt">-fsSL</span> https://download.docker.com/linux/debian/gpg 
 9
 10
 11
-</pre></td><td class="rouge-code"><pre><span class="c"># 测试版</span>
-curl <span class="nt">-fsSL</span> test.docker.com <span class="nt">-o</span> get-docker.sh
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="k">package</span> <span class="n">main</span>
 
-<span class="c"># 以下为稳定版</span>
-curl <span class="nt">-fsSL</span> get.docker.com <span class="nt">-o</span> get-docker.sh
+<span class="k">import</span> <span class="s">"fmt"</span>
 
-<span class="c"># 阿里云源</span>
-<span class="nb">sudo </span>sh get-docker.sh <span class="nt">--mirror</span> Aliyun
+<span class="k">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">c</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="k">chan</span> <span class="kt">int</span><span class="p">)</span>
+	<span class="k">go</span> <span class="k">func</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">defer</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"A.defer"</span><span class="p">)</span>
+		<span class="n">c</span> <span class="o">&lt;-</span> <span class="m">6</span>
+		<span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"A running"</span><span class="p">)</span>
+	<span class="p">}()</span>
 
-<span class="c"># 微软 AzureChina 源</span>
-<span class="nb">sudo </span>sh get-docker.sh <span class="nt">--mirror</span> AzureChinaCloud
+	<span class="n">num</span> <span class="o">:=</span> <span class="o">&lt;-</span><span class="n">c</span>
+	<span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"num ="</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
+
+	<span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"main over"</span><span class="p">)</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="启动-docker"><span class="me-2">启动 Docker</span><a href="#启动-docker" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="有缓冲"><span class="me-2">有缓冲</span><a href="#有缓冲" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>systemctl <span class="nb">enable </span>docker
-<span class="nb">sudo </span>systemctl start docker
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>使用命令以下测试是否成功启动</p>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>docker run <span class="nt">--rm</span> hello-world
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>出现下述类似输出即安装启动成功</p>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-go highlighter-rouge"><div class="code-header">
+        <span data-label-text="Go"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -1073,40 +902,100 @@ curl <span class="nt">-fsSL</span> get.docker.com <span class="nt">-o</span> get
 24
 25
 26
-</pre></td><td class="rouge-code"><pre>Unable to find image <span class="s1">'hello-world:latest'</span> locally
-latest: Pulling from library/hello-world
-2db29710123e: Pull <span class="nb">complete
-</span>Digest: sha256:c77be1d3a47d0caf71a82dd893ee61ce01f32fc758031a6ec4cf1389248bb833
-Status: Downloaded newer image <span class="k">for </span>hello-world:latest
+27
+</pre></td><td class="rouge-code"><pre><span class="k">package</span> <span class="n">main</span>
 
-Hello from Docker!
-This message shows that your installation appears to be working correctly.
+<span class="k">import</span> <span class="p">(</span>
+	<span class="s">"fmt"</span>
+	<span class="s">"time"</span>
+<span class="p">)</span>
 
-To generate this message, Docker took the following steps:
- 1. The Docker client contacted the Docker daemon.
- 2. The Docker daemon pulled the <span class="s2">"hello-world"</span> image from the Docker Hub.
-    <span class="o">(</span>amd64<span class="o">)</span>
- 3. The Docker daemon created a new container from that image which runs the
-    executable that produces the output you are currently reading.
- 4. The Docker daemon streamed that output to the Docker client, which sent it
-    to your terminal.
+<span class="k">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">c</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="k">chan</span> <span class="kt">int</span><span class="p">,</span> <span class="m">3</span><span class="p">)</span>
 
-To try something more ambitious, you can run an Ubuntu container with:
- <span class="nv">$ </span>docker run <span class="nt">-it</span> ubuntu bash
+	<span class="k">go</span> <span class="k">func</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">defer</span> <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"A over"</span><span class="p">)</span>
+		<span class="k">for</span> <span class="n">i</span> <span class="o">:=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="m">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">{</span>
+			<span class="n">c</span> <span class="o">&lt;-</span> <span class="n">i</span>
+			<span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"A goroutine, i ="</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s">"len ="</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">),</span> <span class="s">"cap ="</span><span class="p">,</span> <span class="nb">cap</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+		<span class="p">}</span>
+	<span class="p">}()</span>
 
-Share images, automate workflows, and more with a free Docker ID:
- https://hub.docker.com/
+	<span class="n">time</span><span class="o">.</span><span class="n">Sleep</span><span class="p">(</span><span class="m">2</span> <span class="o">*</span> <span class="n">time</span><span class="o">.</span><span class="n">Second</span><span class="p">)</span>
 
-For more examples and ideas, visit:
- https://docs.docker.com/get-started/
+	<span class="k">for</span> <span class="n">i</span> <span class="o">:=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="m">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">{</span>
+		<span class="n">num</span> <span class="o">:=</span> <span class="o">&lt;-</span><span class="n">c</span>
+		<span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"main, num ="</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
+	<span class="p">}</span>
+
+	<span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"main over"</span><span class="p">)</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="blog1-wordpress"><span class="me-2">Blog1: WordPress</span><a href="#blog1-wordpress" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="关闭-channel"><span class="me-2">关闭 channel</span><a href="#关闭-channel" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>创建相应文件夹 (例如 /root/wordpress)，然后创建 <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> 文件</p>
+<p>通过 <code class="language-plaintext highlighter-rouge">close()</code> 关闭</p>
 
-<div class="language-yml highlighter-rouge"><div class="code-header">
-        <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-go highlighter-rouge"><div class="code-header">
+        <span data-label-text="Go"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="rouge-code"><pre><span class="k">package</span> <span class="n">main</span>
+
+<span class="k">import</span> <span class="s">"fmt"</span>
+
+<span class="k">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">c</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="k">chan</span> <span class="kt">int</span><span class="p">,</span> <span class="m">5</span><span class="p">)</span>
+
+	<span class="k">go</span> <span class="k">func</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">for</span> <span class="n">i</span> <span class="o">:=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="m">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">{</span>
+			<span class="n">c</span> <span class="o">&lt;-</span> <span class="n">i</span>
+		<span class="p">}</span>
+		<span class="c">// 关闭</span>
+		<span class="nb">close</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+	<span class="p">}()</span>
+
+	<span class="k">for</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="n">data</span><span class="p">,</span> <span class="n">ok</span> <span class="o">:=</span> <span class="o">&lt;-</span><span class="n">c</span><span class="p">;</span> <span class="n">ok</span> <span class="p">{</span>
+			<span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+			<span class="k">break</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+
+	<span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"Main Finished"</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="使用-range"><span class="me-2">使用 range</span><a href="#使用-range" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>上述 main 的 for 循环可以简写使用 range</p>
+
+<div class="language-go highlighter-rouge"><div class="code-header">
+        <span data-label-text="Go"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -1135,82 +1024,58 @@ For more examples and ideas, visit:
 26
 27
 28
-</pre></td><td class="rouge-code"><pre><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.3'</span>
-<span class="na">services</span><span class="pi">:</span>
-   <span class="na">db</span><span class="pi">:</span>
-     <span class="na">image</span><span class="pi">:</span> <span class="s">mysql:5.7</span>
-     <span class="na">volumes</span><span class="pi">:</span>
-       <span class="pi">-</span> <span class="s">db_data:/var/lib/mysql</span>
-     <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span>
-     <span class="na">environment</span><span class="pi">:</span>
-       <span class="na">MYSQL_ROOT_PASSWORD</span><span class="pi">:</span> <span class="s">somewordpress</span>
-       <span class="na">MYSQL_DATABASE</span><span class="pi">:</span> <span class="s">wordpress</span>
-       <span class="na">MYSQL_USER</span><span class="pi">:</span> <span class="s">wordpress</span>
-       <span class="na">MYSQL_PASSWORD</span><span class="pi">:</span> <span class="s">wordpress</span>
-   <span class="na">wordpress</span><span class="pi">:</span>
-     <span class="na">depends_on</span><span class="pi">:</span>
-       <span class="pi">-</span> <span class="s">db</span>
-     <span class="na">image</span><span class="pi">:</span> <span class="s">wordpress:latest</span>
-     <span class="na">volumes</span><span class="pi">:</span>
-       <span class="pi">-</span> <span class="s">/root/wordpress/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini</span>
-     <span class="na">ports</span><span class="pi">:</span>
-       <span class="pi">-</span> <span class="s">8000:80</span>
-     <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span>
-     <span class="na">environment</span><span class="pi">:</span>
-       <span class="na">WORDPRESS_DB_HOST</span><span class="pi">:</span> <span class="s">db:3306</span>
-       <span class="na">WORDPRESS_DB_USER</span><span class="pi">:</span> <span class="s">wordpress</span>
-       <span class="na">WORDPRESS_DB_PASSWORD</span><span class="pi">:</span> <span class="s">wordpress</span>
-       <span class="na">WORDPRESS_DB_NAME</span><span class="pi">:</span> <span class="s">wordpress</span>
-<span class="na">volumes</span><span class="pi">:</span>
-    <span class="na">db_data</span><span class="pi">:</span> <span class="pi">{}</span>
+</pre></td><td class="rouge-code"><pre><span class="k">package</span> <span class="n">main</span>
+
+<span class="k">import</span> <span class="s">"fmt"</span>
+
+<span class="k">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">c</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="k">chan</span> <span class="kt">int</span><span class="p">,</span> <span class="m">5</span><span class="p">)</span>
+
+	<span class="k">go</span> <span class="k">func</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">for</span> <span class="n">i</span> <span class="o">:=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="m">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">{</span>
+			<span class="n">c</span> <span class="o">&lt;-</span> <span class="n">i</span>
+		<span class="p">}</span>
+
+		<span class="nb">close</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+	<span class="p">}()</span>
+
+	<span class="c">//for {</span>
+	<span class="c">//	if data, ok := &lt;-c; ok {</span>
+	<span class="c">//		fmt.Println(data)</span>
+	<span class="c">//	} else {</span>
+	<span class="c">//		break</span>
+	<span class="c">//	}</span>
+	<span class="c">//}</span>
+
+	<span class="k">for</span> <span class="n">data</span> <span class="o">:=</span> <span class="k">range</span> <span class="n">c</span> <span class="p">{</span>
+		<span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+	<span class="p">}</span>
+	<span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"Main Finished"</span><span class="p">)</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>创建 <code class="language-plaintext highlighter-rouge">uploads.ini</code> 文件</p>
+<h2 id="单向-channel"><span class="me-2">单向 channel</span><a href="#单向-channel" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<div class="language-ini highlighter-rouge"><div class="code-header">
-        <span data-label-text="Ini"><i class="fas fa-code fa-fw small"></i></span>
+<p>默认情况下 channel 是双向的，即可读可写，也可以指定通道方向，只读或只写</p>
+
+<div class="language-go highlighter-rouge"><div class="code-header">
+        <span data-label-text="Go"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
-</pre></td><td class="rouge-code"><pre><span class="py">file_uploads</span> <span class="p">=</span> <span class="s">On</span>
-<span class="py">memory_limit</span> <span class="p">=</span> <span class="s">256M</span>
-<span class="py">upload_max_filesize</span> <span class="p">=</span> <span class="s">10M</span>
-<span class="py">post_max_size</span> <span class="p">=</span> <span class="s">10M</span>
-<span class="py">max_execution_time</span> <span class="p">=</span> <span class="s">600</span>
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="n">c</span> <span class="k">chan</span> <span class="kt">int</span> <span class="c">// 声明正常双向 channel</span>
+<span class="c">// c1 只可写</span>
+<span class="k">var</span> <span class="n">c1</span> <span class="k">chan</span><span class="o">&lt;-</span> <span class="kt">int</span>
+<span class="c">// c2 只可读</span>
+<span class="k">var</span> <span class="n">c2</span> <span class="o">&lt;-</span><span class="k">chan</span> <span class="kt">int</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="docker-容器运行相关"><span class="me-2">docker 容器运行相关</span><a href="#docker-容器运行相关" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>可以把双向 channel 转为单向，反之不可。也就是可以定义函数形参为单向，但传递双向</p>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="rouge-code"><pre><span class="c"># 后台运行</span>
-docker-compose up <span class="nt">-d</span>
-
-<span class="c"># 停止</span>
-docker-compose stop
-
-<span class="c"># 停止并删除</span>
-docker-compose down
-</pre></td></tr></tbody></table></code></div></div>
-
-<h2 id="blog2-typecho"><span class="me-2">Blog2: Typecho</span><a href="#blog2-typecho" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>使用镜像：<a href="https://hub.docker.com/r/80x86/typecho">80x86/typecho</a></p>
-
-<p>创建文件夹与相应文件</p>
-
-<div class="language-yml highlighter-rouge"><div class="code-header">
-        <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-go highlighter-rouge"><div class="code-header">
+        <span data-label-text="Go"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -1224,229 +1089,49 @@ docker-compose down
 11
 12
 13
-</pre></td><td class="rouge-code"><pre><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.0'</span>
-<span class="na">services</span><span class="pi">:</span>
-    <span class="na">typecho</span><span class="pi">:</span>
-        <span class="na">image</span><span class="pi">:</span> <span class="s">80x86/typecho:latest</span>
-        <span class="na">container_name</span><span class="pi">:</span> <span class="s">Typecho_Blog</span>
-        <span class="na">volumes</span><span class="pi">:</span>
-            <span class="pi">-</span> <span class="s">/root/typecho/data:/data</span>
-        <span class="na">ports</span><span class="pi">:</span>
-            <span class="pi">-</span> <span class="s">8001:80</span>
-        <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span>
-        <span class="na">environment</span><span class="pi">:</span>
-            <span class="na">PHP_TZ</span><span class="pi">:</span> <span class="s">Asia/Shanghai</span>
-            <span class="na">PHP_MAX_EXECUTION_TIME</span><span class="pi">:</span> <span class="m">600</span>
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="rouge-code"><pre><span class="c">//   chan&lt;- //只写</span>
+<span class="k">func</span> <span class="n">counter</span><span class="p">(</span><span class="n">out</span> <span class="k">chan</span><span class="o">&lt;-</span> <span class="kt">int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">defer</span> <span class="nb">close</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="o">:=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="m">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">{</span>
+        <span class="n">out</span> <span class="o">&lt;-</span> <span class="n">i</span> <span class="c">//如果对方不读 会阻塞</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+ 
+<span class="c">//   &lt;-chan //只读</span>
+<span class="k">func</span> <span class="n">printer</span><span class="p">(</span><span class="n">in</span> <span class="o">&lt;-</span><span class="k">chan</span> <span class="kt">int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="n">num</span> <span class="o">:=</span> <span class="k">range</span> <span class="n">in</span> <span class="p">{</span>
+        <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+ 
+<span class="k">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">c</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="k">chan</span> <span class="kt">int</span><span class="p">)</span> <span class="c">//双向</span>
+ 
+    <span class="k">go</span> <span class="n">counter</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="c">//生产者</span>
+    <span class="n">printer</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>    <span class="c">//消费者</span>
+ 
+    <span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"done"</span><span class="p">)</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="网盘网站"><span class="me-2">网盘网站</span><a href="#网盘网站" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="select"><span class="me-2">select</span><a href="#select" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>使用项目：<a href="https://github.com/px-org/PanIndex">https://github.com/px-org/PanIndex</a></p>
+<p>select 可以监听多个 channel 上的数据流动，语法与 switch 类似，但每个 case 语句里必须是一个 IO 操作</p>
 
-<p>官方教程：<a href="https://docs.noki.icu/">https://docs.noki.icu/</a></p>
+<p>一般放到 <code class="language-plaintext highlighter-rouge">for{}</code> 语句块中</p>
 
-<div class="language-yml highlighter-rouge"><div class="code-header">
-        <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="rouge-code"><pre><span class="na">version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">3.0"</span>
-<span class="na">services</span><span class="pi">:</span>
-  <span class="na">PanIndex</span><span class="pi">:</span>
-    <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span>
-    <span class="na">image</span><span class="pi">:</span> <span class="s">iicm/pan-index:latest</span>
-    <span class="na">container_name</span><span class="pi">:</span> <span class="s">VRC_Pan</span>
-    <span class="na">volumes</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">/root/pan/data:/app/data</span>
-    <span class="na">ports</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">8002:5238</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<h2 id="nginx-与-ssl-证书"><span class="me-2">nginx 与 SSL 证书</span><a href="#nginx-与-ssl-证书" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>使用项目：<a href="https://github.com/0xJacky/nginx-ui">https://github.com/0xJacky/nginx-ui</a></p>
-
-<div class="language-yml highlighter-rouge"><div class="code-header">
-        <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="rouge-code"><pre><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.1'</span> 
-<span class="na">services</span><span class="pi">:</span> 
-  <span class="na">nginx-ui</span><span class="pi">:</span>
-    <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span>
-    <span class="na">image</span><span class="pi">:</span> <span class="s">uozi/nginx-ui:latest</span>
-    <span class="na">container_name</span><span class="pi">:</span> <span class="s">nginx_UI</span>
-    <span class="na">volumes</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">/root/nginx/nginx:/etc/nginx</span>
-      <span class="pi">-</span> <span class="s">/root/nginx/nginx-ui:/etc/nginx-ui</span>
-      <span class="pi">-</span> <span class="s">/root/nginx/www:/www</span>
-    <span class="na">ports</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">80:80</span>
-      <span class="pi">-</span> <span class="s">443:443</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>在配置时代理宿主机的话，可以将宿主机 IP 视为 <code class="language-plaintext highlighter-rouge">172.17.0.1</code></p>
-
-<p>具体可通过一些命令查询</p>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>ip addr show docker0
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>GUI 没什么好说的</p>
-
-<h2 id="进入容器内部"><span class="me-2">进入容器内部</span><a href="#进入容器内部" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<ol>
-  <li>获取容器 ID</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>docker container <span class="nb">ls</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<ol>
-  <li>进入</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>docker <span class="nb">exec</span> <span class="nt">-i</span> <span class="o">[</span>ID] bash
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>然后使用 bash 命令即可 (没有 bash 提示符)</p>
-
-<h2 id="以下仅记录"><span class="me-2">以下仅记录</span><a href="#以下仅记录" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>耗时最长的就是调 nginx 和 ssl 配置了，最后一直不成功，便使用 GUI</p>
-
-<h3 id="ssl-证书"><span class="me-2">SSL 证书</span><a href="#ssl-证书" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>使用了 <a href="https://hub.docker.com/r/neilpang/acme.sh">neilpang/acme.sh</a> ，使用了 DNS 验证，其他方式请参考 <a href="https://github.com/acmesh-official/acme.sh/wiki/Run-acme.sh-in-docker">Run acme.sh in docker · acmesh-official/acme.sh Wiki (github.com)</a></p>
-
-<p>创建相应文件夹与文件</p>
-
-<div class="language-yml highlighter-rouge"><div class="code-header">
-        <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="rouge-code"><pre><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.1'</span> 
-<span class="na">services</span><span class="pi">:</span> 
-  <span class="na">acme.sh</span><span class="pi">:</span>
-    <span class="na">image</span><span class="pi">:</span> <span class="s">neilpang/acme.sh</span>
-    <span class="na">container_name</span><span class="pi">:</span> <span class="s">acme.sh</span>    
-    <span class="na">command</span><span class="pi">:</span> <span class="s">daemon</span>
-    <span class="na">volumes</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">/root/acme/acme.sh:/acme.sh</span>
-      <span class="pi">-</span> <span class="s">/root/acme/conf:/.acme.sh</span>
-    <span class="na">environment</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">CF_Key="这是CF的API"</span>
-      <span class="pi">-</span> <span class="s">CF_Email="这是CF的邮箱"</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>对于其他 DNS 服务商，请参考：<a href="https://github.com/acmesh-official/acme.sh/wiki/dnsapi">https://github.com/acmesh-official/acme.sh/wiki/dnsapi</a></p>
-
-<p>注册账号：</p>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>docker <span class="nb">exec </span>acme.sh <span class="nt">--register-account</span> <span class="nt">-m</span> mail@server.com
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>获取证书 (此处为 CF)</p>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>docker <span class="nb">exec </span>acme.sh <span class="nt">--issue</span> <span class="nt">--dns</span> dns_cf <span class="nt">-d</span> example.com <span class="nt">-d</span> www.example.com
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>获取后的证书和存储目录会打印出来，将此目录映射到 nginx 容器</p>
-
-<p>可以设置 cron 定时任务以自动更新证书，参考：<a href="https://www.runoob.com/w3cnote/linux-crontab-tasks.html">Linux Crontab 定时任务 - 菜鸟教程</a></p>
-
-<hr />
-
-<p>参考资料</p>
-
-<p><a href="https://cloud.tencent.com/developer/article/1769236">docker获取Let’s Encrypt永久免费SSL证书 - 腾讯云开发者社区-腾讯云 (tencent.com)</a></p>
-
-<p><a href="https://github.com/acmesh-official/acme.sh/wiki/ZeroSSL.com-CA">ZeroSSL.com CA · acmesh-official/acme.sh Wiki (github.com)</a></p>
-
-<hr />
-
-<h3 id="nginx"><span class="me-2">Nginx</span><a href="#nginx" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>创建相应文件夹 (例如 /root/nginx)，然后创建 <code class="language-plaintext highlighter-rouge">docker-compose.yml</code></p>
-
-<div class="language-yml highlighter-rouge"><div class="code-header">
-        <span data-label-text="YAML"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="rouge-code"><pre><span class="na">version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">3.1'</span> 
-<span class="na">services</span><span class="pi">:</span> 
-  <span class="na">nginx</span><span class="pi">:</span>
-    <span class="na">restart</span><span class="pi">:</span> <span class="s">always</span> 
-    <span class="na">image</span><span class="pi">:</span> <span class="s">nginx</span>
-    <span class="na">container_name</span><span class="pi">:</span> <span class="s">nginx</span>
-    <span class="na">ports</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">80:80</span>
-    <span class="na">volumes</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">/root/docker/nginx/conf.d:/etc/nginx/conf.d</span>
-      <span class="pi">-</span> <span class="s">/root/docker/nginx/www:/user/share/nfinx/html</span>
-      <span class="pi">-</span> <span class="s">/root/docker/nginx/log:/var/log/nginx</span>
-      <span class="pi">-</span> <span class="s">/root/acme/acme.sh:/ssl</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>然后运行，启动后当前目录有 <code class="language-plaintext highlighter-rouge">conf.d</code> 文件夹，在该文件夹新建以 .conf 为后缀的文件，例如 <code class="language-plaintext highlighter-rouge">default.conf</code></p>
-
-<div class="language-conf highlighter-rouge"><div class="code-header">
-        <span data-label-text="Conf"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-go highlighter-rouge"><div class="code-header">
+        <span data-label-text="Go"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -1478,84 +1163,38 @@ docker-compose down
 29
 30
 31
-32
-33
-34
-35
-</pre></td><td class="rouge-code"><pre><span class="n">server</span> {
-    <span class="n">listen</span>          <span class="m">80</span>;
-    <span class="n">listen</span>          [::]:<span class="m">80</span>;
+</pre></td><td class="rouge-code"><pre><span class="k">package</span> <span class="n">main</span>
 
-    <span class="n">server_name</span>     &lt;<span class="n">your_server_name</span>&gt;;
-    <span class="n">rewrite</span> ^(.*)$  <span class="n">https</span>://$<span class="n">host</span>$<span class="m">1</span> <span class="n">permanent</span>;
-}
+<span class="k">import</span> <span class="s">"fmt"</span>
 
-<span class="n">map</span> $<span class="n">http_upgrade</span> $<span class="n">connection_upgrade</span> {
-    <span class="n">default</span> <span class="n">upgrade</span>;
-    <span class="s1">''</span>      <span class="n">close</span>;
-}
+<span class="k">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">c</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="k">chan</span> <span class="kt">int</span><span class="p">)</span>
+	<span class="n">quit</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="k">chan</span> <span class="kt">int</span><span class="p">)</span>
 
-<span class="n">server</span> {
-    <span class="n">listen</span>  <span class="m">443</span>       <span class="n">ssl</span> <span class="n">http2</span>;
-    <span class="n">listen</span>  [::]:<span class="m">443</span>  <span class="n">ssl</span> <span class="n">http2</span>;
+	<span class="k">go</span> <span class="k">func</span><span class="p">()</span> <span class="p">{</span>
+		<span class="k">for</span> <span class="n">i</span> <span class="o">:=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="m">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">{</span>
+			<span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="o">&lt;-</span><span class="n">c</span><span class="p">)</span>
+		<span class="p">}</span>
 
-    <span class="n">server_name</span>         &lt;<span class="n">your_server_name</span>&gt;;
+		<span class="n">quit</span> <span class="o">&lt;-</span> <span class="m">0</span>
+	<span class="p">}()</span>
 
-	<span class="c"># ssl 证书位置
-</span>    <span class="n">ssl_certificate</span>     /<span class="n">path</span>/<span class="n">to</span>/<span class="n">ssl_cert</span>;
-    <span class="c"># ssl 密钥位置
-</span>    <span class="n">ssl_certificate_key</span> /<span class="n">path</span>/<span class="n">to</span>/<span class="n">ssl_cert_key</span>;
-
-    <span class="n">location</span> / {
-        <span class="n">proxy_set_header</span>    <span class="n">Host</span>                $<span class="n">host</span>;
-        <span class="n">proxy_set_header</span>    <span class="n">X</span>-<span class="n">Real</span>-<span class="n">IP</span>           $<span class="n">remote_addr</span>;
-        <span class="n">proxy_set_header</span>    <span class="n">X</span>-<span class="n">Forwarded</span>-<span class="n">For</span>     $<span class="n">proxy_add_x_forwarded_for</span>;
-        <span class="n">proxy_set_header</span>    <span class="n">X</span>-<span class="n">Forwarded</span>-<span class="n">Proto</span>   $<span class="n">scheme</span>;
-        <span class="n">proxy_http_version</span>  <span class="m">1</span>.<span class="m">1</span>;
-        <span class="n">proxy_set_header</span>    <span class="n">Upgrade</span>             $<span class="n">http_upgrade</span>;
-        <span class="n">proxy_set_header</span>    <span class="n">Connection</span>          $<span class="n">connection_upgrade</span>;
-        <span class="n">proxy_pass</span>          <span class="n">http</span>://<span class="m">172</span>.<span class="m">17</span>.<span class="m">0</span>.<span class="m">1</span>:<span class="m">9000</span>/;
-    }
-}
+	<span class="c">// main</span>
+	<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">:=</span> <span class="m">1</span><span class="p">,</span> <span class="m">1</span>
+	<span class="k">for</span> <span class="p">{</span>
+		<span class="k">select</span> <span class="p">{</span>
+		<span class="k">case</span> <span class="n">c</span> <span class="o">&lt;-</span> <span class="n">x</span><span class="o">:</span>
+			<span class="n">tmp</span> <span class="o">:=</span> <span class="n">x</span>
+			<span class="n">x</span> <span class="o">=</span> <span class="n">y</span>
+			<span class="n">y</span> <span class="o">=</span> <span class="n">tmp</span> <span class="o">+</span> <span class="n">y</span>
+		<span class="k">case</span> <span class="o">&lt;-</span><span class="n">quit</span><span class="o">:</span>
+			<span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="s">"quit"</span><span class="p">)</span>
+			<span class="k">return</span>
+         <span class="c">// 可以有 default，此例不需要</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
-
-<hr />
-
-<p>参考资料</p>
-
-<p><a href="https://blog.csdn.net/Blueeyedboy521/article/details/124848929">docker安装nginx并配置ssl证书，代理宿主机服务_Blueeyedboy521的博客-CSDN博客_bitwarden docker ssl</a></p>
-
-<p><a href="https://developer.aliyun.com/article/761236">Nginx 安装 SSL 配置 HTTPS 超详细完整全过程-阿里云开发者社区 (aliyun.com)</a></p>
-
-<p><a href="https://blog.csdn.net/usdnfo/article/details/111509661">快速部署 Docker 同时发布多个网站或服务_天道酬勤~的博客-CSDN博客_docker部署 一台服务器多个系统</a></p>
-
-<p><a href="https://diamondfsd.com/lets-encrytp-hand-https/">Let’s Encrypt 使用教程，免费的SSL证书，让你的网站拥抱 HTTPS - Diamond-Blog (diamondfsd.com)</a></p>
-
-<p><a href="https://www.jianshu.com/p/2e0fe505766b">Nginx反向代理的一次使用总结 - 简书 (jianshu.com)</a></p>
-
-<p><a href="https://www.cnblogs.com/cnxkey/articles/11180979.html">Nginx配置反向代理隐藏服务端口 - &amp;大飞 - 博客园 (cnblogs.com)</a></p>
-
-<hr />
-
-<h2 id="参考文章"><span class="me-2">参考文章</span><a href="#参考文章" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p><a href="https://yeasy.gitbook.io/docker_practice/install/debian">Debian - Docker — 从入门到实践 (gitbook.io)</a></p>
-
-<p><a href="https://cloud.tencent.com/developer/article/1592741">Docker 安装 Wordpress 博客 - 腾讯云开发者社区-腾讯云 (tencent.com)</a></p>
-
-<p><a href="https://devpress.csdn.net/cms/62f4ee7a7e6682346618948a.html">Docker部署WordPress解决“上传的文件尺寸超过php.ini中定义的upload_max_filesize值”问题_neiro-DevPress官方社区 (csdn.net)</a></p>
-
-<p><a href="https://www.liaosam.com/problem-binding-to-port-80.html">let’s Encrypt 证书之安装故障 Could not bind to IPv4 or IPv6. - 料网 (liaosam.com)</a></p>
-
-<p><a href="https://www.cnblogs.com/FLY_DREAM/p/14221136.html">基于Let’s Encrypt生成免费证书-支持多域名泛域名证书 - DevOps在路上 - 博客园 (cnblogs.com)</a></p>
-
-<p><a href="https://www.runoob.com/docker/docker-compose.html">Docker Compose-菜鸟教程 (runoob.com)</a></p>
-
-<p><a href="https://www.cnblogs.com/54chensongxia/p/12938929.html">Nginx配置文件详解 - 程序员自由之路 - 博客园 (cnblogs.com)</a></p>
-
-<p><a href="https://www.moeelf.com/archives/281.html">Docker使用acme.sh申请ssl证书 – 萌精灵 (moeelf.com)</a></p>
-
-<p><a href="https://blog.csdn.net/Blueeyedboy521/article/details/124848929">docker安装nginx并配置ssl证书，代理宿主机服务</a></p>
 
 </div>
 
@@ -1566,8 +1205,8 @@ docker-compose down
   <div class="post-meta mb-3">
     <i class="far fa-folder-open fa-fw me-1"></i>
     
-      <a href='/categories/%E6%97%A5%E5%B8%B8/'>日常</a>,
-      <a href='/categories/%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95/'>折腾记录</a>
+      <a href='/categories/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/'>编程基础</a>,
+      <a href='/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/'>编程语言</a>
   </div>
   
 
@@ -1576,8 +1215,8 @@ docker-compose down
   <div class="post-tags">
     <i class="fa fa-tags fa-fw me-1"></i>
       
-      <a href="/tags/docker/"
-          class="post-tag no-text-decoration" >Docker</a>
+      <a href="/tags/go/"
+          class="post-tag no-text-decoration" >Go</a>
       
   </div>
   
@@ -1611,7 +1250,7 @@ docker-compose down
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8%20Docker%20%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95%20-%20yexca'Blog&url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F102"
+        href="https://twitter.com/intent/tweet?text=GoLang%20%E9%80%9A%E9%81%93%20-%20yexca'Blog&url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F207"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -1624,7 +1263,7 @@ docker-compose down
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8%20Docker%20%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95%20-%20yexca'Blog&u=https%3A%2F%2Fblog.yexca.net%2Farchives%2F102"
+        href="https://www.facebook.com/sharer/sharer.php?title=GoLang%20%E9%80%9A%E9%81%93%20-%20yexca'Blog&u=https%3A%2F%2Fblog.yexca.net%2Farchives%2F207"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -1637,7 +1276,7 @@ docker-compose down
     
       
       <a
-        href="https://t.me/share/url?url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F102&text=%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%94%A8%20Docker%20%E9%83%A8%E7%BD%B2%E8%AE%B0%E5%BD%95%20-%20yexca'Blog"
+        href="https://t.me/share/url?url=https%3A%2F%2Fblog.yexca.net%2Farchives%2F207&text=GoLang%20%E9%80%9A%E9%81%93%20-%20yexca'Blog"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -2963,1267 +2602,1267 @@ docker-compose down
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -5456,7 +5095,7 @@ docker-compose down
         
         
         <div class="col">
-          <a href="/archives/131" class="card post-preview h-100">
+          <a href="/archives/154" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -5469,14 +5108,14 @@ docker-compose down
 
 <em
   class="small"
-  data-ts="1698996840"
+  data-ts="1708300680"
   data-df="ll"
   
 >
-  Nov  3, 2023
+  Feb 19, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>2023 新服务器部署记录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>Hello GoLang</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -5485,14 +5124,13 @@ docker-compose down
 
 
 
-                  自从博客转移到 Github 上后本打算就这样不再购买新服务器的，不过可能是这几个月很平静使得我迫切想折腾一阵，也可能是 我可以不用，但不能没有 的心理使我冲动消费了一次
+                  
+  Golang Series
 
-目前的网站 (yexca.net 网域)
-
-
-  个人介绍？：http://yexca.net (目前还是半成品)
-  这个 Blog：http://blog.yexca.net
-  怀旧 Blog：http://wp....
+  Hello GoLang: This Page
+GoLang (var and const) 变量与常量: https://blog.yexca.net/archives/155
+GoLang (func) 函数: https://blog.yexca.net/archives/156
+GoLang (slice and map) 切片: https:...
                 </p>
               </div>
             </div>
@@ -5502,7 +5140,7 @@ docker-compose down
         
         
         <div class="col">
-          <a href="/archives/71" class="card post-preview h-100">
+          <a href="/archives/155" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -5515,14 +5153,14 @@ docker-compose down
 
 <em
   class="small"
-  data-ts="1663152436"
+  data-ts="1708382460"
   data-df="ll"
   
 >
-  Sep 14, 2022
+  Feb 20, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>Fedora 安装 Komga 折腾记录</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>GoLang 变量与常量</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -5531,23 +5169,13 @@ docker-compose down
 
 
 
-                  引言
+                  
+  Golang Series
 
-为了在内网更方便得看漫画
-
-IP 设置
-
-路由器为 OpenWRT 系统
-
-路由器设置
-
-在 网络- IP/MAC 绑定 将电脑绑定一个固定的 IP
-
-Fedora 设置
-
-因为我设置的 IP 与自动分配的不一致 (有线连接) ，固需要手动修改
-
-在 网络-设置 的 身份 加上 MAC 地址，IPv4 改为 手动，地址依次为 IP、255.255.255.255、路由器 IP，DNS...
+  Hello GoLang: https://blog.yexca.net/archives/154
+GoLang (var and const) 变量与常量: This Page
+GoLang (func) 函数: https://blog.yexca.net/archives/156
+GoLang (slice and map) 切片: https:...
                 </p>
               </div>
             </div>
@@ -5557,7 +5185,7 @@ Fedora 设置
         
         
         <div class="col">
-          <a href="/archives/73" class="card post-preview h-100">
+          <a href="/archives/156" class="card post-preview h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -5570,14 +5198,14 @@ Fedora 设置
 
 <em
   class="small"
-  data-ts="1663311601"
+  data-ts="1708548420"
   data-df="ll"
   
 >
-  Sep 16, 2022
+  Feb 22, 2024
 </em>
 
-              <h4 class="pt-0 my-2" data-toc-skip>个人内网折腾</h4>
+              <h4 class="pt-0 my-2" data-toc-skip>GoLang 函数</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -5586,21 +5214,13 @@ Fedora 设置
 
 
 
-                  引言
+                  
+  Golang Series
 
-人嘛，有了比较好的就会追求更好的，欲望无穷无尽。本想整 NAS，奈何经济实力不够，于是通过四个项目在自己电脑整了入口、动画、漫画以及音声库，那么
-
-书接上回，继续折腾
-
-成品展示
-
-全部使用 Docker 部署，理论上应该只要 Docker 支持的平台就能复现
-
-
-
-
-  
-    调整了域名为 link.start.icu，本没有 .icu，可浏览器不能解析，只能加上 (不过莫名更...
+  Hello GoLang: https://blog.yexca.net/archives/154
+GoLang (var and const) 变量与常量: https://blog.yexca.net/archives/155
+GoLang (func) 函数: This Page
+GoLang (slice and map) 切片: https:...
                 </p>
               </div>
             </div>
@@ -5620,22 +5240,21 @@ Fedora 设置
 <div class="post-navigation d-flex justify-content-between">
   
     <a
-      href="/archives/101"
+      href="/archives/206"
       class="btn btn-outline-primary"
       prompt="Older"
     >
-      <p>软件工程-软件质量与软件工具</p>
+      <p>GoLang go 程</p>
     </a>
   
 
   
-    <a
-      href="/archives/103"
-      class="btn btn-outline-primary"
+    <div
+      class="btn btn-outline-primary disabled"
       prompt="Newer"
     >
-      <p>UML</p>
-    </a>
+      <p>-</p>
+    </div>
   
 </div>
 
