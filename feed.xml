@@ -4,7 +4,7 @@
   <id>https://blog.yexca.net/</id>
   <title>yexca'Blog</title>
   <subtitle>yexca,blog,技术,博客,技术博客</subtitle>
-  <updated>2024-12-21T15:02:46+08:00</updated>
+  <updated>2024-12-22T22:10:50+08:00</updated>
   <author>
     <name>yexca</name>
     <uri>https://blog.yexca.net/</uri>
@@ -17,6 +17,64 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>GoLang 后端入门</title>
+    <link href="https://blog.yexca.net/archives/208" rel="alternate" type="text/html" title="GoLang 后端入门" />
+    <published>2024-12-22T22:07:00+08:00</published>
+  
+    <updated>2024-12-22T22:07:00+08:00</updated>
+  
+    <id>https://blog.yexca.net/archives/208</id>
+    <content src="https://blog.yexca.net/archives/208" />
+    <author>
+      <name>yexca</name>
+    </author>
+
+  
+    
+    <category term="编程基础" />
+    
+    <category term="编程语言" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      简单 (非技术框架) 实现的 Go 后端
+
+众所周知，后端的开发一般是面向接口的开发，也可以说是 CRUD 工程师，本文章将使用 Go 描述从数据库读出数据，然后返回 JSON 数据
+
+数据库
+
+例子为从 MySQL 数据库的分类表，读出分类的名称与 ID，数据库的结构如下
+
+DROP TABLE IF EXISTS categories ;
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description VARCHAR(255)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+项目结构
+
+本例子的项目结构如下
+
+project/
+├── database/       // 数据库包
+...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -69,7 +127,7 @@ GoLang (struct tag) 结构体标签: https...
     <link href="https://blog.yexca.net/archives/206" rel="alternate" type="text/html" title="GoLang go 程" />
     <published>2024-12-17T21:16:00+08:00</published>
   
-    <updated>2024-12-17T21:16:00+08:00</updated>
+    <updated>2024-12-21T15:05:33+08:00</updated>
   
     <id>https://blog.yexca.net/archives/206</id>
     <content src="https://blog.yexca.net/archives/206" />
@@ -114,7 +172,7 @@ GoLang (struct tag) 结构体标签: https...
     <link href="https://blog.yexca.net/archives/205" rel="alternate" type="text/html" title="GoLang 结构体标签" />
     <published>2024-12-11T18:31:00+08:00</published>
   
-    <updated>2024-12-17T21:21:36+08:00</updated>
+    <updated>2024-12-21T15:05:33+08:00</updated>
   
     <id>https://blog.yexca.net/archives/205</id>
     <content src="https://blog.yexca.net/archives/205" />
@@ -159,7 +217,7 @@ GoLang (struct tag) 结构体标签: This ...
     <link href="https://blog.yexca.net/archives/204" rel="alternate" type="text/html" title="GoLang 反射" />
     <published>2024-12-03T14:07:00+08:00</published>
   
-    <updated>2024-12-17T21:21:36+08:00</updated>
+    <updated>2024-12-21T15:05:33+08:00</updated>
   
     <id>https://blog.yexca.net/archives/204</id>
     <content src="https://blog.yexca.net/archives/204" />
@@ -193,57 +251,6 @@ GoLang (slice and map) 切片: https://blog.yexca.net/archives/160
 GoLang (OOP) 面向对象: https://blog.yexca.net/archives/162
 GoLang (reflect) 反射: This Page
 GoLang (struct tag) 结构体标签: https://blog.yexca.net/archives...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>东京科学大学大学院情报理工学院 2020 问题五 / 科学大院理工学 2020 問題五</title>
-    <link href="https://blog.yexca.net/archives/203" rel="alternate" type="text/html" title="东京科学大学大学院情报理工学院 2020 问题五 / 科学大院理工学 2020 問題五" />
-    <published>2024-12-01T18:15:00+08:00</published>
-  
-    <updated>2024-12-03T14:41:09+08:00</updated>
-  
-    <id>https://blog.yexca.net/archives/203</id>
-    <content src="https://blog.yexca.net/archives/203" />
-    <author>
-      <name>yexca</name>
-    </author>
-
-  
-    
-    <category term="考试" />
-    
-    <category term="CS" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      問題一：https://blog.yexca.net/archives/198
-問題二：https://blog.yexca.net/archives/201
-問題三：https://blog.yexca.net/archives/200
-問題四：https://blog.yexca.net/archives/202
-問題五：この文章
-
-引言
-
-应该快两周了吧终于把这张试卷看完了，效率不是一般的低啊。整体来看怎么说呢，虽然整体难度是要比中国 408 难度低一点，但考试的风格与侧重点并不相同，具体还是不太好比较。希望下次我的效率可以高点啊
-
-碎碎念
-
-话说最近没怎么写碎碎念了，这其实还是因为当我想着去发一篇文章的时候往往都是很累的状态了，已经没有精力去写了。说到这里就想到以前对于一样东西从来都只是考虑要不要去学，现在不得不把时间、精力等算上了，最近看到的一个梗
-
-
-  你就不能一手抓考...
     </summary>
   
 
